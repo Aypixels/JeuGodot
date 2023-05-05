@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dangn5ppg0asu"]
+
+[ext_resource type="Texture2D" uid="uid://cba00lngfnqyk" path="res://environment/layers/back.png" id="1_v6ul7"]
+
+[node name="Jeu" type="Node2D"]
+
+[node name="Back" type="Sprite2D" parent="."]
+position = Vector2(574.5, 325)
+scale = Vector2(3.01302, 2.76667)
+texture = ExtResource("1_v6ul7")

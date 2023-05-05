@@ -8,7 +8,7 @@ position = Vector2(297, 273)
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 87.0
-offset_top = 196.0
-offset_right = 1040.0
-offset_bottom = 544.0
+offset_left = 410.0
+offset_top = 198.0
+offset_right = 919.0
+offset_bottom = 501.0

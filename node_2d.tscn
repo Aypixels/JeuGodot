@@ -4,7 +4,20 @@
 
 [node name="Node2D" type="Node2D"]
 
+<<<<<<< HEAD
 [node name="Back" type="Sprite2D" parent="."]
 position = Vector2(575, 324)
 scale = Vector2(2.99479, 2.70833)
 texture = ExtResource("1_duk6m")
+=======
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(297, 273)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 410.0
+offset_top = 198.0
+offset_right = 919.0
+offset_bottom = 501.0
+>>>>>>> 5fc5ee66f7526ff38e1bb08049920183d45b770d

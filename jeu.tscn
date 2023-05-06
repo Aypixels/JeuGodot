@@ -1,6 +1,14 @@
 [gd_scene load_steps=2 format=3 uid="uid://dangn5ppg0asu"]
+[gd_scene load_steps=5 format=3 uid="uid://dangn5ppg0asu"]
 
 [ext_resource type="Texture2D" uid="uid://cba00lngfnqyk" path="res://environment/layers/back.png" id="1_v6ul7"]
+[ext_resource type="Texture2D" uid="uid://cspm03qms0a0p" path="res://sprites/player/idle/player-idle-1.png" id="2_ejgob"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n32gy"]
+size = Vector2(4.9784, 7.95181)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_or77r"]
+size = Vector2(382.673, 8.55417)
 
 [node name="Jeu" type="Node2D"]
 
@@ -8,3 +16,29 @@
 position = Vector2(574.5, 325)
 scale = Vector2(3.01302, 2.76667)
 texture = ExtResource("1_v6ul7")
+
+[node name="Player" type="AnimatableBody2D" parent="."]
+position = Vector2(113, 534)
+scale = Vector2(3.01302, 2.76667)
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(0.165947, 8.67465)
+scale = Vector2(0.331893, 0.361445)
+texture = ExtResource("2_ejgob")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+visible = false
+position = Vector2(-5.72205e-06, 10.4819)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_n32gy")
+
+[node name="ground" type="StaticBody2D" parent="."]
+position = Vector2(573, 556)
+scale = Vector2(3.01302, 2.76667)
+
+[node name="Sprite2D" type="Sprite2D" parent="ground"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ground"]
+position = Vector2(1.02289, 11.4486)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_or77r")

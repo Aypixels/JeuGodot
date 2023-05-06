@@ -128,52 +128,39 @@ size = Vector2(4.9784, 7.95181)
 position = Vector2(573, 556)
 scale = Vector2(3.01302, 2.76667)
 
-[node name="Environment" type="Sprite2D" parent="ground"]
-visibility_layer = 770
-position = Vector2(11.9482, -48.0723)
-scale = Vector2(0.331893, 0.361445)
-texture = ExtResource("1_0ruui")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ground"]
 visible = false
 position = Vector2(14.6033, 21.3554)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_54jt5")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="ground"]
 visible = false
 position = Vector2(-144.705, 1.08432)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_pvieu")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="ground"]
 visible = false
 position = Vector2(-126.119, 3.91568)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_04lbh")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="ground"]
 visible = false
 position = Vector2(-96.7684, -13.253)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_3dgmj")
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="ground"]
 visible = false
 position = Vector2(-27.9006, -7.65057)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_lbv7t")
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="ground"]
 visible = false
 position = Vector2(-110.21, -45)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_e0djg")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="ground"]
 visible = false
 position = Vector2(28.1893, -42.2891)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_um0m0")
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="ground"]
@@ -186,52 +173,52 @@ shape = SubResource("RectangleShape2D_8e6ay")
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="ground"]
 visible = false
 position = Vector2(51.6093, 3.97588)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6e0gf")
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="ground"]
 visible = false
 position = Vector2(78.1392, 0.903595)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_odc3s")
 
 [node name="CollisionShape2D11" type="CollisionShape2D" parent="ground"]
 visible = false
 position = Vector2(91.6025, 3.85541)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_okmox")
 
 [node name="CollisionShape2D12" type="CollisionShape2D" parent="ground"]
 visible = false
 position = Vector2(33.2109, -13.4337)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_kw7ae")
 
 [node name="CollisionShape2D13" type="CollisionShape2D" parent="ground"]
 visible = false
 position = Vector2(6.65947, -7.71086)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_e1c5f")
 
 [node name="CollisionShape2D14" type="CollisionShape2D" parent="ground"]
 visible = false
 position = Vector2(-11.9482, -10.6627)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_rt2hj")
 
 [node name="CollisionShape2D15" type="CollisionShape2D" parent="ground"]
 visible = false
 position = Vector2(150.16, -13.3735)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_7jfmb")
+
+[node name="Environment" type="Sprite2D" parent="ground"]
+visibility_layer = 770
+texture_filter = 1
+position = Vector2(11.9482, -48.0723)
+scale = Vector2(0.331893, 0.361445)
+texture = ExtResource("1_0ruui")
 
 [node name="Player" type="CharacterBody2D" parent="."]
 script = ExtResource("2_tlha8")
 jump_speed = 350
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="Player"]
+texture_filter = 1
 position = Vector2(113.5, 558)
-scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_2tqdg")
 animation = &"idle"
 speed_scale = 2.0

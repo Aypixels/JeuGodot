@@ -1039,6 +1039,7 @@ sources/3 = SubResource("TileSetAtlasSource_qviqg")
 [node name="Jeu" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
 position = Vector2(399, 35)
 tile_set = SubResource("TileSet_w46sb")
 format = 2

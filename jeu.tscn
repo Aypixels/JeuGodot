@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://dangn5ppg0asu"]
+[gd_scene load_steps=30 format=3 uid="uid://dangn5ppg0asu"]
 
 [ext_resource type="Texture2D" uid="uid://0p8jtoy8jr0o" path="res://tilset/dungeon_sheet.png" id="1_1thtv"]
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_givdt"]
@@ -1156,9 +1156,16 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rbxbj"]
+size = Vector2(10, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e6ilt"]
+size = Vector2(584.045, 39.875)
+
 [node name="Jeu" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
+z_index = -1
 texture_filter = 1
 position = Vector2(399, 35)
 tile_set = SubResource("TileSet_w46sb")
@@ -1188,12 +1195,60 @@ layer_3/z_index = 10
 layer_3/tile_data = PackedInt32Array()
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(92, -193)
 script = ExtResource("5_xpp4v")
+metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 texture_filter = 1
 position = Vector2(413, 298)
 sprite_frames = SubResource("SpriteFrames_21g84")
 animation = &"idleDown"
+metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(413, 303)
+shape = SubResource("RectangleShape2D_rbxbj")
+metadata/_edit_group_ = true
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(413, 299)
+zoom = Vector2(5, 5)
+limit_left = 270
+limit_top = 50
+limit_right = 785
+limit_bottom = 500
+metadata/_edit_group_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(525.5, 56.75)
+scale = Vector2(0.806444, 1)
+shape = SubResource("RectangleShape2D_e6ilt")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(0, 452)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(525.5, 55.9375)
+scale = Vector2(0.806444, 1)
+shape = SubResource("RectangleShape2D_e6ilt")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(336, -265)
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(525.5, 56)
+scale = Vector2(0.806444, 1)
+shape = SubResource("RectangleShape2D_e6ilt")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2(833, -254)
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2(525.5, 56.875)
+scale = Vector2(0.806444, 1)
+shape = SubResource("RectangleShape2D_e6ilt")

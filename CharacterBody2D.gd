@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var speed = 100
-var oldPose = ""
+var oldPose = "Down"
 
 func _physics_process(_delta):
 	velocity.x = (int(Input.is_action_pressed("Right")) - int(Input.is_action_pressed("Left"))) * speed

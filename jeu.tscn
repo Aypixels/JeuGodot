@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://dangn5ppg0asu"]
+[gd_scene load_steps=11 format=3 uid="uid://dangn5ppg0asu"]
 
 [ext_resource type="Texture2D" uid="uid://0p8jtoy8jr0o" path="res://tilset/dungeon_sheet.png" id="1_1thtv"]
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_givdt"]
 [ext_resource type="Texture2D" uid="uid://dggq7d8rkwh6k" path="res://tilset/tiles_packed.png" id="3_a4byo"]
 [ext_resource type="Texture2D" uid="uid://cc13ouexxamdf" path="res://tilset/snow-expansion.png" id="4_k2743"]
+[ext_resource type="Texture2D" uid="uid://1ryg8qn25y5x" path="res://tilset/character/tile000.png" id="5_xgmu2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pwapk"]
 texture = ExtResource("1_1thtv")
@@ -1037,6 +1038,7 @@ sources/2 = SubResource("TileSetAtlasSource_vyose")
 sources/3 = SubResource("TileSetAtlasSource_qviqg")
 
 [node name="Jeu" type="Node2D"]
+scale = Vector2(2, 2)
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -1066,3 +1068,8 @@ layer_3/y_sort_enabled = false
 layer_3/y_sort_origin = 0
 layer_3/z_index = 10
 layer_3/tile_data = PackedInt32Array()
+
+[node name="Tile000" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(503, 327)
+texture = ExtResource("5_xgmu2")

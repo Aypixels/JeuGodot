@@ -1,10 +1,26 @@
-[gd_scene load_steps=11 format=3 uid="uid://dangn5ppg0asu"]
+[gd_scene load_steps=28 format=3 uid="uid://dangn5ppg0asu"]
 
 [ext_resource type="Texture2D" uid="uid://0p8jtoy8jr0o" path="res://tilset/dungeon_sheet.png" id="1_1thtv"]
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_givdt"]
 [ext_resource type="Texture2D" uid="uid://dggq7d8rkwh6k" path="res://tilset/tiles_packed.png" id="3_a4byo"]
 [ext_resource type="Texture2D" uid="uid://cc13ouexxamdf" path="res://tilset/snow-expansion.png" id="4_k2743"]
 [ext_resource type="Texture2D" uid="uid://1ryg8qn25y5x" path="res://tilset/character/tile000.png" id="5_xgmu2"]
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="5_xpp4v"]
+[ext_resource type="Texture2D" uid="uid://thijtlnn35fy" path="res://tilset/character/tile017.png" id="6_a06ib"]
+[ext_resource type="Texture2D" uid="uid://b38k2db5em0d7" path="res://tilset/character/tile018.png" id="7_dh1wp"]
+[ext_resource type="Texture2D" uid="uid://bnskexftfl03u" path="res://tilset/character/tile001.png" id="7_jmtb2"]
+[ext_resource type="Texture2D" uid="uid://c77jtoak0i1ff" path="res://tilset/character/tile019.png" id="8_3eytf"]
+[ext_resource type="Texture2D" uid="uid://deasouh3itgbn" path="res://tilset/character/tile002.png" id="8_l4dnu"]
+[ext_resource type="Texture2D" uid="uid://bw5kmngafo0hn" path="res://tilset/character/tile020.png" id="9_kic5g"]
+[ext_resource type="Texture2D" uid="uid://ysc8pdqbococ" path="res://tilset/character/tile003.png" id="9_un606"]
+[ext_resource type="Texture2D" uid="uid://cp0s2qwfdo3yx" path="res://tilset/character/tile051.png" id="10_ntuv0"]
+[ext_resource type="Texture2D" uid="uid://cjv5shkaxy77b" path="res://tilset/character/tile034.png" id="12_kophl"]
+[ext_resource type="Texture2D" uid="uid://4xd5j8m58jjw" path="res://tilset/character/tile052.png" id="13_bpi01"]
+[ext_resource type="Texture2D" uid="uid://beqawqawxp8yn" path="res://tilset/character/tile053.png" id="14_bk72e"]
+[ext_resource type="Texture2D" uid="uid://bu4yxjym8l0kw" path="res://tilset/character/tile054.png" id="15_vvhbs"]
+[ext_resource type="Texture2D" uid="uid://bhxryhnki3k16" path="res://tilset/character/tile035.png" id="19_6oivb"]
+[ext_resource type="Texture2D" uid="uid://cb08fkyfikdcw" path="res://tilset/character/tile036.png" id="20_46ute"]
+[ext_resource type="Texture2D" uid="uid://da2swhhai4mn8" path="res://tilset/character/tile037.png" id="21_qv1oq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pwapk"]
 texture = ExtResource("1_1thtv")
@@ -1037,8 +1053,110 @@ sources/1 = SubResource("TileSetAtlasSource_0u1yg")
 sources/2 = SubResource("TileSetAtlasSource_vyose")
 sources/3 = SubResource("TileSetAtlasSource_qviqg")
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_21g84"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_xgmu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jmtb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_l4dnu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_un606")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_xgmu2")
+}],
+"loop": true,
+"name": &"idleDown",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_ntuv0")
+}],
+"loop": true,
+"name": &"idleLeft",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_a06ib")
+}],
+"loop": true,
+"name": &"idleRight",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_kophl")
+}],
+"loop": true,
+"name": &"idleUp",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_ntuv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_bpi01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_bk72e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_vvhbs")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_a06ib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dh1wp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_3eytf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_kic5g")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_kophl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_6oivb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_46ute")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_qv1oq")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}]
+
 [node name="Jeu" type="Node2D"]
-scale = Vector2(2, 2)
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -1069,7 +1187,13 @@ layer_3/y_sort_origin = 0
 layer_3/z_index = 10
 layer_3/tile_data = PackedInt32Array()
 
-[node name="Tile000" type="Sprite2D" parent="."]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("5_xpp4v")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 texture_filter = 1
-position = Vector2(503, 327)
-texture = ExtResource("5_xgmu2")
+position = Vector2(413, 298)
+sprite_frames = SubResource("SpriteFrames_21g84")
+animation = &"idleDown"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]

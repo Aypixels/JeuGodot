@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://dangn5ppg0asu"]
+[gd_scene load_steps=37 format=3 uid="uid://dangn5ppg0asu"]
 
 [ext_resource type="Texture2D" uid="uid://0p8jtoy8jr0o" path="res://tilset/dungeon_sheet.png" id="1_1thtv"]
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_givdt"]
@@ -21,6 +21,11 @@
 [ext_resource type="Texture2D" uid="uid://bhxryhnki3k16" path="res://tilset/character/tile035.png" id="19_6oivb"]
 [ext_resource type="Texture2D" uid="uid://cb08fkyfikdcw" path="res://tilset/character/tile036.png" id="20_46ute"]
 [ext_resource type="Texture2D" uid="uid://da2swhhai4mn8" path="res://tilset/character/tile037.png" id="21_qv1oq"]
+[ext_resource type="Texture2D" uid="uid://w7x17vqpqr5h" path="res://Pillar animation/tile017.png" id="22_y7cco"]
+[ext_resource type="Texture2D" uid="uid://cai4a1na2um5d" path="res://Pillar animation/tile018.png" id="23_ju6g3"]
+[ext_resource type="Texture2D" uid="uid://dala2gg163sgm" path="res://Pillar animation/tile019.png" id="24_kol22"]
+[ext_resource type="Texture2D" uid="uid://s53s50sovswo" path="res://Pillar animation/tile020.png" id="25_uf4t4"]
+[ext_resource type="Texture2D" uid="uid://bctweomfc83v0" path="res://Pillar animation/tile021.png" id="26_27e3a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pwapk"]
 texture = ExtResource("1_1thtv")
@@ -1162,6 +1167,31 @@ size = Vector2(10, 10)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e6ilt"]
 size = Vector2(557.807, 22.2928)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_cb1as"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_y7cco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ju6g3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_kol22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_uf4t4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_27e3a")
+}],
+"loop": true,
+"name": &"pillar",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4c6j6"]
+
 [node name="Jeu" type="Node2D"]
 metadata/_edit_horizontal_guides_ = []
 
@@ -1260,3 +1290,14 @@ rotation = 1.5708
 position = Vector2(521.161, 175.852)
 scale = Vector2(0.806444, 1)
 shape = SubResource("RectangleShape2D_e6ilt")
+
+[node name="Pillar1" type="StaticBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Pillar1"]
+sprite_frames = SubResource("SpriteFrames_cb1as")
+animation = &"pillar"
+frame = 4
+frame_progress = 0.854115
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pillar1"]
+shape = SubResource("RectangleShape2D_4c6j6")

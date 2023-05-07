@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bunhg2hx1qrql"
-path="res://.godot/imported/tile010.png-429c15cd4ef09903d20a780d09fb4c85.ctex"
+path="res://.godot/imported/tile010.png-9ead251eba97b4a377210396184385f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pillar animation/tile010.png"
-dest_files=["res://.godot/imported/tile010.png-429c15cd4ef09903d20a780d09fb4c85.ctex"]
+source_file="res://Animation/Pillar animation/tile010.png"
+dest_files=["res://.godot/imported/tile010.png-9ead251eba97b4a377210396184385f1.ctex"]
 
 [params]
 

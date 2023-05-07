@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddm00b0hyiix6"
-path="res://.godot/imported/tile023.png-720ec801fc60a699bc817bf7ba316d60.ctex"
+uid="uid://c75rnkigjq2o2"
+path="res://.godot/imported/tile007.png-a9511ab699b47ac9c6b133108ba56651.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Pillar animation/tile023.png"
-dest_files=["res://.godot/imported/tile023.png-720ec801fc60a699bc817bf7ba316d60.ctex"]
+source_file="res://Animation/Pillar animation/tile007.png"
+dest_files=["res://.godot/imported/tile007.png-a9511ab699b47ac9c6b133108ba56651.ctex"]
 
 [params]
 

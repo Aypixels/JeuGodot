@@ -28,3 +28,4 @@ func _physics_process(_delta):
 		$AnimatedSprite2D.speed_scale = 2
 	else:
 		speed = 100
+		$AnimatedSprite2D.speed_scale = 1

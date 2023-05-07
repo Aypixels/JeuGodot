@@ -1,11 +1,11 @@
-[gd_scene load_steps=40 format=3 uid="uid://p3l4xt5bdip6"]
+[gd_scene load_steps=40 format=3 uid="uid://blf0dcs488jss"]
 
 [ext_resource type="Texture2D" uid="uid://0p8jtoy8jr0o" path="res://tilset/dungeon_sheet.png" id="1_boaf3"]
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_67xik"]
 [ext_resource type="Texture2D" uid="uid://dggq7d8rkwh6k" path="res://tilset/tiles_packed.png" id="3_27ua3"]
 [ext_resource type="Texture2D" uid="uid://cc13ouexxamdf" path="res://tilset/snow-expansion.png" id="4_i7rrc"]
-[ext_resource type="PackedScene" uid="uid://dycjwpca3qn8i" path="res://Scène/player.tscn" id="5_10jvo"]
-[ext_resource type="Script" path="res://Pillar1.gd" id="6_06fdf"]
+[ext_resource type="PackedScene" uid="uid://c04vlqyf0b0h4" path="res://Scène/player.tscn" id="5_10jvo"]
+[ext_resource type="Script" path="res://Scripts/Pillar1.gd" id="6_y7vmg"]
 [ext_resource type="Texture2D" uid="uid://w7x17vqpqr5h" path="res://Animation/Pillar animation/tile017.png" id="7_i3rwl"]
 [ext_resource type="Texture2D" uid="uid://cai4a1na2um5d" path="res://Animation/Pillar animation/tile018.png" id="8_0hci3"]
 [ext_resource type="Texture2D" uid="uid://dala2gg163sgm" path="res://Animation/Pillar animation/tile019.png" id="9_27eif"]
@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bctweomfc83v0" path="res://Animation/Pillar animation/tile021.png" id="11_qr80i"]
 [ext_resource type="Texture2D" uid="uid://bfmrqb5na73di" path="res://Animation/Pillar animation/tile022.png" id="12_2jyks"]
 [ext_resource type="Texture2D" uid="uid://ddm00b0hyiix6" path="res://Animation/Pillar animation/tile023.png" id="13_8ed3n"]
-[ext_resource type="Script" path="res://Gate.gd" id="14_ep1dl"]
+[ext_resource type="Script" path="res://Scripts/Gate.gd" id="14_eh6fm"]
 [ext_resource type="Texture2D" uid="uid://wbv1cl4pjwe7" path="res://Animation/Gate animation/tile032.png" id="15_n82on"]
 [ext_resource type="Texture2D" uid="uid://bvxb8oyen78ix" path="res://Animation/Gate animation/tile033.png" id="16_8i82b"]
 [ext_resource type="Texture2D" uid="uid://bpmtbtgy1l66" path="res://Animation/Gate animation/tile034.png" id="17_hvcfu"]
@@ -1243,7 +1243,7 @@ shape = SubResource("RectangleShape2D_00w7i")
 [node name="Pillar_b1" type="StaticBody2D" parent="."]
 texture_filter = 1
 position = Vector2(477, 365)
-script = ExtResource("6_06fdf")
+script = ExtResource("6_y7vmg")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Pillar_b1"]
@@ -1258,7 +1258,7 @@ shape = SubResource("RectangleShape2D_4c6j6")
 [node name="Pillar_b2" type="StaticBody2D" parent="."]
 texture_filter = 1
 position = Vector2(576, 364)
-script = ExtResource("6_06fdf")
+script = ExtResource("6_y7vmg")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pillar_b2"]
@@ -1272,7 +1272,7 @@ animation = &"pillar"
 
 [node name="Pillar_r1" type="StaticBody2D" parent="."]
 position = Vector2(475, 265)
-script = ExtResource("6_06fdf")
+script = ExtResource("6_y7vmg")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Pillar_r1"]
@@ -1287,7 +1287,7 @@ shape = SubResource("RectangleShape2D_j1xhf")
 
 [node name="Pillar_r2" type="StaticBody2D" parent="."]
 position = Vector2(578, 266)
-script = ExtResource("6_06fdf")
+script = ExtResource("6_y7vmg")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Pillar_r2"]
@@ -1303,7 +1303,7 @@ shape = SubResource("RectangleShape2D_j1xhf")
 [node name="Pillar_g1" type="StaticBody2D" parent="."]
 texture_filter = 1
 position = Vector2(473, 164)
-script = ExtResource("6_06fdf")
+script = ExtResource("6_y7vmg")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pillar_g1"]
@@ -1318,7 +1318,7 @@ animation = &"pillar"
 [node name="Pillar_g2" type="StaticBody2D" parent="."]
 texture_filter = 1
 position = Vector2(574, 162)
-script = ExtResource("6_06fdf")
+script = ExtResource("6_y7vmg")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pillar_g2"]
@@ -1332,7 +1332,7 @@ animation = &"pillar"
 
 [node name="Gate" type="StaticBody2D" parent="."]
 position = Vector2(399, 35)
-script = ExtResource("14_ep1dl")
+script = ExtResource("14_eh6fm")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Gate"]

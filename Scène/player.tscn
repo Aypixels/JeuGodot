@@ -1,6 +1,6 @@
-[gd_scene load_steps=20 format=3 uid="uid://dycjwpca3qn8i"]
+[gd_scene load_steps=20 format=3 uid="uid://c04vlqyf0b0h4"]
 
-[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_ean0e"]
+[ext_resource type="Script" path="res://Scripts/CharacterBody2D.gd" id="1_cuhv2"]
 [ext_resource type="Texture2D" uid="uid://bnskexftfl03u" path="res://tilset/character/tile001.png" id="2_peuey"]
 [ext_resource type="Texture2D" uid="uid://deasouh3itgbn" path="res://tilset/character/tile002.png" id="3_odfw7"]
 [ext_resource type="Texture2D" uid="uid://ysc8pdqbococ" path="res://tilset/character/tile003.png" id="4_uuou3"]
@@ -126,7 +126,7 @@ size = Vector2(10, 10)
 
 [node name="Player" type="CharacterBody2D"]
 z_index = 5
-script = ExtResource("1_ean0e")
+script = ExtResource("1_cuhv2")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

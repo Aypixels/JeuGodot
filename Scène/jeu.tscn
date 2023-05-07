@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://blf0dcs488jss"]
+[gd_scene load_steps=42 format=3 uid="uid://cc606di8l653f"]
 
 [ext_resource type="Texture2D" uid="uid://0p8jtoy8jr0o" path="res://tilset/dungeon_sheet.png" id="1_boaf3"]
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_67xik"]
@@ -19,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://bpmtbtgy1l66" path="res://Animation/Gate animation/tile034.png" id="17_hvcfu"]
 [ext_resource type="Texture2D" uid="uid://outntma4m2o2" path="res://Animation/Gate animation/tile035.png" id="18_kpm2q"]
 [ext_resource type="Texture2D" uid="uid://qxbfcnuri2qa" path="res://Animation/Gate animation/tile036.png" id="19_l7fy4"]
+[ext_resource type="Script" path="res://Scène/Area2D.gd" id="20_l6mdg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pwapk"]
 texture = ExtResource("1_boaf3")
@@ -1172,6 +1173,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sljwx"]
 size = Vector2(63.5, 22)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bm0c1"]
+size = Vector2(35.625, 14)
+
 [node name="Jeu" type="Node2D"]
 metadata/_edit_horizontal_guides_ = []
 metadata/_edit_lock_ = true
@@ -1346,3 +1350,15 @@ frame_progress = 0.0932882
 visible = false
 position = Vector2(128.25, 35)
 shape = SubResource("RectangleShape2D_sljwx")
+
+[node name="Area2D" type="Area2D" parent="Gate"]
+position = Vector2(-401, -41)
+script = ExtResource("20_l6mdg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gate/Area2D"]
+position = Vector2(528, 97)
+shape = SubResource("RectangleShape2D_bm0c1")
+
+[connection signal="body_entered" from="Gate/Area2D" to="Player" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Gate/Area2D" to="Gate" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Gate/Area2D" to="Player" method="_on_area_2d_body_exited"]

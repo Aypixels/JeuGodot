@@ -1212,6 +1212,7 @@ texture_filter = 1
 position = Vector2(413, 298)
 sprite_frames = SubResource("SpriteFrames_21g84")
 animation = &"up"
+speed_scale = 1.7
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]

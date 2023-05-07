@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var speed = 100
+var speed = 0;
 var oldPose = "Down"
 
 func _physics_process(_delta):
@@ -24,8 +24,8 @@ func _physics_process(_delta):
 		$AnimatedSprite2D.play("idle" + oldPose)
 	
 	if Input.is_action_pressed("Shift"):
-		speed = 150
+		speed = 100
 		$AnimatedSprite2D.speed_scale = 2
 	else:
-		speed = 100
+		speed = 70
 		$AnimatedSprite2D.speed_scale = 1

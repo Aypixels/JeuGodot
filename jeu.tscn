@@ -1057,9 +1057,6 @@ sources/3 = SubResource("TileSetAtlasSource_qviqg")
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_xgmu2")
-}, {
-"duration": 1.0,
 "texture": ExtResource("7_jmtb2")
 }, {
 "duration": 1.0,
@@ -1067,6 +1064,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("9_un606")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xgmu2")
 }],
 "loop": true,
 "name": &"down",
@@ -1106,9 +1106,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("10_ntuv0")
-}, {
-"duration": 1.0,
 "texture": ExtResource("13_bpi01")
 }, {
 "duration": 1.0,
@@ -1116,15 +1113,15 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("15_vvhbs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ntuv0")
 }],
 "loop": true,
 "name": &"left",
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": ExtResource("6_a06ib")
-}, {
 "duration": 1.0,
 "texture": ExtResource("7_dh1wp")
 }, {
@@ -1133,15 +1130,15 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("9_kic5g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_a06ib")
 }],
 "loop": true,
 "name": &"right",
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": ExtResource("12_kophl")
-}, {
 "duration": 1.0,
 "texture": ExtResource("19_6oivb")
 }, {
@@ -1150,6 +1147,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("21_qv1oq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_kophl")
 }],
 "loop": true,
 "name": &"up",
@@ -1211,7 +1211,7 @@ metadata/_edit_group_ = true
 texture_filter = 1
 position = Vector2(413, 298)
 sprite_frames = SubResource("SpriteFrames_21g84")
-animation = &"idleDown"
+animation = &"up"
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]

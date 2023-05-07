@@ -1297,8 +1297,8 @@ shape = SubResource("RectangleShape2D_e6ilt")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Pillar1"]
 sprite_frames = SubResource("SpriteFrames_cb1as")
 animation = &"pillar"
-frame = 4
-frame_progress = 0.854115
+frame = 1
+frame_progress = 0.357622
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pillar1"]
 shape = SubResource("RectangleShape2D_4c6j6")

@@ -25,7 +25,7 @@ func _physics_process(_delta):
 	
 	if Input.is_action_pressed("Shift"):
 		speed = 100
-		$AnimatedSprite2D.speed_scale = 2
+		$AnimatedSprite2D.speed_scale = 1.7
 	else:
 		speed = 70
 		$AnimatedSprite2D.speed_scale = 1

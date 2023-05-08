@@ -1361,5 +1361,4 @@ shape = SubResource("RectangleShape2D_bm0c1")
 metadata/_edit_group_ = true
 
 [connection signal="body_entered" from="Gate/Area2D" to="Player" method="_on_area_2d_body_entered"]
-[connection signal="body_entered" from="Gate/Area2D" to="Gate" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Gate/Area2D" to="Player" method="_on_area_2d_body_exited"]

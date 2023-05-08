@@ -1053,10 +1053,10 @@ sources/2 = SubResource("TileSetAtlasSource_vyose")
 sources/3 = SubResource("TileSetAtlasSource_qviqg")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yebs5"]
-size = Vector2(91.5, 22)
+size = Vector2(109, 24)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8n0vj"]
-size = Vector2(90.625, 22.5)
+size = Vector2(112, 24)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j4uiu"]
 size = Vector2(7, 413)
@@ -1171,10 +1171,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sljwx"]
-size = Vector2(63.5, 22)
+size = Vector2(60.5, 23)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bm0c1"]
-size = Vector2(35.625, 14)
+size = Vector2(36, 16)
 
 [node name="Jeu" type="Node2D"]
 metadata/_edit_horizontal_guides_ = []
@@ -1221,14 +1221,13 @@ layer_4/tile_data = PackedInt32Array(-524322, 65536, 1, -458786, 65536, 1, -3932
 position = Vector2(529, 430)
 
 [node name="Collision" type="StaticBody2D" parent="."]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Collision"]
-position = Vector2(449.75, 70)
+position = Vector2(458.5, 70)
 shape = SubResource("RectangleShape2D_yebs5")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Collision"]
-position = Vector2(604.688, 70)
+position = Vector2(594, 70)
 shape = SubResource("RectangleShape2D_8n0vj")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Collision"]
@@ -1347,8 +1346,7 @@ animation = &"gate"
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Gate"]
-visible = false
-position = Vector2(128.25, 35)
+position = Vector2(126.75, 35.5)
 shape = SubResource("RectangleShape2D_sljwx")
 metadata/_edit_group_ = true
 
@@ -1358,7 +1356,7 @@ script = ExtResource("20_l6mdg")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Gate/Area2D"]
-position = Vector2(528, 97)
+position = Vector2(530, 96)
 shape = SubResource("RectangleShape2D_bm0c1")
 metadata/_edit_group_ = true
 

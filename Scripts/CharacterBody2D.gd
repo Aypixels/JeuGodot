@@ -4,7 +4,6 @@ var speed = 0;
 var oldPose = "Down"
 var is_body_inside = false
 
-
 func _physics_process(_delta):
 	velocity.x = (int(Input.is_action_pressed("Right")) - int(Input.is_action_pressed("Left"))) 
 	velocity.y = (int(Input.is_action_pressed("down")) - int(Input.is_action_pressed("up"))) 
@@ -44,17 +43,13 @@ func _on_area_2d_body_exited(_body):
 	gate.play_backwards("gate")
 
 func _process(_delta):
+	var gate = get_parent().get_node("Gate/AnimatedSprite2D")
+	var gate_collision = get_parent().get_node("Gate/CollisionShape2D")
 	if is_body_inside:
-		var gate = get_parent().get_node("Gate/AnimatedSprite2D")
-		var collision = get_parent().get_node("Gate/CollisionShape2D")
-		var frame = gate.frame
-		if frame == 4:
+		if gate.frame == 4:
 			gate.pause()
-			collision.set_deferred("disabled", true)
+			gate_collision.set_deferred("disabled", true)
 	else:
-		var gate = get_parent().get_node("Gate/AnimatedSprite2D")
-		var collision = get_parent().get_node("Gate/CollisionShape2D")
-		var frame = gate.frame
-		if frame == 0:
+		if gate.frame == 0:
 			gate.pause()
-			collision.set_deferred("disabled", false)
+			gate_collision.set_deferred("disabled", false)

@@ -33,23 +33,28 @@ func _physics_process(_delta):
 		speed = 70
 		$AnimatedSprite2D.speed_scale = 1
 
-func _on_area_2d_body_entered(body):
-	var gate = get_parent().get_node("Gate/AnimatedSprite2D")
-	var area = gate.get_parent().get_node("Area2D")
-	if gate.frame != 4:
-		gate.play("gate")
-		
+func _on_area_2d_body_entered(_body):
 	is_body_inside = true
-	
+	var gate = get_parent().get_node("Gate/AnimatedSprite2D")
+	gate.play("gate")
 
-func _on_area_2d_body_exited(body):
+func _on_area_2d_body_exited(_body):
 	is_body_inside = false
 	var gate = get_parent().get_node("Gate/AnimatedSprite2D")
-	gate.pause()
+	gate.play_backwards("gate")
 
 func _process(_delta):
 	if is_body_inside:
 		var gate = get_parent().get_node("Gate/AnimatedSprite2D")
+		var collision = get_parent().get_node("Gate/CollisionShape2D")
 		var frame = gate.frame
 		if frame == 4:
 			gate.pause()
+			collision.set_deferred("disabled", true)
+	else:
+		var gate = get_parent().get_node("Gate/AnimatedSprite2D")
+		var collision = get_parent().get_node("Gate/CollisionShape2D")
+		var frame = gate.frame
+		if frame == 0:
+			gate.pause()
+			collision.set_deferred("disabled", false)

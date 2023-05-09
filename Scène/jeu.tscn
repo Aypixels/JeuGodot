@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_67xik"]
 [ext_resource type="Texture2D" uid="uid://dggq7d8rkwh6k" path="res://tilset/tiles_packed.png" id="3_27ua3"]
 [ext_resource type="Texture2D" uid="uid://cc13ouexxamdf" path="res://tilset/snow-expansion.png" id="4_i7rrc"]
-[ext_resource type="PackedScene" uid="uid://c04vlqyf0b0h4" path="res://Scène/player.tscn" id="5_10jvo"]
+[ext_resource type="PackedScene" uid="uid://cddw5ser5phuj" path="res://Scène/player.tscn" id="5_10jvo"]
 [ext_resource type="Script" path="res://Scripts/Pillar1.gd" id="6_y7vmg"]
 [ext_resource type="Texture2D" uid="uid://w7x17vqpqr5h" path="res://Animation/Pillar animation/tile017.png" id="7_i3rwl"]
 [ext_resource type="Texture2D" uid="uid://cai4a1na2um5d" path="res://Animation/Pillar animation/tile018.png" id="8_0hci3"]
@@ -1356,7 +1356,7 @@ script = ExtResource("20_l6mdg")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Gate/Area2D"]
-position = Vector2(529, 84.5)
+position = Vector2(528, 84.5)
 shape = SubResource("RectangleShape2D_bm0c1")
 metadata/_edit_group_ = true
 

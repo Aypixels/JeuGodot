@@ -3,13 +3,14 @@ extends CharacterBody2D
 var speed = 0;
 var oldPose = "Down"
 var is_body_inside = false
+var attacking = true
 
 func _physics_process(_delta):
 	velocity.x = (int(Input.is_action_pressed("Right")) - int(Input.is_action_pressed("Left"))) 
 	velocity.y = (int(Input.is_action_pressed("down")) - int(Input.is_action_pressed("up"))) 
 	velocity = velocity.normalized() * speed
-	move_and_slide()
-	
+	if attacking == false :
+		move_and_slide()
 	if Input.is_action_pressed("Right"):
 		$AnimatedSprite2D.play("right")
 		oldPose = "Right"
@@ -22,6 +23,9 @@ func _physics_process(_delta):
 	elif Input.is_action_pressed("down"):
 		$AnimatedSprite2D.play("down")
 		oldPose = "Down"
+	elif Input.is_action_pressed("attack"):
+		$AnimatedSprite2D.play("attack_"+oldPose)
+		attacking = true
 	else:
 		$AnimatedSprite2D.play("idle" + oldPose)
 	
@@ -43,6 +47,8 @@ func _on_area_2d_body_exited(_body):
 	gate.play_backwards("gate")
 
 func _process(_delta):
+	if $AnimatedSprite2D.animation_finished :
+		attacking = false
 	var gate = get_parent().get_node("Gate/AnimatedSprite2D")
 	var gate_collision = get_parent().get_node("Gate/CollisionShape2D")
 	if is_body_inside:

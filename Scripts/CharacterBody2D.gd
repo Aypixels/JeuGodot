@@ -33,8 +33,11 @@ func _physics_process(_delta):
 		speed = 100
 		$AnimatedSprite2D.speed_scale = 1.7
 	else:
-		speed = 70
-		$AnimatedSprite2D.speed_scale = 1
+		if attacking :
+			$AnimatedSprite2D.speed_scale = 1.7
+		else:
+			speed = 70
+			$AnimatedSprite2D.speed_scale = 1
 
 func _on_area_2d_body_entered(_body):
 	is_body_inside = true

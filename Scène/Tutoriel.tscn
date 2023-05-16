@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://cc606di8l653f"]
+[gd_scene load_steps=52 format=3 uid="uid://cc606di8l653f"]
 
 [ext_resource type="Texture2D" uid="uid://0p8jtoy8jr0o" path="res://tilset/dungeon_sheet.png" id="1_jdsty"]
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_m43nj"]
@@ -22,6 +22,8 @@
 [ext_resource type="Texture2D" uid="uid://outntma4m2o2" path="res://Animation/Gate animation/tile035.png" id="18_api1d"]
 [ext_resource type="Texture2D" uid="uid://qxbfcnuri2qa" path="res://Animation/Gate animation/tile036.png" id="19_dfyvy"]
 [ext_resource type="Script" path="res://Scène/Area2D.gd" id="20_okufh"]
+[ext_resource type="PackedScene" uid="uid://cr0barqe03b27" path="res://Scène/cat.tscn" id="23_6xsbf"]
+[ext_resource type="Script" path="res://Scène/cat.gd" id="24_n8kun"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pwapk"]
 texture = ExtResource("1_jdsty")
@@ -2123,8 +2125,6 @@ texture = ExtResource("5_f4a87")
 7:34/0 = 0
 0:35/0 = 0
 1:35/0 = 0
-
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_fknio"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s8jo8"]
 texture = ExtResource("6_aiwty")
@@ -4295,7 +4295,6 @@ sources/1 = SubResource("TileSetAtlasSource_0u1yg")
 sources/2 = SubResource("TileSetAtlasSource_vyose")
 sources/3 = SubResource("TileSetAtlasSource_qviqg")
 sources/4 = SubResource("TileSetAtlasSource_56ydp")
-sources/8 = SubResource("TileSetScenesCollectionSource_fknio")
 sources/9 = SubResource("TileSetAtlasSource_s8jo8")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yebs5"]
@@ -4640,6 +4639,11 @@ visible = false
 position = Vector2(528, 84.5)
 shape = SubResource("RectangleShape2D_bm0c1")
 metadata/_edit_group_ = true
+
+[node name="Cat" parent="." instance=ExtResource("23_6xsbf")]
+z_index = 1
+position = Vector2(473, 117)
+script = ExtResource("24_n8kun")
 
 [connection signal="body_entered" from="Gate/Area2D" to="Player" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Gate/Area2D" to="Player" method="_on_area_2d_body_exited"]

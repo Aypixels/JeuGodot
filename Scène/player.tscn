@@ -1,6 +1,6 @@
-[gd_scene load_steps=36 format=3 uid="uid://cddw5ser5phuj"]
+[gd_scene load_steps=36 format=3 uid="uid://cy20wqat7l3d7"]
 
-[ext_resource type="Script" path="res://Scripts/CharacterBody2D.gd" id="1_cuhv2"]
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_jhf83"]
 [ext_resource type="Texture2D" uid="uid://d462uqwd5y8g" path="res://Animation/character/attack_player/tile036.png" id="2_76eio"]
 [ext_resource type="Texture2D" uid="uid://syb4m8lyojim" path="res://Animation/character/tile001.png" id="2_bjrcj"]
 [ext_resource type="Texture2D" uid="uid://cd8xccgmsvrg3" path="res://Animation/character/tile002.png" id="3_5jbus"]
@@ -210,14 +210,15 @@ size = Vector2(10, 10)
 
 [node name="Player" type="CharacterBody2D"]
 z_index = 5
-script = ExtResource("1_cuhv2")
+position = Vector2(-1, -1)
+script = ExtResource("1_jhf83")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(1, -4)
 sprite_frames = SubResource("SpriteFrames_21g84")
-animation = &"idleUp"
+animation = &"attack_Down"
 speed_scale = 1.7
 metadata/_edit_group_ = true
 

@@ -218,7 +218,7 @@ metadata/_edit_group_ = true
 texture_filter = 1
 position = Vector2(1, -4)
 sprite_frames = SubResource("SpriteFrames_21g84")
-animation = &"attack_Down"
+animation = &"idleDown"
 speed_scale = 1.7
 metadata/_edit_group_ = true
 

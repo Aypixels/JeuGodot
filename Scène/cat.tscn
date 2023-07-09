@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cr0barqe03b27"]
+[gd_scene load_steps=6 format=3 uid="uid://cr0barqe03b27"]
 
 [ext_resource type="Texture2D" uid="uid://cwe4qxpu7fsl6" path="res://Animation/Cat_animation/tile006.png" id="1_bvw1b"]
 [ext_resource type="Script" path="res://Scène/cat.gd" id="1_j7hnx"]
@@ -17,6 +17,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_32nk6"]
 size = Vector2(14, 10)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ktacd"]
+size = Vector2(21, 18)
+
 [node name="Cat" type="CharacterBody2D"]
 script = ExtResource("1_j7hnx")
 
@@ -30,3 +33,9 @@ animation = &"sit"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 2)
 shape = SubResource("RectangleShape2D_32nk6")
+
+[node name="Text_collision" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Text_collision"]
+position = Vector2(-0.5, 2)
+shape = SubResource("RectangleShape2D_ktacd")

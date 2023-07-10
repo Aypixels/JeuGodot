@@ -4641,7 +4641,7 @@ metadata/_edit_group_ = true
 
 [node name="Cat" parent="." instance=ExtResource("23_6xsbf")]
 z_index = 1
-position = Vector2(484, 424)
+position = Vector2(461, 219)
 
 [connection signal="body_entered" from="Gate/Area2D" to="Player" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Gate/Area2D" to="Player" method="_on_area_2d_body_exited"]

@@ -8,8 +8,8 @@ func _input(event):
 		SignalBus.emit_signal("dialog_display", dialog_key)
 
 
-func _on_area_entered(area):
+func _on_area_entered(_area):
 	area_active = true
 
-func _on_area_exited(area):
+func _on_area_exited(_area):
 	area_active = false

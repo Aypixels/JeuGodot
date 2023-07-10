@@ -33,7 +33,7 @@
 [ext_resource type="Texture2D" uid="uid://b2p771q2d8o8d" path="res://Animation/character/attack_player/tile047.png" id="16_mh0b8"]
 [ext_resource type="Texture2D" uid="uid://dhge5urcpsy48" path="res://Animation/character/attack_player/tile048.png" id="17_12h12"]
 [ext_resource type="Texture2D" uid="uid://dt2nhhvnog52e" path="res://Animation/character/tile037.png" id="17_l2hk8"]
-[ext_resource type="PackedScene" uid="uid://f5y3uawar2n" path="res://Scène/Dialog_box.tscn" id="34_ijouk"]
+[ext_resource type="PackedScene" uid="uid://bdwxt86d4exjv" path="res://Scène/Dialog_box.tscn" id="34_ijouk"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_21g84"]
 animations = [{

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b21yv65s7uchv"
-path="res://.godot/imported/dungeon_sheet.png-2e7ad0fb8ea09239f013970aa7a58326.ctex"
+path="res://.godot/imported/dungeon_sheet.png-eb20e67d93518db3eb56b616bcea5bf6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/dungeon_sheet.png"
-dest_files=["res://.godot/imported/dungeon_sheet.png-2e7ad0fb8ea09239f013970aa7a58326.ctex"]
+source_file="res://assets/dungeon_sheet.png"
+dest_files=["res://.godot/imported/dungeon_sheet.png-eb20e67d93518db3eb56b616bcea5bf6.ctex"]
 
 [params]
 

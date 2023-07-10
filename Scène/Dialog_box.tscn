@@ -1,34 +1,38 @@
-[gd_scene load_steps=4 format=3 uid="uid://f5y3uawar2n"]
+[gd_scene load_steps=6 format=3 uid="uid://bdwxt86d4exjv"]
 
-[ext_resource type="Texture2D" uid="uid://dsn2onpk7viu5" path="res://addons/Dialogbox.png" id="1_2dnm6"]
 [ext_resource type="Script" path="res://Scripts/Dialog_box.gd" id="1_4s44p"]
-[ext_resource type="Texture2D" uid="uid://cel7ryb4u8lub" path="res://addons/Dialogbox_indicator.png" id="2_24cfm"]
+[ext_resource type="Texture2D" uid="uid://dsn2onpk7viu5" path="res://assets/Dialogbox.png" id="2_adfq3"]
+[ext_resource type="Texture2D" uid="uid://cel7ryb4u8lub" path="res://assets/Dialogbox_indicator.png" id="3_gfqmo"]
+[ext_resource type="FontFile" uid="uid://b43nky15j7np0" path="res://assets/yoster.ttf" id="3_k16h2"]
+[ext_resource type="FontFile" uid="uid://cehwvq4xnvh1c" path="res://assets/kongtext.ttf" id="4_hoye6"]
 
 [node name="Control" type="Container"]
 process_mode = 3
 script = ExtResource("1_4s44p")
 
 [node name="Dialogbox2" type="Sprite2D" parent="."]
-position = Vector2(-3.8147e-06, 39)
-scale = Vector2(0.26452, 0.324489)
-texture = ExtResource("1_2dnm6")
+position = Vector2(0.500002, 46.3984)
+scale = Vector2(0.271044, 0.319477)
+texture = ExtResource("2_adfq3")
 metadata/_edit_group_ = true
 
 [node name="Text" type="RichTextLabel" parent="Dialogbox2"]
-offset_left = -261.0
-offset_top = -24.0
+offset_left = -253.0
+offset_top = -20.0
 offset_right = 236.0
-offset_bottom = 48.0
+offset_bottom = 46.0
+theme_override_fonts/normal_font = ExtResource("3_k16h2")
 bbcode_enabled = true
 
 [node name="Name" type="RichTextLabel" parent="Dialogbox2"]
-offset_left = -194.877
-offset_top = -66.3554
-offset_right = -40.877
-offset_bottom = -35.3554
+offset_left = -197.0
+offset_top = -61.0
+offset_right = -31.0
+offset_bottom = -39.0
+theme_override_fonts/normal_font = ExtResource("4_hoye6")
 bbcode_enabled = true
 
 [node name="DialogboxIndicator" type="Sprite2D" parent="Dialogbox2"]
 position = Vector2(253.121, 41.1207)
 scale = Vector2(0.63468, 0.658523)
-texture = ExtResource("2_24cfm")
+texture = ExtResource("3_gfqmo")

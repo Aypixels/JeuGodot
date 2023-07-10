@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cel7ryb4u8lub"
-path="res://.godot/imported/Dialogbox_indicator.png-c66bb18497df728b9840ed4c015c4ae3.ctex"
+path="res://.godot/imported/Dialogbox_indicator.png-b03fdcde4e25e20fd69f46f21a653698.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/Dialogbox_indicator.png"
-dest_files=["res://.godot/imported/Dialogbox_indicator.png-c66bb18497df728b9840ed4c015c4ae3.ctex"]
+source_file="res://assets/Dialogbox_indicator.png"
+dest_files=["res://.godot/imported/Dialogbox_indicator.png-b03fdcde4e25e20fd69f46f21a653698.ctex"]
 
 [params]
 

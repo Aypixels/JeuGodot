@@ -1,11 +1,12 @@
 extends Container
 
 var scene_text = {
-	"player_cat" : [["Moi","Chat noir"],["Où suis-je ?","Meow...?"]]
+	"player_cat" : [["Toi","Chat noir"],["Où suis-je ?","Meow...?"]]
 }
 var selected_text = []
 var selected_name = []
 var in_progress= false
+var phrase_end = false
 
 @onready var background = $Dialogbox2
 @onready var text_label = $Dialogbox2/Text
@@ -17,8 +18,15 @@ func _ready():
 	SignalBus.dialog_display.connect(on_dialog_display)
 	
 func show_text():
+	text_label.visible_characters = 0
+	phrase_end = false
 	text_name.text = selected_name.pop_front()
 	text_label.text = selected_text.pop_front()
+	
+	while text_label.visible_characters < len(text_label.text) :
+		text_label.visible_characters+=1
+		await get_tree().create_timer(0.04).timeout
+	phrase_end = true
 	
 func next_phrase():
 	if selected_text.size() > 0 :
@@ -30,11 +38,15 @@ func finish() :
 	text_label.text = ""
 	background.visible = false
 	in_progress = false
+	phrase_end = false
 	get_tree().paused = false
 		
 func on_dialog_display(text_key) :
-	if in_progress :
+	if in_progress and phrase_end:
 		next_phrase()
+	elif in_progress:
+		text_label.visible_characters = len(text_label.text)
+		phrase_end = true
 	else:
 		get_tree().paused = true
 		background.visible = true
@@ -45,3 +57,8 @@ func on_dialog_display(text_key) :
 		show_text()
 		
 
+func _process(_delta):
+	if phrase_end :
+		indicator.visible = true
+	else :
+		indicator.visible = false

@@ -21,7 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://bpmtbtgy1l66" path="res://Animation/Gate animation/tile034.png" id="17_iy0mo"]
 [ext_resource type="Texture2D" uid="uid://outntma4m2o2" path="res://Animation/Gate animation/tile035.png" id="18_api1d"]
 [ext_resource type="Texture2D" uid="uid://qxbfcnuri2qa" path="res://Animation/Gate animation/tile036.png" id="19_dfyvy"]
-[ext_resource type="PackedScene" uid="uid://cr0barqe03b27" path="res://Scène/cat.tscn" id="23_6xsbf"]
+[ext_resource type="PackedScene" uid="uid://c7q8noc2bebxf" path="res://Scène/cat.tscn" id="23_6xsbf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pwapk"]
 texture = ExtResource("1_jdsty")
@@ -4432,6 +4432,7 @@ size = Vector2(60.5, 24)
 size = Vector2(38, 39)
 
 [node name="Tutoriel" type="Node2D"]
+process_mode = 1
 metadata/_edit_horizontal_guides_ = []
 metadata/_edit_lock_ = true
 
@@ -4640,7 +4641,7 @@ metadata/_edit_group_ = true
 
 [node name="Cat" parent="." instance=ExtResource("23_6xsbf")]
 z_index = 1
-position = Vector2(431, 103)
+position = Vector2(484, 424)
 
 [connection signal="body_entered" from="Gate/Area2D" to="Player" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Gate/Area2D" to="Player" method="_on_area_2d_body_exited"]

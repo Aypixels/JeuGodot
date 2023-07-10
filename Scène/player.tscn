@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://cy20wqat7l3d7"]
+[gd_scene load_steps=38 format=3 uid="uid://cy20wqat7l3d7"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_jhf83"]
 [ext_resource type="Texture2D" uid="uid://d462uqwd5y8g" path="res://Animation/character/attack_player/tile036.png" id="2_76eio"]
@@ -33,6 +33,7 @@
 [ext_resource type="Texture2D" uid="uid://b2p771q2d8o8d" path="res://Animation/character/attack_player/tile047.png" id="16_mh0b8"]
 [ext_resource type="Texture2D" uid="uid://dhge5urcpsy48" path="res://Animation/character/attack_player/tile048.png" id="17_12h12"]
 [ext_resource type="Texture2D" uid="uid://dt2nhhvnog52e" path="res://Animation/character/tile037.png" id="17_l2hk8"]
+[ext_resource type="PackedScene" uid="uid://f5y3uawar2n" path="res://Scène/Dialog_box.tscn" id="34_ijouk"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_21g84"]
 animations = [{
@@ -208,6 +209,8 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rbxbj"]
 size = Vector2(10, 10)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ysp45"]
+
 [node name="Player" type="CharacterBody2D"]
 z_index = 5
 position = Vector2(-1, -1)
@@ -233,4 +236,16 @@ zoom = Vector2(5, 5)
 limit_left = 270
 limit_right = 785
 limit_bottom = 500
+metadata/_edit_group_ = true
+
+[node name="DialogInteractionArea" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DialogInteractionArea"]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_ysp45")
+
+[node name="Control" parent="." instance=ExtResource("34_ijouk")]
 metadata/_edit_group_ = true

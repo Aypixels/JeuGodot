@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://f5y3uawar2n"]
+
+[ext_resource type="Texture2D" uid="uid://dsn2onpk7viu5" path="res://addons/Dialogbox.png" id="1_2dnm6"]
+[ext_resource type="Script" path="res://Scène/Dialogbox2.gd" id="2_4pdbw"]
+[ext_resource type="Texture2D" uid="uid://cel7ryb4u8lub" path="res://addons/Dialogbox_indicator.png" id="2_24cfm"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_right = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dialogbox2" type="Sprite2D" parent="."]
+position = Vector2(562, 508)
+scale = Vector2(1.60101, 1.7783)
+texture = ExtResource("1_2dnm6")
+script = ExtResource("2_4pdbw")
+dialog_Path = "res://addons/dialog.gd"
+
+[node name="Text" type="RichTextLabel" parent="Dialogbox2"]
+offset_left = -261.0
+offset_top = -24.0
+offset_right = 236.0
+offset_bottom = 48.0
+bbcode_enabled = true
+text = "Salutations étrangers"
+
+[node name="Name" type="RichTextLabel" parent="Dialogbox2"]
+offset_left = -194.877
+offset_top = -66.3554
+offset_right = -40.877
+offset_bottom = -35.3554
+bbcode_enabled = true
+text = "Name"
+
+[node name="DialogboxIndicator" type="Sprite2D" parent="Dialogbox2"]
+position = Vector2(253.121, 41.1207)
+scale = Vector2(0.63468, 0.658523)
+texture = ExtResource("2_24cfm")

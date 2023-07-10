@@ -1,14 +1,47 @@
-[gd_scene load_steps=7 format=3 uid="uid://c7q8noc2bebxf"]
+[gd_scene load_steps=12 format=3 uid="uid://c7q8noc2bebxf"]
 
-[ext_resource type="Texture2D" uid="uid://cwe4qxpu7fsl6" path="res://Animation/Cat_animation/tile006.png" id="1_bvw1b"]
 [ext_resource type="Script" path="res://Scripts/cat.gd" id="1_h8gry"]
+[ext_resource type="Texture2D" uid="uid://dhja6ml71lyeb" path="res://Animation/Cat_animation/tile003.png" id="2_mrdet"]
 [ext_resource type="PackedScene" uid="uid://dcukxv83yid36" path="res://Scène/dialog_area.tscn" id="3_ium6h"]
+[ext_resource type="Texture2D" uid="uid://caa1ed40sljxh" path="res://Animation/Cat_animation/tile004.png" id="3_ukl3g"]
+[ext_resource type="Texture2D" uid="uid://1hm3mv1b2tvx" path="res://Animation/Cat_animation/tile039.png" id="4_j50d0"]
+[ext_resource type="Texture2D" uid="uid://dwvciq6t5dhor" path="res://Animation/Cat_animation/tile040.png" id="5_6bn2v"]
+[ext_resource type="Texture2D" uid="uid://bwydd1wwr3oha" path="res://Animation/Cat_animation/tile026.png" id="6_mmndg"]
+[ext_resource type="Texture2D" uid="uid://cnu52iw7h5upv" path="res://Animation/Cat_animation/tile025.png" id="7_lohmq"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7noq7"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_bvw1b")
+"texture": ExtResource("2_mrdet")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ukl3g")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_j50d0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_6bn2v")
+}],
+"loop": true,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_mmndg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_lohmq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_mmndg")
 }],
 "loop": true,
 "name": &"sit",
@@ -26,16 +59,20 @@ script = ExtResource("1_h8gry")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-0.312496, -2)
-scale = Vector2(0.542969, 0.679688)
+position = Vector2(-0.312496, -1.0625)
+scale = Vector2(0.542969, 0.621094)
 sprite_frames = SubResource("SpriteFrames_7noq7")
 animation = &"sit"
+frame_progress = 0.775467
+speed_scale = 0.3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(-1, 2)
 shape = SubResource("RectangleShape2D_32nk6")
 
 [node name="DialogAreaCat" parent="." instance=ExtResource("3_ium6h")]
+visible = false
 position = Vector2(-1, 2)
 dialog_key = "player_cat"
 

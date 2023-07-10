@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var speed = 0;
+var speed = 0
 var oldPose = "Down"
 var is_body_inside = false
 var attacking = true

@@ -5,7 +5,7 @@ var moving = false
 var rng = RandomNumberGenerator.new()
 
 func _process(_delta):
-	if not moving :
+	if not moving and $DialogAreaCat.area_active == false :
 		var move = rng.randi_range(0,100)
 		if move == 0:
 			moving = true

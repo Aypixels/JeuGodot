@@ -26,7 +26,7 @@ script = ExtResource("1_6w0xo")
 [node name="Background" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_k3wr2")
-animation = &"neutral"
+animation = &"something"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(5, 5)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://cc606di8l653f"]
+[gd_scene load_steps=55 format=3 uid="uid://cc606di8l653f"]
 
 [ext_resource type="Texture2D" uid="uid://0p8jtoy8jr0o" path="res://tilset/dungeon_sheet.png" id="1_jdsty"]
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_m43nj"]
@@ -25,7 +25,6 @@
 [ext_resource type="Script" path="res://Scripts/music_script.gd" id="23_epccn"]
 [ext_resource type="AudioStream" uid="uid://bpxqdgdv8vbrb" path="res://assets/Undertale Sound Effect Battle Encounter.mp3" id="25_eqw7g"]
 [ext_resource type="PackedScene" uid="uid://wchc7nkaalau" path="res://Scène/Something.tscn" id="25_rbbiq"]
-[ext_resource type="PackedScene" uid="uid://dqygux301tgms" path="res://Scène/Combat_scene.tscn" id="26_2kqyc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pwapk"]
 texture = ExtResource("1_jdsty")
@@ -4675,9 +4674,6 @@ shape = SubResource("SegmentShape2D_sjipi")
 [node name="Engage" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("25_eqw7g")
 volume_db = -2.447
-
-[node name="Combat_scene" parent="." instance=ExtResource("26_2kqyc")]
-visible = false
 
 [connection signal="body_entered" from="Gate/Area2D" to="Player" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Gate/Area2D" to="Player" method="_on_area_2d_body_exited"]

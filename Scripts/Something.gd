@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 var launch = false
+var combat_path = preload("res://Scène/Combat_scene.tscn")
 
 func _ready():
 	$AnimatedSprite2D.visible=false
@@ -25,7 +26,8 @@ func _process(_delta) :
 			$"..".visible = true
 			await get_tree().create_timer(0.1).timeout
 			$"..".visible = false
-			await get_tree().create_timer(0.8).timeout
+			await get_tree().create_timer(0.6).timeout
 			SignalBus.emit_signal("fight", "something", ["something"])
+			get_tree().change_scene_to_packed(combat_path)
 			print("signale bien envoyé")
 			launch = false

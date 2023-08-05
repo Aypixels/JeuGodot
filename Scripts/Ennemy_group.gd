@@ -15,7 +15,7 @@ func place_enemy(_combat_index, enemies_id) :
 	for enemy_id in enemies_id :
 		enemy_path = "res://Combat_characters/Combat_"+enemy_id+".tscn"
 		enemy_scene = load(enemy_path)
-		add_child(enemy_scene)
+		add_child(enemy_scene.instantiate())
 	enemies = get_children()
 	print(enemies.size())
 	for i in enemies.size():

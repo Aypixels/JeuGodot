@@ -7,9 +7,3 @@ var current_scene = "Tutoriel"
 
 func _ready():
 	RenderingServer.set_default_clear_color("black")
-
-
-		
-	
-
-	

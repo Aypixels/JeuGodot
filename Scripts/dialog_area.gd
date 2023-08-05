@@ -11,7 +11,6 @@ func _input(event):
 func _on_area_entered(_area):
 	area_active = true
 
-
 func _on_area_exited(_area):
 	area_active = false
 

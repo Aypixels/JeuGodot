@@ -1,6 +1,6 @@
-[gd_scene load_steps=36 format=3 uid="uid://bg5fa2hlu2gix"]
+[gd_scene load_steps=36 format=3 uid="uid://wchc7nkaalau"]
 
-[ext_resource type="Script" path="res://Scène/Something.gd" id="1_w77nf"]
+[ext_resource type="Script" path="res://Scripts/Something.gd" id="1_8w7pu"]
 [ext_resource type="Texture2D" uid="uid://wss7rl0mc4qy" path="res://Animation/Something animation/Disappear/frame_00_delay-0.35s.png" id="2_kxcdf"]
 [ext_resource type="Texture2D" uid="uid://bgduso6rapmno" path="res://Animation/Something animation/Disappear/frame_01_delay-0.05s.png" id="3_1yka7"]
 [ext_resource type="Texture2D" uid="uid://c2rcj41ekg8tx" path="res://Animation/Something animation/Disappear/frame_02_delay-0.05s.png" id="4_2dldj"]
@@ -36,6 +36,44 @@
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_k6kmw"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_cv7tw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_nk3kv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_6f70q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_u22le")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rp2iv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5ulo7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6udw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1hwy6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2dldj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1yka7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_kxcdf")
+}],
+"loop": true,
+"name": &"appear",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_kxcdf")
@@ -152,14 +190,15 @@ animations = [{
 size = Vector2(12, 30.5)
 
 [node name="Something" type="CharacterBody2D"]
-script = ExtResource("1_w77nf")
+script = ExtResource("1_8w7pu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
 position = Vector2(3.57628e-07, -5.66244e-07)
 scale = Vector2(0.28125, 0.234375)
 sprite_frames = SubResource("SpriteFrames_k6kmw")
-animation = &"walk"
-frame_progress = 0.277656
+animation = &"appear"
+frame_progress = 0.545096
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -0.25)

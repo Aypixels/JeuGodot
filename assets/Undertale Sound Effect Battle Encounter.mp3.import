@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bpxqdgdv8vbrb"
+path="res://.godot/imported/Undertale Sound Effect Battle Encounter.mp3-8ad0ba66659ad8f6a5d3b43c7fd6e206.mp3str"
+
+[deps]
+
+source_file="res://assets/Undertale Sound Effect Battle Encounter.mp3"
+dest_files=["res://.godot/imported/Undertale Sound Effect Battle Encounter.mp3-8ad0ba66659ad8f6a5d3b43c7fd6e206.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

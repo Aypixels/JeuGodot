@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xowcvkaos0gf"
-path="res://.godot/imported/Something_29.webp-84ecb53146d5c202717a095da1752638.ctex"
+uid="uid://bqq86sl8lqoln"
+path="res://.godot/imported/something_fight.png-51653bf1f5b2e180dd3aa1a1ce491470.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Something_29.webp"
-dest_files=["res://.godot/imported/Something_29.webp-84ecb53146d5c202717a095da1752638.ctex"]
+source_file="res://assets/battle_backgrounds/something_fight.png"
+dest_files=["res://.godot/imported/something_fight.png-51653bf1f5b2e180dd3aa1a1ce491470.ctex"]
 
 [params]
 

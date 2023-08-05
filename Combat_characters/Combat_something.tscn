@@ -1,0 +1,204 @@
+[gd_scene load_steps=35 format=3 uid="uid://cmb2qj25b2pu2"]
+
+[ext_resource type="Texture2D" uid="uid://cojh0hl3mner4" path="res://Animation/Something animation/Disappear/frame_10_delay-0.05s.png" id="1_s165m"]
+[ext_resource type="Texture2D" uid="uid://dswyxf8axkj1u" path="res://Animation/Something animation/Disappear/frame_09_delay-0.05s.png" id="2_1cmxu"]
+[ext_resource type="Texture2D" uid="uid://bh3hrbjljf6sm" path="res://Animation/Something animation/Disappear/frame_08_delay-0.05s.png" id="3_j48od"]
+[ext_resource type="Texture2D" uid="uid://bi58jops827ed" path="res://Animation/Something animation/Disappear/frame_07_delay-0.05s.png" id="4_61ibc"]
+[ext_resource type="Texture2D" uid="uid://dc2lumfwxh5oo" path="res://Animation/Something animation/Disappear/frame_06_delay-0.05s.png" id="5_yovwh"]
+[ext_resource type="Texture2D" uid="uid://gbhp08ndu1wg" path="res://Animation/Something animation/Disappear/frame_05_delay-0.05s.png" id="6_8p28a"]
+[ext_resource type="Texture2D" uid="uid://du1kc6sfnkdg3" path="res://Animation/Something animation/Disappear/frame_04_delay-0.05s.png" id="7_5tpk7"]
+[ext_resource type="Texture2D" uid="uid://dmbir01wg2jj4" path="res://Animation/Something animation/Disappear/frame_03_delay-0.05s.png" id="8_e2k5m"]
+[ext_resource type="Texture2D" uid="uid://c2rcj41ekg8tx" path="res://Animation/Something animation/Disappear/frame_02_delay-0.05s.png" id="9_yra0t"]
+[ext_resource type="Texture2D" uid="uid://bgduso6rapmno" path="res://Animation/Something animation/Disappear/frame_01_delay-0.05s.png" id="10_ddoxa"]
+[ext_resource type="Texture2D" uid="uid://wss7rl0mc4qy" path="res://Animation/Something animation/Disappear/frame_00_delay-0.35s.png" id="11_m21dc"]
+[ext_resource type="Texture2D" uid="uid://dn8mfmykv0oij" path="res://Animation/Something animation/Disappear/frame_11_delay-0.05s.png" id="12_vo8rq"]
+[ext_resource type="Texture2D" uid="uid://bthg0lwkn23vm" path="res://Animation/Something animation/Disappear/frame_15_delay-0.5s.png" id="13_1nf1m"]
+[ext_resource type="Texture2D" uid="uid://biu45ykcr400i" path="res://Animation/Something animation/Disappear/frame_12_delay-0.05s.png" id="14_m54nu"]
+[ext_resource type="Texture2D" uid="uid://rop6db36tf8g" path="res://Animation/Something animation/Disappear/frame_13_delay-0.05s.png" id="15_6s4m4"]
+[ext_resource type="Texture2D" uid="uid://2oj8nt5otbpx" path="res://Animation/Something animation/Disappear/frame_14_delay-0.05s.png" id="16_20vhq"]
+[ext_resource type="Texture2D" uid="uid://cc5m1aop4icm8" path="res://Animation/Something animation/Hole/frame_00_delay-0.15s.png" id="17_gti0n"]
+[ext_resource type="Texture2D" uid="uid://bl86n6e0565dh" path="res://Animation/Something animation/Hole/frame_01_delay-0.15s.png" id="18_wu6xh"]
+[ext_resource type="Texture2D" uid="uid://dbc24jh64pirw" path="res://Animation/Something animation/Hole/frame_02_delay-0.15s.png" id="19_a4eca"]
+[ext_resource type="Texture2D" uid="uid://bh5wrn4rqknbp" path="res://Animation/Something animation/Hole/frame_03_delay-0.15s.png" id="20_kmyba"]
+[ext_resource type="Texture2D" uid="uid://03g72lfdqcwx" path="res://Animation/Something animation/Hole/frame_04_delay-0.15s.png" id="21_sq257"]
+[ext_resource type="Texture2D" uid="uid://bwbtrtummyvxa" path="res://Animation/Something animation/Hole/frame_05_delay-0.15s.png" id="22_wibo1"]
+[ext_resource type="Texture2D" uid="uid://oencvx4vlwqw" path="res://Animation/Something animation/Hole/frame_06_delay-0.15s.png" id="23_gnw6j"]
+[ext_resource type="Texture2D" uid="uid://b5evwih0us1fk" path="res://Animation/Something animation/Hole/frame_07_delay-0.15s.png" id="24_m8nm0"]
+[ext_resource type="Texture2D" uid="uid://hi84r3r7ee8o" path="res://Animation/Something animation/Hole/frame_08_delay-0.15s.png" id="25_qoct4"]
+[ext_resource type="Texture2D" uid="uid://cgtj2rndeg4nv" path="res://Animation/Something animation/Hole/frame_09_delay-0.15s.png" id="26_r2jq6"]
+[ext_resource type="Texture2D" uid="uid://dms4c47picspf" path="res://Animation/Something animation/Hole/frame_10_delay-0.15s.png" id="27_yscip"]
+[ext_resource type="Texture2D" uid="uid://dt3oaca7iq6tq" path="res://Animation/Something animation/Hole/frame_11_delay-0.4s.png" id="28_kecdj"]
+[ext_resource type="Texture2D" uid="uid://b80tf5eo26smq" path="res://Animation/Something animation/Walk/frame_0_delay-0.22s.png" id="29_u8au6"]
+[ext_resource type="Texture2D" uid="uid://chqx6iy08fb7t" path="res://Animation/Something animation/Walk/frame_1_delay-0.22s.png" id="30_s4v2a"]
+[ext_resource type="Texture2D" uid="uid://c88inicjpj02j" path="res://Animation/Something animation/Walk/frame_2_delay-0.22s.png" id="31_jhllr"]
+[ext_resource type="Texture2D" uid="uid://c1flkevifk06j" path="res://Animation/Something animation/Walk/frame_3_delay-0.22s.png" id="32_a1c35"]
+[ext_resource type="Texture2D" uid="uid://b5woq1mddvxsg" path="res://assets/3414630-small-removebg-preview.png" id="33_08752"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gsthi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_s165m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1cmxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j48od")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_61ibc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_yovwh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8p28a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5tpk7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_e2k5m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_yra0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ddoxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_m21dc")
+}],
+"loop": true,
+"name": &"appear",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_m21dc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ddoxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_yra0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_e2k5m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5tpk7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8p28a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_yovwh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_61ibc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j48od")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1cmxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_s165m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_vo8rq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_1nf1m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_m54nu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_6s4m4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_20vhq")
+}],
+"loop": true,
+"name": &"disappear",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_gti0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_wu6xh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_a4eca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_kmyba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_sq257")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_wibo1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_gnw6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_m8nm0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_qoct4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_r2jq6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_yscip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_kecdj")
+}],
+"loop": true,
+"name": &"hole",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_u8au6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_s4v2a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_jhllr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_a1c35")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Combat_something" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(3.57628e-07, -5.66244e-07)
+scale = Vector2(0.28125, 0.234375)
+sprite_frames = SubResource("SpriteFrames_gsthi")
+animation = &"walk"
+
+[node name="focus" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(0, -20)
+scale = Vector2(0.0159176, 0.0166667)
+texture = ExtResource("33_08752")
+flip_v = true

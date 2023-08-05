@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://cc606di8l653f"]
+[gd_scene load_steps=55 format=3 uid="uid://cc606di8l653f"]
 
 [ext_resource type="Texture2D" uid="uid://0p8jtoy8jr0o" path="res://tilset/dungeon_sheet.png" id="1_jdsty"]
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_m43nj"]
@@ -22,8 +22,9 @@
 [ext_resource type="Texture2D" uid="uid://qxbfcnuri2qa" path="res://Animation/Gate animation/tile036.png" id="19_dfyvy"]
 [ext_resource type="PackedScene" uid="uid://c7q8noc2bebxf" path="res://Scène/cat.tscn" id="23_6xsbf"]
 [ext_resource type="AudioStream" uid="uid://c6liec8wxjahk" path="res://Musics/171. Persevere.mp3" id="23_85gdj"]
-[ext_resource type="Script" path="res://Scène/music_script.gd" id="24_hb5v1"]
-[ext_resource type="PackedScene" uid="uid://bg5fa2hlu2gix" path="res://Scène/Something.tscn" id="25_rbbiq"]
+[ext_resource type="Script" path="res://Scripts/music_script.gd" id="23_epccn"]
+[ext_resource type="AudioStream" uid="uid://bpxqdgdv8vbrb" path="res://assets/Undertale Sound Effect Battle Encounter.mp3" id="25_eqw7g"]
+[ext_resource type="PackedScene" uid="uid://wchc7nkaalau" path="res://Scène/Something.tscn" id="25_rbbiq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pwapk"]
 texture = ExtResource("1_jdsty")
@@ -4658,7 +4659,7 @@ position = Vector2(461, 219)
 process_mode = 3
 stream = ExtResource("23_85gdj")
 volume_db = -8.565
-script = ExtResource("24_hb5v1")
+script = ExtResource("23_epccn")
 
 [node name="Something" parent="." instance=ExtResource("25_rbbiq")]
 position = Vector2(526, -554)
@@ -4669,6 +4670,10 @@ position = Vector2(330, -302)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="End_of_road"]
 position = Vector2(113, -223)
 shape = SubResource("SegmentShape2D_sjipi")
+
+[node name="Engage" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("25_eqw7g")
+volume_db = -2.447
 
 [connection signal="body_entered" from="Gate/Area2D" to="Player" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Gate/Area2D" to="Player" method="_on_area_2d_body_exited"]

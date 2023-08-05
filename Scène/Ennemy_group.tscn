@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhyrpl2bq2gwo"]
+
+[ext_resource type="Script" path="res://Scripts/Ennemy_group.gd" id="1_oy2xa"]
+[ext_resource type="PackedScene" uid="uid://cmb2qj25b2pu2" path="res://Combat_characters/Combat_something.tscn" id="2_q6qyi"]
+
+[node name="Ennemy_group" type="Node2D"]
+position = Vector2(-1, -4)
+script = ExtResource("1_oy2xa")
+
+[node name="Combat_something" parent="." instance=ExtResource("2_q6qyi")]
+position = Vector2(1, 4)

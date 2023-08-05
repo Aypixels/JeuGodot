@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://dqygux301tgms"]
+
+[ext_resource type="Script" path="res://Scripts/Ennemy_group.gd" id="1_6w0xo"]
+[ext_resource type="Texture2D" uid="uid://bqq86sl8lqoln" path="res://assets/battle_backgrounds/something_fight.png" id="2_sjn1b"]
+[ext_resource type="PackedScene" uid="uid://dhyrpl2bq2gwo" path="res://Scène/Ennemy_group.tscn" id="3_twq0c"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k3wr2"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_sjn1b")
+}],
+"loop": true,
+"name": &"something",
+"speed": 5.0
+}]
+
+[node name="Combat_scene" type="Node2D"]
+script = ExtResource("1_6w0xo")
+
+[node name="Background" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_k3wr2")
+animation = &"neutral"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(5, 5)
+
+[node name="Ennemy_group" parent="." instance=ExtResource("3_twq0c")]
+position = Vector2(0, 0)

@@ -26,8 +26,6 @@ func _process(_delta) :
 			await get_tree().create_timer(0.1).timeout
 			$"..".visible = false
 			await get_tree().create_timer(0.8).timeout
-			get_tree().change_scene_to_file("res://Scène/Combat_scene.tscn")
 			SignalBus.emit_signal("fight", "something", ["something"])
 			print("signale bien envoyé")
 			launch = false
-			

@@ -1,8 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://dqygux301tgms"]
+[gd_scene load_steps=9 format=3 uid="uid://dqygux301tgms"]
 
 [ext_resource type="Script" path="res://Scripts/Combat_scene.gd" id="1_3hhq4"]
 [ext_resource type="Texture2D" uid="uid://bqq86sl8lqoln" path="res://assets/battle_backgrounds/something_fight.png" id="2_sjn1b"]
 [ext_resource type="PackedScene" uid="uid://dhyrpl2bq2gwo" path="res://Scène/Ennemy_group.tscn" id="3_twq0c"]
+[ext_resource type="PackedScene" uid="uid://bdakt35ttg6g2" path="res://Scène/Ally_group.tscn" id="4_fb1oj"]
+[ext_resource type="Texture2D" uid="uid://qdf0a8xcmn58" path="res://assets/Frisk layout.png" id="5_y3t0p"]
+[ext_resource type="AudioStream" uid="uid://cirpx0ye4d1js" path="res://assets/OMORI OST - 014 Acrophobia.mp3" id="6_8bfeq"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_k3wr2"]
 animations = [{
@@ -20,13 +23,25 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_fduaq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_y3t0p")
+}],
+"loop": true,
+"name": &"lvl1",
+"speed": 5.0
+}]
+
 [node name="Combat_scene" type="Node2D"]
 script = ExtResource("1_3hhq4")
 
 [node name="Background" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_k3wr2")
-animation = &"neutral"
+animation = &"something"
+frame_progress = 0.33281
 
 [node name="Camera2D" type="Camera2D" parent="."]
 enabled = false
@@ -34,3 +49,49 @@ zoom = Vector2(5, 5)
 
 [node name="Ennemy_group" parent="." instance=ExtResource("3_twq0c")]
 position = Vector2(0, 0)
+
+[node name="Ally_group" parent="." instance=ExtResource("4_fb1oj")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Attack" type="Button" parent="CanvasLayer"]
+offset_left = 889.0
+offset_top = 540.0
+offset_right = 952.0
+offset_bottom = 571.0
+scale = Vector2(1.4, 1.36)
+text = "Attack"
+
+[node name="Special" type="Button" parent="CanvasLayer"]
+offset_left = 889.0
+offset_top = 598.0
+offset_right = 952.0
+offset_bottom = 629.0
+scale = Vector2(1.4, 1.32)
+text = "Special"
+
+[node name="Run" type="Button" parent="CanvasLayer"]
+offset_left = 1018.0
+offset_top = 598.0
+offset_right = 1081.0
+offset_bottom = 629.0
+scale = Vector2(1.4, 1.32)
+text = "Run"
+
+[node name="Items" type="Button" parent="CanvasLayer"]
+offset_left = 1018.0
+offset_top = 540.0
+offset_right = 1070.0
+offset_bottom = 571.0
+scale = Vector2(1.68, 1.32)
+text = "Items"
+
+[node name="Frisk_UI" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(102.375, -49.125)
+scale = Vector2(0.392241, 0.403571)
+sprite_frames = SubResource("SpriteFrames_fduaq")
+animation = &"lvl1"
+
+[node name="something" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_8bfeq")

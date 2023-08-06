@@ -1,5 +1,6 @@
-[gd_scene load_steps=35 format=3 uid="uid://cmb2qj25b2pu2"]
+[gd_scene load_steps=36 format=3 uid="uid://cmb2qj25b2pu2"]
 
+[ext_resource type="Script" path="res://Combat_characters/Combat_something.gd" id="1_armpb"]
 [ext_resource type="Texture2D" uid="uid://cojh0hl3mner4" path="res://Animation/Something animation/Disappear/frame_10_delay-0.05s.png" id="1_s165m"]
 [ext_resource type="Texture2D" uid="uid://dswyxf8axkj1u" path="res://Animation/Something animation/Disappear/frame_09_delay-0.05s.png" id="2_1cmxu"]
 [ext_resource type="Texture2D" uid="uid://bh3hrbjljf6sm" path="res://Animation/Something animation/Disappear/frame_08_delay-0.05s.png" id="3_j48od"]
@@ -170,6 +171,26 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("11_m21dc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ddoxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_yra0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ddoxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_m21dc")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("29_u8au6")
 }, {
 "duration": 1.0,
@@ -187,13 +208,15 @@ animations = [{
 }]
 
 [node name="Combat_something" type="CharacterBody2D"]
+script = ExtResource("1_armpb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(3.57628e-07, -5.66244e-07)
+position = Vector2(0, -3)
 scale = Vector2(0.28125, 0.234375)
 sprite_frames = SubResource("SpriteFrames_gsthi")
-animation = &"walk"
+animation = &"hurt"
+frame_progress = 0.824858
 
 [node name="focus" type="Sprite2D" parent="."]
 visible = false

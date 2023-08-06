@@ -1,14 +1,13 @@
 extends AudioStreamPlayer
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	SignalBus.fight.connect(cut_sound)
+	stream_paused= false
 
+func cut_sound(_a, _b) :
+	stream_paused = true
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if playing == false :
+	if playing == false and stream_paused == false :
 		play()
-	if $"..".visible == false :
-		stop()

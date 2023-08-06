@@ -8,7 +8,6 @@ func _on_body_entered(body):
 	if body.has_method("player") :
 		is_body_inside = true
 		gate.play("gate")
-		print("yay")
 
 func _on_body_exited(body):
 	if body.has_method("player") :

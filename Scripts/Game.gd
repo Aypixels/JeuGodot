@@ -3,6 +3,8 @@ extends Node2D
 var start_scene = "res://Scène/Tutoriel.tscn"
 var current_level : Node2D
 var combat : Node2D
+var current_allies = ["player"]
+
 
 func _ready():
 	current_level = load(start_scene).instantiate()
@@ -28,7 +30,7 @@ func start_combat(combat_index, enemies) :
 	$Player/Camera2D.enabled = false
 	$Combat_scene/Camera2D.enabled = true
 	$Level.visible = false
-	SignalBus.emit_signal("place_combat", combat_index, enemies)
+	SignalBus.emit_signal("place_combat", combat_index, enemies, current_allies)
 	
 	
 	

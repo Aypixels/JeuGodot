@@ -66,7 +66,6 @@ func switch_focus(x,y):
 
 func show_choice():
 	choice.show()
-	choice.find_child("Attack").grab_focus()
 	
 func reset_focus():
 	target_index = 0

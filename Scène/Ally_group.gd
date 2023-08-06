@@ -2,13 +2,15 @@ extends Node2D
 
 var ally_path = ""
 var allies = []
+var enemies = []
 var index = 0
 
 func _ready():
 	SignalBus.place_combat.connect(place_ally)
 	visible = false
 	
-func place_ally(_combat_index, _enemies_id, allies_id) :
+func place_ally(_combat_index, enemies_id, allies_id) :
+	enemies = enemies_id
 	visible = true
 	for ally_id in allies_id :
 		ally_path = "res://Combat_characters/Combat_"+ally_id+".tscn"
@@ -41,3 +43,7 @@ func switch_focus(x,y):
 	allies[x].focus()
 	allies[y].unfocus()
 	
+
+func _on_run_pressed():
+	if enemies[0] == "something" :
+		SignalBus.emit_signal("battle_dialog_display", "something_run")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dqygux301tgms"]
+[gd_scene load_steps=17 format=3 uid="uid://dqygux301tgms"]
 
 [ext_resource type="Script" path="res://Scripts/Combat_scene.gd" id="1_3hhq4"]
 [ext_resource type="Texture2D" uid="uid://bqq86sl8lqoln" path="res://assets/battle_backgrounds/something_fight.png" id="2_sjn1b"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://qdf0a8xcmn58" path="res://assets/Frisk layout.png" id="5_y3t0p"]
 [ext_resource type="AudioStream" uid="uid://cirpx0ye4d1js" path="res://assets/OMORI OST - 014 Acrophobia.mp3" id="6_8bfeq"]
 [ext_resource type="Texture2D" uid="uid://cgw0dji3gb2ui" path="res://assets/combat_dialog_box.png" id="8_iel0u"]
+[ext_resource type="Script" path="res://Scène/CombatDialogBox.gd" id="9_muyly"]
+[ext_resource type="Texture2D" uid="uid://b5woq1mddvxsg" path="res://assets/3414630-small-removebg-preview.png" id="10_r6j7g"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_k3wr2"]
 animations = [{
@@ -155,10 +157,26 @@ sprite_frames = SubResource("SpriteFrames_fduaq")
 animation = &"lvl1"
 
 [node name="CombatDialogBox" type="Sprite2D" parent="."]
-position = Vector2(-29, 42)
-scale = Vector2(1, 0.92)
+position = Vector2(-21, 48)
+scale = Vector2(0.892343, 0.730059)
 texture = ExtResource("8_iel0u")
+script = ExtResource("9_muyly")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CombatDialogBox"]
+offset_left = -54.9116
+offset_top = -13.6975
+offset_right = -14.9116
+offset_bottom = 26.3025
+scale = Vector2(2.72958, 0.708736)
+
+[node name="DialogboxIndicator" type="Sprite2D" parent="CombatDialogBox"]
+position = Vector2(54.5313, 14)
+rotation = 3.14082
+scale = Vector2(0.0129872, 0.0103677)
+skew = 0.000290394
+texture = ExtResource("10_r6j7g")
 
 [connection signal="new_turn" from="Ennemy_group" to="Ally_group" method="_on_ennemy_group_new_turn"]
 [connection signal="next_player" from="Ennemy_group" to="Ally_group" method="_on_ennemy_group_next_player"]
 [connection signal="pressed" from="choice/Attack" to="Ennemy_group" method="_on_attack_pressed"]
+[connection signal="pressed" from="choice/Run" to="Ally_group" method="_on_run_pressed"]

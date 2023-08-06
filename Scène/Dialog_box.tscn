@@ -14,6 +14,7 @@ script = ExtResource("1_4s44p")
 position = Vector2(0, 34)
 scale = Vector2(1.26533, 1)
 texture = ExtResource("2_1acxv")
+metadata/_edit_group_ = true
 
 [node name="CombatDialogBox" type="Sprite2D" parent="Dialogbox2"]
 position = Vector2(-39.219, -19.5)

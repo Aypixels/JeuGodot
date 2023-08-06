@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://ypg824c7hn8q" path="res://tilset/up2.png" id="12_kc2is"]
 [ext_resource type="Texture2D" uid="uid://b5woq1mddvxsg" path="res://assets/3414630-small-removebg-preview.png" id="13_k3ypk"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_bev7w"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_lf2fw"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -32,11 +32,6 @@ animations = [{
 }],
 "loop": true,
 "name": &"down",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"hurt",
 "speed": 5.0
 }, {
 "frames": [{
@@ -127,15 +122,15 @@ animations = [{
 resource_name = "hurt"
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = false
+tracks/0/enabled = true
 tracks/0/path = NodePath("AnimatedSprite2D:self_modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.3, 0.5),
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Color(0.979003, 0.0872906, 0.0580226, 1), Color(1, 1, 1, 1), Color(0.979003, 0.0872906, 0.0580226, 1), Color(1, 1, 1, 1)]
+"values": [Color(0.887977, 0.0635266, 0.0392895, 1), Color(1, 1, 1, 1), Color(0.887977, 0.0635266, 0.0392895, 1), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_oaqtc"]
@@ -150,7 +145,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(0.979003, 0.0872906, 0.0580226, 1)]
+"values": [Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_104wn"]
@@ -163,13 +158,11 @@ _data = {
 script = ExtResource("1_fwnnm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-self_modulate = Color(0.979003, 0.0872906, 0.0580226, 1)
 texture_filter = 1
 position = Vector2(1, -2)
 scale = Vector2(0.6, 0.6)
-sprite_frames = SubResource("SpriteFrames_bev7w")
+sprite_frames = SubResource("SpriteFrames_lf2fw")
 animation = &"idleLeft"
-frame_progress = 0.160428
 speed_scale = 1.7
 
 [node name="focus" type="Sprite2D" parent="."]

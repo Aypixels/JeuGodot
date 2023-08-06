@@ -52,9 +52,9 @@ position = Vector2(0, 0)
 
 [node name="Ally_group" parent="." instance=ExtResource("4_fb1oj")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="choice" type="CanvasLayer" parent="."]
 
-[node name="Attack" type="Button" parent="CanvasLayer"]
+[node name="Attack" type="Button" parent="choice"]
 offset_left = 889.0
 offset_top = 540.0
 offset_right = 952.0
@@ -62,7 +62,7 @@ offset_bottom = 571.0
 scale = Vector2(1.4, 1.36)
 text = "Attack"
 
-[node name="Special" type="Button" parent="CanvasLayer"]
+[node name="Special" type="Button" parent="choice"]
 offset_left = 889.0
 offset_top = 598.0
 offset_right = 952.0
@@ -70,7 +70,7 @@ offset_bottom = 629.0
 scale = Vector2(1.4, 1.32)
 text = "Special"
 
-[node name="Run" type="Button" parent="CanvasLayer"]
+[node name="Run" type="Button" parent="choice"]
 offset_left = 1018.0
 offset_top = 598.0
 offset_right = 1081.0
@@ -78,7 +78,7 @@ offset_bottom = 629.0
 scale = Vector2(1.4, 1.32)
 text = "Run"
 
-[node name="Items" type="Button" parent="CanvasLayer"]
+[node name="Items" type="Button" parent="choice"]
 offset_left = 1018.0
 offset_top = 540.0
 offset_right = 1070.0
@@ -95,3 +95,7 @@ animation = &"lvl1"
 
 [node name="something" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_8bfeq")
+
+[connection signal="new_turn" from="Ennemy_group" to="Ally_group" method="_on_ennemy_group_new_turn"]
+[connection signal="next_player" from="Ennemy_group" to="Ally_group" method="_on_ennemy_group_next_player"]
+[connection signal="pressed" from="choice/Attack" to="Ennemy_group" method="_on_attack_pressed"]

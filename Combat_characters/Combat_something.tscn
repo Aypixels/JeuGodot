@@ -216,7 +216,7 @@ position = Vector2(0, -3)
 scale = Vector2(0.28125, 0.234375)
 sprite_frames = SubResource("SpriteFrames_gsthi")
 animation = &"hurt"
-frame_progress = 0.824858
+frame_progress = 0.766386
 
 [node name="focus" type="Sprite2D" parent="."]
 visible = false

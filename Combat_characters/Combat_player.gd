@@ -19,9 +19,11 @@ func _play_animation() :
 	
 func focus() :
 	_focus.show()
-	
 func unfocus():
 	_focus.hide()
 	
 func take_damage(value):
 	health -= value
+	
+func _ready():
+	$AnimatedSprite2D.play("idleLeft")

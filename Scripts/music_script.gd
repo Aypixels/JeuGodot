@@ -10,3 +10,5 @@ func _ready():
 func _process(_delta):
 	if playing == false :
 		play()
+	if $"..".visible == false :
+		stop()

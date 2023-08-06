@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjy6cqcdss1wr"]
+
+[ext_resource type="PackedScene" uid="uid://cy20wqat7l3d7" path="res://Scène/player.tscn" id="1_s8lps"]
+[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_uyjkw"]
+[ext_resource type="AudioStream" uid="uid://bpxqdgdv8vbrb" path="res://assets/Undertale Sound Effect Battle Encounter.mp3" id="3_mq4tu"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_uyjkw")
+
+[node name="Level" type="Node2D" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("1_s8lps")]
+
+[node name="Engage" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_mq4tu")
+volume_db = -2.447

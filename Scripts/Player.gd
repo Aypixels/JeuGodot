@@ -2,9 +2,16 @@ extends CharacterBody2D
 
 var speed = 0
 var oldPose = "Down"
-var is_body_inside = false
 var attacking = true
 var stop = false
+
+func player():
+	pass
+
+func _ready() :
+	position.x = 525
+	position.y = 430
+	SignalBus.end_road.connect(end_of_road)
 
 func _physics_process(_delta):
 	if not stop :
@@ -43,34 +50,7 @@ func _physics_process(_delta):
 				speed = 70
 				$AnimatedSprite2D.speed_scale = 1
 
-func _on_area_2d_body_entered(body):
-	if body == $"." :
-		is_body_inside = true
-		var gate = get_parent().get_node("Gate/AnimatedSprite2D")
-		gate.play("gate")
 
-func _on_area_2d_body_exited(body):
-	if body == $"." :
-		is_body_inside = false
-		var gate = get_parent().get_node("Gate/AnimatedSprite2D")
-		gate.play_backwards("gate")
-
-func _process(_delta):
-	if SignalBus.current_scene == "Tutoriel" :
-		var gate = get_parent().get_node("Gate/AnimatedSprite2D")
-		var gate_collision = get_parent().get_node("Gate/CollisionShape2D")
-		if is_body_inside:
-			if gate.frame == 4:
-				gate.pause()
-				gate_collision.set_deferred("disabled", true)
-		else:
-			if gate.frame == 0:
-				gate.pause()
-				gate_collision.set_deferred("disabled", false)
-
-
-func _on_end_of_road_body_entered(body):
-	if body == $".":
-		stop = true
-		$AnimatedSprite2D.play("idleUp")
-		SignalBus.emit_signal("end_road")
+func end_of_road():
+	stop = true
+	$AnimatedSprite2D.play("idleUp")

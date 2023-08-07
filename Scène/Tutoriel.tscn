@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://bqlb60vpnbe2b"]
+[gd_scene load_steps=56 format=3 uid="uid://bupmtyfrpp8m6"]
 
 [ext_resource type="Texture2D" uid="uid://0p8jtoy8jr0o" path="res://tilset/dungeon_sheet.png" id="1_jdsty"]
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_m43nj"]
@@ -24,8 +24,8 @@
 [ext_resource type="AudioStream" uid="uid://c6liec8wxjahk" path="res://Musics/171. Persevere.mp3" id="23_85gdj"]
 [ext_resource type="Script" path="res://Scripts/music_script.gd" id="23_epccn"]
 [ext_resource type="PackedScene" uid="uid://wchc7nkaalau" path="res://Scène/Something.tscn" id="25_rbbiq"]
-[ext_resource type="Script" path="res://Scène/End_of_road.gd" id="25_xotxv"]
-[ext_resource type="Script" path="res://Scène/Go_to_castle.gd" id="26_gkegp"]
+[ext_resource type="Script" path="res://Scripts/End_of_road.gd" id="25_umjae"]
+[ext_resource type="Script" path="res://Scripts/Go_to_castle.gd" id="26_uvmrv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pwapk"]
 texture = ExtResource("1_jdsty")
@@ -4663,14 +4663,14 @@ position = Vector2(526, -554)
 
 [node name="End_of_road" type="Area2D" parent="."]
 position = Vector2(330, -302)
-script = ExtResource("25_xotxv")
+script = ExtResource("25_umjae")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="End_of_road"]
 position = Vector2(114, -217)
 shape = SubResource("SegmentShape2D_sjipi")
 
 [node name="Go_to_castle" type="Area2D" parent="."]
-script = ExtResource("26_gkegp")
+script = ExtResource("26_uvmrv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Go_to_castle"]
 position = Vector2(526, -607)

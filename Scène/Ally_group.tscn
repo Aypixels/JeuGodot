@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://bdakt35ttg6g2"]
+[gd_scene load_steps=2 format=3 uid="uid://c3e8im3fr48dp"]
 
-[ext_resource type="Script" path="res://Scène/Ally_group.gd" id="1_at4cr"]
+[ext_resource type="Script" path="res://Scripts/Ally_group.gd" id="1_0ty5y"]
 
 [node name="Ally_group" type="Node2D"]
-script = ExtResource("1_at4cr")
+script = ExtResource("1_0ty5y")

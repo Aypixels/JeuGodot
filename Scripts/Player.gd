@@ -50,5 +50,7 @@ func end_of_road():
 
 func castle_position() :
 	position = Vector2(0,0)
+
+
 func combat_end():
 	stop = false

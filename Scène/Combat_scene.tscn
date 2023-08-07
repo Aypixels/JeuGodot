@@ -1,17 +1,17 @@
-[gd_scene load_steps=25 format=3 uid="uid://dqygux301tgms"]
+[gd_scene load_steps=25 format=3 uid="uid://dm8robqbf3qft"]
 
 [ext_resource type="Script" path="res://Scripts/Combat_scene.gd" id="1_3hhq4"]
 [ext_resource type="Texture2D" uid="uid://bqq86sl8lqoln" path="res://assets/battle_backgrounds/something_fight.png" id="2_sjn1b"]
 [ext_resource type="PackedScene" uid="uid://dhyrpl2bq2gwo" path="res://Scène/Ennemy_group.tscn" id="3_twq0c"]
-[ext_resource type="PackedScene" uid="uid://bdakt35ttg6g2" path="res://Scène/Ally_group.tscn" id="4_fb1oj"]
+[ext_resource type="PackedScene" uid="uid://c3e8im3fr48dp" path="res://Scène/Ally_group.tscn" id="4_fb1oj"]
 [ext_resource type="FontFile" uid="uid://c6j3p5khmw0g1" path="res://assets/NESCyrillic.ttf" id="5_q57hc"]
 [ext_resource type="AudioStream" uid="uid://cirpx0ye4d1js" path="res://assets/OMORI OST - 014 Acrophobia.mp3" id="6_8bfeq"]
 [ext_resource type="Texture2D" uid="uid://cnjvkb8rentwp" path="res://assets/frisk_lvl1.png" id="7_g1io8"]
 [ext_resource type="Texture2D" uid="uid://cgw0dji3gb2ui" path="res://assets/combat_dialog_box.png" id="8_iel0u"]
-[ext_resource type="Script" path="res://Scène/Frisk_UI.gd" id="8_mukn2"]
-[ext_resource type="Script" path="res://Scène/CombatDialogBox.gd" id="9_muyly"]
+[ext_resource type="Script" path="res://Scripts/Frisk_UI.gd" id="8_q15e6"]
 [ext_resource type="FontFile" uid="uid://dw0xt1bycx0el" path="res://assets/Determination/DTM-Sans.ttf" id="9_o5a47"]
 [ext_resource type="Texture2D" uid="uid://b5woq1mddvxsg" path="res://assets/3414630-small-removebg-preview.png" id="10_r6j7g"]
+[ext_resource type="Script" path="res://Scripts/CombatDialogBox.gd" id="11_efbcd"]
 [ext_resource type="FontFile" uid="uid://b4sngv2t4bmog" path="res://assets/Determination/DTM-Mono.otf" id="11_pdlsd"]
 [ext_resource type="Texture2D" uid="uid://bpn087oxw2w45" path="res://assets/enemy_turn.png" id="14_o3f1g"]
 [ext_resource type="Texture2D" uid="uid://dmbf4f8kntspa" path="res://assets/your_turn.png" id="15_3x4bb"]
@@ -188,7 +188,7 @@ position = Vector2(47.6875, 47.4616)
 scale = Vector2(0.403017, 0.419177)
 sprite_frames = SubResource("SpriteFrames_fduaq")
 animation = &"lvl1"
-script = ExtResource("8_mukn2")
+script = ExtResource("8_q15e6")
 metadata/_edit_group_ = true
 
 [node name="lvl" type="Label" parent="Frisk_UI"]
@@ -232,7 +232,7 @@ show_percentage = false
 position = Vector2(-21, 48)
 scale = Vector2(0.892343, 0.730059)
 texture = ExtResource("8_iel0u")
-script = ExtResource("9_muyly")
+script = ExtResource("11_efbcd")
 
 [node name="DialogboxIndicator" type="Sprite2D" parent="CombatDialogBox"]
 position = Vector2(54.5313, 14)

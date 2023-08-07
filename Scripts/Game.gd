@@ -56,7 +56,10 @@ func combat_won() :
 
 
 func on_go_to_castle() :
-	$Level/Tutoriel.queue_free()
+	fondu.play("fondu")
+	await fondu.animation_finished
 	current_level = load("res://Scène/Castle.tscn").instantiate()
+	$Level/Tutoriel.queue_free()
 	$Level.add_child(current_level)
+	fondu.play_backwards("fondu")
 	

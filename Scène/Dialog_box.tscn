@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Dialog_box.gd" id="1_4s44p"]
 [ext_resource type="Texture2D" uid="uid://cgw0dji3gb2ui" path="res://assets/combat_dialog_box.png" id="2_1acxv"]
-[ext_resource type="FontFile" uid="uid://b43nky15j7np0" path="res://assets/yoster.ttf" id="3_k16h2"]
+[ext_resource type="FontFile" uid="uid://b4sngv2t4bmog" path="res://assets/Determination/DTM-Mono.otf" id="3_q7p11"]
 [ext_resource type="FontFile" uid="uid://cehwvq4xnvh1c" path="res://assets/kongtext.ttf" id="4_hoye6"]
 [ext_resource type="Texture2D" uid="uid://b5woq1mddvxsg" path="res://assets/3414630-small-removebg-preview.png" id="5_webc3"]
 
@@ -22,18 +22,20 @@ scale = Vector2(0.207539, 0.236842)
 texture = ExtResource("2_1acxv")
 
 [node name="Text" type="RichTextLabel" parent="Dialogbox2"]
-offset_left = -56.0
-offset_top = -14.0
-offset_right = 50.0
-offset_bottom = 15.0
-theme_override_fonts/normal_font = ExtResource("3_k16h2")
+offset_left = -55.0
+offset_top = -12.0
+offset_right = 372.0
+offset_bottom = 93.0
+scale = Vector2(0.249183, 0.266893)
+theme_override_fonts/normal_font = ExtResource("3_q7p11")
 bbcode_enabled = true
 
 [node name="Name" type="RichTextLabel" parent="Dialogbox2"]
 offset_left = -50.0
 offset_top = -22.0
-offset_right = -28.0
-offset_bottom = -16.0
+offset_right = 99.0
+offset_bottom = -1.0
+scale = Vector2(0.146467, 0.28)
 theme_override_fonts/normal_font = ExtResource("4_hoye6")
 bbcode_enabled = true
 

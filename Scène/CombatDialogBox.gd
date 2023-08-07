@@ -1,7 +1,8 @@
 extends Sprite2D
 
 var battle_text = {
-	"something_run" : ["...T'enfuir ne te paraît pas être une option"]
+	"something_run" : ["* T'enfuir ne te semble pas être une option"],
+	"clear" : [""]
 }
 var selected_text = []
 var in_progress= false
@@ -24,29 +25,17 @@ func show_text():
 		await get_tree().create_timer(0.04).timeout
 	phrase_end = true
 	
-func next_phrase():
-	if selected_text.size() > 0 :
-		show_text()
-	else : 
-		finish()
 		
 func finish() :
 	text_label.text = ""
 	in_progress = false
 	phrase_end = false
-	get_tree().paused = false
 		
 func on_battle_dialog_display(text_key) :
-	if in_progress and phrase_end:
-		next_phrase()
-	elif in_progress:
-		text_label.visible_characters = len(text_label.text)
-		phrase_end = true
-	else:
-		get_tree().paused = true
-		in_progress = true
-		selected_text = battle_text[text_key].duplicate()
-		show_text()
+	finish()
+	in_progress = true
+	selected_text = battle_text[text_key].duplicate()
+	show_text()
 		
 
 func _process(_delta):

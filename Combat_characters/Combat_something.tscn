@@ -220,6 +220,7 @@ frame_progress = 0.766386
 
 [node name="focus" type="Sprite2D" parent="."]
 visible = false
+self_modulate = Color(0.592157, 0, 0, 1)
 texture_filter = 1
 position = Vector2(0, -20)
 scale = Vector2(0.0159176, 0.0166667)

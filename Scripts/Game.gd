@@ -5,6 +5,7 @@ var current_level : Node2D
 var combat : Node2D
 var current_allies = ["player"]
 
+var Frisk = [20,20,1]
 
 func _ready():
 	current_level = load(start_scene).instantiate()
@@ -31,7 +32,7 @@ func start_combat(combat_index, enemies) :
 	$Combat_scene/Camera2D.enabled = true
 	$Level.visible = false
 	SignalBus.emit_signal("place_combat", combat_index, enemies, current_allies)
-	
+	SignalBus.emit_signal("set_up_FriskUI", str(Frisk[0]), str(Frisk[1]), str(Frisk[2]))
 	
 	
 	

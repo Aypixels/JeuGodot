@@ -52,6 +52,7 @@ func _process(_delta):
 		_action(action_queue)
 
 func _action(stack) :
+	SignalBus.emit_signal("battle_dialog_display", "clear")
 	for i in stack :
 		enemies[i].take_damage(1)
 		await get_tree().create_timer(1).timeout

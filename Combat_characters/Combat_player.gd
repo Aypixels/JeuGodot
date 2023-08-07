@@ -1,6 +1,7 @@
 extends Node2D
 
 @onready var _focus = $focus
+@onready var damage_taken = $damage_taken
 
 
 var ATK
@@ -20,6 +21,7 @@ func unfocus():
 	_focus.hide()
 	
 func take_damage(value):
+	damage_taken.play()
 	HP -= value
 	_update_health()
 	_play_animation()

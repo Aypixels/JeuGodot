@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://byqusg2bldx5y"
+path="res://.godot/imported/SE_whirlpool copy.ogg-345e80ecacbab2cd4d7cb91ddc1c2f33.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_whirlpool copy.ogg"
+dest_files=["res://.godot/imported/SE_whirlpool copy.ogg-345e80ecacbab2cd4d7cb91ddc1c2f33.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

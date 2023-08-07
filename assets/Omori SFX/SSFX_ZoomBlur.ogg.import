@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://by5fmhqllqmlv"
+path="res://.godot/imported/SSFX_ZoomBlur.ogg-29d9e0bd3cab34fa86c64aa0214bb3cd.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SSFX_ZoomBlur.ogg"
+dest_files=["res://.godot/imported/SSFX_ZoomBlur.ogg-29d9e0bd3cab34fa86c64aa0214bb3cd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

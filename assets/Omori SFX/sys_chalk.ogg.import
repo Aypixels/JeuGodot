@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dt8ma73trjvin"
+path="res://.godot/imported/sys_chalk.ogg-72655a8cd055c06b96cb231ecfde510c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/sys_chalk.ogg"
+dest_files=["res://.godot/imported/sys_chalk.ogg-72655a8cd055c06b96cb231ecfde510c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

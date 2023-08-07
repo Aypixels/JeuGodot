@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://buap6l7n84c2l"
+path="res://.godot/imported/BA_sad_poem.ogg-12bb80f13aeb27350e19674156b4dc7d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_sad_poem.ogg"
+dest_files=["res://.godot/imported/BA_sad_poem.ogg-12bb80f13aeb27350e19674156b4dc7d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

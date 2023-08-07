@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b15w2elfgk1wa"
+path="res://.godot/imported/BA_rumble_4.ogg-ba5ce30852e9ad7072cf839f5cae3c73.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_rumble_4.ogg"
+dest_files=["res://.godot/imported/BA_rumble_4.ogg-ba5ce30852e9ad7072cf839f5cae3c73.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

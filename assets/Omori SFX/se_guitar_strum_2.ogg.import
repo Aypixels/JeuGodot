@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bcomvn2g5gqq5"
+path="res://.godot/imported/se_guitar_strum_2.ogg-a61a21292fbfef860ade64655fbe1665.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_guitar_strum_2.ogg"
+dest_files=["res://.godot/imported/se_guitar_strum_2.ogg-a61a21292fbfef860ade64655fbe1665.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

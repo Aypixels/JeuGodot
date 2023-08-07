@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ukb28j7ywgin"
+path="res://.godot/imported/SE_car_start.ogg-bcbadbb1fd9af310551b92b38be6dd1a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_car_start.ogg"
+dest_files=["res://.godot/imported/SE_car_start.ogg-bcbadbb1fd9af310551b92b38be6dd1a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

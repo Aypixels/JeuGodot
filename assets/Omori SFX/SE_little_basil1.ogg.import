@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bx0rnjhrhelgf"
+path="res://.godot/imported/SE_little_basil1.ogg-cdd96052065bfd7e0e8f7cecd773f26e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_little_basil1.ogg"
+dest_files=["res://.godot/imported/SE_little_basil1.ogg-cdd96052065bfd7e0e8f7cecd773f26e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

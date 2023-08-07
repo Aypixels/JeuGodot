@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c7urxkdbshdmg"
+path="res://.godot/imported/SE_sprout_mole1.ogg-4b98965c48a87efe8725b38c38cddd0e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_sprout_mole1.ogg"
+dest_files=["res://.godot/imported/SE_sprout_mole1.ogg-4b98965c48a87efe8725b38c38cddd0e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ctu17j4m0phxk"
+path="res://.godot/imported/GEN_movement2.ogg-19c502439268a7015c7ef9e2803e6910.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/GEN_movement2.ogg"
+dest_files=["res://.godot/imported/GEN_movement2.ogg-19c502439268a7015c7ef9e2803e6910.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

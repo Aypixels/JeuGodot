@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b4w65egotjord"
+path="res://.godot/imported/GEN_Poke.ogg-c4201f706d54637a6d8f6df52d7f848e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/GEN_Poke.ogg"
+dest_files=["res://.godot/imported/GEN_Poke.ogg-c4201f706d54637a6d8f6df52d7f848e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

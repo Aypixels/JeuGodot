@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://lqhlxbuwg7b5"
+path="res://.godot/imported/mini_coj_windup.ogg-d62daea180c978dc023924d4b2457320.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/mini_coj_windup.ogg"
+dest_files=["res://.godot/imported/mini_coj_windup.ogg-d62daea180c978dc023924d4b2457320.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

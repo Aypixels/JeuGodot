@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://btsd630ds1nvv"
+path="res://.godot/imported/SE_getting_into_water.ogg-03b21598aef15de225e8fbefe9bf69b3.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_getting_into_water.ogg"
+dest_files=["res://.godot/imported/SE_getting_into_water.ogg-03b21598aef15de225e8fbefe9bf69b3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

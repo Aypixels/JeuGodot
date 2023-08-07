@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://duyfofer6ts6t"
+path="res://.godot/imported/SE_sucks_a_LOT.ogg-6d854442dfc85c449fd89bb0fc02e799.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_sucks_a_LOT.ogg"
+dest_files=["res://.godot/imported/SE_sucks_a_LOT.ogg-6d854442dfc85c449fd89bb0fc02e799.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

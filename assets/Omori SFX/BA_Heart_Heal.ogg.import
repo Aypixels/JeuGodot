@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://lw1bjwcs551g"
+path="res://.godot/imported/BA_Heart_Heal.ogg-50ed093121818263ed1970b195a5795d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_Heart_Heal.ogg"
+dest_files=["res://.godot/imported/BA_Heart_Heal.ogg-50ed093121818263ed1970b195a5795d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

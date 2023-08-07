@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://com73kulpcmpx"
+path="res://.godot/imported/xx_piano_aubrey.ogg-92b33cb7c14e90c56326bfcabc7d6e46.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/xx_piano_aubrey.ogg"
+dest_files=["res://.godot/imported/xx_piano_aubrey.ogg-92b33cb7c14e90c56326bfcabc7d6e46.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

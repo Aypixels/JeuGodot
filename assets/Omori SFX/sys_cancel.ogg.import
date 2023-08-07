@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d0rn0i8osouuj"
+path="res://.godot/imported/sys_cancel.ogg-4a2a834925ae4d00bd55f6b25d390ad4.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/sys_cancel.ogg"
+dest_files=["res://.godot/imported/sys_cancel.ogg-4a2a834925ae4d00bd55f6b25d390ad4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

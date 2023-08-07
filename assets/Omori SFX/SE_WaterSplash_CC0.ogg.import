@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dlhck0fwaunoq"
+path="res://.godot/imported/SE_WaterSplash_CC0.ogg-ef3c959f10acebd69d57d15b97516a1e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_WaterSplash_CC0.ogg"
+dest_files=["res://.godot/imported/SE_WaterSplash_CC0.ogg-ef3c959f10acebd69d57d15b97516a1e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

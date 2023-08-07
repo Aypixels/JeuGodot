@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dbkfcvdp1up6n"
+path="res://.godot/imported/SE_bs_bad_trumpet.ogg-2e034d675dd468bb017cdf36c5e1c072.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_bs_bad_trumpet.ogg"
+dest_files=["res://.godot/imported/SE_bs_bad_trumpet.ogg-2e034d675dd468bb017cdf36c5e1c072.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

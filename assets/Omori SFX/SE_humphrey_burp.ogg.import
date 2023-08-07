@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bnlf0luyotliv"
+path="res://.godot/imported/SE_humphrey_burp.ogg-7d854509f0c12c978d662df22bfb7f13.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_humphrey_burp.ogg"
+dest_files=["res://.godot/imported/SE_humphrey_burp.ogg-7d854509f0c12c978d662df22bfb7f13.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://r65tg1egy5ng"
+path="res://.godot/imported/BA_ACS_pass_hero_3.ogg-ca9e193f25ac6885411b87e604be2876.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_ACS_pass_hero_3.ogg"
+dest_files=["res://.godot/imported/BA_ACS_pass_hero_3.ogg-ca9e193f25ac6885411b87e604be2876.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c8vdvt7qk5nvv"
+path="res://.godot/imported/SYS_throw 2.ogg-53a020ce0fe1631a8336fa77a1e3a8dc.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SYS_throw 2.ogg"
+dest_files=["res://.godot/imported/SYS_throw 2.ogg-53a020ce0fe1631a8336fa77a1e3a8dc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

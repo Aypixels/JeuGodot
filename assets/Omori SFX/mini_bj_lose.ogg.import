@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bp13y3yc1yyt7"
+path="res://.godot/imported/mini_bj_lose.ogg-f03b8ff25322b36eccad7cc30e5dc85a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/mini_bj_lose.ogg"
+dest_files=["res://.godot/imported/mini_bj_lose.ogg-f03b8ff25322b36eccad7cc30e5dc85a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b1twatyby20w"
+path="res://.godot/imported/SE_reverse_swell.ogg-b2ccb5f0c4bf1374e9fafa187d12ff5e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_reverse_swell.ogg"
+dest_files=["res://.godot/imported/SE_reverse_swell.ogg-b2ccb5f0c4bf1374e9fafa187d12ff5e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

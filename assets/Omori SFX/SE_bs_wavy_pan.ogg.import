@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bskxyqovwbgio"
+path="res://.godot/imported/SE_bs_wavy_pan.ogg-925868ff1889775a6843dcf281d8e223.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_bs_wavy_pan.ogg"
+dest_files=["res://.godot/imported/SE_bs_wavy_pan.ogg-925868ff1889775a6843dcf281d8e223.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

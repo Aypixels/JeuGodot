@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dlk22ch0gsgkq"
+path="res://.godot/imported/ft_doShake.ogg-a2bd8aa323ef3d6d261235c8b552f02d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/ft_doShake.ogg"
+dest_files=["res://.godot/imported/ft_doShake.ogg-a2bd8aa323ef3d6d261235c8b552f02d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

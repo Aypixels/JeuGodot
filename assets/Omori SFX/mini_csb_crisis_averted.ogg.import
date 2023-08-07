@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cpuyb2xrct3yt"
+path="res://.godot/imported/mini_csb_crisis_averted.ogg-4e2030bf095919a6ae88ce7bda63c1a4.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/mini_csb_crisis_averted.ogg"
+dest_files=["res://.godot/imported/mini_csb_crisis_averted.ogg-4e2030bf095919a6ae88ce7bda63c1a4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d2stqisegggxo"
+path="res://.godot/imported/se_bike_bell.ogg-08d9a8c812ce6e4204b7187ea6873b39.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_bike_bell.ogg"
+dest_files=["res://.godot/imported/se_bike_bell.ogg-08d9a8c812ce6e4204b7187ea6873b39.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

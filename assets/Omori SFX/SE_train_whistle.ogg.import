@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dm2jrinl1b0cg"
+path="res://.godot/imported/SE_train_whistle.ogg-00d0dd9c29ac5c1d56c02505fb3f23e8.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_train_whistle.ogg"
+dest_files=["res://.godot/imported/SE_train_whistle.ogg-00d0dd9c29ac5c1d56c02505fb3f23e8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

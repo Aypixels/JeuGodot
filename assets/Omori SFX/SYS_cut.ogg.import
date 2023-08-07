@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://42cgvwkh4gdx"
+path="res://.godot/imported/SYS_cut.ogg-dfabb442180e6324a472340f99b7aca4.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SYS_cut.ogg"
+dest_files=["res://.godot/imported/SYS_cut.ogg-dfabb442180e6324a472340f99b7aca4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

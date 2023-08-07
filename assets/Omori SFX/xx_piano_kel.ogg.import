@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c8nle2vn2ur1i"
+path="res://.godot/imported/xx_piano_kel.ogg-010b72431261b2c26d07b6c092724549.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/xx_piano_kel.ogg"
+dest_files=["res://.godot/imported/xx_piano_kel.ogg-010b72431261b2c26d07b6c092724549.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

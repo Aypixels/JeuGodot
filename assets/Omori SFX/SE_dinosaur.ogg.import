@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cypegmy5usuin"
+path="res://.godot/imported/SE_dinosaur.ogg-386b8944a95c1b638b94c68f6068423a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_dinosaur.ogg"
+dest_files=["res://.godot/imported/SE_dinosaur.ogg-386b8944a95c1b638b94c68f6068423a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

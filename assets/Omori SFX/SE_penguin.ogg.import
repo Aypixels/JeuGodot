@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://boxxpo2jo7011"
+path="res://.godot/imported/SE_penguin.ogg-9f8d781895d8f17add000355780d18df.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_penguin.ogg"
+dest_files=["res://.godot/imported/SE_penguin.ogg-9f8d781895d8f17add000355780d18df.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

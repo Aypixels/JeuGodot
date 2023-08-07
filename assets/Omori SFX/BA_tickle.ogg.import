@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d17pnccrbt2rd"
+path="res://.godot/imported/BA_tickle.ogg-7cb6aab2cde45e4a336d8e8b072cd8ae.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_tickle.ogg"
+dest_files=["res://.godot/imported/BA_tickle.ogg-7cb6aab2cde45e4a336d8e8b072cd8ae.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

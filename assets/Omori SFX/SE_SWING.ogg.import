@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://gsvnyf7ciwpo"
+path="res://.godot/imported/SE_SWING.ogg-d8e7e3a5a696fc33d460b8ede8571f6f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_SWING.ogg"
+dest_files=["res://.godot/imported/SE_SWING.ogg-d8e7e3a5a696fc33d460b8ede8571f6f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

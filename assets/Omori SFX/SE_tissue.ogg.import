@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ctymjmyj5wylk"
+path="res://.godot/imported/SE_tissue.ogg-9e5287da1606a5a7d06b8bb1518d9cd8.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_tissue.ogg"
+dest_files=["res://.godot/imported/SE_tissue.ogg-9e5287da1606a5a7d06b8bb1518d9cd8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

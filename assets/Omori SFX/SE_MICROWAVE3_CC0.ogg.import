@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c7tcueuv8baho"
+path="res://.godot/imported/SE_MICROWAVE3_CC0.ogg-321ad1b9ced1acb6a480409eb2c6e9be.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_MICROWAVE3_CC0.ogg"
+dest_files=["res://.godot/imported/SE_MICROWAVE3_CC0.ogg-321ad1b9ced1acb6a480409eb2c6e9be.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

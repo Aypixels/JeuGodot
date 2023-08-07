@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bf8l23gkkf6dr"
+path="res://.godot/imported/[sfx]battle_ekg_beep.ogg-13124d0adfcac59b6a8b920d4fe9b6a5.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/[sfx]battle_ekg_beep.ogg"
+dest_files=["res://.godot/imported/[sfx]battle_ekg_beep.ogg-13124d0adfcac59b6a8b920d4fe9b6a5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

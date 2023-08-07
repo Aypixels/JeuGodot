@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bxuxdlrbwt0uk"
+path="res://.godot/imported/SE_longleg.ogg-f17c00db0c994c3fc65cd87ece736166.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_longleg.ogg"
+dest_files=["res://.godot/imported/SE_longleg.ogg-f17c00db0c994c3fc65cd87ece736166.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

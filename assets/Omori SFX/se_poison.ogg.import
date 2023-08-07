@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d14gkcq1xwcws"
+path="res://.godot/imported/se_poison.ogg-789cc06b37d93355a6f5199a0af233c2.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_poison.ogg"
+dest_files=["res://.godot/imported/se_poison.ogg-789cc06b37d93355a6f5199a0af233c2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

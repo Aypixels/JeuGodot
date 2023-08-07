@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d3sjci1tt88g6"
+path="res://.godot/imported/SE_stairs_up.ogg-e2e04cb8673ef53dc9c08ab57dfd9e27.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_stairs_up.ogg"
+dest_files=["res://.godot/imported/SE_stairs_up.ogg-e2e04cb8673ef53dc9c08ab57dfd9e27.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

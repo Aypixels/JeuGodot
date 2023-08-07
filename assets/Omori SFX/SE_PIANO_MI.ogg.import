@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b31mgn82nuo2b"
+path="res://.godot/imported/SE_PIANO_MI.ogg-bd73a6439961d3f830e7b94b1e311436.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_PIANO_MI.ogg"
+dest_files=["res://.godot/imported/SE_PIANO_MI.ogg-bd73a6439961d3f830e7b94b1e311436.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

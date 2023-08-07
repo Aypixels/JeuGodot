@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ws75v0q0pjbx"
+path="res://.godot/imported/SE_machine_hum.ogg-f6074652eabb38ecaac256ccd63f86d2.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_machine_hum.ogg"
+dest_files=["res://.godot/imported/SE_machine_hum.ogg-f6074652eabb38ecaac256ccd63f86d2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c5hmf77xojnwl"
+path="res://.godot/imported/ft_big_reverb.ogg-5e34162527693355db170f96c2b2b3dd.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/ft_big_reverb.ogg"
+dest_files=["res://.godot/imported/ft_big_reverb.ogg-5e34162527693355db170f96c2b2b3dd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

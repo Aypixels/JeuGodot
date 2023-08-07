@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dw1xk8f06ytb4"
+path="res://.godot/imported/SYS_picnic.ogg-f1a8af3635f8bb1fa8bc3d8bd17f38c0.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SYS_picnic.ogg"
+dest_files=["res://.godot/imported/SYS_picnic.ogg-f1a8af3635f8bb1fa8bc3d8bd17f38c0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

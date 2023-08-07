@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://xwyij4goso4r"
+path="res://.godot/imported/SE_Knock_WoodDoor.ogg-f2dbc4a10396781509023dbd29b00750.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_Knock_WoodDoor.ogg"
+dest_files=["res://.godot/imported/SE_Knock_WoodDoor.ogg-f2dbc4a10396781509023dbd29b00750.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

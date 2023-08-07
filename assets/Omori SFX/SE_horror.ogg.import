@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://clikfo3m5dsg3"
+path="res://.godot/imported/SE_horror.ogg-e8c2e083995ff48177de81c6aa87cb97.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_horror.ogg"
+dest_files=["res://.godot/imported/SE_horror.ogg-e8c2e083995ff48177de81c6aa87cb97.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

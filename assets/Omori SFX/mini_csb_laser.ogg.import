@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://eg86ad1qnp6d"
+path="res://.godot/imported/mini_csb_laser.ogg-ad7ec4affc0073bf3e67b00641ba0729.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/mini_csb_laser.ogg"
+dest_files=["res://.godot/imported/mini_csb_laser.ogg-ad7ec4affc0073bf3e67b00641ba0729.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

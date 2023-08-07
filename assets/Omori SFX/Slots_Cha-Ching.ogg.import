@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://da5rjrwko4441"
+path="res://.godot/imported/Slots_Cha-Ching.ogg-bd807dc013f34f285ebf9b9f234f2428.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/Slots_Cha-Ching.ogg"
+dest_files=["res://.godot/imported/Slots_Cha-Ching.ogg-bd807dc013f34f285ebf9b9f234f2428.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

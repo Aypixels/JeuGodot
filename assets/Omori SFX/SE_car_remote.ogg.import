@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b8rw2geosgfhq"
+path="res://.godot/imported/SE_car_remote.ogg-91be5f9a7436553ef57402ee53020191.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_car_remote.ogg"
+dest_files=["res://.godot/imported/SE_car_remote.ogg-91be5f9a7436553ef57402ee53020191.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

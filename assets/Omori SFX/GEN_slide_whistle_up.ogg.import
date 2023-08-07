@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b8df8p12soj3g"
+path="res://.godot/imported/GEN_slide_whistle_up.ogg-ed63c8bc7380148d887e2d451ccf5ac7.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/GEN_slide_whistle_up.ogg"
+dest_files=["res://.godot/imported/GEN_slide_whistle_up.ogg-ed63c8bc7380148d887e2d451ccf5ac7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

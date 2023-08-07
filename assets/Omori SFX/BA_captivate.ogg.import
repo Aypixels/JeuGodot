@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bufljyqafja0m"
+path="res://.godot/imported/BA_captivate.ogg-9393e9d658445aa80c9284408ec3e1c3.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_captivate.ogg"
+dest_files=["res://.godot/imported/BA_captivate.ogg-9393e9d658445aa80c9284408ec3e1c3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

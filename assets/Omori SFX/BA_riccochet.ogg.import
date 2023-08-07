@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://tbpp68jw2eax"
+path="res://.godot/imported/BA_riccochet.ogg-e42fc1ed57fdc97bcfd8691477fb9247.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_riccochet.ogg"
+dest_files=["res://.godot/imported/BA_riccochet.ogg-e42fc1ed57fdc97bcfd8691477fb9247.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var defeated = $defeated
 @onready var _focus = $focus
 @onready var animation_player = $AnimatedSprite2D
 var hurt = false
@@ -12,8 +13,6 @@ var Max_health : int = 20
 var ATK = 5
 var HP : int = 20 
 
-func _update_health() :
-	pass
 
 func _play_animation() :
 	animation_player.play("hurt")
@@ -27,10 +26,20 @@ func unfocus():
 	
 func take_damage(value):
 	HP -= value
-	_update_health()
-	_play_animation()
+	if HP < 1 : 
+		_defeated()
+	else:
+		_play_animation()
 
 func _process(_delta):
 	if hurt == true and animation_player.frame == 4 :
 		animation_player.play("walk")
 		hurt = false
+	if animation_player.frame == 15 and HP < 1:
+		visible = false
+
+func _defeated() :
+	SignalBus.emit_signal("defeated", $".")
+	defeated.play()
+	animation_player.play("disappear")
+

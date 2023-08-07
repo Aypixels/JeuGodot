@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bjk2gu3e8pfcd"
+path="res://.godot/imported/SE_crown_murmur.ogg-7ab592ca52b5bcb16139dae00d8511e7.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_crown_murmur.ogg"
+dest_files=["res://.godot/imported/SE_crown_murmur.ogg-7ab592ca52b5bcb16139dae00d8511e7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

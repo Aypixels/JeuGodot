@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://22jt8y2hwfic"
+path="res://.godot/imported/BA_abduct.ogg-b11cca67a92c00a5b07820e0eadb7cd3.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_abduct.ogg"
+dest_files=["res://.godot/imported/BA_abduct.ogg-b11cca67a92c00a5b07820e0eadb7cd3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

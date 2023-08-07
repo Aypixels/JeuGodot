@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b30flni4b1tdj"
+path="res://.godot/imported/BA_scatter.ogg-97dc63e85e42a2e79fc312ed1a72ed38.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_scatter.ogg"
+dest_files=["res://.godot/imported/BA_scatter.ogg-97dc63e85e42a2e79fc312ed1a72ed38.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

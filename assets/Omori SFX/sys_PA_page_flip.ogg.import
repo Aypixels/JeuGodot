@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bea1j08k2ncsi"
+path="res://.godot/imported/sys_PA_page_flip.ogg-46ab1704b6ec55c785c479c08d69e1ae.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/sys_PA_page_flip.ogg"
+dest_files=["res://.godot/imported/sys_PA_page_flip.ogg-46ab1704b6ec55c785c479c08d69e1ae.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dtc1ucxbr2c4s"
+path="res://.godot/imported/SSFX_Distort.ogg-f5c776c9d97b7162d38f9bf533c682fb.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SSFX_Distort.ogg"
+dest_files=["res://.godot/imported/SSFX_Distort.ogg-f5c776c9d97b7162d38f9bf533c682fb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

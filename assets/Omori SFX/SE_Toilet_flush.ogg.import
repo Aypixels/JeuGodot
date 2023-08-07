@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ctq1ppoymibxr"
+path="res://.godot/imported/SE_Toilet_flush.ogg-c59231f6360a050386c5ea6157de2dc6.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_Toilet_flush.ogg"
+dest_files=["res://.godot/imported/SE_Toilet_flush.ogg-c59231f6360a050386c5ea6157de2dc6.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

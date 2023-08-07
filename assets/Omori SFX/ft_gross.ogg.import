@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cc8io8jslasxs"
+path="res://.godot/imported/ft_gross.ogg-609e3bd5dcef3ba5fcd0c85047af8795.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/ft_gross.ogg"
+dest_files=["res://.godot/imported/ft_gross.ogg-609e3bd5dcef3ba5fcd0c85047af8795.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

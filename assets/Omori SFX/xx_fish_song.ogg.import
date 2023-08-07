@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dx3pveua7ldt2"
+path="res://.godot/imported/xx_fish_song.ogg-84d23bc17fb57d0c19208db02af8d0b1.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/xx_fish_song.ogg"
+dest_files=["res://.godot/imported/xx_fish_song.ogg-84d23bc17fb57d0c19208db02af8d0b1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

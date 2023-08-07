@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dosy7vjxnf77s"
+path="res://.godot/imported/GEN_Swish.ogg-298f05608daa507e778590b7d40a405a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/GEN_Swish.ogg"
+dest_files=["res://.godot/imported/GEN_Swish.ogg-298f05608daa507e778590b7d40a405a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

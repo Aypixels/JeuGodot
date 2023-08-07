@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b5g6865iqwiu6"
+path="res://.godot/imported/Re Stretched.ogg-63cfbe577e36867d8211b99607927aa5.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/Re Stretched.ogg"
+dest_files=["res://.godot/imported/Re Stretched.ogg-63cfbe577e36867d8211b99607927aa5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

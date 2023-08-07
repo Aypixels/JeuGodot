@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b5dcwlvgwbeoc"
+path="res://.godot/imported/SE_bs_cough.ogg-9d5886bc9a1833e01b98e812794939ff.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_bs_cough.ogg"
+dest_files=["res://.godot/imported/SE_bs_cough.ogg-9d5886bc9a1833e01b98e812794939ff.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

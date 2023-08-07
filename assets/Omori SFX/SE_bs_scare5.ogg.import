@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dpj8hol5lcy78"
+path="res://.godot/imported/SE_bs_scare5.ogg-c6e0fa9dc878b2ecac61bca5690ff595.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_bs_scare5.ogg"
+dest_files=["res://.godot/imported/SE_bs_scare5.ogg-c6e0fa9dc878b2ecac61bca5690ff595.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

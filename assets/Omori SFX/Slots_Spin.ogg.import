@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bcgluxnsmx7n8"
+path="res://.godot/imported/Slots_Spin.ogg-c1135134ec52b745603689ba5ab80544.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/Slots_Spin.ogg"
+dest_files=["res://.godot/imported/Slots_Spin.ogg-c1135134ec52b745603689ba5ab80544.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

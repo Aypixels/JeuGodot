@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b8vh3k2iml5cm"
+path="res://.godot/imported/BA_overcome.ogg-c794dedcf26b3f8e363e729b1fd0be72.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_overcome.ogg"
+dest_files=["res://.godot/imported/BA_overcome.ogg-c794dedcf26b3f8e363e729b1fd0be72.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

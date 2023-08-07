@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://icnuit12j426"
+path="res://.godot/imported/solo_duet.ogg-a1e169fe8a43cf775a2059189d9deb95.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/solo_duet.ogg"
+dest_files=["res://.godot/imported/solo_duet.ogg-a1e169fe8a43cf775a2059189d9deb95.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

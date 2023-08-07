@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bmbgma28pi8wo"
+path="res://.godot/imported/BA_angry_stage_2.ogg-159fe299b74c7af18d88e1f1c4ed040d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_angry_stage_2.ogg"
+dest_files=["res://.godot/imported/BA_angry_stage_2.ogg-159fe299b74c7af18d88e1f1c4ed040d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

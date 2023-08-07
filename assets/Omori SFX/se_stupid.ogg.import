@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cwb1vgy73cqg"
+path="res://.godot/imported/se_stupid.ogg-8cb278bb89adf5610872a086e9fda782.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_stupid.ogg"
+dest_files=["res://.godot/imported/se_stupid.ogg-8cb278bb89adf5610872a086e9fda782.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

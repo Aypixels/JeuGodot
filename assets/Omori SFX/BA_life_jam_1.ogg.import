@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cswsaotvq512f"
+path="res://.godot/imported/BA_life_jam_1.ogg-939f41b0fdb8eab458d632c64b057b0c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_life_jam_1.ogg"
+dest_files=["res://.godot/imported/BA_life_jam_1.ogg-939f41b0fdb8eab458d632c64b057b0c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

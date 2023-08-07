@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cska0eledf2u4"
+path="res://.godot/imported/SE_evil5.ogg-3851914edcf2eca52903e65af179bbdc.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_evil5.ogg"
+dest_files=["res://.godot/imported/SE_evil5.ogg-3851914edcf2eca52903e65af179bbdc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

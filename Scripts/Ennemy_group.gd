@@ -13,6 +13,7 @@ signal next_player
 
 func _ready():
 	SignalBus.place_combat.connect(place_enemy)
+	SignalBus.defeated.connect(enemy_defeated)
 	visible = false
 	
 func place_enemy(_combat_index, enemies_id, allies_id) :
@@ -29,6 +30,7 @@ func place_enemy(_combat_index, enemies_id, allies_id) :
 	else :
 		for i in enemies.size():
 			enemies[i].position = Vector2(i*-20-16, 0)
+	SignalBus.emit_signal("switch_turn", "ally")
 			
 			
 func _process(_delta):
@@ -54,10 +56,11 @@ func _process(_delta):
 func _action(stack) :
 	SignalBus.emit_signal("battle_dialog_display", "clear")
 	for i in stack :
-		enemies[i].take_damage(1)
+		enemies[i].take_damage(10)
 		await get_tree().create_timer(1).timeout
 	action_queue.clear()
 	is_battling = false
+	check_victory()
 	enemy_turn()
 
 func switch_focus(x,y):
@@ -81,10 +84,18 @@ func _on_attack_pressed():
 	choice.hide()
 	start_choosing()
 
+func enemy_defeated(enemy_id) :
+	enemies.erase(enemy_id)
+	
+func check_victory():
+	if enemies.size() == 0 :
+		$
+
 func enemy_turn() :
+	SignalBus.emit_signal("switch_turn", "enemy")
 	for enemy in enemies :
 		SignalBus.emit_signal("enemy_attack", enemy.ATK)
 		await get_tree().create_timer(1).timeout
 	SignalBus.emit_signal("new_turn")
 	show_choice()
-		
+	SignalBus.emit_signal("switch_turn", "ally")

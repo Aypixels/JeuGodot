@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bldypjafmxhko"
+path="res://.godot/imported/SE_humphrey_down.ogg-e7993ce6eecfa77ad9e22b74dd7e0e99.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_humphrey_down.ogg"
+dest_files=["res://.godot/imported/SE_humphrey_down.ogg-e7993ce6eecfa77ad9e22b74dd7e0e99.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://w44vxxbuasif"
+path="res://.godot/imported/BA_ACS_kel_omori_2.ogg-c6e7be6848966a3cf1afa0171ad9d2eb.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_ACS_kel_omori_2.ogg"
+dest_files=["res://.godot/imported/BA_ACS_kel_omori_2.ogg-c6e7be6848966a3cf1afa0171ad9d2eb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bg6kt7vyppa2j"
+path="res://.godot/imported/xx_kel_whistle.ogg-8208f34a9aff0d73d7258bbbec07c6b8.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/xx_kel_whistle.ogg"
+dest_files=["res://.godot/imported/xx_kel_whistle.ogg-8208f34a9aff0d73d7258bbbec07c6b8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

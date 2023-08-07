@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bryegp11m8mp4"
+path="res://.godot/imported/BA_pierce_heart.ogg-f7ded5734dfc400b09ca94f6f103dac7.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_pierce_heart.ogg"
+dest_files=["res://.godot/imported/BA_pierce_heart.ogg-f7ded5734dfc400b09ca94f6f103dac7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

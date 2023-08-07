@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://kipif2vrsfpe"
+path="res://.godot/imported/mini_csb_death.ogg-76ff98363394ff54c3ec94bcb011f939.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/mini_csb_death.ogg"
+dest_files=["res://.godot/imported/mini_csb_death.ogg-76ff98363394ff54c3ec94bcb011f939.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

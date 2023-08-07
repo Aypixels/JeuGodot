@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dmc2mkbhjaud1"
+path="res://.godot/imported/se_feedback.ogg-68154becd34007bb0845336f4db408f2.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_feedback.ogg"
+dest_files=["res://.godot/imported/se_feedback.ogg-68154becd34007bb0845336f4db408f2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

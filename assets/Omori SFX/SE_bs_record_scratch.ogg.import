@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bn8nahmfhrhrb"
+path="res://.godot/imported/SE_bs_record_scratch.ogg-b1b37b711363f0de9e31d341835d2786.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_bs_record_scratch.ogg"
+dest_files=["res://.godot/imported/SE_bs_record_scratch.ogg-b1b37b711363f0de9e31d341835d2786.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

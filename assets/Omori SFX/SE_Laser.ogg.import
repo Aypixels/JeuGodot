@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bsap28csmgoj4"
+path="res://.godot/imported/SE_Laser.ogg-4b5a424bb4e658b0ee310c8d189c2f15.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_Laser.ogg"
+dest_files=["res://.godot/imported/SE_Laser.ogg-4b5a424bb4e658b0ee310c8d189c2f15.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

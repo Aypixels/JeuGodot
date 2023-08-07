@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://4dli7sgfgn58"
+path="res://.godot/imported/SSFX_Shake.ogg-e2e7956ecf1fa24368e65c0ef31214fe.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SSFX_Shake.ogg"
+dest_files=["res://.godot/imported/SSFX_Shake.ogg-e2e7956ecf1fa24368e65c0ef31214fe.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://yl6jd1xf55as"
+path="res://.godot/imported/se_evilbugs3.ogg-505c665dc223bd3c163ff6c428086ccb.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_evilbugs3.ogg"
+dest_files=["res://.godot/imported/se_evilbugs3.ogg-505c665dc223bd3c163ff6c428086ccb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

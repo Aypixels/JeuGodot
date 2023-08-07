@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bboeej78l3v4m"
+path="res://.godot/imported/se_impact_double.ogg-18268aa944f8ff773d1746a9ea368ebd.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_impact_double.ogg"
+dest_files=["res://.godot/imported/se_impact_double.ogg-18268aa944f8ff773d1746a9ea368ebd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

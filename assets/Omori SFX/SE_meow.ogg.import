@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://tmclsac38fvg"
+path="res://.godot/imported/SE_meow.ogg-fd0f308cb77cd97a01b73964619eb9f5.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_meow.ogg"
+dest_files=["res://.godot/imported/SE_meow.ogg-fd0f308cb77cd97a01b73964619eb9f5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

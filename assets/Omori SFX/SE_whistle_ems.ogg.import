@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bh32e5a2cnxvg"
+path="res://.godot/imported/SE_whistle_ems.ogg-ee3137b34f2dde3290cb11f6b1fc59c9.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_whistle_ems.ogg"
+dest_files=["res://.godot/imported/SE_whistle_ems.ogg-ee3137b34f2dde3290cb11f6b1fc59c9.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

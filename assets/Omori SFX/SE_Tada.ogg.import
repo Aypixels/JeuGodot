@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b6mfg8nw0st32"
+path="res://.godot/imported/SE_Tada.ogg-14fe08fd6ddb2e66930a3d59b8e1c1c8.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_Tada.ogg"
+dest_files=["res://.godot/imported/SE_Tada.ogg-14fe08fd6ddb2e66930a3d59b8e1c1c8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

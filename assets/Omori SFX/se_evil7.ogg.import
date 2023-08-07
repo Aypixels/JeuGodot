@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d1t0petpcahan"
+path="res://.godot/imported/se_evil7.ogg-36e43e10fb08dca1992926507b83d0e7.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_evil7.ogg"
+dest_files=["res://.godot/imported/se_evil7.ogg-36e43e10fb08dca1992926507b83d0e7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

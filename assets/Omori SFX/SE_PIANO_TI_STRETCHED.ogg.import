@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bnbycgfmoit3k"
+path="res://.godot/imported/SE_PIANO_TI_STRETCHED.ogg-0e6592dd01830f352c9633c9fa4c2809.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_PIANO_TI_STRETCHED.ogg"
+dest_files=["res://.godot/imported/SE_PIANO_TI_STRETCHED.ogg-0e6592dd01830f352c9633c9fa4c2809.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

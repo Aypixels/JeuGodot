@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dt2ed23d73wag"
+path="res://.godot/imported/SE_PIANO_DO_OCTAVE.ogg-4bc58a2d28a52789b026808c317b93ba.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_PIANO_DO_OCTAVE.ogg"
+dest_files=["res://.godot/imported/SE_PIANO_DO_OCTAVE.ogg-4bc58a2d28a52789b026808c317b93ba.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

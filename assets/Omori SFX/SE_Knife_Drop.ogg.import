@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://k1e740o62wq5"
+path="res://.godot/imported/SE_Knife_Drop.ogg-8f25eb72699921294db54ef9e7cf6195.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_Knife_Drop.ogg"
+dest_files=["res://.godot/imported/SE_Knife_Drop.ogg-8f25eb72699921294db54ef9e7cf6195.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c1wusjpfqac15"
+path="res://.godot/imported/SYS_super_smash_impact.ogg-b68f22ece09848c37c55376d81334845.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SYS_super_smash_impact.ogg"
+dest_files=["res://.godot/imported/SYS_super_smash_impact.ogg-b68f22ece09848c37c55376d81334845.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

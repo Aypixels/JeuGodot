@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ctqw6giaxwiyu"
+path="res://.godot/imported/SE_locked_door.ogg-bf07ddb055843ea260dcc5cd4e30272a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_locked_door.ogg"
+dest_files=["res://.godot/imported/SE_locked_door.ogg-bf07ddb055843ea260dcc5cd4e30272a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

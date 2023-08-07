@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bc42pmoy0rg6f"
+path="res://.godot/imported/SE_spider_swarm.ogg-d6835bb5931c11b4d5a5a60367dea00a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_spider_swarm.ogg"
+dest_files=["res://.godot/imported/SE_spider_swarm.ogg-d6835bb5931c11b4d5a5a60367dea00a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

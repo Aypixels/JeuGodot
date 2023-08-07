@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dx8k4sllrjbkn"
+path="res://.godot/imported/BA_misfire_magic.ogg-dd69e36c8f0873e072ca5a86be6b14cd.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_misfire_magic.ogg"
+dest_files=["res://.godot/imported/BA_misfire_magic.ogg-dd69e36c8f0873e072ca5a86be6b14cd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

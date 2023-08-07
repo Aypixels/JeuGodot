@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cc167a7ygoqac"
+path="res://.godot/imported/se_thunder_bolt.ogg-9d91e04056d84546cea75f90d3e1d46e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_thunder_bolt.ogg"
+dest_files=["res://.godot/imported/se_thunder_bolt.ogg-9d91e04056d84546cea75f90d3e1d46e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

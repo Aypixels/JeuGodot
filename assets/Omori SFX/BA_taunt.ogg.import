@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://i3rwg4njtp5w"
+path="res://.godot/imported/BA_taunt.ogg-6881c31b784ded220c880fb46a424819.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_taunt.ogg"
+dest_files=["res://.godot/imported/BA_taunt.ogg-6881c31b784ded220c880fb46a424819.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

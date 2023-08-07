@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://balkq77pg0vbh"
+path="res://.godot/imported/BA_calm_down.ogg-04884939507d62a82e9a36fa381650c2.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_calm_down.ogg"
+dest_files=["res://.godot/imported/BA_calm_down.ogg-04884939507d62a82e9a36fa381650c2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

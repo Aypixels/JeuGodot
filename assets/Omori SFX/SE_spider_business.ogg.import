@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://11qu443vka00"
+path="res://.godot/imported/SE_spider_business.ogg-38c119fb136b2ef09292ad1acf3b9616.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_spider_business.ogg"
+dest_files=["res://.godot/imported/SE_spider_business.ogg-38c119fb136b2ef09292ad1acf3b9616.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

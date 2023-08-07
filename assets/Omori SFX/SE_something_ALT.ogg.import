@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ckdhlduh5jjqf"
+path="res://.godot/imported/SE_something_ALT.ogg-a8071443e1e66628c3a9944c47a3d0fa.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_something_ALT.ogg"
+dest_files=["res://.godot/imported/SE_something_ALT.ogg-a8071443e1e66628c3a9944c47a3d0fa.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

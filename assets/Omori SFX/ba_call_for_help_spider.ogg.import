@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bdgymheud7u62"
+path="res://.godot/imported/ba_call_for_help_spider.ogg-cf684418de2a988471dde018fc3a13eb.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/ba_call_for_help_spider.ogg"
+dest_files=["res://.godot/imported/ba_call_for_help_spider.ogg-cf684418de2a988471dde018fc3a13eb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

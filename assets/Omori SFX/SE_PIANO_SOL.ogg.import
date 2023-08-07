@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dpgse864pg1gs"
+path="res://.godot/imported/SE_PIANO_SOL.ogg-b7d64abeaeb01aa77680d4715050fb6b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_PIANO_SOL.ogg"
+dest_files=["res://.godot/imported/SE_PIANO_SOL.ogg-b7d64abeaeb01aa77680d4715050fb6b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

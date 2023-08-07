@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ddbec5q4wmwq6"
+path="res://.godot/imported/BA_basic_attack_solid.ogg-5cac659b783c3828778c9be3af2d40af.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_basic_attack_solid.ogg"
+dest_files=["res://.godot/imported/BA_basic_attack_solid.ogg-5cac659b783c3828778c9be3af2d40af.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

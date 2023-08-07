@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ifqf03sxjv1m"
+path="res://.godot/imported/SYS_you_died.ogg-623ab06b20c823f1a22b85429fbc07ed.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SYS_you_died.ogg"
+dest_files=["res://.godot/imported/SYS_you_died.ogg-623ab06b20c823f1a22b85429fbc07ed.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

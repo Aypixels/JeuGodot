@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dwnj1t36762xp"
+path="res://.godot/imported/GEN_Wham.ogg-d4872fe4c1eb7ff4c0f520f3cdabf7b5.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/GEN_Wham.ogg"
+dest_files=["res://.godot/imported/GEN_Wham.ogg-d4872fe4c1eb7ff4c0f520f3cdabf7b5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ctsm5jcqbeps0"
+path="res://.godot/imported/BA_do_nothing_dialtone.ogg-29a00fbfedab4175a395473ac9380f4e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_do_nothing_dialtone.ogg"
+dest_files=["res://.godot/imported/BA_do_nothing_dialtone.ogg-29a00fbfedab4175a395473ac9380f4e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

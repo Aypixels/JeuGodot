@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://hypr7ihlks8e"
+path="res://.godot/imported/GEN_victory.ogg-4f0e7d0873c406a7947af1e5d69ad5df.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/GEN_victory.ogg"
+dest_files=["res://.godot/imported/GEN_victory.ogg-4f0e7d0873c406a7947af1e5d69ad5df.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://br5hvqj5iv51u"
+path="res://.godot/imported/se_screech.ogg-dd2c9a07f48c25d1a5b77318acadae24.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_screech.ogg"
+dest_files=["res://.godot/imported/se_screech.ogg-dd2c9a07f48c25d1a5b77318acadae24.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

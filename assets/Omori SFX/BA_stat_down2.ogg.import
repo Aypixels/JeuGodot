@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cqrdpuedgfog4"
+path="res://.godot/imported/BA_stat_down2.ogg-483d4a746dfa010a919f878051b5fae4.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_stat_down2.ogg"
+dest_files=["res://.godot/imported/BA_stat_down2.ogg-483d4a746dfa010a919f878051b5fae4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

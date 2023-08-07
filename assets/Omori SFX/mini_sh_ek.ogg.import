@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ild1d5eykytv"
+path="res://.godot/imported/mini_sh_ek.ogg-2fc248c19347c644a83ea0f59ae316ed.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/mini_sh_ek.ogg"
+dest_files=["res://.godot/imported/mini_sh_ek.ogg-2fc248c19347c644a83ea0f59ae316ed.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

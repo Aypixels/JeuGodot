@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cq0yqnm2iuex1"
+path="res://.godot/imported/SE_curtain_1.ogg-a47685e8d184a405b75fa7d6c8ffe0ab.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_curtain_1.ogg"
+dest_files=["res://.godot/imported/SE_curtain_1.ogg-a47685e8d184a405b75fa7d6c8ffe0ab.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cy4rwi87hlfwr"
+path="res://.godot/imported/GEN_mess_paper.ogg-30816619bce55827a9b73d31e5081676.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/GEN_mess_paper.ogg"
+dest_files=["res://.godot/imported/GEN_mess_paper.ogg-30816619bce55827a9b73d31e5081676.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

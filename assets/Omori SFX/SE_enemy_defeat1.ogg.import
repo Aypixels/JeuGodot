@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cjwovcsjbrcw0"
+path="res://.godot/imported/SE_enemy_defeat1.ogg-ace9bf283077d2addccc71c0cc7ae8ca.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_enemy_defeat1.ogg"
+dest_files=["res://.godot/imported/SE_enemy_defeat1.ogg-ace9bf283077d2addccc71c0cc7ae8ca.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -14,6 +14,7 @@ var phrase_end = false
 
 func _ready():
 	SignalBus.battle_dialog_display.connect(on_battle_dialog_display)
+	indicator.visible = false
 	
 func show_text():
 	text_label.visible_characters = 0

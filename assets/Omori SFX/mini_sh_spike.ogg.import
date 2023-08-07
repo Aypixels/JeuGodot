@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cpgwgx6auk1hu"
+path="res://.godot/imported/mini_sh_spike.ogg-555f0a6f14d3a70f96f2ca6171ac7779.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/mini_sh_spike.ogg"
+dest_files=["res://.godot/imported/mini_sh_spike.ogg-555f0a6f14d3a70f96f2ca6171ac7779.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

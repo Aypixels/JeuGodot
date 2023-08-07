@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://braens7rrwp7u"
+path="res://.godot/imported/Thunder9.ogg-eb1c721142b1649d61161f661a36951c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/Thunder9.ogg"
+dest_files=["res://.godot/imported/Thunder9.ogg-eb1c721142b1649d61161f661a36951c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

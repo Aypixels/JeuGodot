@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ccdj2whohqvnd"
+path="res://.godot/imported/BA_annoy.ogg-ee5d8009bae06f59cca733bc7aabe766.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_annoy.ogg"
+dest_files=["res://.godot/imported/BA_annoy.ogg-ee5d8009bae06f59cca733bc7aabe766.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

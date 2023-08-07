@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://1nos6d68co5c"
+path="res://.godot/imported/SE_POLAROID.ogg-fe510a180355e855caab51c04300041c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_POLAROID.ogg"
+dest_files=["res://.godot/imported/SE_POLAROID.ogg-fe510a180355e855caab51c04300041c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

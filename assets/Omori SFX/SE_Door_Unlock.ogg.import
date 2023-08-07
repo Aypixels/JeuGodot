@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://qik5tnrftmsh"
+path="res://.godot/imported/SE_Door_Unlock.ogg-a7c9617e04b5c461d21b637b04d6a2ca.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_Door_Unlock.ogg"
+dest_files=["res://.godot/imported/SE_Door_Unlock.ogg-a7c9617e04b5c461d21b637b04d6a2ca.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

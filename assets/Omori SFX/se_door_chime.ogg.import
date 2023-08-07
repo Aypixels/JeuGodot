@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cebtoaxmhhujw"
+path="res://.godot/imported/se_door_chime.ogg-f8596ba7ecfbf953d69f1561abd4f2e7.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_door_chime.ogg"
+dest_files=["res://.godot/imported/se_door_chime.ogg-f8596ba7ecfbf953d69f1561abd4f2e7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

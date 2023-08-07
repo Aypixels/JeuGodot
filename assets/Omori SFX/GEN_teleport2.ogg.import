@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://be1yn5egfsq7n"
+path="res://.godot/imported/GEN_teleport2.ogg-a105b6d563e28aff1c06e00ddd236b7f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/GEN_teleport2.ogg"
+dest_files=["res://.godot/imported/GEN_teleport2.ogg-a105b6d563e28aff1c06e00ddd236b7f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

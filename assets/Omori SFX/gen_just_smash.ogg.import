@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d0bt5d7i4kvt4"
+path="res://.godot/imported/gen_just_smash.ogg-ce0aecbfc128836fb16dc35c536b1498.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/gen_just_smash.ogg"
+dest_files=["res://.godot/imported/gen_just_smash.ogg-ce0aecbfc128836fb16dc35c536b1498.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

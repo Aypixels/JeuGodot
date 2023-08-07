@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://n5vmjmc30kcd"
+path="res://.godot/imported/BA_shun.ogg-c098e81bb37bc9f4bcaba698a4ee22eb.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_shun.ogg"
+dest_files=["res://.godot/imported/BA_shun.ogg-c098e81bb37bc9f4bcaba698a4ee22eb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

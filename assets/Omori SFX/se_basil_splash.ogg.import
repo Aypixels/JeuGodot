@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bddfg0q3ucr1x"
+path="res://.godot/imported/se_basil_splash.ogg-2941e94474c73fc8b2c84e057aceee95.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_basil_splash.ogg"
+dest_files=["res://.godot/imported/se_basil_splash.ogg-2941e94474c73fc8b2c84e057aceee95.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

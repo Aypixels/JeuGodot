@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dwvc2puiaibqf"
+path="res://.godot/imported/GEN_boing.ogg-04f7ae72be0b068a3bba2dfc3ec62e70.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/GEN_boing.ogg"
+dest_files=["res://.godot/imported/GEN_boing.ogg-04f7ae72be0b068a3bba2dfc3ec62e70.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b6ssnijc5lmka"
+path="res://.godot/imported/cutscene_the_truth.ogg-7766b2c9e694cbd786b63124cd9936ab.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/cutscene_the_truth.ogg"
+dest_files=["res://.godot/imported/cutscene_the_truth.ogg-7766b2c9e694cbd786b63124cd9936ab.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

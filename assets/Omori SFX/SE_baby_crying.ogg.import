@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://derp4jjwjqdho"
+path="res://.godot/imported/SE_baby_crying.ogg-1a152eb37c702559f5d8f98c6a9f9633.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_baby_crying.ogg"
+dest_files=["res://.godot/imported/SE_baby_crying.ogg-1a152eb37c702559f5d8f98c6a9f9633.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

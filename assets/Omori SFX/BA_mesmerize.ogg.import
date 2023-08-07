@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://binytixjj2747"
+path="res://.godot/imported/BA_mesmerize.ogg-42a2e615dd8c98701395dac85e7dfd7e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_mesmerize.ogg"
+dest_files=["res://.godot/imported/BA_mesmerize.ogg-42a2e615dd8c98701395dac85e7dfd7e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

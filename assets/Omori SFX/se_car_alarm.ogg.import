@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bot43db1jxjit"
+path="res://.godot/imported/se_car_alarm.ogg-8949f919ef3431eddc1153e6ccef7e6a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_car_alarm.ogg"
+dest_files=["res://.godot/imported/se_car_alarm.ogg-8949f919ef3431eddc1153e6ccef7e6a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

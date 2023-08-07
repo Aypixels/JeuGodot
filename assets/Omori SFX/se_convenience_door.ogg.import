@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://23enfbpdlv1c"
+path="res://.godot/imported/se_convenience_door.ogg-9fafc9a0f0d87dc30dbca469befbdf9b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_convenience_door.ogg"
+dest_files=["res://.godot/imported/se_convenience_door.ogg-9fafc9a0f0d87dc30dbca469befbdf9b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

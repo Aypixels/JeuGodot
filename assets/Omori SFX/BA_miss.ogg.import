@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dfwh4mfmidmvo"
+path="res://.godot/imported/BA_miss.ogg-096eb922067e4421656c04030806e29a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_miss.ogg"
+dest_files=["res://.godot/imported/BA_miss.ogg-096eb922067e4421656c04030806e29a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

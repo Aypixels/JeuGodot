@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bovkg3b0vi236"
+path="res://.godot/imported/SE_cutlery.ogg-3d88efd409daf2ed19e1a2bd7abc803d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_cutlery.ogg"
+dest_files=["res://.godot/imported/SE_cutlery.ogg-3d88efd409daf2ed19e1a2bd7abc803d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

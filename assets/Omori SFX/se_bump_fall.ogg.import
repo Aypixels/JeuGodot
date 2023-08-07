@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bvdo16os4pew5"
+path="res://.godot/imported/se_bump_fall.ogg-442370bae04f8383d12f76c6b9f8692d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_bump_fall.ogg"
+dest_files=["res://.godot/imported/se_bump_fall.ogg-442370bae04f8383d12f76c6b9f8692d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

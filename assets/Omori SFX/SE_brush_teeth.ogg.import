@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ckuovsdl6lusr"
+path="res://.godot/imported/SE_brush_teeth.ogg-e615adedcd91e6dc1d2329d901d276d2.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_brush_teeth.ogg"
+dest_files=["res://.godot/imported/SE_brush_teeth.ogg-e615adedcd91e6dc1d2329d901d276d2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

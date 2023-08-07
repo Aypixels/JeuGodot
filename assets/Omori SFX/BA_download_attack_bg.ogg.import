@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cqm38hrxnrbx2"
+path="res://.godot/imported/BA_download_attack_bg.ogg-665cf0fa5c397cf4a7dc83d0857e9c95.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_download_attack_bg.ogg"
+dest_files=["res://.godot/imported/BA_download_attack_bg.ogg-665cf0fa5c397cf4a7dc83d0857e9c95.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

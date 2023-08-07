@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dxu8vu8gkkkit"
+path="res://.godot/imported/SE_pot_smash.ogg-f1472f2891bfc8cffcb43025afadcbf2.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_pot_smash.ogg"
+dest_files=["res://.godot/imported/SE_pot_smash.ogg-f1472f2891bfc8cffcb43025afadcbf2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

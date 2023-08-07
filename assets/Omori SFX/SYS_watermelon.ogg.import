@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d1dlo6lkf3f5t"
+path="res://.godot/imported/SYS_watermelon.ogg-231d8e5ca0f5901449584f5895a861d7.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SYS_watermelon.ogg"
+dest_files=["res://.godot/imported/SYS_watermelon.ogg-231d8e5ca0f5901449584f5895a861d7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

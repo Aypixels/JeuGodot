@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://jki0eluw6k44"
+path="res://.godot/imported/SE_CorkPop.ogg-890e142b8e0feb5f5d082a84c4a33974.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_CorkPop.ogg"
+dest_files=["res://.godot/imported/SE_CorkPop.ogg-890e142b8e0feb5f5d082a84c4a33974.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dbbqapl8xds27"
+path="res://.godot/imported/se_slidingdoor.ogg-9d35a0bab057ce9890869fc66a70ea1b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_slidingdoor.ogg"
+dest_files=["res://.godot/imported/se_slidingdoor.ogg-9d35a0bab057ce9890869fc66a70ea1b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

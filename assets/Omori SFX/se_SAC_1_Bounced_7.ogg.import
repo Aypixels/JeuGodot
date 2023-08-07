@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b2o7nyiw6uh36"
+path="res://.godot/imported/se_SAC_1_Bounced_7.ogg-18da1dfe16a91d8a2ebbb2cd566fa362.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_SAC_1_Bounced_7.ogg"
+dest_files=["res://.godot/imported/se_SAC_1_Bounced_7.ogg-18da1dfe16a91d8a2ebbb2cd566fa362.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

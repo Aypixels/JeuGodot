@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cp1v1usfcm6vu"
+path="res://.godot/imported/SSFX_Glow.ogg-e4526eed90da64156b4f46f44b99bcdf.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SSFX_Glow.ogg"
+dest_files=["res://.godot/imported/SSFX_Glow.ogg-e4526eed90da64156b4f46f44b99bcdf.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

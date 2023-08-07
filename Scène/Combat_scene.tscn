@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://dqygux301tgms"]
+[gd_scene load_steps=25 format=3 uid="uid://dqygux301tgms"]
 
 [ext_resource type="Script" path="res://Scripts/Combat_scene.gd" id="1_3hhq4"]
 [ext_resource type="Texture2D" uid="uid://bqq86sl8lqoln" path="res://assets/battle_backgrounds/something_fight.png" id="2_sjn1b"]
@@ -13,7 +13,8 @@
 [ext_resource type="FontFile" uid="uid://dw0xt1bycx0el" path="res://assets/Determination/DTM-Sans.ttf" id="9_o5a47"]
 [ext_resource type="Texture2D" uid="uid://b5woq1mddvxsg" path="res://assets/3414630-small-removebg-preview.png" id="10_r6j7g"]
 [ext_resource type="FontFile" uid="uid://b4sngv2t4bmog" path="res://assets/Determination/DTM-Mono.otf" id="11_pdlsd"]
-[ext_resource type="Texture2D" uid="uid://cspqyxhrpe1id" path="res://assets/Base_Sprite_Fight.png" id="14_nbnj7"]
+[ext_resource type="Texture2D" uid="uid://bpn087oxw2w45" path="res://assets/enemy_turn.png" id="14_o3f1g"]
+[ext_resource type="Texture2D" uid="uid://dmbf4f8kntspa" path="res://assets/your_turn.png" id="15_3x4bb"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_k3wr2"]
 animations = [{
@@ -92,18 +93,18 @@ bg_color = Color(1, 0.94902, 0, 1)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("14_nbnj7")
+"texture": ExtResource("15_3x4bb")
 }],
 "loop": true,
-"name": &"enemy_turn",
+"name": &"ally_turn",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("14_nbnj7")
+"texture": ExtResource("14_o3f1g")
 }],
 "loop": true,
-"name": &"your_turn",
+"name": &"enemy_turn",
 "speed": 5.0
 }]
 
@@ -127,6 +128,7 @@ position = Vector2(0, 0)
 [node name="choice" type="CanvasLayer" parent="."]
 
 [node name="Attack" type="Button" parent="choice"]
+texture_filter = 1
 offset_left = 897.0
 offset_top = 516.0
 offset_right = 960.0
@@ -139,6 +141,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_kyrs8")
 text = "Attack"
 
 [node name="Special" type="Button" parent="choice"]
+texture_filter = 1
 offset_left = 897.0
 offset_top = 575.0
 offset_right = 960.0
@@ -151,6 +154,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_qcj7r")
 text = "Special"
 
 [node name="Run" type="Button" parent="choice"]
+texture_filter = 1
 offset_left = 1018.0
 offset_top = 575.0
 offset_right = 1081.0
@@ -158,11 +162,12 @@ offset_bottom = 606.0
 scale = Vector2(1.4, 1.32)
 theme_override_colors/font_color = Color(0.843137, 0.858824, 0, 1)
 theme_override_fonts/font = ExtResource("5_q57hc")
-theme_override_font_sizes/font_size = 23
+theme_override_font_sizes/font_size = 22
 theme_override_styles/normal = SubResource("StyleBoxFlat_jnwjt")
 text = "Run"
 
 [node name="Items" type="Button" parent="choice"]
+texture_filter = 1
 offset_left = 1018.0
 offset_top = 516.0
 offset_right = 1070.0
@@ -170,7 +175,7 @@ offset_bottom = 547.0
 scale = Vector2(1.68, 1.32)
 theme_override_colors/font_color = Color(0.843137, 0.858824, 0, 1)
 theme_override_fonts/font = ExtResource("5_q57hc")
-theme_override_font_sizes/font_size = 17
+theme_override_font_sizes/font_size = 16
 theme_override_styles/normal = SubResource("StyleBoxFlat_6e5i2")
 text = "Items"
 
@@ -248,10 +253,10 @@ theme_override_font_sizes/normal_font_size = 27
 
 [node name="Turn" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-94.5, 46.25)
-scale = Vector2(0.5, 0.49)
+position = Vector2(-94, 45)
+scale = Vector2(0.0811856, 0.0781186)
 sprite_frames = SubResource("SpriteFrames_ejnw0")
-animation = &"your_turn"
+animation = &"ally_turn"
 
 [connection signal="next_player" from="Ennemy_group" to="Ally_group" method="_on_ennemy_group_next_player"]
 [connection signal="pressed" from="choice/Attack" to="Ennemy_group" method="_on_attack_pressed"]

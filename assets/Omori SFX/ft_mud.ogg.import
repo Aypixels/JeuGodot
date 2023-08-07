@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c2qotdprqwh05"
+path="res://.godot/imported/ft_mud.ogg-9eeb0d9ea3c2161b2824a6bdb6d989be.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/ft_mud.ogg"
+dest_files=["res://.godot/imported/ft_mud.ogg-9eeb0d9ea3c2161b2824a6bdb6d989be.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

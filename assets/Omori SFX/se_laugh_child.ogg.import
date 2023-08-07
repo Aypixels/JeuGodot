@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cljo0m0kwnf6g"
+path="res://.godot/imported/se_laugh_child.ogg-ca32feda5246bdba782384822e8300f9.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_laugh_child.ogg"
+dest_files=["res://.godot/imported/se_laugh_child.ogg-ca32feda5246bdba782384822e8300f9.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

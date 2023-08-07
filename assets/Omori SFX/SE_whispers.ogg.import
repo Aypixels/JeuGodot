@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ctwfc20lx1odo"
+path="res://.godot/imported/SE_whispers.ogg-e2410d2e09d08a679037cb5c8fe39b7a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_whispers.ogg"
+dest_files=["res://.godot/imported/SE_whispers.ogg-e2410d2e09d08a679037cb5c8fe39b7a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

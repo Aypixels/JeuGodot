@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bqfrff3co6fbv"
+path="res://.godot/imported/SE_lightbulb_screw_2.ogg-29f659bf866b1817a0d8f04e4168e6f4.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_lightbulb_screw_2.ogg"
+dest_files=["res://.godot/imported/SE_lightbulb_screw_2.ogg-29f659bf866b1817a0d8f04e4168e6f4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

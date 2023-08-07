@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bsigj58tbjb4l"
+path="res://.godot/imported/SE_plop_cardboard.ogg-eb3d8820ac60238fdaf9214c9cda26fe.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_plop_cardboard.ogg"
+dest_files=["res://.godot/imported/SE_plop_cardboard.ogg-eb3d8820ac60238fdaf9214c9cda26fe.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

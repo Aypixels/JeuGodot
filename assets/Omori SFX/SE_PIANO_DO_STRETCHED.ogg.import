@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://crdecknewqqph"
+path="res://.godot/imported/SE_PIANO_DO_STRETCHED.ogg-1c2dacbba4cc3b7fca943e1906581beb.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_PIANO_DO_STRETCHED.ogg"
+dest_files=["res://.godot/imported/SE_PIANO_DO_STRETCHED.ogg-1c2dacbba4cc3b7fca943e1906581beb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dicno1dq1knpw"
+path="res://.godot/imported/se_BiteCreakBloodJuicy_002.ogg-0635b540e13710c23c97e92cacf05409.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_BiteCreakBloodJuicy_002.ogg"
+dest_files=["res://.godot/imported/se_BiteCreakBloodJuicy_002.ogg-0635b540e13710c23c97e92cacf05409.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

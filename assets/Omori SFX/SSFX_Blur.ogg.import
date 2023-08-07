@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://clcnbbx5t7ts4"
+path="res://.godot/imported/SSFX_Blur.ogg-00425702bd0607f7be1267f7c746249f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SSFX_Blur.ogg"
+dest_files=["res://.godot/imported/SSFX_Blur.ogg-00425702bd0607f7be1267f7c746249f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

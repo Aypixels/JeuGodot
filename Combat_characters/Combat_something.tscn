@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://cmb2qj25b2pu2"]
+[gd_scene load_steps=38 format=3 uid="uid://cmb2qj25b2pu2"]
 
 [ext_resource type="Script" path="res://Combat_characters/Combat_something.gd" id="1_armpb"]
 [ext_resource type="Texture2D" uid="uid://cojh0hl3mner4" path="res://Animation/Something animation/Disappear/frame_10_delay-0.05s.png" id="1_s165m"]
@@ -34,6 +34,8 @@
 [ext_resource type="Texture2D" uid="uid://c88inicjpj02j" path="res://Animation/Something animation/Walk/frame_2_delay-0.22s.png" id="31_jhllr"]
 [ext_resource type="Texture2D" uid="uid://c1flkevifk06j" path="res://Animation/Something animation/Walk/frame_3_delay-0.22s.png" id="32_a1c35"]
 [ext_resource type="Texture2D" uid="uid://b5woq1mddvxsg" path="res://assets/3414630-small-removebg-preview.png" id="33_08752"]
+[ext_resource type="AudioStream" uid="uid://bngk58tlu60wq" path="res://assets/Omori SFX/SE_Cut.ogg" id="35_mua2c"]
+[ext_resource type="AudioStream" uid="uid://duqrg056d07gf" path="res://assets/Undertale Sound Effect - Monster Dying.mp3" id="36_i4ljl"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gsthi"]
 animations = [{
@@ -215,8 +217,7 @@ texture_filter = 1
 position = Vector2(0, -3)
 scale = Vector2(0.28125, 0.234375)
 sprite_frames = SubResource("SpriteFrames_gsthi")
-animation = &"hurt"
-frame_progress = 0.766386
+animation = &"disappear"
 
 [node name="focus" type="Sprite2D" parent="."]
 visible = false
@@ -226,3 +227,10 @@ position = Vector2(0, -20)
 scale = Vector2(0.0159176, 0.0166667)
 texture = ExtResource("33_08752")
 flip_v = true
+
+[node name="damage_taken" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("35_mua2c")
+
+[node name="defeated" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("36_i4ljl")
+volume_db = 6.42

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ctp3pfjmy3hlx"
+path="res://.godot/imported/SE_bs_weird_cat.ogg-41a185902b32edebf476df80e3283c7b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_bs_weird_cat.ogg"
+dest_files=["res://.godot/imported/SE_bs_weird_cat.ogg-41a185902b32edebf476df80e3283c7b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

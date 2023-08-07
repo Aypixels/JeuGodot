@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dij6c4r2p4lf1"
+path="res://.godot/imported/BA_speed_up.ogg-5ca588695d6314a15c20624f9d2c2600.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_speed_up.ogg"
+dest_files=["res://.godot/imported/BA_speed_up.ogg-5ca588695d6314a15c20624f9d2c2600.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

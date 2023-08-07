@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://baxsdevvh8dmi"
+path="res://.godot/imported/se_evil2.ogg-4ed379c08551ddf12231a12c4eed22e2.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_evil2.ogg"
+dest_files=["res://.godot/imported/se_evil2.ogg-4ed379c08551ddf12231a12c4eed22e2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

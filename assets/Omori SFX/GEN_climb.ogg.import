@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://del5vjbv0ykrn"
+path="res://.godot/imported/GEN_climb.ogg-2436a3ddab38ec604a62c4d948b7201c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/GEN_climb.ogg"
+dest_files=["res://.godot/imported/GEN_climb.ogg-2436a3ddab38ec604a62c4d948b7201c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

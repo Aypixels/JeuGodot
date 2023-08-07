@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dopm5d8vvs6df"
+path="res://.godot/imported/se_quicksand.ogg-824fd099e5bbe5de8e5673326bc184af.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_quicksand.ogg"
+dest_files=["res://.godot/imported/se_quicksand.ogg-824fd099e5bbe5de8e5673326bc184af.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

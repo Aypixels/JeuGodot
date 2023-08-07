@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cwm2y02d03m4b"
+path="res://.godot/imported/se_glitches2.ogg-d687e410d5c2b628209cbff9c16988c4.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/se_glitches2.ogg"
+dest_files=["res://.godot/imported/se_glitches2.ogg-d687e410d5c2b628209cbff9c16988c4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

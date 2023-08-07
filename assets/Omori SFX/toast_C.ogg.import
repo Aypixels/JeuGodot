@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://djyawf6xjlxby"
+path="res://.godot/imported/toast_C.ogg-518c8e3ea4319a6bbe5a96f15a668362.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/toast_C.ogg"
+dest_files=["res://.godot/imported/toast_C.ogg-518c8e3ea4319a6bbe5a96f15a668362.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

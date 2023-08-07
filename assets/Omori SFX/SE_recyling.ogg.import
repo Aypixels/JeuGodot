@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://08lhnpooadar"
+path="res://.godot/imported/SE_recyling.ogg-84e34fdf4c61e0a8e4a27a89350f2170.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_recyling.ogg"
+dest_files=["res://.godot/imported/SE_recyling.ogg-84e34fdf4c61e0a8e4a27a89350f2170.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

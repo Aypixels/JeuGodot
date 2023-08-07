@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://q3rcr053ctsh"
+path="res://.godot/imported/SE_barrel_smash.ogg-4e783faec0941fba15333012ae4fa9b0.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_barrel_smash.ogg"
+dest_files=["res://.godot/imported/SE_barrel_smash.ogg-4e783faec0941fba15333012ae4fa9b0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

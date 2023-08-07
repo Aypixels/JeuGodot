@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b66c5fl4q1rp4"
+path="res://.godot/imported/SE_robo_power.ogg-765e3d150aeb8dc766b58458db519f9e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_robo_power.ogg"
+dest_files=["res://.godot/imported/SE_robo_power.ogg-765e3d150aeb8dc766b58458db519f9e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

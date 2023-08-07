@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cdawghb75ey0m"
+path="res://.godot/imported/SE_big_sneeze.ogg-3bf5a254caf7988e178f20f809223627.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_big_sneeze.ogg"
+dest_files=["res://.godot/imported/SE_big_sneeze.ogg-3bf5a254caf7988e178f20f809223627.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

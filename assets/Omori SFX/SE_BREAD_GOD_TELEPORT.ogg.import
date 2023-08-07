@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://y2nt1xky7xu4"
+path="res://.godot/imported/SE_BREAD_GOD_TELEPORT.ogg-06b8965224acd161f4055b455dde4f48.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_BREAD_GOD_TELEPORT.ogg"
+dest_files=["res://.godot/imported/SE_BREAD_GOD_TELEPORT.ogg-06b8965224acd161f4055b455dde4f48.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

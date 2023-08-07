@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cnxpmwu5jrr84"
+path="res://.godot/imported/SE_spooks.ogg-20c104bf6227e463880b3632cfb9cfc6.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_spooks.ogg"
+dest_files=["res://.godot/imported/SE_spooks.ogg-20c104bf6227e463880b3632cfb9cfc6.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

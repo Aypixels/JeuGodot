@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://lvokqakql45t"
+path="res://.godot/imported/SE_crow.ogg-b795b5c2a1ebc706c95203ce118fa7a5.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_crow.ogg"
+dest_files=["res://.godot/imported/SE_crow.ogg-b795b5c2a1ebc706c95203ce118fa7a5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

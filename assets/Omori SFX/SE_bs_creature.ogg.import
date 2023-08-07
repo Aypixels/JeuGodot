@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://blrb8pgy1hdps"
+path="res://.godot/imported/SE_bs_creature.ogg-43071f8953e1fe678849747df8d54687.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_bs_creature.ogg"
+dest_files=["res://.godot/imported/SE_bs_creature.ogg-43071f8953e1fe678849747df8d54687.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

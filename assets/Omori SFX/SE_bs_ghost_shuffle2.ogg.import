@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d3kh2d8oi6dia"
+path="res://.godot/imported/SE_bs_ghost_shuffle2.ogg-c3963de3960912529017c076611e1c8d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_bs_ghost_shuffle2.ogg"
+dest_files=["res://.godot/imported/SE_bs_ghost_shuffle2.ogg-c3963de3960912529017c076611e1c8d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b1esl4l3gcnop"
+path="res://.godot/imported/SE_potion_hit.ogg-063f8e26b2ac99250e313d4baa2df01b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_potion_hit.ogg"
+dest_files=["res://.godot/imported/SE_potion_hit.ogg-063f8e26b2ac99250e313d4baa2df01b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

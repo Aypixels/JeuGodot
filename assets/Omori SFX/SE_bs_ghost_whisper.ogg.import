@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://claogbrhy5b7n"
+path="res://.godot/imported/SE_bs_ghost_whisper.ogg-4274c35d478593db8bc53d9a747ee077.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_bs_ghost_whisper.ogg"
+dest_files=["res://.godot/imported/SE_bs_ghost_whisper.ogg-4274c35d478593db8bc53d9a747ee077.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

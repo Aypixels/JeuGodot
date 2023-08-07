@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bjxumjv0xga70"
+path="res://.godot/imported/SE_bomb_platform.ogg-6c338251e29ea376b4893b99610d87ef.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_bomb_platform.ogg"
+dest_files=["res://.godot/imported/SE_bomb_platform.ogg-6c338251e29ea376b4893b99610d87ef.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

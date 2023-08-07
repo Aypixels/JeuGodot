@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://fx22ygajcfg6"
+path="res://.godot/imported/SE_light_match.ogg-4eb043d1c61df78343fd9a32911ac40d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_light_match.ogg"
+dest_files=["res://.godot/imported/SE_light_match.ogg-4eb043d1c61df78343fd9a32911ac40d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

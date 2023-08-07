@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://3qhbrn61ilf6"
+path="res://.godot/imported/clambox_7.ogg-f7db4695fc08a2faa577790570b27e19.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/clambox_7.ogg"
+dest_files=["res://.godot/imported/clambox_7.ogg-f7db4695fc08a2faa577790570b27e19.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

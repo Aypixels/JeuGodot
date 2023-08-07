@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bcl131ltvkp3h"
+path="res://.godot/imported/BA_Sad_Music.ogg-c7db7bb69117e3f01ea1ac96307d3505.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_Sad_Music.ogg"
+dest_files=["res://.godot/imported/BA_Sad_Music.ogg-c7db7bb69117e3f01ea1ac96307d3505.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

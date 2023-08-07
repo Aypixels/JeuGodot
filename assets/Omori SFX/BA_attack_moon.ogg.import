@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dyweewc00eh88"
+path="res://.godot/imported/BA_attack_moon.ogg-d5ef447d8651b676d9e6f4657cd0d65b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_attack_moon.ogg"
+dest_files=["res://.godot/imported/BA_attack_moon.ogg-d5ef447d8651b676d9e6f4657cd0d65b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

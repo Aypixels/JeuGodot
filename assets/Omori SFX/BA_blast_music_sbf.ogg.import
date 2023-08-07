@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b7loosbdm4h8i"
+path="res://.godot/imported/BA_blast_music_sbf.ogg-571c26eee35517f0635416a3651918a1.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_blast_music_sbf.ogg"
+dest_files=["res://.godot/imported/BA_blast_music_sbf.ogg-571c26eee35517f0635416a3651918a1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

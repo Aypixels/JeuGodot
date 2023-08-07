@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bjuha746p3so5"
+path="res://.godot/imported/SE_neo_deep_well_explodes.ogg-72bd83912e5f17cad5680d83a1f8b81c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_neo_deep_well_explodes.ogg"
+dest_files=["res://.godot/imported/SE_neo_deep_well_explodes.ogg-72bd83912e5f17cad5680d83a1f8b81c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cqw6yra3xk2mh"
+path="res://.godot/imported/SE_blackspace_NPC2.ogg-170834be4e9b9ed186c22e9c15497975.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_blackspace_NPC2.ogg"
+dest_files=["res://.godot/imported/SE_blackspace_NPC2.ogg-170834be4e9b9ed186c22e9c15497975.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

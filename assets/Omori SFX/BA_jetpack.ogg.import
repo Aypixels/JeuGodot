@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bk0mvr6drq70k"
+path="res://.godot/imported/BA_jetpack.ogg-1de772b74bf2867a14e70a9701f57e79.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/BA_jetpack.ogg"
+dest_files=["res://.godot/imported/BA_jetpack.ogg-1de772b74bf2867a14e70a9701f57e79.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

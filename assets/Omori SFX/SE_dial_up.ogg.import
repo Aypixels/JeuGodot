@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://xvwi3qbnv77s"
+path="res://.godot/imported/SE_dial_up.ogg-a499877f4cab82cfc49a0f4f7741a01a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_dial_up.ogg"
+dest_files=["res://.godot/imported/SE_dial_up.ogg-a499877f4cab82cfc49a0f4f7741a01a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

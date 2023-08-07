@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dmk6wtxiqpp1t"
+path="res://.godot/imported/SE_bed_shuffle.ogg-6272f40c9faccd88e07642f167e917b0.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_bed_shuffle.ogg"
+dest_files=["res://.godot/imported/SE_bed_shuffle.ogg-6272f40c9faccd88e07642f167e917b0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

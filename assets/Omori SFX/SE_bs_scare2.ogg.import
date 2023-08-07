@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dvevl0o46umo4"
+path="res://.godot/imported/SE_bs_scare2.ogg-33f068bce9ccb9742d6dee7e27f05c15.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Omori SFX/SE_bs_scare2.ogg"
+dest_files=["res://.godot/imported/SE_bs_scare2.ogg-33f068bce9ccb9742d6dee7e27f05c15.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

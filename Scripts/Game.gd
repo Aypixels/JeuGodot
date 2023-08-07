@@ -6,7 +6,9 @@ var combat : Node2D
 var current_allies = ["player"]
 @onready var fondu = $Fondu/AnimationPlayer
 
-var Frisk = [20,20,1]
+var allies = { 
+	"Frisk" : [20,20,1] 
+}
 
 func _ready():
 	current_level = load(start_scene).instantiate()
@@ -34,11 +36,11 @@ func start_combat(combat_index, enemies) :
 	$Combat_scene/Camera2D.enabled = true
 	$Level.visible = false
 	SignalBus.emit_signal("place_combat", combat_index, enemies, current_allies)
-	SignalBus.emit_signal("update_FriskUI", Frisk[0], Frisk[1], Frisk[2])
+	SignalBus.emit_signal("update_FriskUI", allies["Frisk"][0], allies["Frisk"][1], allies["Frisk"][2])
 	
 	
 func combat_won() :
-	Frisk[1] = $Combat_scene/Ally_group/Combat_player.get_hp()
+	allies["Frisk"][1] = $Combat_scene/Ally_group/Combat_player.HP
 	await get_tree().create_timer(1.5).timeout
 	fondu.play("fondu")
 	await fondu.animation_finished

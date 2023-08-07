@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://bqlb60vpnbe2b"]
+[gd_scene load_steps=55 format=3 uid="uid://bqlb60vpnbe2b"]
 
 [ext_resource type="Texture2D" uid="uid://0p8jtoy8jr0o" path="res://tilset/dungeon_sheet.png" id="1_jdsty"]
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_m43nj"]
@@ -4439,6 +4439,9 @@ size = Vector2(38, 39)
 a = Vector2(52, 2)
 b = Vector2(117, 2)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8uscl"]
+size = Vector2(28, 20)
+
 [node name="Tutoriel" type="Node2D"]
 process_mode = 1
 metadata/_edit_horizontal_guides_ = []
@@ -4664,6 +4667,12 @@ script = ExtResource("25_xotxv")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="End_of_road"]
 position = Vector2(114, -217)
 shape = SubResource("SegmentShape2D_sjipi")
+
+[node name="Go_to_castle" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Go_to_castle"]
+position = Vector2(526, -607)
+shape = SubResource("RectangleShape2D_8uscl")
 
 [connection signal="body_entered" from="Gate/Gate_area" to="Gate/Gate_area" method="_on_body_entered"]
 [connection signal="body_exited" from="Gate/Gate_area" to="Gate/Gate_area" method="_on_body_exited"]

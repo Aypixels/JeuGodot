@@ -51,7 +51,7 @@ func receive_dmg(DMG):
 			break
 		
 func current_ally_atk() :
-	return allies[index].get_atk()
+	return allies[index].ATK
 	
 
 func _on_run_pressed():

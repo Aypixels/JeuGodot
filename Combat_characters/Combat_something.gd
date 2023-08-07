@@ -38,6 +38,7 @@ func _process(_delta):
 	if animation_player.frame == 15 and HP < 1:
 		visible = false
 
+
 func _defeated() :
 	SignalBus.emit_signal("defeated", $".")
 	defeated.play()

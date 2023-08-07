@@ -35,8 +35,7 @@ func get_stats(Maxhp, current_hp, lvl) :
 	HP = current_hp
 	LV = lvl
 	
-func get_hp(): return HP
-func get_atk() : return ATK
+
 	
 	
 

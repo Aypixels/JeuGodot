@@ -7,13 +7,13 @@ extends AnimatedSprite2D
 var health : int
 
 func _ready():
-	SignalBus.set_up_FriskUI.connect(set_up)
+	SignalBus.update_FriskUI.connect(update)
 	
-func set_up(Maxhp, current_hp, lv):
-	lvl.text = "LV "+lv 
-	hp.text = current_hp+"/"+Maxhp
-	health = int(current_hp)
-	health_bar.max_value=int(Maxhp)
+func update(Maxhp, current_hp, lv):
+	lvl.text = "LV "+str(lv)
+	hp.text = str(current_hp)+"/"+str(Maxhp)
+	health = current_hp
+	health_bar.max_value=Maxhp
 
 func _process(_delta):
 	health_bar.value=health

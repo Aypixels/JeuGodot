@@ -32,7 +32,7 @@ func start_combat(combat_index, enemies) :
 	$Combat_scene/Camera2D.enabled = true
 	$Level.visible = false
 	SignalBus.emit_signal("place_combat", combat_index, enemies, current_allies)
-	SignalBus.emit_signal("set_up_FriskUI", str(Frisk[0]), str(Frisk[1]), str(Frisk[2]))
+	SignalBus.emit_signal("update_FriskUI", Frisk[0], Frisk[1], Frisk[2])
 	
 	
 	

@@ -22,12 +22,14 @@ scale = Vector2(0.207539, 0.236842)
 texture = ExtResource("2_1acxv")
 
 [node name="Text" type="RichTextLabel" parent="Dialogbox2"]
+texture_filter = 1
 offset_left = -55.0
 offset_top = -12.0
-offset_right = 372.0
-offset_bottom = 93.0
-scale = Vector2(0.249183, 0.266893)
+offset_right = 624.0
+offset_bottom = 132.0
+scale = Vector2(0.154346, 0.186892)
 theme_override_fonts/normal_font = ExtResource("3_q7p11")
+theme_override_font_sizes/normal_font_size = 27
 bbcode_enabled = true
 
 [node name="Name" type="RichTextLabel" parent="Dialogbox2"]
@@ -35,7 +37,7 @@ offset_left = -50.0
 offset_top = -22.0
 offset_right = 99.0
 offset_bottom = -1.0
-scale = Vector2(0.146467, 0.28)
+scale = Vector2(0.146467, 0.24)
 theme_override_fonts/normal_font = ExtResource("4_hoye6")
 bbcode_enabled = true
 

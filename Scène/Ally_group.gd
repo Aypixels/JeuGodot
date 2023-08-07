@@ -7,6 +7,7 @@ var index = 0
 
 func _ready():
 	SignalBus.place_combat.connect(place_ally)
+	SignalBus.enemy_attack.connect(receive_dmg)
 	visible = false
 	
 func place_ally(_combat_index, enemies_id, allies_id) :
@@ -43,7 +44,13 @@ func switch_focus(x,y):
 	allies[x].focus()
 	allies[y].unfocus()
 	
-
+func receive_dmg(DMG):
+	for ally in allies :
+		if ally.HP > 0:
+			ally.take_damage(DMG)
+			break
+		
+		
 func _on_run_pressed():
 	if enemies[0] == "something" :
 		SignalBus.emit_signal("battle_dialog_display", "something_run")

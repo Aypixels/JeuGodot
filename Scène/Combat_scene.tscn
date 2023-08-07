@@ -227,7 +227,6 @@ scale = Vector2(0.193135, 0.232939)
 theme_override_fonts/normal_font = ExtResource("11_pdlsd")
 theme_override_font_sizes/normal_font_size = 27
 
-[connection signal="new_turn" from="Ennemy_group" to="Ally_group" method="_on_ennemy_group_new_turn"]
 [connection signal="next_player" from="Ennemy_group" to="Ally_group" method="_on_ennemy_group_next_player"]
 [connection signal="pressed" from="choice/Attack" to="Ennemy_group" method="_on_attack_pressed"]
 [connection signal="pressed" from="choice/Run" to="Ally_group" method="_on_run_pressed"]

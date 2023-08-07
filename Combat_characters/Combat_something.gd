@@ -9,13 +9,9 @@ func _ready():
 	$AnimatedSprite2D.play("walk")
 	
 var Max_health : int = 20
+var ATK = 5
+var HP : int = 20 
 
-var health : int = 20 :
-	set(value) :
-		health = value
-		_update_health()
-		_play_animation()
-		
 func _update_health() :
 	pass
 
@@ -30,7 +26,9 @@ func unfocus():
 	_focus.hide()
 	
 func take_damage(value):
-	health -= value
+	HP -= value
+	_update_health()
+	_play_animation()
 
 func _process(_delta):
 	if hurt == true and animation_player.frame == 4 :

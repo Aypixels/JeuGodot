@@ -12,6 +12,7 @@ func _ready() :
 	position.y = 430
 	SignalBus.end_road.connect(end_of_road)
 	SignalBus.victory.connect(combat_end)
+	SignalBus.go_to_castle.connect(castle_position)
 
 func _physics_process(_delta):
 	if not stop :
@@ -45,7 +46,9 @@ func _physics_process(_delta):
 func end_of_road():
 	stop = true
 	$AnimatedSprite2D.play("idleUp")
+	
 
-
+func castle_position() :
+	position = Vector2(0,0)
 func combat_end():
 	stop = false

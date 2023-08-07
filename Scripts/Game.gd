@@ -16,6 +16,7 @@ func _ready():
 	$Player/Camera2D.make_current()
 	SignalBus.fight.connect(start_combat)
 	SignalBus.victory.connect(combat_won)
+	SignalBus.go_to_castle.connect(on_go_to_castle)
 	
 	
 func start_combat(combat_index, enemies) :
@@ -38,7 +39,6 @@ func start_combat(combat_index, enemies) :
 	SignalBus.emit_signal("place_combat", combat_index, enemies, current_allies)
 	SignalBus.emit_signal("update_FriskUI", allies["Frisk"][0], allies["Frisk"][1], allies["Frisk"][2])
 	
-	
 func combat_won() :
 	allies["Frisk"][1] = $Combat_scene/Ally_group/Combat_player.HP
 	await get_tree().create_timer(1.5).timeout
@@ -49,4 +49,14 @@ func combat_won() :
 	$Player/Camera2D.enabled = true
 	$Level.visible = true
 	fondu.play_backwards("fondu")
+	
+
+
+
+
+
+func on_go_to_castle() :
+	$Level/Tutoriel.queue_free()
+	current_level = load("res://Scène/Castle.tscn").instantiate()
+	$Level.add_child(current_level)
 	

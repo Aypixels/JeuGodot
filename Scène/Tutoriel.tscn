@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://bqlb60vpnbe2b"]
+[gd_scene load_steps=56 format=3 uid="uid://bqlb60vpnbe2b"]
 
 [ext_resource type="Texture2D" uid="uid://0p8jtoy8jr0o" path="res://tilset/dungeon_sheet.png" id="1_jdsty"]
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_m43nj"]
@@ -25,6 +25,7 @@
 [ext_resource type="Script" path="res://Scripts/music_script.gd" id="23_epccn"]
 [ext_resource type="PackedScene" uid="uid://wchc7nkaalau" path="res://Scène/Something.tscn" id="25_rbbiq"]
 [ext_resource type="Script" path="res://Scène/End_of_road.gd" id="25_xotxv"]
+[ext_resource type="Script" path="res://Scène/Go_to_castle.gd" id="26_gkegp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pwapk"]
 texture = ExtResource("1_jdsty")
@@ -4669,6 +4670,7 @@ position = Vector2(114, -217)
 shape = SubResource("SegmentShape2D_sjipi")
 
 [node name="Go_to_castle" type="Area2D" parent="."]
+script = ExtResource("26_gkegp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Go_to_castle"]
 position = Vector2(526, -607)
@@ -4677,3 +4679,4 @@ shape = SubResource("RectangleShape2D_8uscl")
 [connection signal="body_entered" from="Gate/Gate_area" to="Gate/Gate_area" method="_on_body_entered"]
 [connection signal="body_exited" from="Gate/Gate_area" to="Gate/Gate_area" method="_on_body_exited"]
 [connection signal="body_entered" from="End_of_road" to="End_of_road" method="_on_body_entered"]
+[connection signal="body_entered" from="Go_to_castle" to="Go_to_castle" method="_on_body_entered"]

@@ -5,6 +5,7 @@ var enemies = []
 var target_index :int = 0
 var action_queue = []
 var is_battling = false
+var action = ""
 @onready var choice = $"../choice"
 
 signal next_player
@@ -44,8 +45,10 @@ func _process(_delta):
 				target_index += 1
 				switch_focus(target_index, target_index - 1)
 				
-		if Input.is_action_just_pressed("ui_accept") :
-			action_queue.push_back(target_index)
+		if action == "attack" and Input.is_action_just_pressed("ui_accept") :
+			var dmg = get_ally_ATK()
+			action_queue.push_back([target_index,dmg, action])
+			action = ""
 			reset_focus()
 			emit_signal("next_player")
 		
@@ -55,9 +58,10 @@ func _process(_delta):
 
 func _action(stack) :
 	SignalBus.emit_signal("battle_dialog_display", "clear")
-	for i in stack :
-		enemies[i].take_damage(10)
-		await get_tree().create_timer(1).timeout
+	for do in stack :
+		if do[2] == "attack":
+			enemies[do[0]].take_damage(do[1])
+			await get_tree().create_timer(1).timeout
 	action_queue.clear()
 	is_battling = false
 	if not check_victory() :
@@ -67,6 +71,9 @@ func switch_focus(x,y):
 	enemies[x].focus()
 	enemies[y].unfocus()
 
+func get_ally_ATK() :
+	var atk = $"../Ally_group".current_ally_atk()
+	return atk
 
 func show_choice():
 	choice.show()
@@ -81,6 +88,7 @@ func start_choosing() :
 	enemies[0].focus()
 
 func _on_attack_pressed():
+	action = "attack"
 	choice.hide()
 	start_choosing()
 

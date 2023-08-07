@@ -4,7 +4,7 @@ extends Node2D
 @onready var damage_taken = $damage_taken
 
 
-var ATK
+var ATK = 5
 var Max_health : int = 20
 var LV : int = 1
 var HP : int = 20
@@ -35,8 +35,8 @@ func get_stats(Maxhp, current_hp, lvl) :
 	HP = current_hp
 	LV = lvl
 	
-func get_hp():
-	return HP
+func get_hp(): return HP
+func get_atk() : return ATK
 	
 	
 

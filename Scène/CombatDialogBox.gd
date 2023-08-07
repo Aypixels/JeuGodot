@@ -24,7 +24,7 @@ func show_text():
 	
 	while text_label.visible_characters < len(text_label.text) :
 		text_label.visible_characters+=1
-		await get_tree().create_timer(0.04).timeout
+		await get_tree().create_timer(0.02).timeout
 	phrase_end = true
 	
 		

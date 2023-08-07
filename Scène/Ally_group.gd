@@ -50,7 +50,10 @@ func receive_dmg(DMG):
 			ally.take_damage(DMG)
 			break
 		
-		
+func current_ally_atk() :
+	return allies[index].get_atk()
+	
+
 func _on_run_pressed():
 	if enemies[0] == "something" :
 		SignalBus.emit_signal("battle_dialog_display", "something_run")

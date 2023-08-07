@@ -20,6 +20,7 @@ func _process(_delta) :
 			launch = false
 
 func combat_end():
+	SignalBus.emit_signal("battle_dialog_display", "win_something")
 	visible = false
 	$CollisionShape2D.set_deferred("disabled", true)
 	$"../End_of_road/CollisionShape2D".set_deferred("disabled", true)

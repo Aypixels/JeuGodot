@@ -39,6 +39,7 @@ func start_combat(combat_index, enemies) :
 	
 func combat_won() :
 	Frisk[1] = $Combat_scene/Ally_group/Combat_player.get_hp()
+	await Input.is_action_just_pressed("interact")
 	fondu.play("fondu")
 	await fondu.animation_finished
 	combat.queue_free()

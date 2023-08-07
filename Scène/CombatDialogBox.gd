@@ -2,7 +2,8 @@ extends Sprite2D
 
 var battle_text = {
 	"something_run" : ["* T'enfuir ne te semble pas être une option"],
-	"clear" : [""]
+	"clear" : [""],
+	"win_something": ["* Something à été vaincu"]
 }
 var selected_text = []
 var in_progress= false

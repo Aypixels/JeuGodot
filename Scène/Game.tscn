@@ -23,7 +23,7 @@ tracks/0/keys = {
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = true
+tracks/0/enabled = false
 tracks/0/path = NodePath("ColorRect:color")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
@@ -59,6 +59,7 @@ libraries = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="Fondu"]
+offset_top = -1.0
 offset_right = 1152.0
-offset_bottom = 648.0
-color = Color(0, 0, 0, 1)
+offset_bottom = 647.0
+color = Color(0, 0, 0, 0)

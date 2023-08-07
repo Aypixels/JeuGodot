@@ -60,8 +60,8 @@ func _action(stack) :
 		await get_tree().create_timer(1).timeout
 	action_queue.clear()
 	is_battling = false
-	check_victory()
-	enemy_turn()
+	if not check_victory() :
+		enemy_turn()
 
 func switch_focus(x,y):
 	enemies[x].focus()
@@ -89,7 +89,9 @@ func enemy_defeated(enemy_id) :
 	
 func check_victory():
 	if enemies.size() == 0 :
-		$
+		SignalBus.emit_signal("victory")
+		return true
+	return false
 
 func enemy_turn() :
 	SignalBus.emit_signal("switch_turn", "enemy")

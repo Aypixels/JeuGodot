@@ -5,9 +5,9 @@ extends Node2D
 
 
 var ATK
-var Max_health : int = 0
-var LV : int = 0
-var HP : int = 0 
+var Max_health : int = 20
+var LV : int = 1
+var HP : int = 20
 		
 func _update_health() :
 	SignalBus.emit_signal("update_FriskUI", Max_health, HP, LV )
@@ -35,6 +35,8 @@ func get_stats(Maxhp, current_hp, lvl) :
 	HP = current_hp
 	LV = lvl
 	
+func get_hp():
+	return HP
 	
 	
 

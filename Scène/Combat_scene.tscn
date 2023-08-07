@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dqygux301tgms"]
+[gd_scene load_steps=24 format=3 uid="uid://dqygux301tgms"]
 
 [ext_resource type="Script" path="res://Scripts/Combat_scene.gd" id="1_3hhq4"]
 [ext_resource type="Texture2D" uid="uid://bqq86sl8lqoln" path="res://assets/battle_backgrounds/something_fight.png" id="2_sjn1b"]
@@ -13,6 +13,7 @@
 [ext_resource type="FontFile" uid="uid://dw0xt1bycx0el" path="res://assets/Determination/DTM-Sans.ttf" id="9_o5a47"]
 [ext_resource type="Texture2D" uid="uid://b5woq1mddvxsg" path="res://assets/3414630-small-removebg-preview.png" id="10_r6j7g"]
 [ext_resource type="FontFile" uid="uid://b4sngv2t4bmog" path="res://assets/Determination/DTM-Mono.otf" id="11_pdlsd"]
+[ext_resource type="Texture2D" uid="uid://cspqyxhrpe1id" path="res://assets/Base_Sprite_Fight.png" id="14_nbnj7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_k3wr2"]
 animations = [{
@@ -87,6 +88,25 @@ bg_color = Color(1, 1, 1, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fbr1h"]
 bg_color = Color(1, 0.94902, 0, 1)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_ejnw0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_nbnj7")
+}],
+"loop": true,
+"name": &"enemy_turn",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_nbnj7")
+}],
+"loop": true,
+"name": &"your_turn",
+"speed": 5.0
+}]
+
 [node name="Combat_scene" type="Node2D"]
 script = ExtResource("1_3hhq4")
 
@@ -94,7 +114,6 @@ script = ExtResource("1_3hhq4")
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_k3wr2")
 animation = &"something"
-frame_progress = 0.33281
 
 [node name="Camera2D" type="Camera2D" parent="."]
 enabled = false
@@ -226,6 +245,13 @@ offset_bottom = 111.0
 scale = Vector2(0.193135, 0.232939)
 theme_override_fonts/normal_font = ExtResource("11_pdlsd")
 theme_override_font_sizes/normal_font_size = 27
+
+[node name="Turn" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-94.5, 46.25)
+scale = Vector2(0.5, 0.49)
+sprite_frames = SubResource("SpriteFrames_ejnw0")
+animation = &"your_turn"
 
 [connection signal="next_player" from="Ennemy_group" to="Ally_group" method="_on_ennemy_group_next_player"]
 [connection signal="pressed" from="choice/Attack" to="Ennemy_group" method="_on_attack_pressed"]

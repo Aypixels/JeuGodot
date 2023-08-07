@@ -1,6 +1,7 @@
 extends Node
 
 signal dialog_display(name,text_key)
+signal memory()
 signal end_road()
 signal go_to_castle()
 

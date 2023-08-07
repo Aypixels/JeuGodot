@@ -10,6 +10,7 @@ func player():
 func _ready() :
 	position.x = 525
 	position.y = 430
+	SignalBus.memory.connect(memory)
 	SignalBus.end_road.connect(end_of_road)
 	SignalBus.victory.connect(combat_end)
 	SignalBus.go_to_castle.connect(castle_position)
@@ -51,6 +52,11 @@ func end_of_road():
 func castle_position() :
 	position = Vector2(0,0)
 
+func memory():
+	stop = true
+	$AnimatedSprite2D.play("idleUp")
+	SignalBus.emit_signal("dialog_display", "memory")
+	stop = false
 
 func combat_end():
 	stop = false

@@ -1,7 +1,8 @@
 extends Container
 
 var scene_text = {
-	"player_cat" : [["Toi","Chat noir"],["Où suis-je ?","Meow...?"]]
+	"player_cat" : [["Toi","Chat noir"],["Où suis-je ?","Meow...?"]],
+	'memory': [["Toi", "Toi"], ["Mmh...", "Cet endroit me semble familier..."]]
 }
 var selected_text = []
 var selected_name = []

@@ -3,6 +3,10 @@ extends CharacterBody2D
 var speed = 0
 var oldPose = "Down"
 var stop = false
+var locations = {
+	"castle" = Vector2(0,0),
+	"chamber" = Vector2(0,0)
+}
 
 func player():
 	pass
@@ -13,7 +17,7 @@ func _ready() :
 	SignalBus.memory.connect(memory)
 	SignalBus.end_road.connect(end_of_road)
 	SignalBus.victory.connect(combat_end)
-	SignalBus.go_to_castle.connect(castle_position)
+	SignalBus.go_to.connect(positionning)
 
 func _physics_process(_delta):
 	if not stop :
@@ -49,8 +53,9 @@ func end_of_road():
 	$AnimatedSprite2D.play("idleUp")
 	
 
-func castle_position() :
-	position = Vector2(0,0)
+func positionning(location) :
+	await get_tree().create_timer(0.8).timeout
+	position = locations[location]
 
 func memory():
 	stop = true

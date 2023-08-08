@@ -16,7 +16,7 @@ func _ready():
 	$Player/Camera2D.make_current()
 	SignalBus.fight.connect(start_combat)
 	SignalBus.victory.connect(combat_won)
-	SignalBus.go_to_castle.connect(on_go_to_castle)
+	SignalBus.go_to.connect(on_go_to)
 	
 	
 func start_combat(combat_index, enemies) :
@@ -55,11 +55,11 @@ func combat_won() :
 
 
 
-func on_go_to_castle() :
+func on_go_to(location) :
 	fondu.play("fondu")
 	await fondu.animation_finished
-	current_level = load("res://Scène/Castle.tscn").instantiate()
-	$Level/Tutoriel.queue_free()
+	current_level = load("res://Scène/"+location+".tscn").instantiate()
+	$Level.get_child(0).queue_free()
 	$Level.add_child(current_level)
 	fondu.play_backwards("fondu")
 	

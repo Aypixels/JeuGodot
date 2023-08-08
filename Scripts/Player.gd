@@ -54,8 +54,11 @@ func end_of_road():
 	
 
 func positionning(location) :
+	stop = true
+	$AnimatedSprite2D.play("idle" + oldPose)
 	await get_tree().create_timer(0.8).timeout
 	position = locations[location]
+	stop = false
 
 func memory():
 	stop = true

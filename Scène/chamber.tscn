@@ -50,6 +50,8 @@ size = Vector2(61, 20)
 size = Vector2(41, 21)
 
 [node name="chambre" type="Node2D"]
+position = Vector2(-97, -7)
+metadata/_edit_group_ = true
 
 [node name="Background" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

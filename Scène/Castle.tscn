@@ -1,6 +1,5 @@
 [gd_scene load_steps=23 format=3 uid="uid://d4faheix1ornn"]
 
-[ext_resource type="Texture2D" uid="uid://0p8jtoy8jr0o" path="res://tilset/dungeon_sheet.png" id="1_ic5hk"]
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_s7n6p"]
 [ext_resource type="Texture2D" uid="uid://crplcbmfgkrok" path="res://tilset/Scarlet_forest.png" id="3_8jv0r"]
 [ext_resource type="Texture2D" uid="uid://dggq7d8rkwh6k" path="res://tilset/tiles_packed.png" id="3_8t75q"]
@@ -12,8 +11,11 @@
 [ext_resource type="Texture2D" uid="uid://cc5b3m1mccv2r" path="res://tilset/Closed_Grand_Door.png" id="10_l6763"]
 [ext_resource type="Texture2D" uid="uid://dw1c2o6457unx" path="res://tilset/Opened_Grand_Door.png" id="10_pk67m"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pblvi"]
+load_path = "res://.godot/imported/dungeon_sheet.png-0cd1657d2d8d9135991349fe7445be16.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pwapk"]
-texture = ExtResource("1_ic5hk")
+texture = SubResource("CompressedTexture2D_pblvi")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0

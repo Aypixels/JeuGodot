@@ -43,22 +43,21 @@ func finish() :
 	get_tree().paused = false
 		
 func on_dialog_display(text_key) :
-	if in_progress and phrase_end:
-		next_phrase()
-	elif in_progress:
-		text_label.visible_characters = len(text_label.text)
-		phrase_end = true
-	else:
-		get_tree().paused = true
-		background.visible = true
-		in_progress = true
-		selected_name = scene_text[text_key][0].duplicate()
-		selected_text = scene_text[text_key][1].duplicate()
-		assert(len(selected_name) == len(selected_text), "Erreur dans le nombre de dialogue")
-		show_text()
-		
+	get_tree().paused = true
+	background.visible = true
+	selected_name = scene_text[text_key][0].duplicate()
+	selected_text = scene_text[text_key][1].duplicate()
+	assert(len(selected_name) == len(selected_text), "Erreur dans le nombre de dialogue")
+	show_text()
+	await get_tree().create_timer(0.2).timeout
+	in_progress = true
 
 func _process(_delta):
+	if in_progress and phrase_end and Input.is_action_just_pressed("interact") :
+		next_phrase()
+	elif in_progress and Input.is_action_just_pressed("interact") :
+		text_label.visible_characters = len(text_label.text)
+		phrase_end = true
 	if phrase_end :
 		indicator.visible = true
 	else :

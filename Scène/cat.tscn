@@ -71,6 +71,7 @@ position = Vector2(-1, 2)
 shape = SubResource("RectangleShape2D_32nk6")
 
 [node name="DialogAreaCat" parent="." instance=ExtResource("3_ium6h")]
+process_mode = 0
 visible = false
 position = Vector2(-1, 2)
 dialog_key = "player_cat"

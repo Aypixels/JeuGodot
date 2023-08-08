@@ -4,6 +4,7 @@ var memory = false
 func _on_body_entered(body):
 	if body.has_method("player"):
 		SignalBus.emit_signal("memory")
+		$CollisionShape2D.set_deferred("disabled", true)
 
 
 

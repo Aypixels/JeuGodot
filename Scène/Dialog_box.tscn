@@ -12,8 +12,8 @@ script = ExtResource("1_4s44p")
 
 [node name="Dialogbox2" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(0, 34)
-scale = Vector2(1.26533, 1)
+position = Vector2(-1.90735e-06, 31)
+scale = Vector2(1.40577, 1.21053)
 texture = ExtResource("2_1acxv")
 metadata/_edit_group_ = true
 

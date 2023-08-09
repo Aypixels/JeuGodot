@@ -11,6 +11,7 @@ func _ready():
 func cut_sound(_a, _b) :
 	music.stream_paused = true
 func recover_sound():
+	await get_tree().create_timer(1).timeout
 	music.stream_paused = false
 
 func _process(_delta):

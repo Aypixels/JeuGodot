@@ -1,30 +1,30 @@
-[gd_scene load_steps=30 format=3 uid="uid://b3l2ci7wjimc7"]
+[gd_scene load_steps=30 format=3 uid="uid://bdtvg5dmj7rj"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_jhf83"]
 [ext_resource type="Texture2D" uid="uid://cd400khd3t38n" path="res://Animation/character/down1.png" id="2_5ttjl"]
 [ext_resource type="Texture2D" uid="uid://njp58rrtkmo1" path="res://Animation/character/down.png" id="3_5kbub"]
 [ext_resource type="Texture2D" uid="uid://s1rra511bu2t" path="res://Animation/character/down2.png" id="4_cpq2b"]
-[ext_resource type="Texture2D" uid="uid://gb1rqlhg8jxy" path="res://Scène/down_overworld2.png" id="5_k3b7s"]
+[ext_resource type="Texture2D" uid="uid://gb1rqlhg8jxy" path="res://Animation/character/down_overworld2.png" id="5_23sev"]
 [ext_resource type="Texture2D" uid="uid://dc1pdyydsng8t" path="res://Animation/character/left.png" id="5_laxt5"]
+[ext_resource type="Texture2D" uid="uid://de8rh3guh3452" path="res://Animation/character/down_overworld.png" id="6_6sboj"]
 [ext_resource type="Texture2D" uid="uid://cntudgbsqa06y" path="res://Animation/character/right.png" id="6_srke5"]
-[ext_resource type="Texture2D" uid="uid://de8rh3guh3452" path="res://Scène/down_overworld.png" id="6_u65je"]
 [ext_resource type="Texture2D" uid="uid://b1snqbc0ai0xm" path="res://Animation/character/up.png" id="7_7ojun"]
-[ext_resource type="Texture2D" uid="uid://bshdv01vkxonl" path="res://Scène/down_overworld1.png" id="7_aa4vc"]
+[ext_resource type="Texture2D" uid="uid://bshdv01vkxonl" path="res://Animation/character/down_overworld1.png" id="7_17hcf"]
 [ext_resource type="Texture2D" uid="uid://b0twi7arnk3bj" path="res://Animation/character/left1.png" id="8_i4uav"]
-[ext_resource type="Texture2D" uid="uid://dcjbnr5n8n6fy" path="res://Scène/left_overworld.png" id="9_a75q7"]
+[ext_resource type="Texture2D" uid="uid://dcjbnr5n8n6fy" path="res://Animation/character/left_overworld.png" id="9_6lqx2"]
 [ext_resource type="Texture2D" uid="uid://d3adnsfqby0w2" path="res://Animation/character/left2.png" id="9_pa5v0"]
 [ext_resource type="Texture2D" uid="uid://bnmyelbxwrlym" path="res://Animation/character/right1.png" id="10_m1exw"]
-[ext_resource type="Texture2D" uid="uid://dgw7d6ldag11h" path="res://Scène/right_overworld.png" id="11_n05th"]
+[ext_resource type="Texture2D" uid="uid://dgw7d6ldag11h" path="res://Animation/character/right_overworld.png" id="11_k6bm7"]
 [ext_resource type="Texture2D" uid="uid://clr62qduvrhe4" path="res://Animation/character/right2.png" id="11_rfurf"]
 [ext_resource type="Texture2D" uid="uid://b30s8fdcuv4si" path="res://Animation/character/up1.png" id="12_eql23"]
 [ext_resource type="Texture2D" uid="uid://ypg824c7hn8q" path="res://Animation/character/up2.png" id="13_3limp"]
-[ext_resource type="Texture2D" uid="uid://brqdee2hhntqa" path="res://Scène/up_overworld.png" id="13_70swn"]
-[ext_resource type="Texture2D" uid="uid://btlaqys5fil18" path="res://Scène/left_overworld1.png" id="16_5bjdv"]
-[ext_resource type="Texture2D" uid="uid://drlxl02wjt6e8" path="res://Scène/left_overworld2.png" id="17_iofd4"]
-[ext_resource type="Texture2D" uid="uid://dskhw588pkqo" path="res://Scène/right_overworld1.png" id="20_3boa1"]
-[ext_resource type="Texture2D" uid="uid://dxxiqgkm7yjlb" path="res://Scène/right_overworld2.png" id="21_cxhj2"]
-[ext_resource type="Texture2D" uid="uid://dih0vkar6mk24" path="res://Scène/up_overworld1.png" id="24_vjs5j"]
-[ext_resource type="Texture2D" uid="uid://bcvpiuune0rmy" path="res://Scène/up_overworld2.png" id="25_145ox"]
+[ext_resource type="Texture2D" uid="uid://brqdee2hhntqa" path="res://Animation/character/up_overworld.png" id="13_yeyo6"]
+[ext_resource type="Texture2D" uid="uid://btlaqys5fil18" path="res://Animation/character/left_overworld1.png" id="16_ttxyw"]
+[ext_resource type="Texture2D" uid="uid://drlxl02wjt6e8" path="res://Animation/character/left_overworld2.png" id="17_iq4ch"]
+[ext_resource type="Texture2D" uid="uid://dskhw588pkqo" path="res://Animation/character/right_overworld1.png" id="20_vx4n2"]
+[ext_resource type="Texture2D" uid="uid://dxxiqgkm7yjlb" path="res://Animation/character/right_overworld2.png" id="21_55w76"]
+[ext_resource type="Texture2D" uid="uid://dih0vkar6mk24" path="res://Animation/character/up_overworld1.png" id="24_acssl"]
+[ext_resource type="Texture2D" uid="uid://bcvpiuune0rmy" path="res://Animation/character/up_overworld2.png" id="25_wun6h"]
 [ext_resource type="PackedScene" uid="uid://bdwxt86d4exjv" path="res://Scène/Dialog_box.tscn" id="34_ijouk"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_21g84"]
@@ -48,16 +48,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_k3b7s")
+"texture": ExtResource("5_23sev")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_u65je")
+"texture": ExtResource("6_6sboj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_aa4vc")
+"texture": ExtResource("7_17hcf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_u65je")
+"texture": ExtResource("6_6sboj")
 }],
 "loop": true,
 "name": &"downOverworld",
@@ -73,7 +73,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_u65je")
+"texture": ExtResource("6_6sboj")
 }],
 "loop": true,
 "name": &"idleDownOverworld",
@@ -89,7 +89,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_a75q7")
+"texture": ExtResource("9_6lqx2")
 }],
 "loop": true,
 "name": &"idleLeftOverworld",
@@ -105,7 +105,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("11_n05th")
+"texture": ExtResource("11_k6bm7")
 }],
 "loop": true,
 "name": &"idleRightOverworld",
@@ -121,7 +121,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("13_70swn")
+"texture": ExtResource("13_yeyo6")
 }],
 "loop": true,
 "name": &"idleUpOverworld",
@@ -146,16 +146,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("16_5bjdv")
+"texture": ExtResource("16_ttxyw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_a75q7")
+"texture": ExtResource("9_6lqx2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_iofd4")
+"texture": ExtResource("17_iq4ch")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_a75q7")
+"texture": ExtResource("9_6lqx2")
 }],
 "loop": true,
 "name": &"leftOverworld",
@@ -180,16 +180,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("20_3boa1")
+"texture": ExtResource("20_vx4n2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_n05th")
+"texture": ExtResource("11_k6bm7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("21_cxhj2")
+"texture": ExtResource("21_55w76")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_n05th")
+"texture": ExtResource("11_k6bm7")
 }],
 "loop": true,
 "name": &"rightOverworld",
@@ -214,16 +214,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("24_vjs5j")
+"texture": ExtResource("24_acssl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_70swn")
+"texture": ExtResource("13_yeyo6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("25_145ox")
+"texture": ExtResource("25_wun6h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_70swn")
+"texture": ExtResource("13_yeyo6")
 }],
 "loop": true,
 "name": &"upOverworld",

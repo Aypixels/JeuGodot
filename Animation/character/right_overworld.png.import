@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxxiqgkm7yjlb"
-path="res://.godot/imported/right_overworld2.png-f7dc591083176fd6bb626aa6dd874033.ctex"
+uid="uid://dgw7d6ldag11h"
+path="res://.godot/imported/right_overworld.png-9e0b32b6b91e4beec350368eefe92bcb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scène/right_overworld2.png"
-dest_files=["res://.godot/imported/right_overworld2.png-f7dc591083176fd6bb626aa6dd874033.ctex"]
+source_file="res://Animation/character/right_overworld.png"
+dest_files=["res://.godot/imported/right_overworld.png-9e0b32b6b91e4beec350368eefe92bcb.ctex"]
 
 [params]
 

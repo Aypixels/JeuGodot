@@ -56,7 +56,7 @@ metadata/_edit_group_ = true
 [node name="Background" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_lt30v")
-animation = &"night"
+animation = &"day"
 
 [node name="Collision" type="StaticBody2D" parent="."]
 

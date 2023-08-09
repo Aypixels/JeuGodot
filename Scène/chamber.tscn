@@ -1,7 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://c7u4hmrqpk3kn"]
+[gd_scene load_steps=16 format=3 uid="uid://c7u4hmrqpk3kn"]
 
 [ext_resource type="Texture2D" uid="uid://cxc2bbbu6uob7" path="res://assets/chambre_jour.png" id="1_gfm72"]
 [ext_resource type="Texture2D" uid="uid://bsquf26prbyp7" path="res://assets/chambre_nuit.png" id="2_w71aq"]
+[ext_resource type="Script" path="res://Scène/Background.gd" id="3_8r35g"]
+[ext_resource type="Texture2D" uid="uid://chdpbc7qfjq5" path="res://blancket.png" id="3_77i21"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lt30v"]
 animations = [{
@@ -61,6 +63,13 @@ texture_filter = 1
 scale = Vector2(0.82, 0.82)
 sprite_frames = SubResource("SpriteFrames_lt30v")
 animation = &"night"
+script = ExtResource("3_8r35g")
+
+[node name="Blanket" type="Sprite2D" parent="Background"]
+z_index = 20
+texture_filter = 1
+position = Vector2(96, 6.52439)
+texture = ExtResource("3_77i21")
 
 [node name="Collision" type="StaticBody2D" parent="."]
 
@@ -103,6 +112,3 @@ shape = SubResource("RectangleShape2D_73vwm")
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="Collision"]
 position = Vector2(78.5, 23)
 shape = SubResource("RectangleShape2D_8eq7k")
-
-[node name="Blanket" type="Sprite2D" parent="."]
-z_index = 20

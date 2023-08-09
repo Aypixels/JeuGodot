@@ -14,8 +14,8 @@ func player():
 	pass
 
 func _ready() :
-	position.x = 525
-	position.y = 430
+	position.x = 670
+	position.y = 460
 	SignalBus.memory.connect(memory)
 	SignalBus.end_road.connect(end_of_road)
 	SignalBus.victory.connect(combat_end)

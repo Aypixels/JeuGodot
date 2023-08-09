@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://dmbcciu1mqfi0"]
+[gd_scene load_steps=40 format=3 uid="uid://dmbcciu1mqfi0"]
 
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="1_htshc"]
 [ext_resource type="Texture2D" uid="uid://crplcbmfgkrok" path="res://tilset/Scarlet_forest.png" id="2_0po7s"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dw1c2o6457unx" path="res://tilset/Opened_Grand_Door.png" id="10_4rbhf"]
 [ext_resource type="Script" path="res://Scripts/grand_door.gd" id="11_jufmh"]
 [ext_resource type="Texture2D" uid="uid://bxv3h6eb0trir" path="res://assets/Wrap_exit/Pillar.png" id="12_0alh8"]
+[ext_resource type="Texture2D" uid="uid://cxp0s7xbox3cw" path="res://assets/omori_mirror.png" id="12_ptx00"]
 [ext_resource type="Texture2D" uid="uid://ca23hvvu4m5fd" path="res://assets/Wrap_exit/Base_exit.png" id="13_rcgdr"]
 [ext_resource type="Script" path="res://Scripts/exit.gd" id="14_vptg1"]
 [ext_resource type="Texture2D" uid="uid://bdny5fbfwg370" path="res://assets/The_Sun.png" id="15_hcmbb"]
@@ -9144,6 +9145,13 @@ shape = SubResource("RectangleShape2D_dc5hs")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="The_Mirror/mirror"]
 position = Vector2(-449, -376.5)
 shape = SubResource("RectangleShape2D_8rcw2")
+
+[node name="omori_mirror" type="Sprite2D" parent="The_Mirror"]
+visible = false
+z_index = 15
+position = Vector2(-449, -387)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("12_ptx00")
 
 [node name="Exit" type="AnimatableBody2D" parent="."]
 texture_filter = 1

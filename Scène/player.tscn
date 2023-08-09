@@ -265,6 +265,7 @@ position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_ysp45")
 
 [node name="Control" parent="." instance=ExtResource("34_ijouk")]
+z_index = 30
 offset_left = 1.0
 offset_top = 20.0
 offset_right = 1.0

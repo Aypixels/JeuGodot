@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://dmbcciu1mqfi0"]
+[gd_scene load_steps=39 format=3 uid="uid://dmbcciu1mqfi0"]
 
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="1_htshc"]
 [ext_resource type="Texture2D" uid="uid://crplcbmfgkrok" path="res://tilset/Scarlet_forest.png" id="2_0po7s"]
@@ -14,6 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://bxv3h6eb0trir" path="res://assets/Wrap_exit/Pillar.png" id="12_0alh8"]
 [ext_resource type="Texture2D" uid="uid://ca23hvvu4m5fd" path="res://assets/Wrap_exit/Base_exit.png" id="13_rcgdr"]
 [ext_resource type="Script" path="res://Scripts/exit.gd" id="14_vptg1"]
+[ext_resource type="Texture2D" uid="uid://bdny5fbfwg370" path="res://assets/The_Sun.png" id="15_hcmbb"]
+[ext_resource type="Texture2D" uid="uid://cpe21ulkuk7ex" path="res://assets/Entity.png" id="15_u1p06"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0u1yg"]
 texture = ExtResource("1_htshc")
@@ -9038,13 +9040,21 @@ size = Vector2(4176, 20)
 size = Vector2(64, 2872.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dc5hs"]
-size = Vector2(25, 47)
+size = Vector2(30, 47)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8rcw2"]
 size = Vector2(8, 11)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ijyj4"]
 size = Vector2(21, 9)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5e3u4"]
+radius = 6.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_snhck"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kulrg"]
+size = Vector2(35, 26)
 
 [node name="Castle" type="Node2D"]
 
@@ -9126,7 +9136,7 @@ shape = SubResource("RectangleShape2D_tlgf6")
 [node name="The_Mirror" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="The_Mirror"]
-position = Vector2(-449.5, -401.5)
+position = Vector2(-449, -401.5)
 shape = SubResource("RectangleShape2D_dc5hs")
 
 [node name="mirror" type="Area2D" parent="The_Mirror"]
@@ -9181,6 +9191,39 @@ script = ExtResource("14_vptg1")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Exit/exit"]
 position = Vector2(0, -367)
 shape = SubResource("RectangleShape2D_ijyj4")
+
+[node name="The_Sun" type="StaticBody2D" parent="."]
+texture_filter = 1
+
+[node name="TheSun" type="Sprite2D" parent="The_Sun"]
+position = Vector2(-465, 431.875)
+scale = Vector2(0.0273437, 0.0268555)
+texture = ExtResource("15_hcmbb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="The_Sun"]
+visible = false
+position = Vector2(-465, 432)
+shape = SubResource("CircleShape2D_5e3u4")
+
+[node name="Area2D" type="Area2D" parent="The_Sun"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="The_Sun/Area2D"]
+visible = false
+position = Vector2(-465, 432)
+shape = SubResource("CircleShape2D_snhck")
+
+[node name="Entity" type="StaticBody2D" parent="."]
+texture_filter = 1
+
+[node name="Entity" type="Sprite2D" parent="Entity"]
+position = Vector2(-428.125, 424.125)
+scale = Vector2(0.570896, 0.55)
+texture = ExtResource("15_u1p06")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Entity"]
+visible = false
+position = Vector2(-428.5, 424)
+shape = SubResource("RectangleShape2D_kulrg")
 
 [connection signal="body_entered" from="The_Grand_door/grand_door" to="The_Grand_door/grand_door" method="_on_body_entered"]
 [connection signal="body_entered" from="Exit/exit" to="Exit/exit" method="_on_body_entered"]

@@ -6,7 +6,7 @@ func _ready():
 	SignalBus.fight.connect(cut_sound)
 	SignalBus.victory.connect(recover_sound)
 	music.stream_paused= false
-	SignalBus.memory.connect(switch_music_memory)
+	SignalBus.memory.connect(switch_music)
 
 func cut_sound(_a, _b) :
 	music.stream_paused = true
@@ -17,8 +17,8 @@ func _process(_delta):
 	if music.playing == false and music.stream_paused == false :
 		music.play()
 
-func switch_music_memory() :
-	while music.volume_db > -100 :
+func switch_music() :
+	while music.volume_db > -80 :
 		music.volume_db -= 1
 		await get_tree().create_timer(0.04).timeout
 	music.stream_paused = true

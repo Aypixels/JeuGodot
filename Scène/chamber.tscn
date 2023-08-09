@@ -95,3 +95,5 @@ shape = SubResource("RectangleShape2D_p0jb7")
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="Collision"]
 position = Vector2(49.5, -11.5)
 shape = SubResource("RectangleShape2D_73vwm")
+
+[node name="Blanket" type="Sprite2D" parent="."]

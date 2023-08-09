@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://1a6dfoco7v7k"]
+[gd_scene load_steps=33 format=3 uid="uid://1a6dfoco7v7k"]
 
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_m43nj"]
 [ext_resource type="Texture2D" uid="uid://dggq7d8rkwh6k" path="res://tilset/tiles_packed.png" id="3_gj4oh"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b7c6dnkgnj6p7" path="res://tilset/113030.png" id="6_aiwty"]
 [ext_resource type="Texture2D" uid="uid://crplcbmfgkrok" path="res://tilset/Scarlet_forest.png" id="6_byasb"]
 [ext_resource type="Script" path="res://Scripts/Memory.gd" id="13_qg04s"]
+[ext_resource type="AudioStream" uid="uid://b803s2t0ctxvx" path="res://Musics/SCARLET FOREST - Deltarune Orchestral Cover.mp3" id="14_mirvf"]
 [ext_resource type="PackedScene" uid="uid://c7q8noc2bebxf" path="res://Scène/cat.tscn" id="23_6xsbf"]
 [ext_resource type="AudioStream" uid="uid://c6liec8wxjahk" path="res://Musics/171. Persevere.mp3" id="23_85gdj"]
 [ext_resource type="Script" path="res://Scripts/music_script.gd" id="23_epccn"]
@@ -4583,12 +4584,6 @@ shape = SubResource("RectangleShape2D_8w117")
 z_index = 1
 position = Vector2(461, 219)
 
-[node name="Background_music" type="AudioStreamPlayer" parent="."]
-process_mode = 3
-stream = ExtResource("23_85gdj")
-volume_db = -8.565
-script = ExtResource("23_epccn")
-
 [node name="Something" parent="." instance=ExtResource("25_rbbiq")]
 position = Vector2(526, -554)
 
@@ -4613,6 +4608,19 @@ script = ExtResource("13_qg04s")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Memory"]
 position = Vector2(281, -83)
 shape = SubResource("SegmentShape2D_bexsg")
+
+[node name="Musics" type="Node" parent="."]
+process_mode = 3
+script = ExtResource("23_epccn")
+
+[node name="castle_town" type="AudioStreamPlayer" parent="Musics"]
+process_mode = 3
+stream = ExtResource("23_85gdj")
+volume_db = -8.565
+
+[node name="scarlet_forest" type="AudioStreamPlayer" parent="Musics"]
+stream = ExtResource("14_mirvf")
+volume_db = -3.0
 
 [connection signal="body_entered" from="End_of_road" to="End_of_road" method="_on_body_entered"]
 [connection signal="body_entered" from="Go_to_castle" to="Go_to_castle" method="_on_body_entered"]

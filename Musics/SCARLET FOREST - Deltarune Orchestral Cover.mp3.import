@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b803s2t0ctxvx"
+path="res://.godot/imported/SCARLET FOREST - Deltarune Orchestral Cover.mp3-0ff23a5b400817409c8953fdce917f82.mp3str"
+
+[deps]
+
+source_file="res://Musics/SCARLET FOREST - Deltarune Orchestral Cover.mp3"
+dest_files=["res://.godot/imported/SCARLET FOREST - Deltarune Orchestral Cover.mp3-0ff23a5b400817409c8953fdce917f82.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

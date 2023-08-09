@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://d4faheix1ornn"]
+[gd_scene load_steps=34 format=3 uid="uid://dmbcciu1mqfi0"]
 
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="1_htshc"]
 [ext_resource type="Texture2D" uid="uid://crplcbmfgkrok" path="res://tilset/Scarlet_forest.png" id="2_0po7s"]
@@ -13,7 +13,7 @@
 [ext_resource type="Script" path="res://Scripts/grand_door.gd" id="11_jufmh"]
 [ext_resource type="Texture2D" uid="uid://bxv3h6eb0trir" path="res://assets/Wrap_exit/Pillar.png" id="12_0alh8"]
 [ext_resource type="Texture2D" uid="uid://ca23hvvu4m5fd" path="res://assets/Wrap_exit/Base_exit.png" id="13_rcgdr"]
-[ext_resource type="Script" path="res://Scène/exit.gd" id="14_gqu5v"]
+[ext_resource type="Script" path="res://Scripts/exit.gd" id="14_vptg1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0u1yg"]
 texture = ExtResource("1_htshc")
@@ -9176,7 +9176,7 @@ scale = Vector2(0.74, 1)
 texture = ExtResource("13_rcgdr")
 
 [node name="exit" type="Area2D" parent="Exit"]
-script = ExtResource("14_gqu5v")
+script = ExtResource("14_vptg1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Exit/exit"]
 position = Vector2(0, -367)

@@ -14,7 +14,7 @@ signal enemy_attack(ATK)
 signal switch_turn(who)
 signal defeated(ID)
 signal victory()
-
+signal location(location)
 
 func _ready():
 	RenderingServer.set_default_clear_color("black")

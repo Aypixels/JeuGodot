@@ -4622,6 +4622,14 @@ volume_db = -8.565
 stream = ExtResource("14_mirvf")
 volume_db = -3.0
 
+[node name="Name" type="Label" parent="."]
+texture_filter = 1
+offset_left = 469.0
+offset_top = 3.0
+offset_right = 597.0
+offset_bottom = 29.0
+text = "The dream of ___"
+
 [connection signal="body_entered" from="End_of_road" to="End_of_road" method="_on_body_entered"]
 [connection signal="body_entered" from="Go_to_castle" to="Go_to_castle" method="_on_body_entered"]
 [connection signal="body_entered" from="Memory" to="Memory" method="_on_body_entered"]

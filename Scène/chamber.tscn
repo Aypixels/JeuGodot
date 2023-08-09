@@ -60,7 +60,7 @@ metadata/_edit_group_ = true
 texture_filter = 1
 scale = Vector2(0.82, 0.82)
 sprite_frames = SubResource("SpriteFrames_lt30v")
-animation = &"day"
+animation = &"night"
 
 [node name="Collision" type="StaticBody2D" parent="."]
 

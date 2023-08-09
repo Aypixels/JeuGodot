@@ -1,18 +1,30 @@
-[gd_scene load_steps=18 format=3 uid="uid://b3l2ci7wjimc7"]
+[gd_scene load_steps=30 format=3 uid="uid://b3l2ci7wjimc7"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_jhf83"]
 [ext_resource type="Texture2D" uid="uid://cd400khd3t38n" path="res://Animation/character/down1.png" id="2_5ttjl"]
 [ext_resource type="Texture2D" uid="uid://njp58rrtkmo1" path="res://Animation/character/down.png" id="3_5kbub"]
 [ext_resource type="Texture2D" uid="uid://s1rra511bu2t" path="res://Animation/character/down2.png" id="4_cpq2b"]
+[ext_resource type="Texture2D" uid="uid://gb1rqlhg8jxy" path="res://Scène/down_overworld2.png" id="5_k3b7s"]
 [ext_resource type="Texture2D" uid="uid://dc1pdyydsng8t" path="res://Animation/character/left.png" id="5_laxt5"]
 [ext_resource type="Texture2D" uid="uid://cntudgbsqa06y" path="res://Animation/character/right.png" id="6_srke5"]
+[ext_resource type="Texture2D" uid="uid://de8rh3guh3452" path="res://Scène/down_overworld.png" id="6_u65je"]
 [ext_resource type="Texture2D" uid="uid://b1snqbc0ai0xm" path="res://Animation/character/up.png" id="7_7ojun"]
+[ext_resource type="Texture2D" uid="uid://bshdv01vkxonl" path="res://Scène/down_overworld1.png" id="7_aa4vc"]
 [ext_resource type="Texture2D" uid="uid://b0twi7arnk3bj" path="res://Animation/character/left1.png" id="8_i4uav"]
+[ext_resource type="Texture2D" uid="uid://dcjbnr5n8n6fy" path="res://Scène/left_overworld.png" id="9_a75q7"]
 [ext_resource type="Texture2D" uid="uid://d3adnsfqby0w2" path="res://Animation/character/left2.png" id="9_pa5v0"]
 [ext_resource type="Texture2D" uid="uid://bnmyelbxwrlym" path="res://Animation/character/right1.png" id="10_m1exw"]
+[ext_resource type="Texture2D" uid="uid://dgw7d6ldag11h" path="res://Scène/right_overworld.png" id="11_n05th"]
 [ext_resource type="Texture2D" uid="uid://clr62qduvrhe4" path="res://Animation/character/right2.png" id="11_rfurf"]
 [ext_resource type="Texture2D" uid="uid://b30s8fdcuv4si" path="res://Animation/character/up1.png" id="12_eql23"]
 [ext_resource type="Texture2D" uid="uid://ypg824c7hn8q" path="res://Animation/character/up2.png" id="13_3limp"]
+[ext_resource type="Texture2D" uid="uid://brqdee2hhntqa" path="res://Scène/up_overworld.png" id="13_70swn"]
+[ext_resource type="Texture2D" uid="uid://btlaqys5fil18" path="res://Scène/left_overworld1.png" id="16_5bjdv"]
+[ext_resource type="Texture2D" uid="uid://drlxl02wjt6e8" path="res://Scène/left_overworld2.png" id="17_iofd4"]
+[ext_resource type="Texture2D" uid="uid://dskhw588pkqo" path="res://Scène/right_overworld1.png" id="20_3boa1"]
+[ext_resource type="Texture2D" uid="uid://dxxiqgkm7yjlb" path="res://Scène/right_overworld2.png" id="21_cxhj2"]
+[ext_resource type="Texture2D" uid="uid://dih0vkar6mk24" path="res://Scène/up_overworld1.png" id="24_vjs5j"]
+[ext_resource type="Texture2D" uid="uid://bcvpiuune0rmy" path="res://Scène/up_overworld2.png" id="25_145ox"]
 [ext_resource type="PackedScene" uid="uid://bdwxt86d4exjv" path="res://Scène/Dialog_box.tscn" id="34_ijouk"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_21g84"]
@@ -31,7 +43,24 @@ animations = [{
 "texture": ExtResource("3_5kbub")
 }],
 "loop": true,
-"name": &"down",
+"name": &"downDream",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_k3b7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_u65je")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_aa4vc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_u65je")
+}],
+"loop": true,
+"name": &"downOverworld",
 "speed": 5.0
 }, {
 "frames": [{
@@ -39,7 +68,15 @@ animations = [{
 "texture": ExtResource("3_5kbub")
 }],
 "loop": true,
-"name": &"idleDown",
+"name": &"idleDownDream",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_u65je")
+}],
+"loop": true,
+"name": &"idleDownOverworld",
 "speed": 5.0
 }, {
 "frames": [{
@@ -47,7 +84,15 @@ animations = [{
 "texture": ExtResource("5_laxt5")
 }],
 "loop": true,
-"name": &"idleLeft",
+"name": &"idleLeftDream",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_a75q7")
+}],
+"loop": true,
+"name": &"idleLeftOverworld",
 "speed": 5.0
 }, {
 "frames": [{
@@ -55,7 +100,15 @@ animations = [{
 "texture": ExtResource("6_srke5")
 }],
 "loop": true,
-"name": &"idleRight",
+"name": &"idleRightDream",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_n05th")
+}],
+"loop": true,
+"name": &"idleRightOverworld",
 "speed": 5.0
 }, {
 "frames": [{
@@ -63,7 +116,15 @@ animations = [{
 "texture": ExtResource("7_7ojun")
 }],
 "loop": true,
-"name": &"idleUp",
+"name": &"idleUpDream",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_70swn")
+}],
+"loop": true,
+"name": &"idleUpOverworld",
 "speed": 5.0
 }, {
 "frames": [{
@@ -80,7 +141,24 @@ animations = [{
 "texture": ExtResource("5_laxt5")
 }],
 "loop": true,
-"name": &"left",
+"name": &"leftDream",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_5bjdv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_a75q7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_iofd4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_a75q7")
+}],
+"loop": true,
+"name": &"leftOverworld",
 "speed": 5.0
 }, {
 "frames": [{
@@ -97,7 +175,24 @@ animations = [{
 "texture": ExtResource("6_srke5")
 }],
 "loop": true,
-"name": &"right",
+"name": &"rightDream",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_3boa1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_n05th")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_cxhj2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_n05th")
+}],
+"loop": true,
+"name": &"rightOverworld",
 "speed": 5.0
 }, {
 "frames": [{
@@ -114,7 +209,24 @@ animations = [{
 "texture": ExtResource("7_7ojun")
 }],
 "loop": true,
-"name": &"up",
+"name": &"upDream",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_vjs5j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_70swn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_145ox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_70swn")
+}],
+"loop": true,
+"name": &"upOverworld",
 "speed": 5.0
 }]
 
@@ -133,8 +245,7 @@ texture_filter = 1
 position = Vector2(1, -2)
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_21g84")
-animation = &"idleDown"
-frame_progress = 0.986964
+animation = &"upOverworld"
 speed_scale = 1.7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

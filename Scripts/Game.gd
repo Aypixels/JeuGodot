@@ -11,6 +11,7 @@ var allies = {
 }
 
 func _ready():
+	SignalBus.emit_signal("location", "Dream")
 	current_level = load(start_scene).instantiate()
 	$Level.add_child(current_level)
 	$Player/Camera2D.make_current()

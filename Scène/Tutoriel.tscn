@@ -4628,7 +4628,7 @@ offset_left = 469.0
 offset_top = 3.0
 offset_right = 597.0
 offset_bottom = 29.0
-text = "The dream of ___"
+text = "A Dreamer's Tale"
 
 [connection signal="body_entered" from="End_of_road" to="End_of_road" method="_on_body_entered"]
 [connection signal="body_entered" from="Go_to_castle" to="Go_to_castle" method="_on_body_entered"]

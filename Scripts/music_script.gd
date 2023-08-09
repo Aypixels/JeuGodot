@@ -20,6 +20,6 @@ func _process(_delta):
 func switch_music_memory() :
 	while music.volume_db > -100 :
 		music.volume_db -= 1
-		await get_tree().create_timer(0.02).timeout
+		await get_tree().create_timer(0.04).timeout
 	music.stream_paused = true
 	music = $castle_town

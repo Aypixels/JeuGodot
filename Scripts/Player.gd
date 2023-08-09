@@ -5,7 +5,7 @@ var oldPose = "Down"
 var stop = false
 var locations = {
 	"castle" = Vector2(0,0),
-	"chamber" = Vector2(0,0)
+	"chamber" = Vector2(-19,-14)
 }
 
 var _location
@@ -58,14 +58,14 @@ func end_of_road():
 
 func positionning(location) :
 	stop = true
-	$AnimatedSprite2D.play("idle" + oldPose)
+	$AnimatedSprite2D.play("idle" + oldPose + _location)
 	await get_tree().create_timer(0.8).timeout
 	position = locations[location]
 	stop = false
 
 func memory():
 	stop = true
-	$AnimatedSprite2D.play("idleUp")
+	$AnimatedSprite2D.play("idleUp" + _location)
 	SignalBus.emit_signal("dialog_display", "memory")
 	stop = false
 

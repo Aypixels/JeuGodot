@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://pg4rll0pic6a"]
+[gd_scene load_steps=20 format=3 uid="uid://pg4rll0pic6a"]
 
 [ext_resource type="Script" path="res://Scène/scarlet_shop.gd" id="1_4nmx1"]
 [ext_resource type="Texture2D" uid="uid://dxf5re3dhx5n5" path="res://assets/shop_ background.png" id="2_a4hnf"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://boaj3q8imu303" path="res://assets/Black_white.png" id="4_yf31y"]
 [ext_resource type="FontFile" uid="uid://dw0xt1bycx0el" path="res://assets/Determination/DTM-Sans.ttf" id="5_q2xsj"]
 [ext_resource type="FontFile" uid="uid://dsoad1ytjg1k6" path="res://assets/Determination/DTM-Mono.ttf" id="6_4eryq"]
+[ext_resource type="AudioStream" uid="uid://du1hk8ymy3k63" path="res://Scène/lantern (seam's shop).mp3" id="8_cv82s"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yhwle"]
 animations = [{
@@ -124,6 +125,10 @@ offset_bottom = 175.0
 scale = Vector2(0.186795, 0.410725)
 theme_override_fonts/normal_font = ExtResource("6_4eryq")
 theme_override_font_sizes/normal_font_size = 40
+
+[node name="seam_shop" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_cv82s")
+volume_db = -10.272
 
 [connection signal="pressed" from="choice_box/VBoxContainer/Talk" to="." method="_on_talk_pressed"]
 [connection signal="pressed" from="choice_box/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

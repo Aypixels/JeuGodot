@@ -6,17 +6,20 @@ extends Container
 var text_index = 0
 var texts = ["* Hee hee...
 * Bienvenue, voyageur",
+"* J'm'appelle Sean 
+* Ça se prononce «Shawn»",
 "* C'est dangereux plus loin...
 Tu le sais déjà, non ?",
 "* Tu attends quelque chose de moi ...?",
 "* Reviens plus tard"]
 
-
 func _ready():
 	show_shop()
 	show_text(0)
 	$Seam.play("default")
-
+	$seam_shop.play()
+	$"../../Level/Tutoriel/Musics".cut_sound(0, 0)
+	
 func show_shop() :
 	player.visible = false
 	player.stop = true
@@ -28,7 +31,8 @@ func hide_shop():
 	queue_free()
 	player.visible = true
 	player.stop = false
-	
+	$"../../Level/Tutoriel/Musics".recover_sound_ambient()
+
 func show_text(id):
 	text.text = texts[id]
 	text.visible_characters = 0
@@ -42,7 +46,7 @@ func _on_exit_pressed():
 	hide_shop()
 
 func _on_talk_pressed():
-	if text_index < 3 :
+	if text_index < len(texts) - 1 :
 		text_index += 1
 	if text_index == 1 :
 		await get_tree().create_timer(0.4).timeout

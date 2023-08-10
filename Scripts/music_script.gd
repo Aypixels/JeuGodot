@@ -4,14 +4,18 @@ extends Node
 
 func _ready():
 	SignalBus.fight.connect(cut_sound)
-	SignalBus.victory.connect(recover_sound)
+	SignalBus.victory.connect(recover_sound_combat)
 	music.stream_paused= false
 	SignalBus.memory.connect(switch_music)
 
 func cut_sound(_a, _b) :
 	music.stream_paused = true
-func recover_sound():
+	
+func recover_sound_combat():
 	await get_tree().create_timer(2).timeout
+	music.stream_paused = false
+	
+func recover_sound_ambient():
 	music.stream_paused = false
 
 func _process(_delta):

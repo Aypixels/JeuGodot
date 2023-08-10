@@ -16,4 +16,5 @@ func _process(_delta):
 	if Input.is_action_just_pressed("interact") and player_in:
 		player_in = false
 		SignalBus.emit_signal("open_UI", "scarlet_shop")
+		SignalBus.emit_signal("seam")
 

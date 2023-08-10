@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://bdtvg5dmj7rj"]
+[gd_scene load_steps=31 format=3 uid="uid://du46womknwtmf"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_jhf83"]
 [ext_resource type="Texture2D" uid="uid://cd400khd3t38n" path="res://Animation/character/down1.png" id="2_5ttjl"]
@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://dxxiqgkm7yjlb" path="res://Animation/character/right_overworld2.png" id="21_55w76"]
 [ext_resource type="Texture2D" uid="uid://dih0vkar6mk24" path="res://Animation/character/up_overworld1.png" id="24_acssl"]
 [ext_resource type="Texture2D" uid="uid://bcvpiuune0rmy" path="res://Animation/character/up_overworld2.png" id="25_wun6h"]
+[ext_resource type="Texture2D" uid="uid://7oyy55mclmpo" path="res://Tiled_file/spacebar.png" id="27_owe21"]
 [ext_resource type="PackedScene" uid="uid://bdwxt86d4exjv" path="res://Scène/Dialog_box.tscn" id="34_ijouk"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_21g84"]
@@ -270,3 +271,9 @@ offset_left = 1.0
 offset_top = 20.0
 offset_right = 1.0
 offset_bottom = 20.0
+
+[node name="Spacebar" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1, -23)
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("27_owe21")

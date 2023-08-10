@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://c5hs6htv8c8f"]
+[gd_scene load_steps=20 format=3]
 
 [ext_resource type="Script" path="res://Combat_characters/Combat_player.gd" id="1_fwnnm"]
 [ext_resource type="Texture2D" uid="uid://cd400khd3t38n" path="res://Animation/character/down1.png" id="2_5du2q"]

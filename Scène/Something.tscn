@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://wchc7nkaalau"]
+[gd_scene load_steps=36 format=3]
 
 [ext_resource type="Script" path="res://Scripts/Something.gd" id="1_8w7pu"]
 [ext_resource type="Texture2D" uid="uid://wss7rl0mc4qy" path="res://Animation/Something animation/Disappear/frame_00_delay-0.35s.png" id="2_kxcdf"]

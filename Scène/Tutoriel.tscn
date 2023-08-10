@@ -6687,6 +6687,7 @@ theme_override_fonts/font = ExtResource("15_fba8q")
 text = "A Dreamer's Tale"
 
 [node name="Shop" type="StaticBody2D" parent="."]
+texture_filter = 1
 
 [node name="Shop_sprite" type="Sprite2D" parent="Shop"]
 position = Vector2(101, 267)
@@ -6708,3 +6709,4 @@ shape = SubResource("RectangleShape2D_s4k06")
 [connection signal="body_entered" from="Go_to_castle" to="Go_to_castle" method="_on_body_entered"]
 [connection signal="body_entered" from="Memory" to="Memory" method="_on_body_entered"]
 [connection signal="body_entered" from="Shop/Enter_Shop" to="Shop/Enter_Shop" method="_on_body_entered"]
+[connection signal="body_exited" from="Shop/Enter_Shop" to="Shop/Enter_Shop" method="_on_body_exited"]

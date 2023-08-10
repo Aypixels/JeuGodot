@@ -1,7 +1,9 @@
 extends AnimatedSprite2D
 
+@onready var blanket = $"../Blanket"
+
 func _ready():
 	if animation.get_basename() == "night":
-		$Blanket.visibility_layer = true
+		blanket.visible = true
 	else:
-		$Blanket.visibility_layer = false
+		blanket.visible = false

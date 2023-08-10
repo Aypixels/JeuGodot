@@ -11,6 +11,7 @@ process_mode = 3
 script = ExtResource("1_4s44p")
 
 [node name="Dialogbox2" type="Sprite2D" parent="."]
+z_index = 10
 texture_filter = 1
 position = Vector2(-1.90735e-06, 31)
 scale = Vector2(1.40577, 1.21053)

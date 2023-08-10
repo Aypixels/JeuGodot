@@ -43,6 +43,7 @@ func finish() :
 	get_tree().paused = false
 		
 func on_dialog_display(text_key) :
+	$"..".go_idle()
 	get_tree().paused = true
 	background.visible = true
 	selected_name = scene_text[text_key][0].duplicate()

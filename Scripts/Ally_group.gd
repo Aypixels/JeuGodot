@@ -8,6 +8,7 @@ var index = 0
 func _ready():
 	SignalBus.place_combat.connect(place_ally)
 	SignalBus.enemy_attack.connect(receive_dmg)
+	SignalBus.new_turn.connect(focus_first)
 	visible = false
 	
 func place_ally(_combat_index, enemies_id, allies_id) :
@@ -27,6 +28,8 @@ func place_ally(_combat_index, enemies_id, allies_id) :
 	allies[0].focus()
 
 
+
+
 func _on_ennemy_group_next_player():
 	if index < allies.size() - 1:
 		index += 1
@@ -36,7 +39,7 @@ func _on_ennemy_group_next_player():
 		allies[-1].unfocus()
 		
 
-func _on_ennemy_group_new_turn():
+func focus_first():
 	allies[0].focus()
 	
 	

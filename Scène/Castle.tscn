@@ -9234,4 +9234,5 @@ position = Vector2(-428.5, 424)
 shape = SubResource("RectangleShape2D_kulrg")
 
 [connection signal="body_entered" from="The_Grand_door/grand_door" to="The_Grand_door/grand_door" method="_on_body_entered"]
+[connection signal="body_exited" from="The_Grand_door/grand_door" to="The_Grand_door/grand_door" method="_on_body_exited"]
 [connection signal="body_entered" from="Exit/exit" to="Exit/exit" method="_on_body_entered"]

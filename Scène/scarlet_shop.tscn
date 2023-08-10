@@ -1,0 +1,129 @@
+[gd_scene load_steps=19 format=3 uid="uid://pg4rll0pic6a"]
+
+[ext_resource type="Script" path="res://Scène/scarlet_shop.gd" id="1_4nmx1"]
+[ext_resource type="Texture2D" uid="uid://dxf5re3dhx5n5" path="res://assets/shop_ background.png" id="2_a4hnf"]
+[ext_resource type="Texture2D" uid="uid://f4rvgrmbafwg" path="res://assets/Seam.png" id="3_3u28v"]
+[ext_resource type="Texture2D" uid="uid://degjf7hsyvlk3" path="res://assets/seam_smiling.png" id="4_xmiv8"]
+[ext_resource type="Texture2D" uid="uid://boaj3q8imu303" path="res://assets/Black_white.png" id="4_yf31y"]
+[ext_resource type="FontFile" uid="uid://dw0xt1bycx0el" path="res://assets/Determination/DTM-Sans.ttf" id="5_q2xsj"]
+[ext_resource type="FontFile" uid="uid://dsoad1ytjg1k6" path="res://assets/Determination/DTM-Mono.ttf" id="6_4eryq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yhwle"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_3u28v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_xmiv8")
+}],
+"loop": true,
+"name": &"smiling",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_grc16"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4ma3a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_43fxf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g4eul"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uuhcl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5qk4m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o8sci"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1frnm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3o4o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jvqip"]
+
+[node name="scarlet_shop" type="Container"]
+texture_filter = 1
+anchors_preset = -1
+anchor_right = 0.74566
+anchor_bottom = 0.742284
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 291.0
+offset_bottom = 165.0
+script = ExtResource("1_4nmx1")
+metadata/_edit_use_anchors_ = true
+
+[node name="ShopBackground" type="Sprite2D" parent="."]
+position = Vector2(575, 206.625)
+scale = Vector2(3.54938, 3.35569)
+texture = ExtResource("2_a4hnf")
+
+[node name="Seam" type="AnimatedSprite2D" parent="."]
+position = Vector2(576, 213)
+scale = Vector2(3.5, 3.651)
+sprite_frames = SubResource("SpriteFrames_yhwle")
+animation = &"smiling"
+
+[node name="choice_box" type="Sprite2D" parent="."]
+position = Vector2(967.625, 528)
+scale = Vector2(2.64259, 2.05455)
+texture = ExtResource("4_yf31y")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="choice_box"]
+texture_filter = 1
+offset_left = -53.5932
+offset_top = -40.3982
+offset_right = 38.4068
+offset_bottom = 25.6018
+scale = Vector2(0.764554, 0.812295)
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="Talk" type="Button" parent="choice_box/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_q2xsj")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxEmpty_grc16")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4ma3a")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_43fxf")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_g4eul")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uuhcl")
+text = "Parler"
+
+[node name="Exit" type="Button" parent="choice_box/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_q2xsj")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5qk4m")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o8sci")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1frnm")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_x3o4o")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jvqip")
+text = "Sortir
+"
+
+[node name="dialog_box" type="Sprite2D" parent="."]
+position = Vector2(392.25, 526.5)
+scale = Vector2(5.80371, 2.04546)
+texture = ExtResource("4_yf31y")
+
+[node name="text" type="RichTextLabel" parent="dialog_box"]
+offset_left = -62.0
+offset_top = -41.0
+offset_right = 593.0
+offset_bottom = 175.0
+scale = Vector2(0.186795, 0.410725)
+theme_override_fonts/normal_font = ExtResource("6_4eryq")
+theme_override_font_sizes/normal_font_size = 40
+
+[connection signal="pressed" from="choice_box/VBoxContainer/Talk" to="." method="_on_talk_pressed"]
+[connection signal="pressed" from="choice_box/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

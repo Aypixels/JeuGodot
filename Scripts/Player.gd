@@ -40,7 +40,7 @@ func _physics_process(_delta):
 			$AnimatedSprite2D.play("down" + _location)
 			oldPose = "Down"
 		else:
-			$AnimatedSprite2D.play("idle" + oldPose + _location)
+			go_idle()
 		move_and_slide()
 		
 		if Input.is_action_pressed("Shift"):
@@ -59,7 +59,9 @@ func end_of_road():
 func positionning(location) :
 	stop = true
 	$AnimatedSprite2D.play("idle" + oldPose + _location)
-	await get_tree().create_timer(0.8).timeout
+	await get_tree(
+		
+	).create_timer(0.8).timeout
 	position = locations[location]
 	stop = false
 
@@ -74,3 +76,8 @@ func combat_end():
 
 func locate_frisk(location):
 	_location = location
+	oldPose = "Down"
+	
+func go_idle() : $AnimatedSprite2D.play("idle" + oldPose + _location)
+
+func get_cam_pos(): return $Camera2D.position

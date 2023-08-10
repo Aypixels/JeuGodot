@@ -45,7 +45,7 @@ func _process(_delta):
 				target_index += 1
 				switch_focus(target_index, target_index - 1)
 				
-		if action == "attack" and Input.is_action_just_pressed("ui_accept") :
+		if action == "attack" and Input.is_action_just_pressed("interact") :
 			var dmg = get_ally_ATK()
 			action_queue.push_back([target_index,dmg, action])
 			action = ""

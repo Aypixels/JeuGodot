@@ -14,3 +14,5 @@ func _on_area_entered(_area):
 func _on_area_exited(_area):
 	area_active = false
 
+
+func show_spacebar(): pass

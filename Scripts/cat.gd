@@ -23,3 +23,5 @@ func _process(_delta):
 			moving = false
 		else:
 			$AnimatedSprite2D.play("sit")
+
+func show_spacebar(): pass

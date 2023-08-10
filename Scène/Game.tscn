@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://bjy6cqcdss1wr"]
 
-[ext_resource type="PackedScene" uid="uid://bdtvg5dmj7rj" path="res://Scène/player.tscn" id="1_s8lps"]
+[ext_resource type="PackedScene" uid="uid://du46womknwtmf" path="res://Scène/player.tscn" id="1_s8lps"]
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_uyjkw"]
 [ext_resource type="AudioStream" uid="uid://bpxqdgdv8vbrb" path="res://assets/Undertale Sound Effect Battle Encounter.mp3" id="3_mq4tu"]
 [ext_resource type="Script" path="res://Scène/Over the screen.gd" id="4_rrl86"]

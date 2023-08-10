@@ -12,9 +12,9 @@
 [ext_resource type="FontFile" uid="uid://cehwvq4xnvh1c" path="res://assets/kongtext.ttf" id="15_fba8q"]
 [ext_resource type="Texture2D" uid="uid://b72cvdujr7ug6" path="res://assets/Shop.png" id="16_5dhyb"]
 [ext_resource type="Script" path="res://Scène/Enter_Shop.gd" id="17_4jki2"]
-[ext_resource type="PackedScene" uid="uid://c7q8noc2bebxf" path="res://Scène/cat.tscn" id="23_6xsbf"]
+[ext_resource type="PackedScene" uid="uid://b4eimxrlr0sd7" path="res://Scène/cat.tscn" id="23_6xsbf"]
 [ext_resource type="Script" path="res://Scripts/music_script.gd" id="23_epccn"]
-[ext_resource type="PackedScene" uid="uid://wchc7nkaalau" path="res://Scène/Something.tscn" id="25_rbbiq"]
+[ext_resource type="PackedScene" uid="uid://bh86d62qw6q0n" path="res://Scène/Something.tscn" id="25_rbbiq"]
 [ext_resource type="Script" path="res://Scripts/End_of_road.gd" id="25_umjae"]
 [ext_resource type="Script" path="res://Scripts/Go_to_castle.gd" id="26_uvmrv"]
 

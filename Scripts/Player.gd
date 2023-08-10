@@ -81,3 +81,4 @@ func locate_frisk(location):
 func go_idle() : $AnimatedSprite2D.play("idle" + oldPose + _location)
 
 func get_cam_pos(): return $Camera2D.position
+

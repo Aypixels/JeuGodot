@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://1a6dfoco7v7k"]
+[gd_scene load_steps=38 format=3 uid="uid://1a6dfoco7v7k"]
 
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_m43nj"]
 [ext_resource type="Texture2D" uid="uid://dggq7d8rkwh6k" path="res://tilset/tiles_packed.png" id="3_gj4oh"]
@@ -9,6 +9,8 @@
 [ext_resource type="Script" path="res://Scripts/Memory.gd" id="13_qg04s"]
 [ext_resource type="AudioStream" uid="uid://b803s2t0ctxvx" path="res://Musics/SCARLET FOREST - Deltarune Orchestral Cover.mp3" id="14_mirvf"]
 [ext_resource type="FontFile" uid="uid://cehwvq4xnvh1c" path="res://assets/kongtext.ttf" id="15_fba8q"]
+[ext_resource type="Texture2D" uid="uid://b72cvdujr7ug6" path="res://assets/Shop.png" id="16_5dhyb"]
+[ext_resource type="Script" path="res://Scène/Enter_Shop.gd" id="17_4jki2"]
 [ext_resource type="PackedScene" uid="uid://c7q8noc2bebxf" path="res://Scène/cat.tscn" id="23_6xsbf"]
 [ext_resource type="AudioStream" uid="uid://c6liec8wxjahk" path="res://Musics/171. Persevere.mp3" id="23_85gdj"]
 [ext_resource type="Script" path="res://Scripts/music_script.gd" id="23_epccn"]
@@ -6527,6 +6529,12 @@ size = Vector2(28, 20)
 a = Vector2(315, -194)
 b = Vector2(179, -194)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eojpu"]
+size = Vector2(159, 110)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s4k06"]
+size = Vector2(51, 14.875)
+
 [node name="Tutoriel" type="Node2D"]
 process_mode = 1
 metadata/_edit_horizontal_guides_ = []
@@ -6678,6 +6686,25 @@ offset_bottom = 10.0
 theme_override_fonts/font = ExtResource("15_fba8q")
 text = "A Dreamer's Tale"
 
+[node name="Shop" type="StaticBody2D" parent="."]
+
+[node name="Shop_sprite" type="Sprite2D" parent="Shop"]
+position = Vector2(101, 267)
+scale = Vector2(0.515789, 0.524272)
+texture = ExtResource("16_5dhyb")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Shop"]
+position = Vector2(100.5, 265)
+shape = SubResource("RectangleShape2D_eojpu")
+
+[node name="Enter_Shop" type="Area2D" parent="Shop"]
+script = ExtResource("17_4jki2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shop/Enter_Shop"]
+position = Vector2(101.5, 327.563)
+shape = SubResource("RectangleShape2D_s4k06")
+
 [connection signal="body_entered" from="End_of_road" to="End_of_road" method="_on_body_entered"]
 [connection signal="body_entered" from="Go_to_castle" to="Go_to_castle" method="_on_body_entered"]
 [connection signal="body_entered" from="Memory" to="Memory" method="_on_body_entered"]
+[connection signal="body_entered" from="Shop/Enter_Shop" to="Shop/Enter_Shop" method="_on_body_entered"]

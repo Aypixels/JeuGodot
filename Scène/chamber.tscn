@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cugtptca1c5ag"]
+[gd_scene load_steps=16 format=3 uid="uid://cugtptca1c5ag"]
 
 [ext_resource type="Texture2D" uid="uid://cxc2bbbu6uob7" path="res://assets/chambre_jour.png" id="1_gfm72"]
 [ext_resource type="Texture2D" uid="uid://bsquf26prbyp7" path="res://assets/chambre_nuit.png" id="2_w71aq"]
@@ -52,6 +52,9 @@ size = Vector2(33, 18.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8eq7k"]
 size = Vector2(37, 23)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eovq0"]
+size = Vector2(40, 14)
 
 [node name="chambre" type="Node2D"]
 position = Vector2(-97, -7)
@@ -110,3 +113,7 @@ shape = SubResource("RectangleShape2D_73vwm")
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="Collision"]
 position = Vector2(78.5, 25.5)
 shape = SubResource("RectangleShape2D_8eq7k")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Collision"]
+position = Vector2(78, -10)
+shape = SubResource("RectangleShape2D_eovq0")

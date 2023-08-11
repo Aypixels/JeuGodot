@@ -18,6 +18,7 @@ func _ready():
 	SignalBus.fight.connect(start_combat)
 	SignalBus.victory.connect(combat_won)
 	SignalBus.go_to.connect(on_go_to)
+	SignalBus.lose.connect(combat_lost)
 	
 	
 func start_combat(combat_index, enemies) :
@@ -52,7 +53,8 @@ func combat_won() :
 	fondu.play_backwards("fondu")
 	
 
-
+func combat_lost() :
+	pass
 
 
 

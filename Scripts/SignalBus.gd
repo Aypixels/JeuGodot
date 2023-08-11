@@ -14,6 +14,7 @@ signal enemy_attack(ATK)
 signal switch_turn(who)
 signal defeated(id)
 signal victory()
+signal lose()
 
 #Général
 signal location(location)

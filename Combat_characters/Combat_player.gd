@@ -21,10 +21,13 @@ func unfocus():
 	_focus.hide()
 	
 func take_damage(value):
-	damage_taken.play()
 	HP -= value
-	_update_health()
-	_play_animation()
+	if HP > 0 :
+		damage_taken.play()
+		_update_health()
+		_play_animation()
+	else :
+		_defeated()
 	
 func _ready():
 	$AnimatedSprite2D.play("idleLeft")
@@ -35,7 +38,10 @@ func get_stats(Maxhp, current_hp, lvl) :
 	HP = current_hp
 	LV = lvl
 	
-
+	
+func _defeated() :
+	SignalBus.emit_signal("defeated", $".")
+	visible = false
 	
 	
 

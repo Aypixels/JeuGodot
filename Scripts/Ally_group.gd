@@ -9,6 +9,7 @@ func _ready():
 	SignalBus.place_combat.connect(place_ally)
 	SignalBus.enemy_attack.connect(receive_dmg)
 	SignalBus.new_turn.connect(focus_first)
+	SignalBus.defeated.connect(allly_defeated)
 	visible = false
 	
 func place_ally(_combat_index, enemies_id, allies_id) :
@@ -53,6 +54,11 @@ func receive_dmg(DMG):
 			ally.take_damage(DMG)
 			break
 		
+		
+func allly_defeated(ally_id) :
+	if ally_id in allies :
+		allies.erase(ally_id)
+
 func current_ally_atk() :
 	return allies[index].ATK
 	

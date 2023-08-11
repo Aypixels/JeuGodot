@@ -93,11 +93,18 @@ func _on_attack_pressed():
 	start_choosing()
 
 func enemy_defeated(enemy_id) :
-	enemies.erase(enemy_id)
+	if enemy_id in enemies :
+		enemies.erase(enemy_id)
 	
 func check_victory():
 	if enemies.size() == 0 :
 		SignalBus.emit_signal("victory")
+		return true
+	return false
+
+func check_lose():
+	if $"../Ally_group".allies.size() == 0 :
+		SignalBus.emit_signal("lose")
 		return true
 	return false
 
@@ -106,6 +113,7 @@ func enemy_turn() :
 	for enemy in enemies :
 		SignalBus.emit_signal("enemy_attack", enemy.ATK)
 		await get_tree().create_timer(1).timeout
+		check_lose()
 	SignalBus.emit_signal("new_turn")
 	show_choice()
 	SignalBus.emit_signal("switch_turn", "ally")

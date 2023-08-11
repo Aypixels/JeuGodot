@@ -16,7 +16,11 @@ func recover_sound_combat():
 	music.stream_paused = false
 	
 func recover_sound_ambient():
+	music.volume_db = -30
 	music.stream_paused = false
+	while music.volume_db < 0 :
+		music.volume_db += 1
+		await get_tree().create_timer(0.04).timeout
 
 func _process(_delta):
 	if music.playing == false and music.stream_paused == false :

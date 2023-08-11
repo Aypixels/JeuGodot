@@ -10,9 +10,11 @@ func _input(event):
 
 func _on_area_entered(_area):
 	area_active = true
+	SignalBus.emit_signal('show_spacebar')
 
 func _on_area_exited(_area):
 	area_active = false
+	SignalBus.emit_signal('hide_spacebar')	
 
 
 func show_spacebar(): pass

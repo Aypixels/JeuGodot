@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://1a6dfoco7v7k"]
+[gd_scene load_steps=38 format=3 uid="uid://cm2xlnrofqqye"]
 
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_m43nj"]
 [ext_resource type="Texture2D" uid="uid://dggq7d8rkwh6k" path="res://tilset/tiles_packed.png" id="3_gj4oh"]
@@ -6,12 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://c5jmvgukjw73m" path="res://tilset/Overworld.png" id="5_f4a87"]
 [ext_resource type="Texture2D" uid="uid://b7c6dnkgnj6p7" path="res://tilset/113030.png" id="6_aiwty"]
 [ext_resource type="Texture2D" uid="uid://crplcbmfgkrok" path="res://tilset/Scarlet_forest.png" id="6_byasb"]
-[ext_resource type="AudioStream" uid="uid://du1hk8ymy3k63" path="res://Scène/lantern (seam's shop).mp3" id="13_onhm1"]
 [ext_resource type="Script" path="res://Scripts/Memory.gd" id="13_qg04s"]
+[ext_resource type="AudioStream" uid="uid://du1hk8ymy3k63" path="res://Musics/lantern (seam's shop).mp3" id="13_v12uk"]
 [ext_resource type="AudioStream" uid="uid://b803s2t0ctxvx" path="res://Musics/SCARLET FOREST - Deltarune Orchestral Cover.mp3" id="14_mirvf"]
 [ext_resource type="FontFile" uid="uid://cehwvq4xnvh1c" path="res://assets/kongtext.ttf" id="15_fba8q"]
 [ext_resource type="Texture2D" uid="uid://b72cvdujr7ug6" path="res://assets/Shop.png" id="16_5dhyb"]
-[ext_resource type="Script" path="res://Scène/Enter_Shop.gd" id="17_4jki2"]
+[ext_resource type="Script" path="res://Scripts/Enter_Shop.gd" id="17_87fvl"]
 [ext_resource type="PackedScene" uid="uid://b4eimxrlr0sd7" path="res://Scène/cat.tscn" id="23_6xsbf"]
 [ext_resource type="Script" path="res://Scripts/music_script.gd" id="23_epccn"]
 [ext_resource type="PackedScene" uid="uid://bh86d62qw6q0n" path="res://Scène/Something.tscn" id="25_rbbiq"]
@@ -6670,7 +6670,7 @@ script = ExtResource("23_epccn")
 
 [node name="castle_town" type="AudioStreamPlayer" parent="Musics"]
 process_mode = 3
-stream = ExtResource("13_onhm1")
+stream = ExtResource("13_v12uk")
 volume_db = -8.565
 
 [node name="scarlet_forest" type="AudioStreamPlayer" parent="Musics"]
@@ -6699,7 +6699,7 @@ position = Vector2(100.5, 265)
 shape = SubResource("RectangleShape2D_eojpu")
 
 [node name="Enter_Shop" type="Area2D" parent="Shop"]
-script = ExtResource("17_4jki2")
+script = ExtResource("17_87fvl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Shop/Enter_Shop"]
 position = Vector2(101.5, 327.563)

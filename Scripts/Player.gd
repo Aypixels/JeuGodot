@@ -21,6 +21,8 @@ func _ready() :
 	SignalBus.victory.connect(combat_end)
 	SignalBus.go_to.connect(positionning)
 	SignalBus.location.connect(locate_frisk)
+	SignalBus.show_spacebar.connect(show_spacebar)
+	SignalBus.hide_spacebar.connect(hide_spacebar)
 
 func _physics_process(_delta):
 	if not stop :
@@ -81,3 +83,9 @@ func locate_frisk(location):
 func go_idle() : $AnimatedSprite2D.play("idle" + oldPose + _location)
 func get_cam_pos(): return $Camera2D.position
 
+func show_spacebar(): 
+	$Spacebar.visible = true
+	$Spacebar.play("spacebar")
+func hide_spacebar(): 
+	$Spacebar.visible = false
+	$Spacebar.stop()

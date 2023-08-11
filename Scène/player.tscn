@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://du46womknwtmf"]
+[gd_scene load_steps=34 format=3 uid="uid://buosgganahfa2"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_jhf83"]
 [ext_resource type="Texture2D" uid="uid://cd400khd3t38n" path="res://Animation/character/down1.png" id="2_5ttjl"]
@@ -25,8 +25,9 @@
 [ext_resource type="Texture2D" uid="uid://dxxiqgkm7yjlb" path="res://Animation/character/right_overworld2.png" id="21_55w76"]
 [ext_resource type="Texture2D" uid="uid://dih0vkar6mk24" path="res://Animation/character/up_overworld1.png" id="24_acssl"]
 [ext_resource type="Texture2D" uid="uid://bcvpiuune0rmy" path="res://Animation/character/up_overworld2.png" id="25_wun6h"]
-[ext_resource type="Script" path="res://Scène/spacebar.gd" id="26_j4btv"]
+[ext_resource type="Script" path="res://Scripts/spacebar.gd" id="26_1glb2"]
 [ext_resource type="Texture2D" uid="uid://7oyy55mclmpo" path="res://Tiled_file/spacebar.png" id="27_owe21"]
+[ext_resource type="Texture2D" uid="uid://b657vspkhy2k6" path="res://Tiled_file/clicked_spacebar.png" id="29_a1dy3"]
 [ext_resource type="PackedScene" uid="uid://bdwxt86d4exjv" path="res://Scène/Dialog_box.tscn" id="34_ijouk"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_21g84"]
@@ -238,6 +239,20 @@ size = Vector2(10, 7.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ysp45"]
 size = Vector2(20, 21)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_5nd6u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_owe21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_a1dy3")
+}],
+"loop": true,
+"name": &"spacebar",
+"speed": 1.99
+}]
+
 [node name="Player" type="CharacterBody2D"]
 z_index = 5
 position = Vector2(0, -2)
@@ -262,7 +277,7 @@ zoom = Vector2(4, 4)
 [node name="DialogInteractionArea" type="Area2D" parent="."]
 collision_layer = 2
 collision_mask = 0
-script = ExtResource("26_j4btv")
+script = ExtResource("26_1glb2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DialogInteractionArea"]
 position = Vector2(1, 5.5)
@@ -274,11 +289,13 @@ offset_top = 20.0
 offset_right = 1.0
 offset_bottom = 20.0
 
-[node name="Spacebar" type="Sprite2D" parent="."]
+[node name="Spacebar" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2(1, -23)
+position = Vector2(1, -20)
 scale = Vector2(0.03, 0.03)
-texture = ExtResource("27_owe21")
+sprite_frames = SubResource("SpriteFrames_5nd6u")
+animation = &"spacebar"
+frame_progress = 0.640675
 
 [connection signal="body_entered" from="DialogInteractionArea" to="DialogInteractionArea" method="_on_body_entered"]
 [connection signal="body_exited" from="DialogInteractionArea" to="DialogInteractionArea" method="_on_body_exited"]

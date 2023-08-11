@@ -1,6 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://cugtptca1c5ag"]
+[gd_scene load_steps=18 format=3 uid="uid://ddqxwqbnspvsu"]
 
 [ext_resource type="Texture2D" uid="uid://cxc2bbbu6uob7" path="res://assets/chambre_jour.png" id="1_gfm72"]
+[ext_resource type="Script" path="res://Scripts/chamber.gd" id="1_yau6q"]
 [ext_resource type="Texture2D" uid="uid://bsquf26prbyp7" path="res://assets/chambre_nuit.png" id="2_w71aq"]
 [ext_resource type="Script" path="res://Scripts/Background.gd" id="3_guwki"]
 [ext_resource type="Texture2D" uid="uid://chdpbc7qfjq5" path="res://assets/blancket.png" id="4_8xf8v"]
@@ -59,6 +60,7 @@ size = Vector2(40, 13)
 
 [node name="chambre" type="Node2D"]
 position = Vector2(-97, -7)
+script = ExtResource("1_yau6q")
 metadata/_edit_group_ = true
 
 [node name="Background" type="AnimatedSprite2D" parent="."]

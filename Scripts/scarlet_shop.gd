@@ -6,8 +6,8 @@ extends Container
 var text_index = 0
 var texts = ["* Hee hee...
 * Bienvenue, voyageur",
-"* J'm'appelle Sean 
-* Ça se prononce «Shawn»",
+"* J'm'appelle Seam 
+* Ça se prononce «Shawm»",
 "* C'est dangereux plus loin...
 Tu le sais déjà, non ?",
 "* Tu attends quelque chose de moi ...?",
@@ -17,8 +17,14 @@ func _ready():
 	show_shop()
 	show_text(0)
 	$Seam.play("default")
-	$seam_shop.play()
 	$"../../Level/Tutoriel/Musics".cut_sound(0, 0)
+	$seam_shop.volume_db = -30
+	$seam_shop.play()
+	while $seam_shop.volume_db < 0 :
+		$seam_shop.volume_db += 1
+		await get_tree().create_timer(0.04).timeout
+
+
 	
 func show_shop() :
 	player.visible = false

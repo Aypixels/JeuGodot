@@ -20,6 +20,8 @@ signal location(location)
 signal go_to(direction)
 signal dialog_display(name,text_key)
 signal open_UI(id)
+signal show_spacebar()
+signal hide_spacebar()
 
 func _ready():
 	RenderingServer.set_default_clear_color("black")

@@ -1,10 +1,11 @@
-[gd_scene load_steps=18 format=3 uid="uid://ddqxwqbnspvsu"]
+[gd_scene load_steps=20 format=3 uid="uid://ddqxwqbnspvsu"]
 
 [ext_resource type="Texture2D" uid="uid://cxc2bbbu6uob7" path="res://assets/chambre_jour.png" id="1_gfm72"]
 [ext_resource type="Script" path="res://Scripts/chamber.gd" id="1_yau6q"]
 [ext_resource type="Texture2D" uid="uid://bsquf26prbyp7" path="res://assets/chambre_nuit.png" id="2_w71aq"]
 [ext_resource type="Script" path="res://Scripts/Background.gd" id="3_guwki"]
 [ext_resource type="Texture2D" uid="uid://chdpbc7qfjq5" path="res://assets/blancket.png" id="4_8xf8v"]
+[ext_resource type="Script" path="res://Scène/window.gd" id="6_g5wvm"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lt30v"]
 animations = [{
@@ -57,6 +58,9 @@ size = Vector2(37, 26)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eovq0"]
 size = Vector2(40, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w3rne"]
+size = Vector2(28.5, 20)
 
 [node name="chambre" type="Node2D"]
 position = Vector2(-97, -7)
@@ -122,3 +126,13 @@ texture_filter = 1
 position = Vector2(78.72, 5.35)
 scale = Vector2(0.82, 0.82)
 texture = ExtResource("4_8xf8v")
+
+[node name="window" type="Area2D" parent="."]
+script = ExtResource("6_g5wvm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="window"]
+position = Vector2(4.25, -23)
+shape = SubResource("RectangleShape2D_w3rne")
+
+[connection signal="body_entered" from="window" to="window" method="_on_body_entered"]
+[connection signal="body_exited" from="window" to="window" method="_on_body_exited"]

@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b7c6dnkgnj6p7" path="res://tilset/113030.png" id="6_aiwty"]
 [ext_resource type="Texture2D" uid="uid://crplcbmfgkrok" path="res://tilset/Scarlet_forest.png" id="6_byasb"]
 [ext_resource type="Script" path="res://Scripts/Memory.gd" id="13_qg04s"]
-[ext_resource type="AudioStream" uid="uid://du1hk8ymy3k63" path="res://Musics/lantern (seam's shop).mp3" id="13_v12uk"]
+[ext_resource type="AudioStream" uid="uid://c6liec8wxjahk" path="res://Musics/171. Persevere.mp3" id="13_tasb1"]
 [ext_resource type="AudioStream" uid="uid://b803s2t0ctxvx" path="res://Musics/SCARLET FOREST - Deltarune Orchestral Cover.mp3" id="14_mirvf"]
 [ext_resource type="FontFile" uid="uid://cehwvq4xnvh1c" path="res://assets/kongtext.ttf" id="15_fba8q"]
 [ext_resource type="Texture2D" uid="uid://b72cvdujr7ug6" path="res://assets/Shop.png" id="16_5dhyb"]
@@ -6670,7 +6670,7 @@ script = ExtResource("23_epccn")
 
 [node name="castle_town" type="AudioStreamPlayer" parent="Musics"]
 process_mode = 3
-stream = ExtResource("13_v12uk")
+stream = ExtResource("13_tasb1")
 volume_db = -8.565
 
 [node name="scarlet_forest" type="AudioStreamPlayer" parent="Musics"]

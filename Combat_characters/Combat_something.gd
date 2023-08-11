@@ -10,7 +10,7 @@ func _ready():
 	$AnimatedSprite2D.play("walk")
 	
 var Max_health : int = 20
-var ATK = 5
+var ATK = 10
 var HP : int = 20 
 
 

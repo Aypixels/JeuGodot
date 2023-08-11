@@ -1,9 +1,10 @@
 extends Sprite2D
 
 var battle_text = {
-	"something_run" : ["* T'enfuir ne te semble pas être une option"],
+	"something_run" : ["* M'enfuir ne me semble pas être une option"],
 	"clear" : [""],
-	"win_something": ["* Something à été vaincu"]
+	"win_something": ["* Something à été vaincu"],
+	"choose_target" : ["* Qui vais-je attaquer ?"]
 }
 var selected_text = []
 var in_progress= false

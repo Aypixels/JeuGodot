@@ -46,23 +46,28 @@ func combat_won() :
 	await get_tree().create_timer(1.5).timeout
 	fondu.play("fondu")
 	await fondu.animation_finished
+	fondu.play_backwards("fondu")
 	combat.queue_free()
-	$Combat_scene/Camera2D.enabled = false
 	$Player/Camera2D.enabled = true
 	$Level.visible = true
-	fondu.play_backwards("fondu")
+
 	
 
 func combat_lost() :
-	pass
-
-
+	await get_tree().create_timer(0.7).timeout
+	SignalBus.emit_signal("go_to", "chamber")
+	await fondu.animation_finished
+	SignalBus.emit_signal("location", "Overworld")
+	combat.queue_free()
+	$Player/Camera2D.enabled = true
+	$Level.visible = true
+	
 
 func on_go_to(location) :
 	fondu.play("fondu")
 	await fondu.animation_finished
+	fondu.play_backwards("fondu")
 	current_level = load("res://Scène/"+location+".tscn").instantiate()
 	$Level.get_child(0).queue_free()
 	$Level.add_child(current_level)
-	fondu.play_backwards("fondu")
 	

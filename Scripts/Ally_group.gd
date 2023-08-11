@@ -41,7 +41,8 @@ func _on_ennemy_group_next_player():
 		
 
 func focus_first():
-	allies[0].focus()
+	if allies.size()>0 :
+		allies[0].focus()
 	
 	
 func switch_focus(x,y):

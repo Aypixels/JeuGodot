@@ -89,6 +89,7 @@ func start_choosing() :
 
 func _on_attack_pressed():
 	action = "attack"
+	SignalBus.emit_signal("battle_dialog_display", "choose_target")
 	choice.hide()
 	start_choosing()
 
@@ -113,7 +114,7 @@ func enemy_turn() :
 	for enemy in enemies :
 		SignalBus.emit_signal("enemy_attack", enemy.ATK)
 		await get_tree().create_timer(1).timeout
-		check_lose()
-	SignalBus.emit_signal("new_turn")
-	show_choice()
-	SignalBus.emit_signal("switch_turn", "ally")
+	if not check_lose() :
+		SignalBus.emit_signal("new_turn")
+		show_choice()
+		SignalBus.emit_signal("switch_turn", "ally")

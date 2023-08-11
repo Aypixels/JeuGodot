@@ -61,9 +61,7 @@ func end_of_road():
 func positionning(location) :
 	stop = true
 	$AnimatedSprite2D.play("idle" + oldPose + _location)
-	await get_tree(
-		
-	).create_timer(0.8).timeout
+	await get_tree().create_timer(0.8).timeout
 	position = locations[location]
 	stop = false
 
@@ -79,6 +77,7 @@ func combat_end():
 func locate_frisk(location):
 	_location = location
 	oldPose = "Down"
+	go_idle()
 	
 func go_idle() : $AnimatedSprite2D.play("idle" + oldPose + _location)
 func get_cam_pos(): return $Camera2D.position

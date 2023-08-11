@@ -14,6 +14,8 @@ func _update_health() :
 
 func _play_animation() :
 	$AnimationPlayer.play("hurt")
+	await $AnimationPlayer.animation_finished
+	$AnimatedSprite2D.play("idle")
 	
 func focus() :
 	_focus.show()
@@ -22,15 +24,16 @@ func unfocus():
 	
 func take_damage(value):
 	HP -= value
+	_update_health()
+	damage_taken.play()
 	if HP > 0 :
-		damage_taken.play()
-		_update_health()
 		_play_animation()
 	else :
 		_defeated()
 	
 func _ready():
-	$AnimatedSprite2D.play("idleLeft")
+	$AnimatedSprite2D.flip_h = true
+	$AnimatedSprite2D.play("idle")
 	SignalBus.update_FriskUI.connect(get_stats)
 	
 func get_stats(Maxhp, current_hp, lvl) :
@@ -40,8 +43,10 @@ func get_stats(Maxhp, current_hp, lvl) :
 	
 	
 func _defeated() :
+	$AnimatedSprite2D.flip_h = false
+	$AnimatedSprite2D.play("death")
 	SignalBus.emit_signal("defeated", $".")
+	await $AnimatedSprite2D.animation_finished
 	visible = false
-	
 	
 

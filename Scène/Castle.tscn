@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://dmbcciu1mqfi0"]
+[gd_scene load_steps=42 format=3 uid="uid://dmbcciu1mqfi0"]
 
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="1_htshc"]
 [ext_resource type="Texture2D" uid="uid://crplcbmfgkrok" path="res://tilset/Scarlet_forest.png" id="2_0po7s"]
@@ -17,6 +17,7 @@
 [ext_resource type="Script" path="res://Scripts/exit.gd" id="14_vptg1"]
 [ext_resource type="Texture2D" uid="uid://bdny5fbfwg370" path="res://assets/The_Sun.png" id="15_hcmbb"]
 [ext_resource type="Texture2D" uid="uid://cpe21ulkuk7ex" path="res://assets/Entity.png" id="15_u1p06"]
+[ext_resource type="Texture2D" uid="uid://bcl8l1xkgolta" path="res://assets/White_particle.png" id="16_8miqu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0u1yg"]
 texture = ExtResource("1_htshc")
@@ -9049,6 +9050,14 @@ size = Vector2(8, 11)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ijyj4"]
 size = Vector2(21, 9)
 
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_aqyvv"]
+emission_shape = 3
+emission_box_extents = Vector3(100, 30, 1)
+particle_flag_disable_z = true
+gravity = Vector3(1, 98, 0)
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_5e3u4"]
 radius = 6.0
 
@@ -9199,6 +9208,14 @@ script = ExtResource("14_vptg1")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Exit/exit"]
 position = Vector2(0, -367)
 shape = SubResource("RectangleShape2D_ijyj4")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Exit"]
+self_modulate = Color(1, 1, 1, 0.811765)
+position = Vector2(3, -454)
+scale = Vector2(0.48, 1)
+emitting = false
+process_material = SubResource("ParticleProcessMaterial_aqyvv")
+texture = ExtResource("16_8miqu")
 
 [node name="The_Sun" type="StaticBody2D" parent="."]
 texture_filter = 1

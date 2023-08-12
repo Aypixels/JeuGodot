@@ -1,0 +1,68 @@
+[gd_scene load_steps=7 format=3 uid="uid://d2alup74lfn2u"]
+
+[ext_resource type="Texture2D" uid="uid://cnjvkb8rentwp" path="res://assets/frisk_lvl1.png" id="1_dlp23"]
+[ext_resource type="Script" path="res://Scripts/Frisk_UI.gd" id="2_lx0ni"]
+[ext_resource type="FontFile" uid="uid://dw0xt1bycx0el" path="res://assets/Determination/DTM-Sans.ttf" id="3_5jeop"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fduaq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dlp23")
+}],
+"loop": true,
+"name": &"lvl1",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t3fip"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fbr1h"]
+bg_color = Color(1, 0.94902, 0, 1)
+
+[node name="Frisk_UI" type="AnimatedSprite2D"]
+texture_filter = 1
+position = Vector2(47.6875, 47.4616)
+scale = Vector2(0.403017, 0.419177)
+sprite_frames = SubResource("SpriteFrames_fduaq")
+animation = &"lvl1"
+script = ExtResource("2_lx0ni")
+metadata/_edit_group_ = true
+
+[node name="lvl" type="Label" parent="."]
+texture_filter = 1
+offset_left = 10.1978
+offset_top = 17.3452
+offset_right = 82.1978
+offset_bottom = 54.3452
+scale = Vector2(0.187473, 0.185835)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_5jeop")
+theme_override_font_sizes/font_size = 40
+text = "LV 1"
+uppercase = true
+
+[node name="hp" type="Label" parent="."]
+texture_filter = 1
+offset_left = 7.64835
+offset_top = 24.7788
+offset_right = 81.6483
+offset_bottom = 51.7788
+scale = Vector2(0.140656, 0.177673)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_5jeop")
+theme_override_font_sizes/font_size = 40
+text = "20/20"
+uppercase = true
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -13.0
+offset_top = 25.0
+offset_right = 18.0
+offset_bottom = 32.0
+scale = Vector2(0.512996, 0.500277)
+theme_override_styles/background = SubResource("StyleBoxFlat_t3fip")
+theme_override_styles/fill = SubResource("StyleBoxFlat_fbr1h")
+value = 100.0
+show_percentage = false

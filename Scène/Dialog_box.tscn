@@ -18,7 +18,7 @@ scale = Vector2(1.40577, 1.21053)
 texture = ExtResource("2_1acxv")
 metadata/_edit_group_ = true
 
-[node name="CombatDialogBox" type="Sprite2D" parent="Dialogbox2"]
+[node name="DialogBox" type="Sprite2D" parent="Dialogbox2"]
 texture_filter = 1
 position = Vector2(-39.219, -20)
 scale = Vector2(0.207539, 0.210526)

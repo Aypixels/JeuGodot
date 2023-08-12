@@ -120,9 +120,9 @@ texture = ExtResource("4_yf31y")
 [node name="text" type="RichTextLabel" parent="dialog_box"]
 offset_left = -62.0
 offset_top = -41.0
-offset_right = 593.0
+offset_right = 632.0
 offset_bottom = 175.0
-scale = Vector2(0.186795, 0.410725)
+scale = Vector2(0.180004, 0.408119)
 theme_override_fonts/normal_font = ExtResource("6_4eryq")
 theme_override_font_sizes/normal_font_size = 40
 

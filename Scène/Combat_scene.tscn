@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dm8robqbf3qft"]
+[gd_scene load_steps=20 format=3 uid="uid://dm8robqbf3qft"]
 
 [ext_resource type="Script" path="res://Scripts/Combat_scene.gd" id="1_3hhq4"]
 [ext_resource type="Texture2D" uid="uid://bqq86sl8lqoln" path="res://assets/battle_backgrounds/something_fight.png" id="2_sjn1b"]
@@ -6,10 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://c3e8im3fr48dp" path="res://Scène/Ally_group.tscn" id="4_fb1oj"]
 [ext_resource type="FontFile" uid="uid://c6j3p5khmw0g1" path="res://assets/NESCyrillic.ttf" id="5_q57hc"]
 [ext_resource type="AudioStream" uid="uid://cirpx0ye4d1js" path="res://assets/OMORI OST - 014 Acrophobia.mp3" id="6_8bfeq"]
-[ext_resource type="Texture2D" uid="uid://cnjvkb8rentwp" path="res://assets/frisk_lvl1.png" id="7_g1io8"]
+[ext_resource type="PackedScene" uid="uid://d2alup74lfn2u" path="res://Scène/frisk_ui.tscn" id="7_2p0tr"]
 [ext_resource type="Texture2D" uid="uid://cgw0dji3gb2ui" path="res://assets/combat_dialog_box.png" id="8_iel0u"]
-[ext_resource type="Script" path="res://Scripts/Frisk_UI.gd" id="8_q15e6"]
-[ext_resource type="FontFile" uid="uid://dw0xt1bycx0el" path="res://assets/Determination/DTM-Sans.ttf" id="9_o5a47"]
 [ext_resource type="Texture2D" uid="uid://b5woq1mddvxsg" path="res://assets/3414630-small-removebg-preview.png" id="10_r6j7g"]
 [ext_resource type="Script" path="res://Scripts/CombatDialogBox.gd" id="11_efbcd"]
 [ext_resource type="FontFile" uid="uid://b4sngv2t4bmog" path="res://assets/Determination/DTM-Mono.otf" id="11_pdlsd"]
@@ -71,23 +69,6 @@ border_width_bottom = 2
 border_color = Color(0.776471, 0.415686, 0.0745098, 1)
 shadow_color = Color(1, 0.623529, 0, 0.6)
 shadow_size = 5
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_fduaq"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("7_g1io8")
-}],
-"loop": true,
-"name": &"lvl1",
-"speed": 5.0
-}]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t3fip"]
-bg_color = Color(1, 1, 1, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fbr1h"]
-bg_color = Color(1, 0.94902, 0, 1)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ejnw0"]
 animations = [{
@@ -182,51 +163,7 @@ text = "Items"
 [node name="something" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_8bfeq")
 
-[node name="Frisk_UI" type="AnimatedSprite2D" parent="."]
-texture_filter = 1
-position = Vector2(47.6875, 47.4616)
-scale = Vector2(0.403017, 0.419177)
-sprite_frames = SubResource("SpriteFrames_fduaq")
-animation = &"lvl1"
-script = ExtResource("8_q15e6")
-metadata/_edit_group_ = true
-
-[node name="lvl" type="Label" parent="Frisk_UI"]
-texture_filter = 1
-offset_left = 10.1978
-offset_top = 17.3452
-offset_right = 82.1978
-offset_bottom = 54.3452
-scale = Vector2(0.187473, 0.185835)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("9_o5a47")
-theme_override_font_sizes/font_size = 40
-text = "LV 1"
-uppercase = true
-
-[node name="hp" type="Label" parent="Frisk_UI"]
-texture_filter = 1
-offset_left = 7.64835
-offset_top = 24.7788
-offset_right = 81.6483
-offset_bottom = 51.7788
-scale = Vector2(0.140656, 0.177673)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("9_o5a47")
-theme_override_font_sizes/font_size = 40
-text = "20/20"
-uppercase = true
-
-[node name="ProgressBar" type="ProgressBar" parent="Frisk_UI"]
-offset_left = -13.0
-offset_top = 25.0
-offset_right = 18.0
-offset_bottom = 32.0
-scale = Vector2(0.512996, 0.500277)
-theme_override_styles/background = SubResource("StyleBoxFlat_t3fip")
-theme_override_styles/fill = SubResource("StyleBoxFlat_fbr1h")
-value = 100.0
-show_percentage = false
+[node name="Frisk_UI" parent="." instance=ExtResource("7_2p0tr")]
 
 [node name="CombatDialogBox" type="Sprite2D" parent="."]
 position = Vector2(-21, 48)

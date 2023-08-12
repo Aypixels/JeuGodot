@@ -1,9 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://b3tr3dt4qj2iv"]
+[gd_scene load_steps=11 format=3 uid="uid://b3tr3dt4qj2iv"]
 
 [ext_resource type="PackedScene" uid="uid://buosgganahfa2" path="res://Scène/player.tscn" id="1_s8lps"]
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_uyjkw"]
+[ext_resource type="FontFile" uid="uid://dw0xt1bycx0el" path="res://assets/Determination/DTM-Sans.ttf" id="3_61dlb"]
 [ext_resource type="AudioStream" uid="uid://bpxqdgdv8vbrb" path="res://assets/Undertale Sound Effect Battle Encounter.mp3" id="3_mq4tu"]
 [ext_resource type="Script" path="res://Scripts/Over the screen.gd" id="4_rrl86"]
+[ext_resource type="Script" path="res://Scène/Inventory.gd" id="5_wlat6"]
+[ext_resource type="PackedScene" uid="uid://d2alup74lfn2u" path="res://Scène/frisk_ui.tscn" id="6_wk0pp"]
 
 [sub_resource type="Animation" id="Animation_yl7or"]
 length = 0.001
@@ -48,6 +51,124 @@ script = ExtResource("1_uyjkw")
 
 [node name="Player" parent="." instance=ExtResource("1_s8lps")]
 
+[node name="Inventory" type="Control" parent="Player"]
+process_mode = 3
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 0
+offset_left = -143.0
+offset_top = -84.0
+offset_right = -143.0
+offset_bottom = -84.0
+scale = Vector2(0.24959, 0.249869)
+script = ExtResource("5_wlat6")
+
+[node name="Panel" type="Panel" parent="Player/Inventory"]
+layout_mode = 0
+offset_left = 2.0
+offset_right = 1152.0
+offset_bottom = 649.0
+
+[node name="Item_inventory" type="Control" parent="Player/Inventory"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ItemList" type="ItemList" parent="Player/Inventory/Item_inventory"]
+layout_mode = 2
+offset_left = 586.0
+offset_top = 101.0
+offset_right = 1124.0
+offset_bottom = 375.0
+theme_override_fonts/font = ExtResource("3_61dlb")
+item_count = 1
+same_column_width = true
+item_0/text = ""
+
+[node name="Items" type="Label" parent="Player/Inventory/Item_inventory"]
+layout_mode = 2
+offset_left = 592.0
+offset_top = 47.0
+offset_right = 700.0
+offset_bottom = 83.0
+theme_override_fonts/font = ExtResource("3_61dlb")
+theme_override_font_sizes/font_size = 40
+text = "Items"
+
+[node name="Frisk_UI" parent="Player/Inventory" instance=ExtResource("6_wk0pp")]
+position = Vector2(104.171, 196.103)
+scale = Vector2(2.5, 2.6)
+
+[node name="item_info" type="Control" parent="Player/Inventory"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 226.0
+offset_top = 49.0
+offset_right = 537.0
+offset_bottom = 386.0
+
+[node name="Item_info" type="Label" parent="Player/Inventory/item_info"]
+layout_mode = 2
+offset_left = -1.63217
+offset_top = -0.974884
+offset_right = 178.368
+offset_bottom = 35.0251
+theme_override_fonts/font = ExtResource("3_61dlb")
+theme_override_font_sizes/font_size = 40
+text = "Item Info"
+
+[node name="descriptton" type="RichTextLabel" parent="Player/Inventory/item_info"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 157.0
+offset_right = 292.0
+offset_bottom = 331.0
+
+[node name="stats" type="RichTextLabel" parent="Player/Inventory/item_info"]
+layout_mode = 0
+offset_left = 91.0
+offset_top = 61.0
+offset_right = 291.0
+offset_bottom = 143.0
+
+[node name="item_icon" type="Sprite2D" parent="Player/Inventory/item_info"]
+position = Vector2(14.3941, 83.0691)
+
+[node name="Team" type="Control" parent="Player/Inventory"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 53.0
+offset_top = 400.0
+offset_right = 551.0
+offset_bottom = 588.0
+
+[node name="team" type="Label" parent="Player/Inventory/Team"]
+layout_mode = 0
+offset_right = 89.0
+offset_bottom = 38.0
+theme_override_fonts/font = ExtResource("3_61dlb")
+theme_override_font_sizes/font_size = 40
+text = "Team"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Player/Inventory/Team"]
+layout_mode = 0
+offset_top = 52.0
+offset_right = 449.0
+offset_bottom = 151.0
+
+[node name="ally1" type="Sprite2D" parent="Player/Inventory/Team/HBoxContainer"]
+position = Vector2(33, 25)
+
+[node name="ally2" type="Sprite2D" parent="Player/Inventory/Team/HBoxContainer"]
+position = Vector2(122, 25)
+
+[node name="ally3" type="Sprite2D" parent="Player/Inventory/Team/HBoxContainer"]
+position = Vector2(200, 22)
+
+[node name="ally4" type="Sprite2D" parent="Player/Inventory/Team/HBoxContainer"]
+position = Vector2(281, 21)
+
 [node name="Engage" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_mq4tu")
 volume_db = -2.447
@@ -66,4 +187,5 @@ offset_bottom = 647.0
 color = Color(0, 0, 0, 0)
 
 [node name="Over the screen" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
 script = ExtResource("4_rrl86")

@@ -28,12 +28,14 @@ func _ready():
 	
 func show_shop() :
 	player.visible = false
+	player.camera_stop()
 	player.stop = true
 	
 	visible = true
 	position = player.get_cam_pos()
 	
 func hide_shop():
+	player.camera_recover()
 	queue_free()
 	player.visible = true
 	player.stop = false

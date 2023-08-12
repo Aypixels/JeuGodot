@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b3tr3dt4qj2iv"]
+[gd_scene load_steps=12 format=3 uid="uid://b3tr3dt4qj2iv"]
 
 [ext_resource type="PackedScene" uid="uid://buosgganahfa2" path="res://Scène/player.tscn" id="1_s8lps"]
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_uyjkw"]
@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://bpxqdgdv8vbrb" path="res://assets/Undertale Sound Effect Battle Encounter.mp3" id="3_mq4tu"]
 [ext_resource type="Script" path="res://Scripts/Over the screen.gd" id="4_rrl86"]
 [ext_resource type="Script" path="res://Scène/Inventory.gd" id="5_wlat6"]
+[ext_resource type="FontFile" uid="uid://bngnc0sjmpcs2" path="res://assets/Determination/DTM-Sans.otf" id="6_g2efp"]
 [ext_resource type="PackedScene" uid="uid://d2alup74lfn2u" path="res://Scène/frisk_ui.tscn" id="6_wk0pp"]
 
 [sub_resource type="Animation" id="Animation_yl7or"]
@@ -79,12 +80,17 @@ offset_bottom = 40.0
 layout_mode = 2
 offset_left = 586.0
 offset_top = 101.0
-offset_right = 1124.0
-offset_bottom = 375.0
+offset_right = 1134.0
+offset_bottom = 380.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_selected_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/guide_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_61dlb")
-item_count = 1
+theme_override_font_sizes/font_size = 24
 same_column_width = true
-item_0/text = ""
+icon_mode = 0
+fixed_icon_size = Vector2i(60, 60)
 
 [node name="Items" type="Label" parent="Player/Inventory/Item_inventory"]
 layout_mode = 2
@@ -120,10 +126,11 @@ text = "Item Info"
 
 [node name="descriptton" type="RichTextLabel" parent="Player/Inventory/item_info"]
 layout_mode = 0
-offset_left = -2.0
+offset_left = -34.0
 offset_top = 157.0
 offset_right = 292.0
 offset_bottom = 331.0
+theme_override_fonts/normal_font = ExtResource("6_g2efp")
 
 [node name="stats" type="RichTextLabel" parent="Player/Inventory/item_info"]
 layout_mode = 0
@@ -131,9 +138,11 @@ offset_left = 91.0
 offset_top = 61.0
 offset_right = 291.0
 offset_bottom = 143.0
+theme_override_fonts/normal_font = ExtResource("6_g2efp")
 
 [node name="item_icon" type="Sprite2D" parent="Player/Inventory/item_info"]
-position = Vector2(14.3941, 83.0691)
+position = Vector2(22.4075, 99.0775)
+scale = Vector2(0.3, 0.299)
 
 [node name="Team" type="Control" parent="Player/Inventory"]
 layout_mode = 3

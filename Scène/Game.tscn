@@ -1,13 +1,15 @@
-[gd_scene load_steps=12 format=3 uid="uid://b3tr3dt4qj2iv"]
+[gd_scene load_steps=14 format=3 uid="uid://b3tr3dt4qj2iv"]
 
 [ext_resource type="PackedScene" uid="uid://buosgganahfa2" path="res://Scène/player.tscn" id="1_s8lps"]
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_uyjkw"]
 [ext_resource type="FontFile" uid="uid://dw0xt1bycx0el" path="res://assets/Determination/DTM-Sans.ttf" id="3_61dlb"]
 [ext_resource type="AudioStream" uid="uid://bpxqdgdv8vbrb" path="res://assets/Undertale Sound Effect Battle Encounter.mp3" id="3_mq4tu"]
 [ext_resource type="Script" path="res://Scripts/Over the screen.gd" id="4_rrl86"]
+[ext_resource type="Script" path="res://Scène/Item_List.gd" id="5_0vxoc"]
 [ext_resource type="Script" path="res://Scène/Inventory.gd" id="5_wlat6"]
 [ext_resource type="FontFile" uid="uid://bngnc0sjmpcs2" path="res://assets/Determination/DTM-Sans.otf" id="6_g2efp"]
 [ext_resource type="PackedScene" uid="uid://d2alup74lfn2u" path="res://Scène/frisk_ui.tscn" id="6_wk0pp"]
+[ext_resource type="Texture2D" uid="uid://bgejdnmnku67f" path="res://Animation/battle_gray_frisk/Idle1.png" id="7_de7wd"]
 
 [sub_resource type="Animation" id="Animation_yl7or"]
 length = 0.001
@@ -88,9 +90,14 @@ theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_colors/guide_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_61dlb")
 theme_override_font_sizes/font_size = 24
+max_columns = 3
 same_column_width = true
 icon_mode = 0
 fixed_icon_size = Vector2i(60, 60)
+script = ExtResource("5_0vxoc")
+item_0/text = "u"
+item_0/icon = ExtResource("7_de7wd")
+item_0/selectable = false
 
 [node name="Items" type="Label" parent="Player/Inventory/Item_inventory"]
 layout_mode = 2
@@ -142,7 +149,6 @@ theme_override_fonts/normal_font = ExtResource("6_g2efp")
 
 [node name="item_icon" type="Sprite2D" parent="Player/Inventory/item_info"]
 position = Vector2(22.4075, 99.0775)
-scale = Vector2(0.3, 0.299)
 
 [node name="Team" type="Control" parent="Player/Inventory"]
 layout_mode = 3
@@ -160,23 +166,16 @@ theme_override_fonts/font = ExtResource("3_61dlb")
 theme_override_font_sizes/font_size = 40
 text = "Team"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Player/Inventory/Team"]
+[node name="team_sprite" type="HBoxContainer" parent="Player/Inventory/Team"]
 layout_mode = 0
 offset_top = 52.0
 offset_right = 449.0
 offset_bottom = 151.0
 
-[node name="ally1" type="Sprite2D" parent="Player/Inventory/Team/HBoxContainer"]
-position = Vector2(33, 25)
-
-[node name="ally2" type="Sprite2D" parent="Player/Inventory/Team/HBoxContainer"]
-position = Vector2(122, 25)
-
-[node name="ally3" type="Sprite2D" parent="Player/Inventory/Team/HBoxContainer"]
-position = Vector2(200, 22)
-
-[node name="ally4" type="Sprite2D" parent="Player/Inventory/Team/HBoxContainer"]
-position = Vector2(281, 21)
+[node name="ally_sprite" type="Sprite2D" parent="Player/Inventory/Team/team_sprite"]
+position = Vector2(75.2103, 76.2768)
+scale = Vector2(3.14408, 3.1622)
+flip_h = true
 
 [node name="Engage" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_mq4tu")

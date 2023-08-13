@@ -6,8 +6,13 @@ var combat : Node2D
 var current_allies = ["player"]
 @onready var fondu = $Fondu/AnimationPlayer
 
-var allies = { 
-	"Frisk" : [20,20,1] 
+#[Maxhp, hp, Lv] ,  item_equipped(0 : weapon/ 1 : armor/2: accessory : [ATK,DEF,HP, special effect], position, sprite_path,scale
+var allies = {
+	"Frisk" : [[20,20,1],
+		[null,null,null],
+		1,
+		"res://Animation/battle_gray_frisk/Idle1.png",
+		Vector2(3.3,3.226)]
 }
 
 func _ready():
@@ -39,7 +44,7 @@ func start_combat(combat_index, enemies) :
 	$Combat_scene/Camera2D.enabled = true
 	$Level.visible = false
 	SignalBus.emit_signal("place_combat", combat_index, enemies, current_allies)
-	SignalBus.emit_signal("update_FriskUI", allies["Frisk"][0], allies["Frisk"][1], allies["Frisk"][2])
+	SignalBus.emit_signal("update_FriskUI", allies["Frisk"][0][0], allies["Frisk"][0][1], allies["Frisk"][0][2])
 	
 func combat_won() :
 	allies["Frisk"][1] = $Combat_scene/Ally_group/Combat_player.HP

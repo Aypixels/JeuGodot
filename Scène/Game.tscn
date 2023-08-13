@@ -1,15 +1,13 @@
-[gd_scene load_steps=14 format=3 uid="uid://b3tr3dt4qj2iv"]
+[gd_scene load_steps=12 format=3 uid="uid://b3tr3dt4qj2iv"]
 
 [ext_resource type="PackedScene" uid="uid://buosgganahfa2" path="res://Scène/player.tscn" id="1_s8lps"]
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_uyjkw"]
 [ext_resource type="FontFile" uid="uid://dw0xt1bycx0el" path="res://assets/Determination/DTM-Sans.ttf" id="3_61dlb"]
 [ext_resource type="AudioStream" uid="uid://bpxqdgdv8vbrb" path="res://assets/Undertale Sound Effect Battle Encounter.mp3" id="3_mq4tu"]
 [ext_resource type="Script" path="res://Scripts/Over the screen.gd" id="4_rrl86"]
-[ext_resource type="Script" path="res://Scène/Item_List.gd" id="5_0vxoc"]
 [ext_resource type="Script" path="res://Scène/Inventory.gd" id="5_wlat6"]
 [ext_resource type="FontFile" uid="uid://bngnc0sjmpcs2" path="res://assets/Determination/DTM-Sans.otf" id="6_g2efp"]
 [ext_resource type="PackedScene" uid="uid://d2alup74lfn2u" path="res://Scène/frisk_ui.tscn" id="6_wk0pp"]
-[ext_resource type="Texture2D" uid="uid://bgejdnmnku67f" path="res://Animation/battle_gray_frisk/Idle1.png" id="7_de7wd"]
 
 [sub_resource type="Animation" id="Animation_yl7or"]
 length = 0.001
@@ -67,7 +65,6 @@ scale = Vector2(0.24959, 0.249869)
 script = ExtResource("5_wlat6")
 
 [node name="Panel" type="Panel" parent="Player/Inventory"]
-layout_mode = 0
 offset_left = 2.0
 offset_right = 1152.0
 offset_bottom = 649.0
@@ -75,29 +72,28 @@ offset_bottom = 649.0
 [node name="Item_inventory" type="Control" parent="Player/Inventory"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 1154.0
+offset_bottom = 648.0
 
 [node name="ItemList" type="ItemList" parent="Player/Inventory/Item_inventory"]
+process_mode = 3
 layout_mode = 2
-offset_left = 586.0
-offset_top = 101.0
-offset_right = 1134.0
-offset_bottom = 380.0
+anchor_left = 0.506897
+anchor_top = 0.154402
+anchor_right = 0.981767
+anchor_bottom = 0.584957
+offset_left = -6.10352e-05
+offset_bottom = -3.05176e-05
+mouse_default_cursor_shape = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_selected_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_colors/guide_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_61dlb")
 theme_override_font_sizes/font_size = 24
-max_columns = 3
-same_column_width = true
-icon_mode = 0
+allow_rmb_select = true
 fixed_icon_size = Vector2i(60, 60)
-script = ExtResource("5_0vxoc")
-item_0/text = "u"
-item_0/icon = ExtResource("7_de7wd")
-item_0/selectable = false
+metadata/_edit_use_anchors_ = true
 
 [node name="Items" type="Label" parent="Player/Inventory/Item_inventory"]
 layout_mode = 2
@@ -197,3 +193,5 @@ color = Color(0, 0, 0, 0)
 [node name="Over the screen" type="CanvasLayer" parent="."]
 follow_viewport_enabled = true
 script = ExtResource("4_rrl86")
+
+[connection signal="item_selected" from="Player/Inventory/Item_inventory/ItemList" to="Player/Inventory" method="_on_item_list_item_selected"]

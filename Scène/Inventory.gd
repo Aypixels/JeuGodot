@@ -1,4 +1,5 @@
 extends Control
+
 @onready var item_list = $Item_inventory/ItemList
 
 # nom de l'item : path, stats(ATK,DEF,HP), description, scale ,special effect
@@ -12,7 +13,6 @@ simple mais solide. Attention à ne pas le casser !", Vector2(0.3, 0.2999) , nul
 func _ready(): 
 	visible = false
 	add_item("bâton")
-	$Item_inventory/ItemList.item_selected.connect(select_item)
 
 func _process(_delta):
 	if Input.is_action_just_pressed("open_inventory") and $".."._location != "Overworld" and $"..".in_dialog() == false and $"../../Level".visible == true and $"..".visible == true :
@@ -22,16 +22,7 @@ func _process(_delta):
 			open_inventory()
 		
 		
-func select_item(item_selected) :
-	$item_info/descriptton.text = item_inventory[item_selected][4]
-	if item_inventory[item_selected][1] != 0 or item_inventory[item_selected][2] !=0 or item_inventory[item_selected][3] or 0 :
-		$item_info/stats.text = "
-		ATK +"+ str(item_inventory[item_selected][1])+"
-		DEF +"+ str(item_inventory[item_selected][2])+"
-		HP +"+ str(item_inventory[item_selected][3])
-	
-	$item_info/item_icon.texture = load(item_inventory[item_selected][0])
-	$item_info/item_icon.scale = item_inventory[item_selected][5]
+
 
 		
 func open_inventory() :
@@ -53,8 +44,8 @@ func add_item(id) :
 	item_inventory.push_back(item_data[id])
 	var icon = load(item_data[id][0])
 	item_list.add_icon_item(icon)
-	for i in range(len(item_list.get_children())) :
-		item_list.set_item_selectable(i)
+	for i in range(item_list.item_count) :
+		item_list.set_item_selectable(i, true)
 	
 func lose_item(id):
 	item_inventory[id].erase(id)
@@ -73,3 +64,15 @@ func show_team() :
 			ally_sprite.flip_h = false
 		
 		
+
+func _on_item_list_item_selected(item_selected):
+	print("pute")
+	$item_info/descriptton.text = item_inventory[item_selected][4]
+	if item_inventory[item_selected][1] != 0 or item_inventory[item_selected][2] !=0 or item_inventory[item_selected][3] or 0 :
+		$item_info/stats.text = "
+		ATK +"+ str(item_inventory[item_selected][1])+"
+		DEF +"+ str(item_inventory[item_selected][2])+"
+		HP +"+ str(item_inventory[item_selected][3])
+	$item_info/item_icon.texture = load(item_inventory[item_selected][0])
+	$item_info/item_icon.scale = item_inventory[item_selected][5]
+

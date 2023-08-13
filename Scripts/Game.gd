@@ -47,7 +47,7 @@ func start_combat(combat_index, enemies) :
 	SignalBus.emit_signal("update_FriskUI", allies["Frisk"][0][0], allies["Frisk"][0][1], allies["Frisk"][0][2])
 	
 func combat_won() :
-	allies["Frisk"][1] = $Combat_scene/Ally_group/Combat_player.HP
+	allies["Frisk"][0][1] = $Combat_scene/Ally_group/Combat_player.HP
 	await get_tree().create_timer(1.5).timeout
 	fondu.play("fondu")
 	await fondu.animation_finished

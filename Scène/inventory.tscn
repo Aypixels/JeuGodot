@@ -1,0 +1,137 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqbb85a2ri7p6"]
+
+[ext_resource type="Script" path="res://Scène/Inventory.gd" id="1_vnca3"]
+[ext_resource type="PackedScene" uid="uid://d2alup74lfn2u" path="res://Scène/frisk_ui.tscn" id="2_sgbaq"]
+[ext_resource type="FontFile" uid="uid://dw0xt1bycx0el" path="res://assets/Determination/DTM-Sans.ttf" id="3_thwvh"]
+[ext_resource type="FontFile" uid="uid://bngnc0sjmpcs2" path="res://assets/Determination/DTM-Sans.otf" id="4_b0n14"]
+
+[node name="Inventory" type="Control"]
+process_mode = 3
+z_index = 99
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 0
+offset_left = -143.0
+offset_top = -84.0
+offset_right = -143.0
+offset_bottom = -84.0
+scale = Vector2(0.24959, 0.249869)
+mouse_force_pass_scroll_events = false
+script = ExtResource("1_vnca3")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_right = 1152.0
+offset_bottom = 649.0
+mouse_filter = 2
+
+[node name="Frisk_UI" parent="." instance=ExtResource("2_sgbaq")]
+position = Vector2(104.171, 196.103)
+scale = Vector2(2.5, 2.6)
+
+[node name="Team" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 53.0
+offset_top = 400.0
+offset_right = 551.0
+offset_bottom = 588.0
+mouse_filter = 2
+
+[node name="team" type="Label" parent="Team"]
+layout_mode = 0
+offset_right = 89.0
+offset_bottom = 38.0
+theme_override_fonts/font = ExtResource("3_thwvh")
+theme_override_font_sizes/font_size = 40
+text = "Team"
+
+[node name="team_sprite" type="HBoxContainer" parent="Team"]
+layout_mode = 0
+offset_top = 52.0
+offset_right = 449.0
+offset_bottom = 151.0
+
+[node name="ally_sprite" type="Sprite2D" parent="Team/team_sprite"]
+position = Vector2(75.2103, 76.2768)
+scale = Vector2(3.14408, 3.1622)
+flip_h = true
+
+[node name="item_info" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 226.0
+offset_top = 49.0
+offset_right = 537.0
+offset_bottom = 386.0
+mouse_filter = 2
+
+[node name="Item_info" type="Label" parent="item_info"]
+layout_mode = 2
+offset_left = -1.63217
+offset_top = -0.974884
+offset_right = 178.368
+offset_bottom = 35.0251
+theme_override_fonts/font = ExtResource("3_thwvh")
+theme_override_font_sizes/font_size = 40
+text = "Item Info"
+
+[node name="descriptton" type="RichTextLabel" parent="item_info"]
+layout_mode = 0
+offset_left = -34.0
+offset_top = 157.0
+offset_right = 292.0
+offset_bottom = 331.0
+theme_override_fonts/normal_font = ExtResource("4_b0n14")
+
+[node name="stats" type="RichTextLabel" parent="item_info"]
+layout_mode = 0
+offset_left = 91.0
+offset_top = 61.0
+offset_right = 291.0
+offset_bottom = 143.0
+theme_override_fonts/normal_font = ExtResource("4_b0n14")
+
+[node name="item_icon" type="Sprite2D" parent="item_info"]
+position = Vector2(22.4075, 99.0775)
+
+[node name="Item_inventory" type="Control" parent="."]
+process_mode = 3
+light_mask = 2
+visibility_layer = 2
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1154.0
+offset_bottom = 648.0
+
+[node name="ItemList" type="ItemList" parent="Item_inventory"]
+process_mode = 3
+layout_mode = 2
+anchor_left = 0.506897
+anchor_top = 0.154402
+anchor_right = 0.981767
+anchor_bottom = 0.584957
+offset_left = -6.10352e-05
+offset_bottom = -3.05176e-05
+focus_mode = 0
+theme_override_fonts/font = ExtResource("3_thwvh")
+theme_override_font_sizes/font_size = 24
+max_columns = 6
+same_column_width = true
+fixed_column_width = 60
+fixed_icon_size = Vector2i(60, 60)
+metadata/_edit_use_anchors_ = true
+
+[node name="Items" type="Label" parent="Item_inventory"]
+layout_mode = 2
+offset_left = 592.0
+offset_top = 47.0
+offset_right = 700.0
+offset_bottom = 83.0
+theme_override_fonts/font = ExtResource("3_thwvh")
+theme_override_font_sizes/font_size = 40
+text = "Items"
+
+[connection signal="item_selected" from="Item_inventory/ItemList" to="." method="_on_item_list_item_selected"]

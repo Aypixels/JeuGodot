@@ -1,6 +1,10 @@
 extends Control
 
 @onready var item_list = $Item_inventory/ItemList
+@onready var game = $"../.."
+@onready var player = $".."
+
+
 
 # nom de l'item : path, stats(ATK,DEF,HP), description, scale ,special effect
 var item_inventory = []
@@ -15,7 +19,7 @@ func _ready():
 	add_item("bâton")
 
 func _process(_delta):
-	if Input.is_action_just_pressed("open_inventory") and $".."._location != "Overworld" and $"..".in_dialog() == false and $"../../Level".visible == true and $"..".visible == true :
+	if Input.is_action_just_pressed("open_inventory") and player._location != "Overworld" and player.in_dialog() == false  :
 		if visible == true :
 			close_inventory()
 		else :
@@ -23,15 +27,15 @@ func _process(_delta):
 		
 		
 
-
 		
 func open_inventory() :
-	SignalBus.emit_signal("update_FriskUI", $"../..".allies["Frisk"][0][0], $"../..".allies["Frisk"][0][1], $"../..".allies["Frisk"][0][2])
+	SignalBus.emit_signal("update_FriskUI", game.allies["Frisk"][0][0], game.allies["Frisk"][0][1], game.allies["Frisk"][0][2])
 	get_tree().paused = true
 	visible = true
 	show_team()
 	
 func close_inventory():
+	$Item_inventory/ItemList.deselect_all()
 	get_tree().paused = false
 	visible = false
 	$item_info/stats.text = ""
@@ -52,7 +56,7 @@ func lose_item(id):
 	item_list.remove_item(id)
 	
 func show_team() :
-	for ally in $"../..".allies.values() :
+	for ally in game.allies.values() :
 		var ally_sprite = $Team/team_sprite/ally_sprite.duplicate()
 		$Team/team_sprite.add_child(ally_sprite)
 		ally_sprite.texture = load(ally[3])
@@ -66,9 +70,8 @@ func show_team() :
 		
 
 func _on_item_list_item_selected(item_selected):
-	print("pute")
 	$item_info/descriptton.text = item_inventory[item_selected][4]
-	if item_inventory[item_selected][1] != 0 or item_inventory[item_selected][2] !=0 or item_inventory[item_selected][3] or 0 :
+	if item_inventory[item_selected][1] != 0 or item_inventory[item_selected][2] !=0 or item_inventory[item_selected][3] != 0 :
 		$item_info/stats.text = "
 		ATK +"+ str(item_inventory[item_selected][1])+"
 		DEF +"+ str(item_inventory[item_selected][2])+"

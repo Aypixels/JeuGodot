@@ -120,11 +120,12 @@ texture = ExtResource("4_yf31y")
 [node name="text" type="RichTextLabel" parent="dialog_box"]
 offset_left = -62.0
 offset_top = -41.0
-offset_right = 632.0
+offset_right = 627.0
 offset_bottom = 175.0
-scale = Vector2(0.180004, 0.408119)
+scale = Vector2(0.167485, 0.415151)
 theme_override_fonts/normal_font = ExtResource("6_4eryq")
 theme_override_font_sizes/normal_font_size = 40
+text = "Bonjour mon cher"
 
 [node name="seam_shop" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_t6mxt")

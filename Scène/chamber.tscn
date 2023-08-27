@@ -1,11 +1,11 @@
-[gd_scene load_steps=20 format=3 uid="uid://ddqxwqbnspvsu"]
+[gd_scene load_steps=20 format=3 uid="uid://b7us8anq3etg2"]
 
 [ext_resource type="Texture2D" uid="uid://cxc2bbbu6uob7" path="res://assets/chambre_jour.png" id="1_gfm72"]
 [ext_resource type="Script" path="res://Scripts/chamber.gd" id="1_yau6q"]
 [ext_resource type="Texture2D" uid="uid://bsquf26prbyp7" path="res://assets/chambre_nuit.png" id="2_w71aq"]
 [ext_resource type="Script" path="res://Scripts/Background.gd" id="3_guwki"]
 [ext_resource type="Texture2D" uid="uid://chdpbc7qfjq5" path="res://assets/blancket.png" id="4_8xf8v"]
-[ext_resource type="Script" path="res://Scène/window.gd" id="6_g5wvm"]
+[ext_resource type="Script" path="res://Scripts/window.gd" id="6_82gii"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lt30v"]
 animations = [{
@@ -128,7 +128,7 @@ scale = Vector2(0.82, 0.82)
 texture = ExtResource("4_8xf8v")
 
 [node name="window" type="Area2D" parent="."]
-script = ExtResource("6_g5wvm")
+script = ExtResource("6_82gii")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="window"]
 position = Vector2(4.25, -23)

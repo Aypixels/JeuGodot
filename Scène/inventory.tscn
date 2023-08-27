@@ -1,9 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://bqbb85a2ri7p6"]
+[gd_scene load_steps=7 format=3 uid="uid://csvos3ds8k6sd"]
 
-[ext_resource type="Script" path="res://Scène/Inventory.gd" id="1_vnca3"]
+[ext_resource type="Script" path="res://Scripts/Inventory.gd" id="1_guawx"]
 [ext_resource type="PackedScene" uid="uid://d2alup74lfn2u" path="res://Scène/frisk_ui.tscn" id="2_sgbaq"]
 [ext_resource type="FontFile" uid="uid://dw0xt1bycx0el" path="res://assets/Determination/DTM-Sans.ttf" id="3_thwvh"]
 [ext_resource type="FontFile" uid="uid://bngnc0sjmpcs2" path="res://assets/Determination/DTM-Sans.otf" id="4_b0n14"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5v5t8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tcrix"]
 
 [node name="Inventory" type="Control"]
 process_mode = 3
@@ -17,7 +21,7 @@ offset_right = -143.0
 offset_bottom = -84.0
 scale = Vector2(0.24959, 0.249869)
 mouse_force_pass_scroll_events = false
-script = ExtResource("1_vnca3")
+script = ExtResource("1_guawx")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
@@ -59,13 +63,14 @@ scale = Vector2(3.14408, 3.1622)
 flip_h = true
 
 [node name="item_info" type="Control" parent="."]
+light_mask = 2
+visibility_layer = 2
 layout_mode = 3
 anchors_preset = 0
 offset_left = 226.0
 offset_top = 49.0
 offset_right = 537.0
 offset_bottom = 386.0
-mouse_filter = 2
 
 [node name="Item_info" type="Label" parent="item_info"]
 layout_mode = 2
@@ -83,6 +88,7 @@ offset_left = -34.0
 offset_top = 157.0
 offset_right = 292.0
 offset_bottom = 331.0
+mouse_filter = 2
 theme_override_fonts/normal_font = ExtResource("4_b0n14")
 
 [node name="stats" type="RichTextLabel" parent="item_info"]
@@ -134,4 +140,33 @@ theme_override_fonts/font = ExtResource("3_thwvh")
 theme_override_font_sizes/font_size = 40
 text = "Items"
 
+[node name="Equiper" type="Button" parent="Item_inventory"]
+layout_mode = 0
+offset_left = 200.329
+offset_top = 324.17
+offset_right = 357.329
+offset_bottom = 391.17
+scale = Vector2(0.76505, 0.775289)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_thwvh")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5v5t8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_tcrix")
+text = "Équiper"
+
+[node name="Jeter" type="Button" parent="Item_inventory"]
+layout_mode = 0
+offset_left = 352.578
+offset_top = 324.17
+offset_right = 509.578
+offset_bottom = 391.17
+scale = Vector2(0.76505, 0.775289)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_thwvh")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5v5t8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_tcrix")
+text = "Jeter"
+
 [connection signal="item_selected" from="Item_inventory/ItemList" to="." method="_on_item_list_item_selected"]
+[connection signal="pressed" from="Item_inventory/Jeter" to="." method="_on_jeter_pressed"]

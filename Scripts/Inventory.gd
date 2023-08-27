@@ -3,9 +3,12 @@ extends Control
 @onready var item_list = $Item_inventory/ItemList
 @onready var game = $"../.."
 @onready var player = $".."
+@onready var equiper = $item_info/Equiper
+@onready var jeter = $item_info/Jeter
 
 
-
+var current_selected = 0
+var equipping = false
 # nom de l'item : path, stats(ATK,DEF,HP), description, scale ,special effect
 var item_inventory = []
 var item_data = {
@@ -26,13 +29,16 @@ func _process(_delta):
 			open_inventory()
 		
 		
-
 		
 func open_inventory() :
 	SignalBus.emit_signal("update_FriskUI", game.allies["Frisk"][0][0], game.allies["Frisk"][0][1], game.allies["Frisk"][0][2])
 	get_tree().paused = true
 	visible = true
 	show_team()
+	equiper.visible=false
+	jeter.visible=false
+	current_selected = 0
+	equipping = false
 	
 func close_inventory():
 	$Item_inventory/ItemList.deselect_all()
@@ -42,6 +48,8 @@ func close_inventory():
 	$item_info/descriptton.text = ""
 	$item_info/item_icon.texture = null
 	$item_info/item_icon.scale = Vector2(1,1)
+	equiper.visible = false
+	jeter.visible = false
 	
 
 func add_item(id) :
@@ -51,17 +59,17 @@ func add_item(id) :
 	for i in range(item_list.item_count) :
 		item_list.set_item_selectable(i, true)
 	
-func lose_item(id):
-	item_inventory[id].erase(id)
-	item_list.remove_item(id)
+
 	
 func show_team() :
 	for ally in game.allies.values() :
 		var ally_sprite = $Team/team_sprite/ally_sprite.duplicate()
 		$Team/team_sprite.add_child(ally_sprite)
 		ally_sprite.texture = load(ally[3])
-		ally_sprite.position = Vector2((40*ally[2]),50)
+		ally_sprite.position = Vector2((45*ally[2]),60)
 		ally_sprite.scale = ally[4]
+		ally_sprite.visible = true
+		#Ajustement sprite de Frisk
 		if ally_sprite.texture == load("res://Animation/battle_gray_frisk/Idle1.png") :
 			ally_sprite.flip_h = true
 		else:
@@ -70,12 +78,36 @@ func show_team() :
 		
 
 func _on_item_list_item_selected(item_selected):
+	current_selected = item_selected
 	$item_info/descriptton.text = item_inventory[item_selected][4]
 	if item_inventory[item_selected][1] != 0 or item_inventory[item_selected][2] !=0 or item_inventory[item_selected][3] != 0 :
 		$item_info/stats.text = "
 		ATK +"+ str(item_inventory[item_selected][1])+"
 		DEF +"+ str(item_inventory[item_selected][2])+"
 		HP +"+ str(item_inventory[item_selected][3])
+		equiper.visible = true
+	else :
+		equiper.visible = false
+	jeter.visible=true
 	$item_info/item_icon.texture = load(item_inventory[item_selected][0])
 	$item_info/item_icon.scale = item_inventory[item_selected][5]
 
+
+func _on_jeter_pressed():
+	if not equipping :
+		item_inventory[current_selected].erase(current_selected)
+		item_list.remove_item(current_selected)
+		$item_info/stats.text = ""
+		$item_info/descriptton.text = ""
+		$item_info/item_icon.texture = null
+		$item_info/item_icon.scale = Vector2(1,1)
+
+
+func _on_equiper_pressed():
+	if not equipping :
+		equipping = true
+		for ally_sprite in $Team/team_sprite.get_children() :
+			var equip_ally = ally_sprite.get_child(0)
+			equip_ally.position.x = ally_sprite.position.x 
+			equip_ally.position.y = ally_sprite.position.y
+			equip_ally.visible = true

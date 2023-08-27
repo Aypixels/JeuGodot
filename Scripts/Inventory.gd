@@ -117,16 +117,23 @@ func equip_ally(id) :
 	for ally in game.allies.values() :
 		if ally[2] == id :
 			var item_sprite = load(item_inventory[current_selected][0])
-			
+			var what = null
 			if item_inventory[id-1][6] == "weapon" :
 				ally[1][0] = [item_inventory[id-1][1],item_inventory[id-1][2],item_inventory[id-1][3] , null]
-				$Team.get_child(-id).get_child(0).texture = item_sprite
+				what = 0
 			elif item_inventory[id-1][6] == "armor":
 				ally[1][1] = [item_inventory[id-1][1],item_inventory[id-1][2],item_inventory[id-1][3] , null]
-				$Team.get_child(-id).get_child(1).texture = item_sprite
+				what =1
 			elif item_inventory[id-1][6] == "accessory":
 				ally[1][2] = [item_inventory[id-1][1],item_inventory[id-1][2],item_inventory[id-1][3] , null]
-				$Team.get_child(-id).get_child(2).texture = item_sprite
+				what = 2
+			
+			$Team.get_child(-id).get_child(what).texture = item_sprite
+			var _is = $Team.get_child(-id).get_child(what).get_texture().get_size() #image size
+			var th = 60 #target height
+			var tw = 60 #target width
+			var _scale = Vector2((_is.x/(_is.x/tw))/50, (_is.y/(_is.y/th))/50)
+			$Team.get_child(-id).get_child(what).set_scale(_scale)
 			finished_equip()
 
 func _on_equiper_ally_1_pressed(): equip_ally(1)

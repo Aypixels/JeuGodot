@@ -112,9 +112,10 @@ offset_right = 551.0
 offset_bottom = 588.0
 
 [node name="equiper_ally1" type="Button" parent="Player/Inventory/Team"]
-offset_left = 19.1183
+visible = false
+offset_left = 3.09198
 offset_top = 176.302
-offset_right = 176.118
+offset_right = 160.092
 offset_bottom = 243.302
 scale = Vector2(0.552887, 0.553027)
 theme_override_colors/font_color = Color(1, 1, 1, 1)

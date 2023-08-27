@@ -6,7 +6,7 @@ var combat : Node2D
 var current_allies = ["player"]
 @onready var fondu = $Fondu/AnimationPlayer
 
-#[Maxhp, hp, Lv] ,  item_equipped(0 : weapon/ 1 : armor/2: accessory : [ATK,DEF,HP, special effect], position, sprite_path,scale
+#[Maxhp, hp, Lv] ,  item_equipped(0 : weapon/ 1 : armor/2: accessory : [ATK,DEF,HP, special effect, name], position, sprite_path,scale
 var allies = {
 	"Frisk" : [[20,20,1],
 		[null,null,null],

@@ -111,6 +111,61 @@ offset_top = 400.0
 offset_right = 551.0
 offset_bottom = 588.0
 
+[node name="equiper_ally1" type="Button" parent="Player/Inventory/Team"]
+offset_left = 19.1183
+offset_top = 176.302
+offset_right = 176.118
+offset_bottom = 243.302
+scale = Vector2(0.552887, 0.553027)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_61dlb")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5v5t8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_tcrix")
+text = "Équiper"
+
+[node name="equiper_ally2" type="Button" parent="Player/Inventory/Team"]
+visible = false
+offset_left = 219.447
+offset_top = 176.302
+offset_right = 376.447
+offset_bottom = 243.302
+scale = Vector2(0.552887, 0.553027)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_61dlb")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5v5t8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_tcrix")
+text = "Équiper"
+
+[node name="equiper_ally3" type="Button" parent="Player/Inventory/Team"]
+visible = false
+offset_left = 419.775
+offset_top = 176.302
+offset_right = 576.775
+offset_bottom = 243.302
+scale = Vector2(0.552887, 0.553027)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_61dlb")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5v5t8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_tcrix")
+text = "Équiper"
+
+[node name="equiper_ally4" type="Button" parent="Player/Inventory/Team"]
+visible = false
+offset_left = 612.091
+offset_top = 176.302
+offset_right = 769.091
+offset_bottom = 243.302
+scale = Vector2(0.552887, 0.553027)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_61dlb")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5v5t8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_tcrix")
+text = "Équiper"
+
 [node name="team" type="Label" parent="Player/Inventory/Team"]
 layout_mode = 0
 offset_right = 89.0
@@ -119,28 +174,63 @@ theme_override_fonts/font = ExtResource("3_61dlb")
 theme_override_font_sizes/font_size = 40
 text = "Team"
 
+[node name="ally_sprite" type="Sprite2D" parent="Player/Inventory/Team"]
+
 [node name="team_sprite" type="HBoxContainer" parent="Player/Inventory/Team"]
 layout_mode = 0
 offset_top = 52.0
 offset_right = 449.0
 offset_bottom = 151.0
 
-[node name="ally_sprite" type="Sprite2D" parent="Player/Inventory/Team/team_sprite"]
-visible = false
+[node name="items_ally4" type="VBoxContainer" parent="Player/Inventory/Team"]
+offset_left = 119.0
+offset_top = 44.0
+offset_right = 171.0
+offset_bottom = 172.0
 
-[node name="equiper_ally" type="Button" parent="Player/Inventory/Team/team_sprite/ally_sprite"]
-visible = false
-offset_left = 39.1511
-offset_top = 132.306
-offset_right = 196.151
-offset_bottom = 199.306
-scale = Vector2(0.552887, 0.553027)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("3_61dlb")
-theme_override_font_sizes/font_size = 40
-theme_override_styles/hover = SubResource("StyleBoxEmpty_5v5t8")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_tcrix")
-text = "Équiper"
+[node name="weapon" type="Sprite2D" parent="Player/Inventory/Team/items_ally4"]
+
+[node name="armor" type="Sprite2D" parent="Player/Inventory/Team/items_ally4"]
+
+[node name="accessory" type="Sprite2D" parent="Player/Inventory/Team/items_ally4"]
+
+[node name="items_ally3" type="VBoxContainer" parent="Player/Inventory/Team"]
+offset_left = 119.0
+offset_top = 44.0
+offset_right = 171.0
+offset_bottom = 172.0
+
+[node name="weapon" type="Sprite2D" parent="Player/Inventory/Team/items_ally3"]
+
+[node name="armor" type="Sprite2D" parent="Player/Inventory/Team/items_ally3"]
+
+[node name="accessory" type="Sprite2D" parent="Player/Inventory/Team/items_ally3"]
+
+[node name="items_ally2" type="VBoxContainer" parent="Player/Inventory/Team"]
+layout_mode = 2
+offset_left = 119.0
+offset_top = 44.0
+offset_right = 171.0
+offset_bottom = 44.0
+
+[node name="weapon" type="Sprite2D" parent="Player/Inventory/Team/items_ally2"]
+
+[node name="armor" type="Sprite2D" parent="Player/Inventory/Team/items_ally2"]
+
+[node name="accessory" type="Sprite2D" parent="Player/Inventory/Team/items_ally2"]
+
+[node name="items_ally1" type="VBoxContainer" parent="Player/Inventory/Team"]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 44.0
+offset_right = 171.0
+offset_bottom = 172.0
+
+[node name="weapon" type="Sprite2D" parent="Player/Inventory/Team/items_ally1"]
+
+[node name="armor" type="Sprite2D" parent="Player/Inventory/Team/items_ally1"]
+
+[node name="accessory" type="Sprite2D" parent="Player/Inventory/Team/items_ally1"]
 
 [node name="item_info" type="Control" parent="Player/Inventory"]
 light_mask = 2
@@ -183,6 +273,7 @@ theme_override_fonts/normal_font = ExtResource("6_g2efp")
 position = Vector2(22.4075, 99.0775)
 
 [node name="Equiper" type="Button" parent="Player/Inventory/item_info"]
+visible = false
 layout_mode = 0
 offset_left = -25.671
 offset_top = 275.17
@@ -197,6 +288,7 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_tcrix")
 text = "Équiper"
 
 [node name="Jeter" type="Button" parent="Player/Inventory/item_info"]
+visible = false
 layout_mode = 0
 offset_left = 126.578
 offset_top = 275.17
@@ -245,6 +337,10 @@ theme_override_fonts/font = ExtResource("3_61dlb")
 theme_override_font_sizes/font_size = 40
 text = "Items"
 
+[connection signal="pressed" from="Player/Inventory/Team/equiper_ally1" to="Player/Inventory" method="_on_equiper_ally_1_pressed"]
+[connection signal="pressed" from="Player/Inventory/Team/equiper_ally2" to="Player/Inventory" method="_on_equiper_ally_2_pressed"]
+[connection signal="pressed" from="Player/Inventory/Team/equiper_ally3" to="Player/Inventory" method="_on_equiper_ally_3_pressed"]
+[connection signal="pressed" from="Player/Inventory/Team/equiper_ally4" to="Player/Inventory" method="_on_equiper_ally_4_pressed"]
 [connection signal="pressed" from="Player/Inventory/item_info/Equiper" to="Player/Inventory" method="_on_equiper_pressed"]
 [connection signal="pressed" from="Player/Inventory/item_info/Jeter" to="Player/Inventory" method="_on_jeter_pressed" flags=18]
 [connection signal="item_selected" from="Player/Inventory/Item_inventory/ItemList" to="Player/Inventory" method="_on_item_list_item_selected" flags=18]

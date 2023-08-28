@@ -103,11 +103,12 @@ func _on_jeter_pressed():
 		$item_info/descriptton.text = ""
 		$item_info/item_icon.texture = null
 		$item_info/item_icon.scale = Vector2(1,1)
+		unequip_item(item_data.find_key(item_inventory[current_selected]))
 
 
 func _on_equiper_pressed():
-	unequip_item("bâton")
 	if not equipping :
+		unequip_item(item_data.find_key(item_inventory[current_selected]))
 		equipping = true
 		var count = 0
 		for ally_sprite in $Team/team_sprite.get_children() :

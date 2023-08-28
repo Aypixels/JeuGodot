@@ -69,10 +69,12 @@ func combat_lost() :
 	
 
 func on_go_to(location) :
+	$Player.stop = true
 	fondu.play("fondu")
 	await fondu.animation_finished
 	fondu.play_backwards("fondu")
 	current_level = load("res://Scène/"+location+".tscn").instantiate()
 	$Level.get_child(0).queue_free()
 	$Level.add_child(current_level)
+	$Player.stop = false
 	

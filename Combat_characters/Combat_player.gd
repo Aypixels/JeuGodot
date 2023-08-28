@@ -2,9 +2,10 @@ extends Node2D
 
 @onready var _focus = $focus
 @onready var damage_taken = $damage_taken
-
+@onready var game = $"../../.."
 
 var ATK = 5
+var DEF = 0
 var Max_health : int = 20
 var LV : int = 1
 var HP : int = 20
@@ -23,7 +24,7 @@ func unfocus():
 	_focus.hide()
 	
 func take_damage(value):
-	HP -= value
+	HP -= value-DEF
 	_update_health()
 	damage_taken.play()
 	if HP > 0 :
@@ -40,6 +41,12 @@ func get_stats(Maxhp, current_hp, lvl) :
 	Max_health = Maxhp
 	HP = current_hp
 	LV = lvl
+	ATK = 5
+	DEF = 0
+	var items = game.allies["Frisk"][1]
+	for item in items :
+		ATK += item[0]
+		DEF += item[1]
 	
 	
 func _defeated() :

@@ -26,6 +26,7 @@ func place_ally(_combat_index, enemies_id, allies_id) :
 	else :
 		for i in allies.size():
 			allies[i].position = Vector2(i*20+16, 0)
+	print(allies[0])
 	allies[0].focus()
 
 

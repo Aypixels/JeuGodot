@@ -236,6 +236,7 @@ offset_bottom = 212.241
 [node name="weapon" type="Sprite2D" parent="Player/Inventory/Team/items_ally1"]
 
 [node name="armor" type="Sprite2D" parent="Player/Inventory/Team/items_ally1"]
+position = Vector2(0, 50)
 
 [node name="accessory" type="Sprite2D" parent="Player/Inventory/Team/items_ally1"]
 

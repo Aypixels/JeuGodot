@@ -13,13 +13,16 @@ var equipping = false
 var item_inventory = []
 var item_data = {
 	"bâton" : ["res://assets/Items/stick_sprite.png", 1,0,0 , "Un bâton :
-simple mais solide. Attention à ne pas le casser !", Vector2(0.3, 0.2999) , "weapon", null]
+simple mais solide. Attention à ne pas le casser !", Vector2(0.3, 0.2999) , "weapon", null],
+	"baton" : ["res://assets/Items/stick_sprite.png", 1,0,0 , "Un bâton :
+simple mais solide. Attention à ne pas le casser !", Vector2(0.3, 0.2999), "armor", null]
 }
 
 
 func _ready(): 
 	visible = false
 	add_item("bâton")
+	add_item("baton")
 
 func _process(_delta):
 	if Input.is_action_just_pressed("open_inventory") and player._location != "Overworld" and player.in_dialog() == false  :
@@ -97,17 +100,18 @@ func _on_item_list_item_selected(item_selected):
 
 func _on_jeter_pressed():
 	if not equipping :
-		item_inventory[current_selected].erase(current_selected)
+		unequip_item(item_data.find_key(item_inventory[current_selected]))
+		item_inventory.remove_at(current_selected)
 		item_list.remove_item(current_selected)
 		$item_info/stats.text = ""
 		$item_info/descriptton.text = ""
 		$item_info/item_icon.texture = null
 		$item_info/item_icon.scale = Vector2(1,1)
-		unequip_item(item_data.find_key(item_inventory[current_selected]))
 
 
 func _on_equiper_pressed():
 	if not equipping :
+		print(item_data.find_key(item_inventory[current_selected]))
 		unequip_item(item_data.find_key(item_inventory[current_selected]))
 		equipping = true
 		var count = 0
@@ -121,14 +125,14 @@ func equip_ally(id) :
 		if ally[2] == id :
 			var item_sprite = load(item_inventory[current_selected][0])
 			var what = null
-			if item_inventory[id-1][6] == "weapon" :
-				ally[1][0] = [item_inventory[id-1][1],item_inventory[id-1][2],item_inventory[id-1][3] , item_inventory[id-1][7], item_data.find_key(item_inventory[id-1])]
+			if item_inventory[current_selected][6] == "weapon" :
+				ally[1][0] = [item_inventory[current_selected][1],item_inventory[current_selected][2],item_inventory[current_selected][3] , item_inventory[current_selected][7], item_data.find_key(item_inventory[current_selected])]
 				what = 0
-			elif item_inventory[id-1][6] == "armor":
-				ally[1][1] = [item_inventory[id-1][1],item_inventory[id-1][2],item_inventory[id-1][3] , item_inventory[id-1][7], item_data.find_key(item_inventory[id-1])]
+			elif item_inventory[current_selected][6] == "armor":
+				ally[1][1] = [item_inventory[current_selected][1],item_inventory[current_selected][2],item_inventory[current_selected][3] , item_inventory[current_selected][7], item_data.find_key(item_inventory[current_selected])]
 				what =1
-			elif item_inventory[id-1][6] == "accessory":
-				ally[1][2] = [item_inventory[id-1][1],item_inventory[id-1][2],item_inventory[id-1][3] , item_inventory[id-1][7], item_data.find_key(item_inventory[id-1])]
+			elif item_inventory[current_selected][6] == "accessory":
+				ally[1][2] = [item_inventory[current_selected][1],item_inventory[current_selected][2],item_inventory[current_selected][3] , item_inventory[current_selected][7], item_data.find_key(item_inventory[current_selected])]
 				what = 2
 			$Team.get_child(-id).get_child(what).texture = item_sprite
 			$Team.get_child(-id).get_child(what).set_scale(item_inventory[id-1][5]/2)

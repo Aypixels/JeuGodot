@@ -9,7 +9,7 @@ var current_allies = ["player"]
 #[Maxhp, hp, Lv] ,  item_equipped(0 : weapon/ 1 : armor/2: accessory : [ATK,DEF,HP, special effect, name], position, sprite_path,scale
 var allies = {
 	"Frisk" : [[20,20,1],
-		[null,null,null],
+		[[0,0,0,null,null],[0,0,0,null,null],[0,0,0,null,null]],
 		1,
 		"res://Animation/battle_gray_frisk/Idle1.png",
 		Vector2(3.3,3.226)]

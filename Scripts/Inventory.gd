@@ -63,6 +63,7 @@ func hide_team() :
 		ally.queue_free()
 	finished_equip()
 	
+	
 func show_team() :
 	for ally in game.allies.values() :
 		var ally_sprite = $Team/ally_sprite.duplicate()
@@ -105,6 +106,7 @@ func _on_jeter_pressed():
 
 
 func _on_equiper_pressed():
+	unequip_item("bâton")
 	if not equipping :
 		equipping = true
 		var count = 0
@@ -119,21 +121,16 @@ func equip_ally(id) :
 			var item_sprite = load(item_inventory[current_selected][0])
 			var what = null
 			if item_inventory[id-1][6] == "weapon" :
-				ally[1][0] = [item_inventory[id-1][1],item_inventory[id-1][2],item_inventory[id-1][3] , null]
+				ally[1][0] = [item_inventory[id-1][1],item_inventory[id-1][2],item_inventory[id-1][3] , item_inventory[id-1][7], item_data.find_key(item_inventory[id-1])]
 				what = 0
 			elif item_inventory[id-1][6] == "armor":
-				ally[1][1] = [item_inventory[id-1][1],item_inventory[id-1][2],item_inventory[id-1][3] , null]
+				ally[1][1] = [item_inventory[id-1][1],item_inventory[id-1][2],item_inventory[id-1][3] , item_inventory[id-1][7], item_data.find_key(item_inventory[id-1])]
 				what =1
 			elif item_inventory[id-1][6] == "accessory":
-				ally[1][2] = [item_inventory[id-1][1],item_inventory[id-1][2],item_inventory[id-1][3] , null]
+				ally[1][2] = [item_inventory[id-1][1],item_inventory[id-1][2],item_inventory[id-1][3] , item_inventory[id-1][7], item_data.find_key(item_inventory[id-1])]
 				what = 2
-			
 			$Team.get_child(-id).get_child(what).texture = item_sprite
-			var _is = $Team.get_child(-id).get_child(what).get_texture().get_size() #image size
-			var th = 60 #target height
-			var tw = 60 #target width
-			var _scale = Vector2((_is.x/(_is.x/tw))/50, (_is.y/(_is.y/th))/50)
-			$Team.get_child(-id).get_child(what).set_scale(_scale)
+			$Team.get_child(-id).get_child(what).set_scale(item_inventory[id-1][5]/2)
 			finished_equip()
 
 func _on_equiper_ally_1_pressed(): equip_ally(1)
@@ -148,5 +145,17 @@ func finished_equip() :
 	$Team/equiper_ally2.visible = false
 	$Team/equiper_ally3.visible = false
 	$Team/equiper_ally4.visible = false
+	equipping = false
 
 		
+func unequip_item(item_name):
+	for ally in game.allies.values() :
+		if ally[1][0][4] == item_name :
+			var ally_pos = ally[2]
+			$Team.get_child(-ally_pos).get_child(0).texture = null
+		elif ally[1][1][4] == item_name :
+			var ally_pos = ally[2]
+			$Team.get_child(-ally_pos).get_child(1).texture = null
+		elif ally[1][2][4] == item_name :
+			var ally_pos = ally[2]
+			$Team.get_child(-ally_pos).get_child(2).texture = null

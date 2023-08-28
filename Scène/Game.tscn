@@ -113,6 +113,7 @@ offset_bottom = 588.0
 
 [node name="equiper_ally1" type="Button" parent="Player/Inventory/Team"]
 visible = false
+layout_mode = 0
 offset_left = 3.09198
 offset_top = 176.302
 offset_right = 160.092
@@ -127,6 +128,7 @@ text = "Équiper"
 
 [node name="equiper_ally2" type="Button" parent="Player/Inventory/Team"]
 visible = false
+layout_mode = 0
 offset_left = 219.447
 offset_top = 176.302
 offset_right = 376.447
@@ -141,6 +143,7 @@ text = "Équiper"
 
 [node name="equiper_ally3" type="Button" parent="Player/Inventory/Team"]
 visible = false
+layout_mode = 0
 offset_left = 419.775
 offset_top = 176.302
 offset_right = 576.775
@@ -155,6 +158,7 @@ text = "Équiper"
 
 [node name="equiper_ally4" type="Button" parent="Player/Inventory/Team"]
 visible = false
+layout_mode = 0
 offset_left = 612.091
 offset_top = 176.302
 offset_right = 769.091
@@ -184,10 +188,11 @@ offset_right = 449.0
 offset_bottom = 151.0
 
 [node name="items_ally4" type="VBoxContainer" parent="Player/Inventory/Team"]
-offset_left = 119.0
-offset_top = 44.0
-offset_right = 171.0
-offset_bottom = 172.0
+layout_mode = 0
+offset_left = 716.262
+offset_top = 84.2538
+offset_right = 768.262
+offset_bottom = 212.254
 
 [node name="weapon" type="Sprite2D" parent="Player/Inventory/Team/items_ally4"]
 
@@ -196,10 +201,11 @@ offset_bottom = 172.0
 [node name="accessory" type="Sprite2D" parent="Player/Inventory/Team/items_ally4"]
 
 [node name="items_ally3" type="VBoxContainer" parent="Player/Inventory/Team"]
-offset_left = 119.0
-offset_top = 44.0
-offset_right = 171.0
-offset_bottom = 172.0
+layout_mode = 0
+offset_left = 523.946
+offset_top = 84.2537
+offset_right = 575.946
+offset_bottom = 212.254
 
 [node name="weapon" type="Sprite2D" parent="Player/Inventory/Team/items_ally3"]
 
@@ -209,10 +215,10 @@ offset_bottom = 172.0
 
 [node name="items_ally2" type="VBoxContainer" parent="Player/Inventory/Team"]
 layout_mode = 2
-offset_left = 119.0
-offset_top = 44.0
-offset_right = 171.0
-offset_bottom = 44.0
+offset_left = 324.0
+offset_top = 68.0
+offset_right = 376.0
+offset_bottom = 212.0
 
 [node name="weapon" type="Sprite2D" parent="Player/Inventory/Team/items_ally2"]
 
@@ -222,10 +228,10 @@ offset_bottom = 44.0
 
 [node name="items_ally1" type="VBoxContainer" parent="Player/Inventory/Team"]
 layout_mode = 0
-offset_left = 119.0
-offset_top = 44.0
-offset_right = 171.0
-offset_bottom = 172.0
+offset_left = 111.269
+offset_top = 60.2412
+offset_right = 163.269
+offset_bottom = 212.241
 
 [node name="weapon" type="Sprite2D" parent="Player/Inventory/Team/items_ally1"]
 

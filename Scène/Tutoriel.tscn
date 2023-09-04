@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://cm2xlnrofqqye"]
+[gd_scene load_steps=42 format=3 uid="uid://cm2xlnrofqqye"]
 
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_m43nj"]
 [ext_resource type="Texture2D" uid="uid://dggq7d8rkwh6k" path="res://tilset/tiles_packed.png" id="3_gj4oh"]
@@ -12,6 +12,8 @@
 [ext_resource type="FontFile" uid="uid://cehwvq4xnvh1c" path="res://assets/kongtext.ttf" id="15_fba8q"]
 [ext_resource type="Texture2D" uid="uid://b72cvdujr7ug6" path="res://assets/Shop.png" id="16_5dhyb"]
 [ext_resource type="Script" path="res://Scripts/Enter_Shop.gd" id="17_87fvl"]
+[ext_resource type="Texture2D" uid="uid://b7sv437cbtf1s" path="res://assets/sign_scarlet_forest.png" id="18_4k5bo"]
+[ext_resource type="Script" path="res://Scène/scarle_forest_sign.gd" id="19_ry1rw"]
 [ext_resource type="PackedScene" uid="uid://b4eimxrlr0sd7" path="res://Scène/cat.tscn" id="23_6xsbf"]
 [ext_resource type="Script" path="res://Scripts/music_script.gd" id="23_epccn"]
 [ext_resource type="PackedScene" uid="uid://bh86d62qw6q0n" path="res://Scène/Something.tscn" id="25_rbbiq"]
@@ -6535,6 +6537,12 @@ size = Vector2(159, 110)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s4k06"]
 size = Vector2(51, 14.875)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hr17o"]
+size = Vector2(14, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n21o2"]
+size = Vector2(14, 10)
+
 [node name="Tutoriel" type="Node2D"]
 process_mode = 1
 metadata/_edit_horizontal_guides_ = []
@@ -6708,8 +6716,30 @@ script = ExtResource("17_87fvl")
 position = Vector2(101.5, 327.563)
 shape = SubResource("RectangleShape2D_s4k06")
 
+[node name="Controls_sign" type="StaticBody2D" parent="."]
+texture_filter = 1
+position = Vector2(763, 428)
+
+[node name="Sprite2D" type="Sprite2D" parent="Controls_sign"]
+position = Vector2(16, 4)
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("18_4k5bo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Controls_sign"]
+position = Vector2(16, 4)
+shape = SubResource("RectangleShape2D_hr17o")
+
+[node name="Area2D" type="Area2D" parent="Controls_sign"]
+script = ExtResource("19_ry1rw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Controls_sign/Area2D"]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_n21o2")
+
 [connection signal="body_entered" from="End_of_road" to="End_of_road" method="_on_body_entered"]
 [connection signal="body_entered" from="Go_to_castle" to="Go_to_castle" method="_on_body_entered"]
 [connection signal="body_entered" from="Memory" to="Memory" method="_on_body_entered"]
 [connection signal="body_entered" from="Shop/Enter_Shop" to="Shop/Enter_Shop" method="_on_body_entered"]
 [connection signal="body_exited" from="Shop/Enter_Shop" to="Shop/Enter_Shop" method="_on_body_exited"]
+[connection signal="body_entered" from="Controls_sign/Area2D" to="Controls_sign/Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Controls_sign/Area2D" to="Controls_sign/Area2D" method="_on_body_exited"]

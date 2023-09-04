@@ -2,8 +2,11 @@ extends Container
 
 var scene_text = {
 	"player_cat" : [["Toi","Chat noir"],["Où suis-je ?","Meow...?"]],
-	'memory': [["Toi", "Toi"], ["Mmh...", "Cet endroit me semble familier..."]],
-	"window": [["Toi"], ["Il fait encore nuit..."]]
+	"memory": [["Toi", "Toi"], ["Mmh...", "Cet endroit me semble familier..."]],
+	"window": [["Toi"], ["Il fait encore nuit..."]],
+	"controls" : [["",],["ZQSD-Flèches -> Déplacement
+Espace -> Intéragir
+M -> Inventaire"]]
 }
 var selected_text = []
 var selected_name = []
@@ -23,6 +26,10 @@ func show_text():
 	text_label.visible_characters = 0
 	phrase_end = false
 	text_name.text = selected_name.pop_front()
+	if text_name.text == "" :
+		$Dialogbox2/DialogBox.hide()
+	else : 
+		$Dialogbox2/DialogBox.show()
 	text_label.text = selected_text.pop_front()
 	
 	while text_label.visible_characters < len(text_label.text) :

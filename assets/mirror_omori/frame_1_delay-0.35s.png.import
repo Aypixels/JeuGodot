@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxp0s7xbox3cw"
-path="res://.godot/imported/omori_mirror.png-15556b39f2b67f577f429feadfb4590b.ctex"
+uid="uid://enjbnwdpytck"
+path="res://.godot/imported/frame_1_delay-0.35s.png-9686f5f8789112e97d4f25369595b2fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/omori_mirror.png"
-dest_files=["res://.godot/imported/omori_mirror.png-15556b39f2b67f577f429feadfb4590b.ctex"]
+source_file="res://assets/mirror_omori/frame_1_delay-0.35s.png"
+dest_files=["res://.godot/imported/frame_1_delay-0.35s.png-9686f5f8789112e97d4f25369595b2fb.ctex"]
 
 [params]
 

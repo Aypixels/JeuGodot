@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://dmbcciu1mqfi0"]
+[gd_scene load_steps=49 format=3 uid="uid://dmbcciu1mqfi0"]
 
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="1_htshc"]
 [ext_resource type="Texture2D" uid="uid://crplcbmfgkrok" path="res://tilset/Scarlet_forest.png" id="2_0po7s"]
@@ -12,9 +12,12 @@
 [ext_resource type="Texture2D" uid="uid://dw1c2o6457unx" path="res://tilset/Opened_Grand_Door.png" id="10_4rbhf"]
 [ext_resource type="Script" path="res://Scripts/grand_door.gd" id="11_jufmh"]
 [ext_resource type="Texture2D" uid="uid://bxv3h6eb0trir" path="res://assets/Wrap_exit/Pillar.png" id="12_0alh8"]
-[ext_resource type="Texture2D" uid="uid://cxp0s7xbox3cw" path="res://assets/omori_mirror.png" id="12_ptx00"]
+[ext_resource type="Script" path="res://Scripts/mirror.gd" id="12_ev2xw"]
+[ext_resource type="Texture2D" uid="uid://dapspkyv4b1d0" path="res://assets/mirror_omori/frame_0_delay-0.35s.png" id="13_50ns5"]
 [ext_resource type="Texture2D" uid="uid://ca23hvvu4m5fd" path="res://assets/Wrap_exit/Base_exit.png" id="13_rcgdr"]
 [ext_resource type="Script" path="res://Scripts/exit.gd" id="14_vptg1"]
+[ext_resource type="Texture2D" uid="uid://enjbnwdpytck" path="res://assets/mirror_omori/frame_1_delay-0.35s.png" id="14_xhrtj"]
+[ext_resource type="Texture2D" uid="uid://dryvgjhjcaxqr" path="res://assets/mirror_omori/frame_2_delay-0.35s.png" id="15_chckh"]
 [ext_resource type="Texture2D" uid="uid://bdny5fbfwg370" path="res://assets/The_Sun.png" id="15_hcmbb"]
 [ext_resource type="Texture2D" uid="uid://cpe21ulkuk7ex" path="res://assets/Entity.png" id="15_u1p06"]
 [ext_resource type="Texture2D" uid="uid://bcl8l1xkgolta" path="res://assets/White_particle.png" id="16_8miqu"]
@@ -9047,6 +9050,59 @@ size = Vector2(30, 47)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8rcw2"]
 size = Vector2(8, 11)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_go8nx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_50ns5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_xhrtj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_chckh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_e7h3l"]
+resource_name = "mirrorfonu"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.133333), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_10odw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.290196)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_geqbu"]
+_data = {
+"RESET": SubResource("Animation_10odw"),
+"mirrorfonu": SubResource("Animation_e7h3l")
+}
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ijyj4"]
 size = Vector2(21, 9)
 
@@ -9150,17 +9206,25 @@ position = Vector2(-449, -401.5)
 shape = SubResource("RectangleShape2D_dc5hs")
 
 [node name="mirror" type="Area2D" parent="The_Mirror"]
+script = ExtResource("12_ev2xw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="The_Mirror/mirror"]
 position = Vector2(-449, -376.5)
 shape = SubResource("RectangleShape2D_8rcw2")
 
-[node name="omori_mirror" type="Sprite2D" parent="The_Mirror"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="The_Mirror"]
+process_mode = 3
 visible = false
-z_index = 15
-position = Vector2(-449, -387)
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("12_ptx00")
+modulate = Color(1, 1, 1, 0.290196)
+z_index = 20
+position = Vector2(-449, -386)
+scale = Vector2(0.4, 0.365)
+sprite_frames = SubResource("SpriteFrames_go8nx")
+
+[node name="mirrorfondu" type="AnimationPlayer" parent="The_Mirror"]
+libraries = {
+"": SubResource("AnimationLibrary_geqbu")
+}
 
 [node name="Exit" type="AnimatableBody2D" parent="."]
 texture_filter = 1
@@ -9255,4 +9319,6 @@ shape = SubResource("RectangleShape2D_kulrg")
 
 [connection signal="body_entered" from="The_Grand_door/grand_door" to="The_Grand_door/grand_door" method="_on_body_entered"]
 [connection signal="body_exited" from="The_Grand_door/grand_door" to="The_Grand_door/grand_door" method="_on_body_exited"]
+[connection signal="body_entered" from="The_Mirror/mirror" to="The_Mirror/mirror" method="_on_body_entered"]
+[connection signal="body_exited" from="The_Mirror/mirror" to="The_Mirror/mirror" method="_on_body_exited"]
 [connection signal="body_entered" from="Exit/exit" to="Exit/exit" method="_on_body_entered"]

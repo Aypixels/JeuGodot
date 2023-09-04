@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://cm2xlnrofqqye"]
+[gd_scene load_steps=42 format=3 uid="uid://2yji7icgns4c"]
 
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="2_m43nj"]
 [ext_resource type="Texture2D" uid="uid://dggq7d8rkwh6k" path="res://tilset/tiles_packed.png" id="3_gj4oh"]
@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://b72cvdujr7ug6" path="res://assets/Shop.png" id="16_5dhyb"]
 [ext_resource type="Script" path="res://Scripts/Enter_Shop.gd" id="17_87fvl"]
 [ext_resource type="Texture2D" uid="uid://b7sv437cbtf1s" path="res://assets/sign_scarlet_forest.png" id="18_4k5bo"]
-[ext_resource type="Script" path="res://Scène/scarle_forest_sign.gd" id="19_ry1rw"]
+[ext_resource type="Script" path="res://Scripts/scarle_forest_sign.gd" id="19_d8pdb"]
 [ext_resource type="PackedScene" uid="uid://b4eimxrlr0sd7" path="res://Scène/cat.tscn" id="23_6xsbf"]
 [ext_resource type="Script" path="res://Scripts/music_script.gd" id="23_epccn"]
 [ext_resource type="PackedScene" uid="uid://bh86d62qw6q0n" path="res://Scène/Something.tscn" id="25_rbbiq"]
@@ -6730,7 +6730,7 @@ position = Vector2(16, 4)
 shape = SubResource("RectangleShape2D_hr17o")
 
 [node name="Area2D" type="Area2D" parent="Controls_sign"]
-script = ExtResource("19_ry1rw")
+script = ExtResource("19_d8pdb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Controls_sign/Area2D"]
 position = Vector2(16, 16)

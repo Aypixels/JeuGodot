@@ -1,12 +1,13 @@
 extends Container
 
 var scene_text = {
-	"player_cat" : [["Toi","Chat noir"],["Où suis-je ?","Meow...?"]],
-	"memory": [["Toi", "Toi"], ["Mmh...", "Cet endroit me semble familier..."]],
-	"window": [["Toi"], ["Il fait encore nuit..."]],
-	"controls" : [["",],["ZQSD-Flèches -> Déplacement
+	"player_cat" : [["Moi","Chat noir"],["Où suis-je ?","Meow...?"]],
+	"memory": [["Moi", "Moi"], ["Mmh...", "Cet endroit me semble familier..."]],
+	"window": [["Moi"], ["Il fait encore nuit..."]],
+	"controls" : [[""],["ZQSD-Flèches -> Déplacement
 Espace -> Intéragir
-M -> Inventaire"]]
+M -> Inventaire"]],
+	"mirror" : [["Moi"],["C'est... Moi ?"]]
 }
 var selected_text = []
 var selected_name = []

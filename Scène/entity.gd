@@ -1,6 +1,7 @@
 extends Area2D
-@onready var the_grand_door = $"../The_Grand_Door"
-var player_in
+var player_in = false
+@onready var window = $"../Window"
+
 
 func _on_body_entered(body):
 	if body.has_method("player") :
@@ -10,13 +11,13 @@ func _on_body_exited(body):
 	if body.has_method("player") :
 		player_in = false
 		SignalBus.emit_signal("hide_spacebar")
-		the_grand_door.play("closed")
 
 
-func _process(_delta) :
-	if Input.is_action_just_pressed("interact") and player_in :
+func _process(_delta):
+	if Input.is_action_just_pressed("interact") and player_in:
 		player_in = false
 		SignalBus.emit_signal("hide_spacebar")
-		the_grand_door.play("opened")
-
+		window.visible = true
+		await get_tree().create_timer(1).timeout
+		window.visible = false
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://dmbcciu1mqfi0"]
+[gd_scene load_steps=53 format=3 uid="uid://dmbcciu1mqfi0"]
 
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="1_htshc"]
 [ext_resource type="Texture2D" uid="uid://crplcbmfgkrok" path="res://tilset/Scarlet_forest.png" id="2_0po7s"]
@@ -21,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://bdny5fbfwg370" path="res://assets/The_Sun.png" id="15_hcmbb"]
 [ext_resource type="Texture2D" uid="uid://cpe21ulkuk7ex" path="res://assets/Entity.png" id="15_u1p06"]
 [ext_resource type="Texture2D" uid="uid://bcl8l1xkgolta" path="res://assets/White_particle.png" id="16_8miqu"]
+[ext_resource type="Script" path="res://Scène/entity.gd" id="22_wh1yc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0u1yg"]
 texture = ExtResource("1_htshc")
@@ -9067,21 +9068,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="Animation" id="Animation_e7h3l"]
-resource_name = "mirrorfonu"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0.133333), Color(1, 1, 1, 1)]
-}
-
 [sub_resource type="Animation" id="Animation_10odw"]
 length = 0.001
 tracks/0/type = "value"
@@ -9095,6 +9081,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Color(1, 1, 1, 0.290196)]
+}
+
+[sub_resource type="Animation" id="Animation_e7h3l"]
+resource_name = "mirrorfonu"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.133333), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_geqbu"]
@@ -9119,8 +9120,20 @@ radius = 6.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_snhck"]
 
+[sub_resource type="Gradient" id="Gradient_wsun1"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_vjw0g"]
+gradient = SubResource("Gradient_wsun1")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.125, 0.133929)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kulrg"]
 size = Vector2(35, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tiamr"]
+size = Vector2(23, 14)
 
 [node name="Castle" type="Node2D"]
 
@@ -9287,7 +9300,12 @@ trail_lifetime = 0.01
 [node name="The_Sun" type="StaticBody2D" parent="."]
 texture_filter = 1
 
+[node name="Polygon2D" type="Polygon2D" parent="The_Sun"]
+position = Vector2(-469, 421)
+polygon = PackedVector2Array(-202, -431, -299, -417, -397, -377, -461, -313, -464, -209, -467, -128, -471, -30, -474, 67, -403, 279, -360, 346, -279, 407, -188, 457, -114, 444, -33, 457, 71, 444, 155, 451, 239, 440, 323, 410, 387, 373, 451, 340, 400, 233, 440, 174, 467, 93, 478, 7, 478, -69, 480, -188, 464, -300, 428, -359, 383, -388, 314, -407, 229, -416, 129, -433, 43, -430, -33, -435, -130, -428)
+
 [node name="TheSun" type="Sprite2D" parent="The_Sun"]
+z_index = 1
 position = Vector2(-465, 431.875)
 scale = Vector2(0.0273437, 0.0268555)
 texture = ExtResource("15_hcmbb")
@@ -9304,7 +9322,17 @@ visible = false
 position = Vector2(-465, 432)
 shape = SubResource("CircleShape2D_snhck")
 
+[node name="PointLight2D" type="PointLight2D" parent="The_Sun"]
+position = Vector2(-465, 432)
+scale = Vector2(14.9453, 13.9375)
+color = Color(1, 1, 0, 1)
+energy = 0.5
+blend_mode = 2
+range_z_max = 0
+texture = SubResource("GradientTexture2D_vjw0g")
+
 [node name="Entity" type="StaticBody2D" parent="."]
+z_index = 1
 texture_filter = 1
 
 [node name="Entity" type="Sprite2D" parent="Entity"]
@@ -9313,12 +9341,47 @@ scale = Vector2(0.570896, 0.55)
 texture = ExtResource("15_u1p06")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Entity"]
-visible = false
 position = Vector2(-428.5, 424)
 shape = SubResource("RectangleShape2D_kulrg")
+
+[node name="Area2D" type="Area2D" parent="Entity"]
+position = Vector2(-434, 434)
+script = ExtResource("22_wh1yc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Entity/Area2D"]
+position = Vector2(3.5, 3)
+shape = SubResource("RectangleShape2D_tiamr")
+
+[node name="Window" type="Window" parent="Entity"]
+transparent_bg = true
+initial_position = 1
+title = "entity_message"
+size = Vector2i(1150, 650)
+mode = 3
+visible = false
+borderless = true
+transparent = true
+
+[node name="Label" type="Label" parent="Entity/Window"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -42.5
+offset_top = -13.0
+offset_right = 42.5
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 100
+text = "PRENDS-LE"
 
 [connection signal="body_entered" from="The_Grand_door/grand_door" to="The_Grand_door/grand_door" method="_on_body_entered"]
 [connection signal="body_exited" from="The_Grand_door/grand_door" to="The_Grand_door/grand_door" method="_on_body_exited"]
 [connection signal="body_entered" from="The_Mirror/mirror" to="The_Mirror/mirror" method="_on_body_entered"]
 [connection signal="body_exited" from="The_Mirror/mirror" to="The_Mirror/mirror" method="_on_body_exited"]
 [connection signal="body_entered" from="Exit/exit" to="Exit/exit" method="_on_body_entered"]
+[connection signal="body_entered" from="Entity/Area2D" to="Entity/Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Entity/Area2D" to="Entity/Area2D" method="_on_body_exited"]

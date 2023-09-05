@@ -26,7 +26,8 @@ func _process(_delta) :
 		mirror.play("default")
 		await get_tree().create_timer(1).timeout
 		SignalBus.emit_signal("dialog_display", "mirror")
-		fondu.play_backwards("mirrorfonu")
+		
+		
 		
 		
 

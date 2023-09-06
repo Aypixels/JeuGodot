@@ -14,15 +14,15 @@ var item_inventory = []
 var item_data = {
 	"bâton" : ["res://assets/Items/stick_sprite.png", 1,0,0 , "Un bâton :
 simple mais solide. Attention à ne pas le casser !", Vector2(0.3, 0.2999) , "weapon", null],
-	"baton" : ["res://assets/Items/stick_sprite.png", 1,0,0 , "Un bâton :
-simple mais solide. Attention à ne pas le casser !", Vector2(0.3, 0.2999), "armor", null]
+	"foulard blanc" : ["res://assets/Items/white_scarf.png", 1,0,0 , "Un foulard blanc:
+un cadeau de la première personne que j'ai rencontré ici", Vector2(1, 1), "armor", null]
 }
 
 
 func _ready(): 
 	visible = false
 	add_item("bâton")
-	add_item("baton")
+	SignalBus.add_item_inventory.connect(add_item)
 
 func _process(_delta):
 	if Input.is_action_just_pressed("open_inventory") and player._location != "Overworld" and player.in_dialog() == false  :
@@ -56,10 +56,11 @@ func close_inventory():
 	
 
 func add_item(id) :
-	item_inventory.push_back(item_data[id])
-	var icon = load(item_data[id][0])
-	item_list.add_icon_item(icon)
-
+	if not(item_data[id] in item_inventory) :
+		item_inventory.push_back(item_data[id])
+		var icon = load(item_data[id][0])
+		item_list.add_icon_item(icon)
+			
 
 func hide_team() :
 	for ally in $Team/team_sprite.get_children() :
@@ -135,7 +136,7 @@ func equip_ally(id) :
 				ally[1][2] = [item_inventory[current_selected][1],item_inventory[current_selected][2],item_inventory[current_selected][3] , item_inventory[current_selected][7], item_data.find_key(item_inventory[current_selected])]
 				what = 2
 			$Team.get_child(-id).get_child(what).texture = item_sprite
-			$Team.get_child(-id).get_child(what).set_scale(item_inventory[id-1][5]/2)
+			$Team.get_child(-id).get_child(what).set_scale(item_inventory[current_selected][5]/2)
 			finished_equip()
 
 func _on_equiper_ally_1_pressed(): equip_ally(1)

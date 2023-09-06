@@ -94,14 +94,13 @@ texture_filter = 1
 position = Vector2(-4.76837e-07, 9.53674e-07)
 scale = Vector2(0.6, 0.577)
 sprite_frames = SubResource("SpriteFrames_thd77")
-animation = &"death"
-frame_progress = 0.449734
+animation = &"idle"
+frame_progress = 0.388551
 flip_h = true
 
 [node name="focus" type="Sprite2D" parent="."]
-visible = false
 texture_filter = 1
-position = Vector2(1, -17)
+position = Vector2(0, -14)
 scale = Vector2(0.0159176, 0.0166667)
 texture = ExtResource("13_k3ypk")
 flip_v = true

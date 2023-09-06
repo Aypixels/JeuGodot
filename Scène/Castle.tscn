@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://dmbcciu1mqfi0"]
+[gd_scene load_steps=66 format=3 uid="uid://dmbcciu1mqfi0"]
 
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="1_htshc"]
 [ext_resource type="Texture2D" uid="uid://crplcbmfgkrok" path="res://tilset/Scarlet_forest.png" id="2_0po7s"]
@@ -21,7 +21,19 @@
 [ext_resource type="Texture2D" uid="uid://bdny5fbfwg370" path="res://assets/The_Sun.png" id="15_hcmbb"]
 [ext_resource type="Texture2D" uid="uid://cpe21ulkuk7ex" path="res://assets/Entity.png" id="15_u1p06"]
 [ext_resource type="Texture2D" uid="uid://bcl8l1xkgolta" path="res://assets/White_particle.png" id="16_8miqu"]
+[ext_resource type="Script" path="res://Scène/the_sun.gd" id="21_gbysv"]
+[ext_resource type="Texture2D" uid="uid://diwhqpgmtnfky" path="res://assets/Oneshot_enter/animation1.png" id="22_ov75g"]
 [ext_resource type="Script" path="res://Scène/entity.gd" id="22_wh1yc"]
+[ext_resource type="Texture2D" uid="uid://sywbt8syvb8a" path="res://assets/Oneshot_enter/animation2.png" id="23_fqnmf"]
+[ext_resource type="Texture2D" uid="uid://c8itsb08npf22" path="res://assets/Oneshot_enter/animation3.png" id="24_ye824"]
+[ext_resource type="Texture2D" uid="uid://de3wwid5nfe88" path="res://assets/Oneshot_enter/animation4.png" id="25_0pm30"]
+[ext_resource type="Texture2D" uid="uid://bful57dn35eqp" path="res://assets/Oneshot_enter/animation5.png" id="26_p6pmx"]
+[ext_resource type="Texture2D" uid="uid://daxh6f0oh36tp" path="res://assets/Oneshot_enter/animation6.png" id="27_bmpyv"]
+[ext_resource type="Texture2D" uid="uid://oeiqfgkm5eem" path="res://assets/Oneshot_enter/animation7.png" id="28_f1vfo"]
+[ext_resource type="Texture2D" uid="uid://sqxxlynuiitt" path="res://assets/Oneshot_enter/animation8.png" id="29_hskis"]
+[ext_resource type="Texture2D" uid="uid://hxft1txhtlnc" path="res://assets/Oneshot_enter/animation9.png" id="30_58sno"]
+[ext_resource type="Texture2D" uid="uid://bwv6usd2u5lcv" path="res://assets/Oneshot_enter/animation10.png" id="31_hikwl"]
+[ext_resource type="Script" path="res://Scène/fade.gd" id="32_lrneo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0u1yg"]
 texture = ExtResource("1_htshc")
@@ -9114,11 +9126,13 @@ particle_flag_disable_z = true
 gravity = Vector3(0, 20, 0)
 orbit_velocity_min = 0.0
 orbit_velocity_max = 0.0
+color = Color(1, 1, 1, 0.615686)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5e3u4"]
 radius = 6.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_snhck"]
+radius = 9.05539
 
 [sub_resource type="Gradient" id="Gradient_wsun1"]
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
@@ -9128,6 +9142,44 @@ gradient = SubResource("Gradient_wsun1")
 fill = 1
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(0.125, 0.133929)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vxnv6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_ov75g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_fqnmf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ye824")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_0pm30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_p6pmx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_bmpyv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_f1vfo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_hskis")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_58sno")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_hikwl")
+}],
+"loop": false,
+"name": &"default",
+"speed": 1.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kulrg"]
 size = Vector2(35, 26)
@@ -9230,7 +9282,7 @@ process_mode = 3
 visible = false
 modulate = Color(1, 1, 1, 0.290196)
 z_index = 20
-position = Vector2(-449, -386)
+position = Vector2(-505, -276)
 scale = Vector2(0.4, 0.365)
 sprite_frames = SubResource("SpriteFrames_go8nx")
 
@@ -9295,45 +9347,56 @@ texture = ExtResource("16_8miqu")
 lifetime = 2.0
 preprocess = 1.0
 randomness = 0.2
-trail_lifetime = 0.01
 
 [node name="The_Sun" type="StaticBody2D" parent="."]
 texture_filter = 1
 
 [node name="Polygon2D" type="Polygon2D" parent="The_Sun"]
-position = Vector2(-469, 421)
-polygon = PackedVector2Array(-202, -431, -299, -417, -397, -377, -461, -313, -464, -209, -467, -128, -471, -30, -474, 67, -403, 279, -360, 346, -279, 407, -188, 457, -114, 444, -33, 457, 71, 444, 155, 451, 239, 440, 323, 410, 387, 373, 451, 340, 400, 233, 440, 174, 467, 93, 478, 7, 478, -69, 480, -188, 464, -300, 428, -359, 383, -388, 314, -407, 229, -416, 129, -433, 43, -430, -33, -435, -130, -428)
+polygon = PackedVector2Array(-1035, -23, -1029, 946, 69, 946, 66, -24)
+script = ExtResource("32_lrneo")
 
 [node name="TheSun" type="Sprite2D" parent="The_Sun"]
 z_index = 1
-position = Vector2(-465, 431.875)
+position = Vector2(-486, 473)
 scale = Vector2(0.0273437, 0.0268555)
 texture = ExtResource("15_hcmbb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="The_Sun"]
 visible = false
-position = Vector2(-465, 432)
+position = Vector2(-486, 473)
 shape = SubResource("CircleShape2D_5e3u4")
 
 [node name="Area2D" type="Area2D" parent="The_Sun"]
+position = Vector2(-466, 431)
+script = ExtResource("21_gbysv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="The_Sun/Area2D"]
-visible = false
-position = Vector2(-465, 432)
+position = Vector2(-20, 42)
 shape = SubResource("CircleShape2D_snhck")
 
 [node name="PointLight2D" type="PointLight2D" parent="The_Sun"]
-position = Vector2(-465, 432)
-scale = Vector2(14.9453, 13.9375)
+position = Vector2(-486, 472.108)
+scale = Vector2(17.3438, 15.5346)
 color = Color(1, 1, 0, 1)
-energy = 0.5
+energy = 0.7
 blend_mode = 2
 range_z_max = 0
+shadow_color = Color(0, 0, 0, 1)
+shadow_filter = 2
 texture = SubResource("GradientTexture2D_vjw0g")
+
+[node name="enter_oneshot" type="AnimatedSprite2D" parent="The_Sun"]
+visible = false
+z_index = 100
+position = Vector2(-485, 474)
+scale = Vector2(1, 0.912)
+sprite_frames = SubResource("SpriteFrames_vxnv6")
+frame_progress = 0.276614
 
 [node name="Entity" type="StaticBody2D" parent="."]
 z_index = 1
 texture_filter = 1
+position = Vector2(-8, 40)
 
 [node name="Entity" type="Sprite2D" parent="Entity"]
 position = Vector2(-428.125, 424.125)
@@ -9383,5 +9446,7 @@ text = "PRENDS-LE"
 [connection signal="body_entered" from="The_Mirror/mirror" to="The_Mirror/mirror" method="_on_body_entered"]
 [connection signal="body_exited" from="The_Mirror/mirror" to="The_Mirror/mirror" method="_on_body_exited"]
 [connection signal="body_entered" from="Exit/exit" to="Exit/exit" method="_on_body_entered"]
+[connection signal="body_entered" from="The_Sun/Area2D" to="The_Sun/Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="The_Sun/Area2D" to="The_Sun/Area2D" method="_on_body_exited"]
 [connection signal="body_entered" from="Entity/Area2D" to="Entity/Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Entity/Area2D" to="Entity/Area2D" method="_on_body_exited"]

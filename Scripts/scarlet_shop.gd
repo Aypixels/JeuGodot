@@ -10,7 +10,10 @@ var texts = ["* Hee hee...
 * Ça se prononce «Shawm»",
 "* C'est dangereux plus loin...
 Tu le sais déjà, non ?",
-"* Tu attends quelque chose de moi ...?",
+"* Tu auras surement besoin de ça, prends le il ne me sert plus à rien.
+		
+Un Foulard Blanc a été ajouté à ton inventaire",
+"* Tu attends quelque chose d'autre de moi ...?",
 "* Reviens plus tard"]
 
 func _ready():
@@ -49,13 +52,15 @@ func show_text(id):
 		await get_tree().create_timer(0.04).timeout
 	
 	
-	
 func _on_exit_pressed():
 	hide_shop()
+
 
 func _on_talk_pressed():
 	if text_index < len(texts) - 1 :
 		text_index += 1
+		if text_index == 3 :
+			SignalBus.emit_signal("add_item_inventory", "foulard blanc")
 	if text_index == 1 :
 		await get_tree().create_timer(0.4).timeout
 		$Seam.play("smiling")

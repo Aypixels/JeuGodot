@@ -5,6 +5,7 @@ var scene_text = {
 	"memory": [["Moi", "Moi"], ["Mmh...", "Cet endroit me semble familier..."]],
 	"window": [["Moi"], ["Il fait encore nuit..."]],
 	"controls" : [[""],["ZQSD-Flèches -> Déplacement
+Shift -> Courir
 Espace -> Intéragir
 M -> Inventaire"]],
 	"mirror" : [["Moi"],["C'est... Moi ?"]]

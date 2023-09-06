@@ -2,6 +2,7 @@ extends Node2D
 
 # Amplitude du tremblement
 var shake_amplitude = 10.0
+
 # Durée du tremblement en secondes
 var shake_duration = 0.5
 

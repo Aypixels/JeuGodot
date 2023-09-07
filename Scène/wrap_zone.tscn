@@ -1,42 +1,43 @@
-[gd_scene load_steps=66 format=3 uid="uid://dmbcciu1mqfi0"]
+[gd_scene load_steps=69 format=3 uid="uid://dmbcciu1mqfi0"]
 
-[ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="1_htshc"]
-[ext_resource type="Texture2D" uid="uid://crplcbmfgkrok" path="res://tilset/Scarlet_forest.png" id="2_0po7s"]
-[ext_resource type="Texture2D" uid="uid://dggq7d8rkwh6k" path="res://tilset/tiles_packed.png" id="3_54vdh"]
-[ext_resource type="Texture2D" uid="uid://cc13ouexxamdf" path="res://tilset/snow-expansion.png" id="4_6h1hr"]
-[ext_resource type="Texture2D" uid="uid://c5jmvgukjw73m" path="res://tilset/Overworld.png" id="5_udfyy"]
-[ext_resource type="Texture2D" uid="uid://cbotvcv3bgsm5" path="res://tilset/PC Computer - Deltarune - Ralsei Castle Interior.png" id="6_7jlkk"]
-[ext_resource type="Texture2D" uid="uid://5mvd0pl485b5" path="res://tilset/PC Computer - Omori - Vast Forest.png" id="7_8up1s"]
-[ext_resource type="Texture2D" uid="uid://b7c6dnkgnj6p7" path="res://tilset/113030.png" id="8_thvc3"]
-[ext_resource type="Texture2D" uid="uid://cc5b3m1mccv2r" path="res://tilset/Closed_Grand_Door.png" id="9_i4yr3"]
-[ext_resource type="Texture2D" uid="uid://dw1c2o6457unx" path="res://tilset/Opened_Grand_Door.png" id="10_4rbhf"]
-[ext_resource type="Script" path="res://Scripts/grand_door.gd" id="11_jufmh"]
-[ext_resource type="Texture2D" uid="uid://bxv3h6eb0trir" path="res://assets/Wrap_exit/Pillar.png" id="12_0alh8"]
-[ext_resource type="Script" path="res://Scripts/mirror.gd" id="12_ev2xw"]
-[ext_resource type="Texture2D" uid="uid://dapspkyv4b1d0" path="res://assets/mirror_omori/frame_0_delay-0.35s.png" id="13_50ns5"]
-[ext_resource type="Texture2D" uid="uid://ca23hvvu4m5fd" path="res://assets/Wrap_exit/Base_exit.png" id="13_rcgdr"]
-[ext_resource type="Script" path="res://Scripts/exit.gd" id="14_vptg1"]
-[ext_resource type="Texture2D" uid="uid://enjbnwdpytck" path="res://assets/mirror_omori/frame_1_delay-0.35s.png" id="14_xhrtj"]
-[ext_resource type="Texture2D" uid="uid://dryvgjhjcaxqr" path="res://assets/mirror_omori/frame_2_delay-0.35s.png" id="15_chckh"]
-[ext_resource type="Texture2D" uid="uid://bdny5fbfwg370" path="res://assets/The_Sun.png" id="15_hcmbb"]
-[ext_resource type="Texture2D" uid="uid://cpe21ulkuk7ex" path="res://assets/Entity.png" id="15_u1p06"]
-[ext_resource type="Texture2D" uid="uid://bcl8l1xkgolta" path="res://assets/White_particle.png" id="16_8miqu"]
-[ext_resource type="Script" path="res://Scène/the_sun.gd" id="21_gbysv"]
-[ext_resource type="Texture2D" uid="uid://diwhqpgmtnfky" path="res://assets/Oneshot_enter/animation1.png" id="22_ov75g"]
-[ext_resource type="Script" path="res://Scène/entity.gd" id="22_wh1yc"]
-[ext_resource type="Texture2D" uid="uid://sywbt8syvb8a" path="res://assets/Oneshot_enter/animation2.png" id="23_fqnmf"]
-[ext_resource type="Texture2D" uid="uid://c8itsb08npf22" path="res://assets/Oneshot_enter/animation3.png" id="24_ye824"]
-[ext_resource type="Texture2D" uid="uid://de3wwid5nfe88" path="res://assets/Oneshot_enter/animation4.png" id="25_0pm30"]
-[ext_resource type="Texture2D" uid="uid://bful57dn35eqp" path="res://assets/Oneshot_enter/animation5.png" id="26_p6pmx"]
-[ext_resource type="Texture2D" uid="uid://daxh6f0oh36tp" path="res://assets/Oneshot_enter/animation6.png" id="27_bmpyv"]
-[ext_resource type="Texture2D" uid="uid://oeiqfgkm5eem" path="res://assets/Oneshot_enter/animation7.png" id="28_f1vfo"]
-[ext_resource type="Texture2D" uid="uid://sqxxlynuiitt" path="res://assets/Oneshot_enter/animation8.png" id="29_hskis"]
-[ext_resource type="Texture2D" uid="uid://hxft1txhtlnc" path="res://assets/Oneshot_enter/animation9.png" id="30_58sno"]
-[ext_resource type="Texture2D" uid="uid://bwv6usd2u5lcv" path="res://assets/Oneshot_enter/animation10.png" id="31_hikwl"]
-[ext_resource type="Script" path="res://Scène/fade.gd" id="32_lrneo"]
+[ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="1_rn4p6"]
+[ext_resource type="Texture2D" uid="uid://crplcbmfgkrok" path="res://tilset/Scarlet_forest.png" id="2_4s62f"]
+[ext_resource type="Texture2D" uid="uid://dggq7d8rkwh6k" path="res://tilset/tiles_packed.png" id="3_fb0yh"]
+[ext_resource type="Texture2D" uid="uid://cc13ouexxamdf" path="res://tilset/snow-expansion.png" id="4_uyoii"]
+[ext_resource type="Texture2D" uid="uid://c5jmvgukjw73m" path="res://tilset/Overworld.png" id="5_unms1"]
+[ext_resource type="Texture2D" uid="uid://cbotvcv3bgsm5" path="res://tilset/PC Computer - Deltarune - Ralsei Castle Interior.png" id="6_nknxj"]
+[ext_resource type="Texture2D" uid="uid://5mvd0pl485b5" path="res://tilset/PC Computer - Omori - Vast Forest.png" id="7_dkwe4"]
+[ext_resource type="Texture2D" uid="uid://b7c6dnkgnj6p7" path="res://tilset/113030.png" id="8_5v4aj"]
+[ext_resource type="Texture2D" uid="uid://cc5b3m1mccv2r" path="res://tilset/Closed_Grand_Door.png" id="9_o2vlf"]
+[ext_resource type="Texture2D" uid="uid://dw1c2o6457unx" path="res://tilset/Opened_Grand_Door.png" id="10_7nxso"]
+[ext_resource type="Script" path="res://Scripts/grand_door.gd" id="11_mhps1"]
+[ext_resource type="Script" path="res://Scène/go_to_deltarune.gd" id="12_uy53e"]
+[ext_resource type="Script" path="res://Scripts/mirror.gd" id="13_d7v54"]
+[ext_resource type="Texture2D" uid="uid://dapspkyv4b1d0" path="res://assets/mirror_omori/frame_0_delay-0.35s.png" id="14_vv382"]
+[ext_resource type="Texture2D" uid="uid://enjbnwdpytck" path="res://assets/mirror_omori/frame_1_delay-0.35s.png" id="15_n8vl7"]
+[ext_resource type="Texture2D" uid="uid://dryvgjhjcaxqr" path="res://assets/mirror_omori/frame_2_delay-0.35s.png" id="16_0kf0g"]
+[ext_resource type="Texture2D" uid="uid://bxv3h6eb0trir" path="res://assets/Wrap_exit/Pillar.png" id="17_wh2pl"]
+[ext_resource type="Texture2D" uid="uid://ca23hvvu4m5fd" path="res://assets/Wrap_exit/Base_exit.png" id="18_l3b5t"]
+[ext_resource type="Script" path="res://Scripts/exit.gd" id="19_uqm15"]
+[ext_resource type="Texture2D" uid="uid://bcl8l1xkgolta" path="res://assets/White_particle.png" id="20_ifr40"]
+[ext_resource type="Script" path="res://Scène/fade.gd" id="21_niosq"]
+[ext_resource type="Texture2D" uid="uid://bdny5fbfwg370" path="res://assets/The_Sun.png" id="22_fttxs"]
+[ext_resource type="Script" path="res://Scène/the_sun.gd" id="23_xd548"]
+[ext_resource type="Texture2D" uid="uid://diwhqpgmtnfky" path="res://assets/Oneshot_enter/animation1.png" id="24_0j3el"]
+[ext_resource type="Texture2D" uid="uid://sywbt8syvb8a" path="res://assets/Oneshot_enter/animation2.png" id="25_gntyg"]
+[ext_resource type="Texture2D" uid="uid://c8itsb08npf22" path="res://assets/Oneshot_enter/animation3.png" id="26_w4gsx"]
+[ext_resource type="Texture2D" uid="uid://de3wwid5nfe88" path="res://assets/Oneshot_enter/animation4.png" id="27_23hvg"]
+[ext_resource type="Texture2D" uid="uid://bful57dn35eqp" path="res://assets/Oneshot_enter/animation5.png" id="28_6xbic"]
+[ext_resource type="Texture2D" uid="uid://daxh6f0oh36tp" path="res://assets/Oneshot_enter/animation6.png" id="29_8a2hk"]
+[ext_resource type="Texture2D" uid="uid://oeiqfgkm5eem" path="res://assets/Oneshot_enter/animation7.png" id="30_j6d3g"]
+[ext_resource type="Texture2D" uid="uid://sqxxlynuiitt" path="res://assets/Oneshot_enter/animation8.png" id="31_rrb0l"]
+[ext_resource type="Texture2D" uid="uid://hxft1txhtlnc" path="res://assets/Oneshot_enter/animation9.png" id="32_1cnax"]
+[ext_resource type="Texture2D" uid="uid://bwv6usd2u5lcv" path="res://assets/Oneshot_enter/animation10.png" id="33_neaf5"]
+[ext_resource type="Texture2D" uid="uid://cpe21ulkuk7ex" path="res://assets/Entity.png" id="34_t4hdl"]
+[ext_resource type="Script" path="res://Scène/entity.gd" id="35_1xgkc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0u1yg"]
-texture = ExtResource("1_htshc")
+texture = ExtResource("1_rn4p6")
 12:1/0 = 0
 19:1/0 = 0
 20:1/0 = 0
@@ -357,7 +358,7 @@ texture = ExtResource("1_htshc")
 32:11/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3nd8s"]
-texture = ExtResource("2_0po7s")
+texture = ExtResource("2_4s62f")
 texture_region_size = Vector2i(20, 20)
 3:14/0 = 0
 4:14/0 = 0
@@ -647,7 +648,7 @@ texture_region_size = Vector2i(20, 20)
 27:25/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vyose"]
-texture = ExtResource("3_54vdh")
+texture = ExtResource("3_fb0yh")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -824,7 +825,7 @@ texture = ExtResource("3_54vdh")
 15:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qviqg"]
-texture = ExtResource("4_6h1hr")
+texture = ExtResource("4_uyoii")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1115,7 +1116,7 @@ texture = ExtResource("4_6h1hr")
 6:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_56ydp"]
-texture = ExtResource("5_udfyy")
+texture = ExtResource("5_unms1")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -2191,7 +2192,7 @@ texture = ExtResource("5_udfyy")
 1:35/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y6j2w"]
-texture = ExtResource("6_7jlkk")
+texture = ExtResource("6_nknxj")
 texture_region_size = Vector2i(20, 20)
 0:0/0 = 0
 1:0/0 = 0
@@ -5184,7 +5185,7 @@ texture_region_size = Vector2i(20, 20)
 48:60/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k0f7y"]
-texture = ExtResource("7_8up1s")
+texture = ExtResource("7_dkwe4")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -8008,7 +8009,7 @@ texture = ExtResource("7_8up1s")
 63:63/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s8jo8"]
-texture = ExtResource("8_thvc3")
+texture = ExtResource("8_5v4aj")
 texture_region_size = Vector2i(20, 20)
 0:0/0 = 0
 1:0/0 = 0
@@ -9027,7 +9028,7 @@ size = Vector2(172, 153)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("9_i4yr3")
+"texture": ExtResource("9_o2vlf")
 }],
 "loop": true,
 "name": &"closed",
@@ -9035,7 +9036,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("10_4rbhf")
+"texture": ExtResource("10_7nxso")
 }],
 "loop": true,
 "name": &"opened",
@@ -9043,7 +9044,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hrnnj"]
-size = Vector2(43, 15.5)
+size = Vector2(72, 15.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5w7my"]
+size = Vector2(23, 26)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ml8oo"]
 size = Vector2(4184, 25)
@@ -9057,6 +9061,9 @@ size = Vector2(4176, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tlgf6"]
 size = Vector2(64, 2872.5)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2gl5f"]
+size = Vector2(26, 23)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dc5hs"]
 size = Vector2(30, 47)
 
@@ -9067,13 +9074,13 @@ size = Vector2(8, 11)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("13_50ns5")
+"texture": ExtResource("14_vv382")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_xhrtj")
+"texture": ExtResource("15_n8vl7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_chckh")
+"texture": ExtResource("16_0kf0g")
 }],
 "loop": true,
 "name": &"default",
@@ -9147,34 +9154,34 @@ fill_to = Vector2(0.125, 0.133929)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("22_ov75g")
+"texture": ExtResource("24_0j3el")
 }, {
 "duration": 1.0,
-"texture": ExtResource("23_fqnmf")
+"texture": ExtResource("25_gntyg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_ye824")
+"texture": ExtResource("26_w4gsx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("25_0pm30")
+"texture": ExtResource("27_23hvg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("26_p6pmx")
+"texture": ExtResource("28_6xbic")
 }, {
 "duration": 1.0,
-"texture": ExtResource("27_bmpyv")
+"texture": ExtResource("29_8a2hk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("28_f1vfo")
+"texture": ExtResource("30_j6d3g")
 }, {
 "duration": 1.0,
-"texture": ExtResource("29_hskis")
+"texture": ExtResource("31_rrb0l")
 }, {
 "duration": 1.0,
-"texture": ExtResource("30_58sno")
+"texture": ExtResource("32_1cnax")
 }, {
 "duration": 1.0,
-"texture": ExtResource("31_hikwl")
+"texture": ExtResource("33_neaf5")
 }],
 "loop": false,
 "name": &"default",
@@ -9187,7 +9194,8 @@ size = Vector2(35, 26)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tiamr"]
 size = Vector2(23, 14)
 
-[node name="Castle" type="Node2D"]
+[node name="Wrap_zone" type="Node2D"]
+process_mode = 1
 
 [node name="TileMap 20" type="TileMap" parent="."]
 z_index = -1
@@ -9240,13 +9248,25 @@ sprite_frames = SubResource("SpriteFrames_cm5nl")
 animation = &"closed"
 
 [node name="grand_door" type="Area2D" parent="The_Grand_door"]
-script = ExtResource("11_jufmh")
+script = ExtResource("11_mhps1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="The_Grand_door/grand_door"]
-position = Vector2(679, -500.75)
+position = Vector2(680, -500.75)
 shape = SubResource("RectangleShape2D_hrnnj")
 
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="The_Grand_door"]
+polygon = PackedVector2Array(668, -506, 592, -506, 592, -658, 764, -658, 764, -505, 691, -505, 691, -579, 668, -579)
+disabled = true
+
+[node name="Area2D" type="Area2D" parent="The_Grand_door"]
+script = ExtResource("12_uy53e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="The_Grand_door/Area2D"]
+position = Vector2(679.5, -566)
+shape = SubResource("RectangleShape2D_5w7my")
+
 [node name="Collision" type="StaticBody2D" parent="."]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Collision"]
 position = Vector2(133, -1329.5)
@@ -9264,6 +9284,10 @@ shape = SubResource("RectangleShape2D_jmo5r")
 position = Vector2(2234, 115.25)
 shape = SubResource("RectangleShape2D_tlgf6")
 
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Collision"]
+position = Vector2(-384, -333.5)
+shape = SubResource("RectangleShape2D_2gl5f")
+
 [node name="The_Mirror" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="The_Mirror"]
@@ -9271,7 +9295,7 @@ position = Vector2(-449, -401.5)
 shape = SubResource("RectangleShape2D_dc5hs")
 
 [node name="mirror" type="Area2D" parent="The_Mirror"]
-script = ExtResource("12_ev2xw")
+script = ExtResource("13_d7v54")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="The_Mirror/mirror"]
 position = Vector2(-449, -376.5)
@@ -9298,41 +9322,41 @@ texture_filter = 1
 self_modulate = Color(1, 1, 1, 0.14902)
 texture_filter = 1
 position = Vector2(0, -463)
-texture = ExtResource("12_0alh8")
+texture = ExtResource("17_wh2pl")
 
 [node name="Pillar2" type="Sprite2D" parent="Exit"]
 self_modulate = Color(1, 1, 1, 0.156863)
 texture_filter = 1
 position = Vector2(1.19209e-07, -463)
 scale = Vector2(0.88, 1)
-texture = ExtResource("12_0alh8")
+texture = ExtResource("17_wh2pl")
 
 [node name="Pillar3" type="Sprite2D" parent="Exit"]
 self_modulate = Color(1, 1, 1, 0.27451)
 texture_filter = 1
 position = Vector2(0.999999, -463)
 scale = Vector2(0.74, 1)
-texture = ExtResource("12_0alh8")
+texture = ExtResource("17_wh2pl")
 
 [node name="BaseExit" type="Sprite2D" parent="Exit"]
 self_modulate = Color(1, 1, 1, 0.14902)
 position = Vector2(1, -361)
-texture = ExtResource("13_rcgdr")
+texture = ExtResource("18_l3b5t")
 
 [node name="BaseExit2" type="Sprite2D" parent="Exit"]
 self_modulate = Color(1, 1, 1, 0.156863)
 position = Vector2(-0.499999, -361)
 scale = Vector2(0.89, 1)
-texture = ExtResource("13_rcgdr")
+texture = ExtResource("18_l3b5t")
 
 [node name="BaseExit3" type="Sprite2D" parent="Exit"]
 self_modulate = Color(1, 1, 1, 0.27451)
 position = Vector2(1, -361)
 scale = Vector2(0.74, 1)
-texture = ExtResource("13_rcgdr")
+texture = ExtResource("18_l3b5t")
 
 [node name="exit" type="Area2D" parent="Exit"]
-script = ExtResource("14_vptg1")
+script = ExtResource("19_uqm15")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Exit/exit"]
 position = Vector2(0, -367)
@@ -9343,7 +9367,7 @@ self_modulate = Color(1, 1, 1, 0.396078)
 position = Vector2(1.26218e-29, -431)
 scale = Vector2(0.48, 0.440002)
 process_material = SubResource("ParticleProcessMaterial_aqyvv")
-texture = ExtResource("16_8miqu")
+texture = ExtResource("20_ifr40")
 lifetime = 2.0
 preprocess = 1.0
 randomness = 0.2
@@ -9353,13 +9377,13 @@ texture_filter = 1
 
 [node name="Polygon2D" type="Polygon2D" parent="The_Sun"]
 polygon = PackedVector2Array(-1035, -23, -1029, 946, 69, 946, 66, -24)
-script = ExtResource("32_lrneo")
+script = ExtResource("21_niosq")
 
 [node name="TheSun" type="Sprite2D" parent="The_Sun"]
 z_index = 1
 position = Vector2(-486, 473)
 scale = Vector2(0.0273437, 0.0268555)
-texture = ExtResource("15_hcmbb")
+texture = ExtResource("22_fttxs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="The_Sun"]
 visible = false
@@ -9368,7 +9392,7 @@ shape = SubResource("CircleShape2D_5e3u4")
 
 [node name="Area2D" type="Area2D" parent="The_Sun"]
 position = Vector2(-466, 431)
-script = ExtResource("21_gbysv")
+script = ExtResource("23_xd548")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="The_Sun/Area2D"]
 position = Vector2(-20, 42)
@@ -9401,7 +9425,7 @@ position = Vector2(-8, 40)
 [node name="Entity" type="Sprite2D" parent="Entity"]
 position = Vector2(-428.125, 424.125)
 scale = Vector2(0.570896, 0.55)
-texture = ExtResource("15_u1p06")
+texture = ExtResource("34_t4hdl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Entity"]
 position = Vector2(-428.5, 424)
@@ -9409,7 +9433,7 @@ shape = SubResource("RectangleShape2D_kulrg")
 
 [node name="Area2D" type="Area2D" parent="Entity"]
 position = Vector2(-434, 434)
-script = ExtResource("22_wh1yc")
+script = ExtResource("35_1xgkc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Entity/Area2D"]
 position = Vector2(3.5, 3)
@@ -9443,6 +9467,7 @@ text = "PRENDS-LE"
 
 [connection signal="body_entered" from="The_Grand_door/grand_door" to="The_Grand_door/grand_door" method="_on_body_entered"]
 [connection signal="body_exited" from="The_Grand_door/grand_door" to="The_Grand_door/grand_door" method="_on_body_exited"]
+[connection signal="body_entered" from="The_Grand_door/Area2D" to="The_Grand_door/Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="The_Mirror/mirror" to="The_Mirror/mirror" method="_on_body_entered"]
 [connection signal="body_exited" from="The_Mirror/mirror" to="The_Mirror/mirror" method="_on_body_exited"]
 [connection signal="body_entered" from="Exit/exit" to="Exit/exit" method="_on_body_entered"]

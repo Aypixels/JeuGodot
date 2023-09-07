@@ -8,7 +8,8 @@ var scene_text = {
 Shift -> Courir
 Espace -> Intéragir
 M -> Inventaire"]],
-	"mirror" : [["Moi"],["C'est... Moi ?"]]
+	"mirror" : [["Moi"],["C'est... Moi ?"]],
+	"non_accessible" : [["Moi"],["Je ne peux pas intéragir avec ça pour l'instant"]],
 }
 var selected_text = []
 var selected_name = []
@@ -50,6 +51,7 @@ func finish() :
 	background.visible = false
 	in_progress = false
 	phrase_end = false
+	SignalBus.emit_signal("dialog_finished")
 	get_tree().paused = false
 		
 func on_dialog_display(text_key) :

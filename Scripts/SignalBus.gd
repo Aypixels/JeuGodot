@@ -18,12 +18,16 @@ signal lose()
 
 #Général
 signal location(location)
-signal go_to(direction)
+signal go_to(direction, transition)
 signal dialog_display(name,text_key)
 signal open_UI(id)
 signal show_spacebar()
 signal hide_spacebar()
 signal add_item_inventory(id)
+signal dialog_finished
 
 func _ready():
 	RenderingServer.set_default_clear_color("black")
+
+
+

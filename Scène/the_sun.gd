@@ -15,21 +15,24 @@ func _on_body_exited(body):
 
 
 func _process(_delta):
-	if Input.is_action_just_pressed("interact") and player_in:
-		player_in = false
-		$"../PointLight2D".enabled = false
-		SignalBus.emit_signal("hide_spacebar")
-		enter_oneshot.position = player.position
-		player.stop = true
-		enter_oneshot.play("default")
-		enter_oneshot.show()
-		enter_oneshot.speed_scale = 1
-	
+	if Input.is_action_just_pressed("interact") and player_in :
+		if $"../../../..".oneshot_opened :
+			player_in = false
+			$"../PointLight2D".enabled = false
+			SignalBus.emit_signal("hide_spacebar")
+			enter_oneshot.position = player.position
+			player.stop = true
+			enter_oneshot.play("default")
+			enter_oneshot.show()
+			enter_oneshot.speed_scale = 1
+		else:
+			SignalBus.emit_signal("dialog_display", "non_accessible")
 	if enter_oneshot.frame == 4 :
 		enter_oneshot.speed_scale = 5
 	if enter_oneshot.frame == 9 :
 		enter_oneshot.stop()
 		enter_oneshot.hide()
+		SignalBus.emit_signal("go_to", "oneshot_start", false)
 		player.stop = false
 		
 

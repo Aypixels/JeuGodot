@@ -1,5 +1,9 @@
 extends Node2D
 
+var omori_opened = false
+var oneshot_opened = false
+var deltarune_opened
+
 var start_scene = "res://Scène/Tutoriel.tscn"
 var current_level : Node2D
 var combat : Node2D
@@ -59,8 +63,8 @@ func combat_won() :
 	
 
 func combat_lost() :
-	await get_tree().create_timer(0.7).timeout
-	SignalBus.emit_signal("go_to", "chamber")
+	await get_tree().create_timer(1).timeout
+	SignalBus.emit_signal("go_to", "chamber",true)
 	await fondu.animation_finished
 	SignalBus.emit_signal("location", "Overworld")
 	combat.queue_free()
@@ -68,11 +72,13 @@ func combat_lost() :
 	$Level.visible = true
 	
 
-func on_go_to(location) :
+func on_go_to(location, transition) :
 	$Player.stop = true
-	fondu.play("fondu")
-	await fondu.animation_finished
-	fondu.play_backwards("fondu")
+	$Player.go_idle()
+	if transition == true :
+		fondu.play("fondu")
+		await fondu.animation_finished
+		fondu.play_backwards("fondu")
 	current_level = load("res://Scène/"+location+".tscn").instantiate()
 	$Level.get_child(0).queue_free()
 	$Level.add_child(current_level)

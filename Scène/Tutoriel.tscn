@@ -6658,10 +6658,10 @@ script = ExtResource("25_umjae")
 position = Vector2(114, -217)
 shape = SubResource("SegmentShape2D_sjipi")
 
-[node name="Go_to_castle" type="Area2D" parent="."]
+[node name="Go_to_wrap_zone" type="Area2D" parent="."]
 script = ExtResource("26_uvmrv")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Go_to_castle"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Go_to_wrap_zone"]
 position = Vector2(526, -607)
 shape = SubResource("RectangleShape2D_8uscl")
 
@@ -6737,7 +6737,7 @@ position = Vector2(16, 16)
 shape = SubResource("RectangleShape2D_n21o2")
 
 [connection signal="body_entered" from="End_of_road" to="End_of_road" method="_on_body_entered"]
-[connection signal="body_entered" from="Go_to_castle" to="Go_to_castle" method="_on_body_entered"]
+[connection signal="body_entered" from="Go_to_wrap_zone" to="Go_to_wrap_zone" method="_on_body_entered"]
 [connection signal="body_entered" from="Memory" to="Memory" method="_on_body_entered"]
 [connection signal="body_entered" from="Shop/Enter_Shop" to="Shop/Enter_Shop" method="_on_body_entered"]
 [connection signal="body_exited" from="Shop/Enter_Shop" to="Shop/Enter_Shop" method="_on_body_exited"]

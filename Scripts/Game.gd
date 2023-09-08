@@ -2,7 +2,8 @@ extends Node2D
 
 var omori_opened = false
 var oneshot_opened = false
-var deltarune_opened
+var deltarune_opened = false
+var exit_opened = true
 
 var start_scene = "res://Scène/Tutoriel.tscn"
 var current_level : Node2D

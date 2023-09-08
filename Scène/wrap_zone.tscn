@@ -9318,43 +9318,6 @@ libraries = {
 [node name="Exit" type="AnimatableBody2D" parent="."]
 texture_filter = 1
 
-[node name="Pillar" type="Sprite2D" parent="Exit"]
-self_modulate = Color(1, 1, 1, 0.14902)
-texture_filter = 1
-position = Vector2(0, -463)
-texture = ExtResource("17_wh2pl")
-
-[node name="Pillar2" type="Sprite2D" parent="Exit"]
-self_modulate = Color(1, 1, 1, 0.156863)
-texture_filter = 1
-position = Vector2(1.19209e-07, -463)
-scale = Vector2(0.88, 1)
-texture = ExtResource("17_wh2pl")
-
-[node name="Pillar3" type="Sprite2D" parent="Exit"]
-self_modulate = Color(1, 1, 1, 0.27451)
-texture_filter = 1
-position = Vector2(0.999999, -463)
-scale = Vector2(0.74, 1)
-texture = ExtResource("17_wh2pl")
-
-[node name="BaseExit" type="Sprite2D" parent="Exit"]
-self_modulate = Color(1, 1, 1, 0.14902)
-position = Vector2(1, -361)
-texture = ExtResource("18_l3b5t")
-
-[node name="BaseExit2" type="Sprite2D" parent="Exit"]
-self_modulate = Color(1, 1, 1, 0.156863)
-position = Vector2(-0.499999, -361)
-scale = Vector2(0.89, 1)
-texture = ExtResource("18_l3b5t")
-
-[node name="BaseExit3" type="Sprite2D" parent="Exit"]
-self_modulate = Color(1, 1, 1, 0.27451)
-position = Vector2(1, -361)
-scale = Vector2(0.74, 1)
-texture = ExtResource("18_l3b5t")
-
 [node name="exit" type="Area2D" parent="Exit"]
 script = ExtResource("19_uqm15")
 
@@ -9362,7 +9325,46 @@ script = ExtResource("19_uqm15")
 position = Vector2(0, -367)
 shape = SubResource("RectangleShape2D_ijyj4")
 
-[node name="GPUParticles2D" type="GPUParticles2D" parent="Exit"]
+[node name="exit_visual" type="Node2D" parent="Exit"]
+
+[node name="Pillar" type="Sprite2D" parent="Exit/exit_visual"]
+self_modulate = Color(1, 1, 1, 0.14902)
+texture_filter = 1
+position = Vector2(0, -463)
+texture = ExtResource("17_wh2pl")
+
+[node name="Pillar2" type="Sprite2D" parent="Exit/exit_visual"]
+self_modulate = Color(1, 1, 1, 0.156863)
+texture_filter = 1
+position = Vector2(1.19209e-07, -463)
+scale = Vector2(0.88, 1)
+texture = ExtResource("17_wh2pl")
+
+[node name="Pillar3" type="Sprite2D" parent="Exit/exit_visual"]
+self_modulate = Color(1, 1, 1, 0.27451)
+texture_filter = 1
+position = Vector2(0.999999, -463)
+scale = Vector2(0.74, 1)
+texture = ExtResource("17_wh2pl")
+
+[node name="BaseExit" type="Sprite2D" parent="Exit/exit_visual"]
+self_modulate = Color(1, 1, 1, 0.14902)
+position = Vector2(1, -361)
+texture = ExtResource("18_l3b5t")
+
+[node name="BaseExit2" type="Sprite2D" parent="Exit/exit_visual"]
+self_modulate = Color(1, 1, 1, 0.156863)
+position = Vector2(-0.499999, -361)
+scale = Vector2(0.89, 1)
+texture = ExtResource("18_l3b5t")
+
+[node name="BaseExit3" type="Sprite2D" parent="Exit/exit_visual"]
+self_modulate = Color(1, 1, 1, 0.27451)
+position = Vector2(1, -361)
+scale = Vector2(0.74, 1)
+texture = ExtResource("18_l3b5t")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Exit/exit_visual"]
 self_modulate = Color(1, 1, 1, 0.396078)
 position = Vector2(1.26218e-29, -431)
 scale = Vector2(0.48, 0.440002)

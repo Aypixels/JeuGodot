@@ -5,6 +5,7 @@ var oneshot_opened = false
 var deltarune_opened = false
 var exit_opened = true
 
+var period = "night"
 var start_scene = "res://Scène/Tutoriel.tscn"
 var current_level : Node2D
 var combat : Node2D
@@ -65,7 +66,7 @@ func combat_won() :
 
 func combat_lost() :
 	await get_tree().create_timer(1).timeout
-	SignalBus.emit_signal("go_to", "chamber",true)
+	SignalBus.emit_signal("go_to", "chamber",true, "wrap_zone")
 	await fondu.animation_finished
 	SignalBus.emit_signal("location", "Overworld")
 	combat.queue_free()
@@ -73,7 +74,7 @@ func combat_lost() :
 	$Level.visible = true
 	
 
-func on_go_to(location, transition) :
+func on_go_to(location, transition, _from) :
 	$Player.stop = true
 	$Player.go_idle()
 	if transition == true :

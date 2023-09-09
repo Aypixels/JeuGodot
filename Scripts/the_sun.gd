@@ -32,7 +32,7 @@ func _process(_delta):
 	if enter_oneshot.frame == 9 :
 		enter_oneshot.stop()
 		enter_oneshot.hide()
-		SignalBus.emit_signal("go_to", "oneshot_start", false)
+		SignalBus.emit_signal("go_to", "oneshot_start", false, "wrap_zone")
 		player.stop = false
 		
 

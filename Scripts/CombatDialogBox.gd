@@ -4,7 +4,11 @@ var battle_text = {
 	"something_run" : ["* M'enfuir ne me semble pas être une option"],
 	"clear" : [""],
 	"win_something": ["* Something à été vaincu"],
-	"choose_target" : ["* Qui vais-je attaquer ?"]
+	"choose_target" : ["* Qui vais-je attaquer ?"],
+	
+	"inspect_something" : ["Something : 5 ATK 0 DEF
+* Un souvenir déplaisant ? Mes plus grandes peurs ? 
+Ce n'est pas simple de mettre un mot dessus"]
 }
 var selected_text = []
 var in_progress= false

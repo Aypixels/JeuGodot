@@ -22,7 +22,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"death",
-"speed": 0.5
+"speed": 1.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -94,8 +94,7 @@ texture_filter = 1
 position = Vector2(-4.76837e-07, 9.53674e-07)
 scale = Vector2(0.6, 0.577)
 sprite_frames = SubResource("SpriteFrames_thd77")
-animation = &"idle"
-frame_progress = 0.388551
+animation = &"death"
 flip_h = true
 
 [node name="focus" type="Sprite2D" parent="."]

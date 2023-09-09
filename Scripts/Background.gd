@@ -1,9 +1,9 @@
 extends AnimatedSprite2D
 
 @onready var blanket = $"../Blanket"
-
+@onready var game = $"../../.."
 func _ready():
-	if animation.get_basename() == "night":
+	if  game.period == "night":
 		blanket.visible = true
 	else:
 		blanket.visible = false

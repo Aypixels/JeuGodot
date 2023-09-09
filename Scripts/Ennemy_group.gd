@@ -9,7 +9,7 @@ var action = ""
 @onready var choice = $"../choice"
 
 signal next_player
-
+signal finished_choosing
 
 
 func _ready():
@@ -45,12 +45,15 @@ func _process(_delta):
 				target_index += 1
 				switch_focus(target_index, target_index - 1)
 				
-		if action == "attack" and Input.is_action_just_pressed("interact") :
-			var dmg = get_ally_ATK()
-			action_queue.push_back([target_index,dmg, action])
-			action = ""
-			reset_focus()
-			emit_signal("next_player")
+		if Input.is_action_just_pressed("interact") :
+			if action == "attack":
+				var dmg = get_ally_ATK()
+				action_queue.push_back([target_index,dmg, action])
+				action = ""
+				reset_focus()
+				emit_signal("next_player")
+			if action == "special" :
+				emit_signal("finished_choosing")
 		
 	if action_queue.size() == allies.size() and not is_battling :
 		is_battling = true
@@ -88,6 +91,7 @@ func start_choosing() :
 	enemies[0].focus()
 
 func _on_attack_pressed():
+	$"../Ally_group".hide_specials()
 	action = "attack"
 	SignalBus.emit_signal("battle_dialog_display", "choose_target")
 	choice.hide()
@@ -116,5 +120,8 @@ func enemy_turn() :
 		await get_tree().create_timer(1).timeout
 	if not check_lose() :
 		SignalBus.emit_signal("new_turn")
+		$"../choice/Attack".grab_focus()
 		show_choice()
 		SignalBus.emit_signal("switch_turn", "ally")
+
+

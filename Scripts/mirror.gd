@@ -33,7 +33,7 @@ func _process(_delta) :
 			SignalBus.emit_signal("dialog_display", "mirror")
 			await SignalBus.dialog_finished
 			await get_tree().create_timer(3).timeout
-			SignalBus.emit_signal("go_to", "omori_start", false)
+			SignalBus.emit_signal("go_to", "omori_start", false, "wrap_zone")
 			
 		else:
 			SignalBus.emit_signal("dialog_display", "non_accessible")

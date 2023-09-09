@@ -4,11 +4,13 @@ var speed = 0
 var oldPose = "Down"
 var stop = false
 var locations = {
-	"wrap_zone" = Vector2(0,0),
-	"chamber" = Vector2(-19,-12),
-	"omori_start" = Vector2(0,0),
-	"deltarune_start" =Vector2(0,0),
-	"oneshot_start" =Vector2(0,0),
+	"wrap_zone_Tutoriel" = Vector2(0,0),
+	"chamber_wrap_zone" = Vector2(-19,-12),
+	"omori_start_wrap_zone" = Vector2(0,0),
+	"deltarune_start_wrap_zone" =Vector2(0,0),
+	"oneshot_start_wrap_zone" =Vector2(0,0),
+	"hallway_chamber" = Vector2(-135, 17),
+	"chamber_hallway" = Vector2(-85, 50)
 }
 
 var _location
@@ -61,12 +63,12 @@ func end_of_road():
 	$AnimatedSprite2D.play("idleUp" + _location)
 	
 
-func positionning(location, transition) :
+func positionning(location, transition, from) :
 	stop = true
 	$AnimatedSprite2D.play("idle" + oldPose + _location)
 	if transition :
 		await get_tree().create_timer(1).timeout
-	position = locations[location]
+	position = locations[location+"_"+from]
 	stop = false
 
 func memory():

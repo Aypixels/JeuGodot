@@ -10,11 +10,14 @@ var shake_duration = 0.5
 var original_position = Vector2.ZERO
 
 func _ready():
-	# Stocker la position d'origine
+	if $"../..".period == "night":
+		$"../../Player".set_modulate(Color(0.4,0.4,0.7,1))
+	else:
+		$"../../Player".set_modulate(Color(1,1,1,1))
 	original_position = position
 
 func _process(delta):
-	if shake_duration > 0:
+	if shake_duration > 0 and $"../..".exit_opened :
 		# Générer un décalage aléatoire pour le tremblement
 		var offset = Vector2(randf_range(-shake_amplitude, shake_amplitude), randf_range(-shake_amplitude, shake_amplitude))
 		# Appliquer le décalage à la position
@@ -22,6 +25,7 @@ func _process(delta):
 		
 		# Réduire la durée du tremblement           
 		shake_duration -= delta
-	else:
+	elif $"../..".exit_opened :
 		# Réinitialiser la position une fois le tremblement terminé
 		position = original_position
+		$"../..".exit_opened = false

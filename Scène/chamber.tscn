@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://b7us8anq3etg2"]
+[gd_scene load_steps=22 format=3 uid="uid://b7us8anq3etg2"]
 
 [ext_resource type="Texture2D" uid="uid://cxc2bbbu6uob7" path="res://assets/chambre_jour.png" id="1_gfm72"]
 [ext_resource type="Script" path="res://Scripts/chamber.gd" id="1_yau6q"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://Scripts/Background.gd" id="3_guwki"]
 [ext_resource type="Texture2D" uid="uid://chdpbc7qfjq5" path="res://assets/blancket.png" id="4_8xf8v"]
 [ext_resource type="Script" path="res://Scripts/window.gd" id="6_82gii"]
+[ext_resource type="Script" path="res://Scripts/go_to_hallway.gd" id="7_ickvf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lt30v"]
 animations = [{
@@ -61,6 +62,9 @@ size = Vector2(40, 13)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w3rne"]
 size = Vector2(28.5, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xedjh"]
+size = Vector2(33, 7)
 
 [node name="chambre" type="Node2D"]
 position = Vector2(-97, -7)
@@ -134,5 +138,14 @@ script = ExtResource("6_82gii")
 position = Vector2(4.25, -23)
 shape = SubResource("RectangleShape2D_w3rne")
 
+[node name="go_to_hallway" type="Area2D" parent="."]
+position = Vector2(4, 88)
+script = ExtResource("7_ickvf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="go_to_hallway"]
+position = Vector2(-0.5, 7.5)
+shape = SubResource("RectangleShape2D_xedjh")
+
 [connection signal="body_entered" from="window" to="window" method="_on_body_entered"]
 [connection signal="body_exited" from="window" to="window" method="_on_body_exited"]
+[connection signal="body_entered" from="go_to_hallway" to="go_to_hallway" method="_on_body_entered"]

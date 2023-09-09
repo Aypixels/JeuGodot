@@ -1,18 +1,20 @@
-[gd_scene load_steps=20 format=3 uid="uid://dm8robqbf3qft"]
+[gd_scene load_steps=26 format=3 uid="uid://dpgcabgohuoo6"]
 
 [ext_resource type="Script" path="res://Scripts/Combat_scene.gd" id="1_3hhq4"]
 [ext_resource type="Texture2D" uid="uid://bqq86sl8lqoln" path="res://assets/battle_backgrounds/something_fight.png" id="2_sjn1b"]
 [ext_resource type="PackedScene" uid="uid://dhyrpl2bq2gwo" path="res://Scène/Ennemy_group.tscn" id="3_twq0c"]
 [ext_resource type="PackedScene" uid="uid://c3e8im3fr48dp" path="res://Scène/Ally_group.tscn" id="4_fb1oj"]
+[ext_resource type="Script" path="res://Scripts/choice.gd" id="5_8a28m"]
 [ext_resource type="FontFile" uid="uid://c6j3p5khmw0g1" path="res://assets/NESCyrillic.ttf" id="5_q57hc"]
 [ext_resource type="AudioStream" uid="uid://cirpx0ye4d1js" path="res://assets/OMORI OST - 014 Acrophobia.mp3" id="6_8bfeq"]
 [ext_resource type="PackedScene" uid="uid://d2alup74lfn2u" path="res://Scène/frisk_ui.tscn" id="7_2p0tr"]
 [ext_resource type="Texture2D" uid="uid://cgw0dji3gb2ui" path="res://assets/combat_dialog_box.png" id="8_iel0u"]
 [ext_resource type="Texture2D" uid="uid://b5woq1mddvxsg" path="res://assets/3414630-small-removebg-preview.png" id="10_r6j7g"]
 [ext_resource type="Script" path="res://Scripts/CombatDialogBox.gd" id="11_efbcd"]
-[ext_resource type="FontFile" uid="uid://b4sngv2t4bmog" path="res://assets/Determination/DTM-Mono.otf" id="11_pdlsd"]
+[ext_resource type="FontFile" uid="uid://dw0xt1bycx0el" path="res://assets/Determination/DTM-Sans.ttf" id="12_83tns"]
 [ext_resource type="Texture2D" uid="uid://bpn087oxw2w45" path="res://assets/enemy_turn.png" id="14_o3f1g"]
 [ext_resource type="Texture2D" uid="uid://dmbf4f8kntspa" path="res://assets/your_turn.png" id="15_3x4bb"]
+[ext_resource type="FontFile" uid="uid://bngnc0sjmpcs2" path="res://assets/Determination/DTM-Sans.otf" id="15_jyci0"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_k3wr2"]
 animations = [{
@@ -38,7 +40,7 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0.776471, 0.415686, 0.0745098, 1)
 shadow_color = Color(1, 0.623529, 0, 0.6)
-shadow_size = 5
+shadow_size = 3
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qcj7r"]
 bg_color = Color(0, 0, 0, 1)
@@ -48,7 +50,7 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0.776471, 0.415686, 0.0745098, 1)
 shadow_color = Color(1, 0.623529, 0, 0.6)
-shadow_size = 5
+shadow_size = 3
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jnwjt"]
 bg_color = Color(0, 0, 0, 1)
@@ -58,7 +60,7 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0.776471, 0.415686, 0.0745098, 1)
 shadow_color = Color(1, 0.623529, 0, 0.6)
-shadow_size = 5
+shadow_size = 3
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6e5i2"]
 bg_color = Color(0, 0, 0, 1)
@@ -68,7 +70,7 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0.776471, 0.415686, 0.0745098, 1)
 shadow_color = Color(1, 0.623529, 0, 0.6)
-shadow_size = 5
+shadow_size = 3
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ejnw0"]
 animations = [{
@@ -89,6 +91,14 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_817lw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wunye"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5ww8n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rrsaa"]
+
 [node name="Combat_scene" type="Node2D"]
 script = ExtResource("1_3hhq4")
 
@@ -107,6 +117,7 @@ position = Vector2(0, 0)
 [node name="Ally_group" parent="." instance=ExtResource("4_fb1oj")]
 
 [node name="choice" type="CanvasLayer" parent="."]
+script = ExtResource("5_8a28m")
 
 [node name="Attack" type="Button" parent="choice"]
 texture_filter = 1
@@ -115,6 +126,12 @@ offset_top = 516.0
 offset_right = 960.0
 offset_bottom = 547.0
 scale = Vector2(1.4, 1.36)
+focus_neighbor_left = NodePath("../../CombatDialogBox/RichTextLabel")
+focus_neighbor_top = NodePath("../../CombatDialogBox/RichTextLabel")
+focus_neighbor_right = NodePath("../Items")
+focus_neighbor_bottom = NodePath("../Special")
+focus_next = NodePath("../Run")
+focus_previous = NodePath("../Run")
 theme_override_colors/font_color = Color(0.843137, 0.858824, 0, 1)
 theme_override_fonts/font = ExtResource("5_q57hc")
 theme_override_font_sizes/font_size = 19
@@ -128,6 +145,10 @@ offset_top = 575.0
 offset_right = 960.0
 offset_bottom = 606.0
 scale = Vector2(1.4, 1.32)
+focus_neighbor_left = NodePath("../../CombatDialogBox/RichTextLabel")
+focus_neighbor_top = NodePath("../Attack")
+focus_neighbor_right = NodePath("../Run")
+focus_neighbor_bottom = NodePath("../../CombatDialogBox/RichTextLabel")
 theme_override_colors/font_color = Color(0.843137, 0.858824, 0, 1)
 theme_override_fonts/font = ExtResource("5_q57hc")
 theme_override_font_sizes/font_size = 16
@@ -141,6 +162,10 @@ offset_top = 575.0
 offset_right = 1081.0
 offset_bottom = 606.0
 scale = Vector2(1.4, 1.32)
+focus_neighbor_left = NodePath("../Special")
+focus_neighbor_top = NodePath("../Items")
+focus_neighbor_right = NodePath("../../CombatDialogBox/RichTextLabel")
+focus_neighbor_bottom = NodePath("../../CombatDialogBox/RichTextLabel")
 theme_override_colors/font_color = Color(0.843137, 0.858824, 0, 1)
 theme_override_fonts/font = ExtResource("5_q57hc")
 theme_override_font_sizes/font_size = 22
@@ -154,6 +179,10 @@ offset_top = 516.0
 offset_right = 1070.0
 offset_bottom = 547.0
 scale = Vector2(1.68, 1.32)
+focus_neighbor_left = NodePath("../Attack")
+focus_neighbor_top = NodePath("../../CombatDialogBox/RichTextLabel")
+focus_neighbor_right = NodePath("../../CombatDialogBox/RichTextLabel")
+focus_neighbor_bottom = NodePath("../Run")
 theme_override_colors/font_color = Color(0.843137, 0.858824, 0, 1)
 theme_override_fonts/font = ExtResource("5_q57hc")
 theme_override_font_sizes/font_size = 16
@@ -185,7 +214,7 @@ offset_top = -14.0
 offset_right = 495.0
 offset_bottom = 111.0
 scale = Vector2(0.193135, 0.232939)
-theme_override_fonts/normal_font = ExtResource("11_pdlsd")
+theme_override_fonts/normal_font = ExtResource("12_83tns")
 theme_override_font_sizes/normal_font_size = 27
 
 [node name="Turn" type="AnimatedSprite2D" parent="."]
@@ -195,6 +224,103 @@ scale = Vector2(0.0811856, 0.0781186)
 sprite_frames = SubResource("SpriteFrames_ejnw0")
 animation = &"ally_turn"
 
+[node name="select_special" type="Node2D" parent="."]
+texture_filter = 1
+
+[node name="Special1" type="Button" parent="select_special"]
+visible = false
+offset_left = -66.0
+offset_top = 38.0
+offset_right = 159.0
+offset_bottom = 86.0
+scale = Vector2(0.150206, 0.147625)
+focus_neighbor_left = NodePath("../../CombatDialogBox/RichTextLabel")
+focus_neighbor_top = NodePath("../../CombatDialogBox/RichTextLabel")
+focus_neighbor_right = NodePath("../Special3")
+focus_neighbor_bottom = NodePath("../Special2")
+focus_next = NodePath("../../CombatDialogBox/RichTextLabel")
+focus_previous = NodePath("../../CombatDialogBox/RichTextLabel")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0.988235, 1, 0.513726, 1)
+theme_override_fonts/font = ExtResource("15_jyci0")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxEmpty_817lw")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wunye")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5ww8n")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rrsaa")
+
+[node name="Special2" type="Button" parent="select_special"]
+visible = false
+offset_left = -66.0
+offset_top = 48.0
+offset_right = 159.0
+offset_bottom = 96.0
+scale = Vector2(0.150206, 0.147625)
+focus_neighbor_left = NodePath("../../CombatDialogBox/RichTextLabel")
+focus_neighbor_top = NodePath("../Special1")
+focus_neighbor_right = NodePath("../Special4")
+focus_neighbor_bottom = NodePath("../../CombatDialogBox/RichTextLabel")
+focus_next = NodePath("../../CombatDialogBox/RichTextLabel")
+focus_previous = NodePath("../../CombatDialogBox/RichTextLabel")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0.988235, 1, 0.513726, 1)
+theme_override_fonts/font = ExtResource("15_jyci0")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxEmpty_817lw")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wunye")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5ww8n")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rrsaa")
+
+[node name="Special3" type="Button" parent="select_special"]
+visible = false
+offset_left = -21.0
+offset_top = 38.0
+offset_right = 204.0
+offset_bottom = 86.0
+scale = Vector2(0.150206, 0.147625)
+focus_neighbor_left = NodePath("../Special1")
+focus_neighbor_top = NodePath("../../CombatDialogBox/RichTextLabel")
+focus_neighbor_right = NodePath("../../choice/Attack")
+focus_neighbor_bottom = NodePath("../Special4")
+focus_next = NodePath("../../CombatDialogBox/RichTextLabel")
+focus_previous = NodePath("../../CombatDialogBox/RichTextLabel")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0.988235, 1, 0.513726, 1)
+theme_override_fonts/font = ExtResource("15_jyci0")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxEmpty_817lw")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wunye")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5ww8n")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rrsaa")
+
+[node name="Special4" type="Button" parent="select_special"]
+visible = false
+offset_left = -21.0
+offset_top = 48.0
+offset_right = 204.0
+offset_bottom = 96.0
+scale = Vector2(0.150206, 0.147625)
+focus_neighbor_left = NodePath("../Special2")
+focus_neighbor_top = NodePath("../Special3")
+focus_neighbor_right = NodePath("../../choice/Special")
+focus_neighbor_bottom = NodePath("../../CombatDialogBox/RichTextLabel")
+focus_next = NodePath("../../CombatDialogBox/RichTextLabel")
+focus_previous = NodePath("../../CombatDialogBox/RichTextLabel")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0.988235, 1, 0.513726, 1)
+theme_override_fonts/font = ExtResource("15_jyci0")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxEmpty_817lw")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wunye")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5ww8n")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rrsaa")
+
 [connection signal="next_player" from="Ennemy_group" to="Ally_group" method="_on_ennemy_group_next_player"]
+[connection signal="next_player" from="Ennemy_group" to="choice" method="_on_ennemy_group_next_player"]
 [connection signal="pressed" from="choice/Attack" to="Ennemy_group" method="_on_attack_pressed"]
+[connection signal="pressed" from="choice/Special" to="Ally_group" method="_on_special_pressed"]
 [connection signal="pressed" from="choice/Run" to="Ally_group" method="_on_run_pressed"]
+[connection signal="pressed" from="select_special/Special1" to="Ally_group" method="_on_special_1_pressed"]
+[connection signal="pressed" from="select_special/Special2" to="Ally_group" method="_on_special_2_pressed"]
+[connection signal="pressed" from="select_special/Special3" to="Ally_group" method="_on_special_3_pressed"]
+[connection signal="pressed" from="select_special/Special4" to="Ally_group" method="_on_special_4_pressed"]

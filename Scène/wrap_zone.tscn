@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=3 uid="uid://dmbcciu1mqfi0"]
+[gd_scene load_steps=69 format=3 uid="uid://ctm3g3tkdcpy5"]
 
 [ext_resource type="Texture2D" uid="uid://halj7hsiyqi0" path="res://tilset/tiles.png" id="1_rn4p6"]
 [ext_resource type="Texture2D" uid="uid://crplcbmfgkrok" path="res://tilset/Scarlet_forest.png" id="2_4s62f"]
@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://cc5b3m1mccv2r" path="res://tilset/Closed_Grand_Door.png" id="9_o2vlf"]
 [ext_resource type="Texture2D" uid="uid://dw1c2o6457unx" path="res://tilset/Opened_Grand_Door.png" id="10_7nxso"]
 [ext_resource type="Script" path="res://Scripts/grand_door.gd" id="11_mhps1"]
-[ext_resource type="Script" path="res://Scène/go_to_deltarune.gd" id="12_uy53e"]
+[ext_resource type="Script" path="res://Scripts/go_to_deltarune.gd" id="12_h4qd4"]
 [ext_resource type="Script" path="res://Scripts/mirror.gd" id="13_d7v54"]
 [ext_resource type="Texture2D" uid="uid://dapspkyv4b1d0" path="res://assets/mirror_omori/frame_0_delay-0.35s.png" id="14_vv382"]
 [ext_resource type="Texture2D" uid="uid://enjbnwdpytck" path="res://assets/mirror_omori/frame_1_delay-0.35s.png" id="15_n8vl7"]
@@ -20,9 +20,9 @@
 [ext_resource type="Texture2D" uid="uid://ca23hvvu4m5fd" path="res://assets/Wrap_exit/Base_exit.png" id="18_l3b5t"]
 [ext_resource type="Script" path="res://Scripts/exit.gd" id="19_uqm15"]
 [ext_resource type="Texture2D" uid="uid://bcl8l1xkgolta" path="res://assets/White_particle.png" id="20_ifr40"]
-[ext_resource type="Script" path="res://Scène/fade.gd" id="21_niosq"]
+[ext_resource type="Script" path="res://Scripts/fade.gd" id="21_6jthm"]
 [ext_resource type="Texture2D" uid="uid://bdny5fbfwg370" path="res://assets/The_Sun.png" id="22_fttxs"]
-[ext_resource type="Script" path="res://Scène/the_sun.gd" id="23_xd548"]
+[ext_resource type="Script" path="res://Scripts/the_sun.gd" id="23_8go6q"]
 [ext_resource type="Texture2D" uid="uid://diwhqpgmtnfky" path="res://assets/Oneshot_enter/animation1.png" id="24_0j3el"]
 [ext_resource type="Texture2D" uid="uid://sywbt8syvb8a" path="res://assets/Oneshot_enter/animation2.png" id="25_gntyg"]
 [ext_resource type="Texture2D" uid="uid://c8itsb08npf22" path="res://assets/Oneshot_enter/animation3.png" id="26_w4gsx"]
@@ -34,7 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://hxft1txhtlnc" path="res://assets/Oneshot_enter/animation9.png" id="32_1cnax"]
 [ext_resource type="Texture2D" uid="uid://bwv6usd2u5lcv" path="res://assets/Oneshot_enter/animation10.png" id="33_neaf5"]
 [ext_resource type="Texture2D" uid="uid://cpe21ulkuk7ex" path="res://assets/Entity.png" id="34_t4hdl"]
-[ext_resource type="Script" path="res://Scène/entity.gd" id="35_1xgkc"]
+[ext_resource type="Script" path="res://Scripts/entity.gd" id="35_repr8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0u1yg"]
 texture = ExtResource("1_rn4p6")
@@ -9259,7 +9259,7 @@ polygon = PackedVector2Array(668, -506, 592, -506, 592, -658, 764, -658, 764, -5
 disabled = true
 
 [node name="Area2D" type="Area2D" parent="The_Grand_door"]
-script = ExtResource("12_uy53e")
+script = ExtResource("12_h4qd4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="The_Grand_door/Area2D"]
 position = Vector2(679.5, -566)
@@ -9379,7 +9379,7 @@ texture_filter = 1
 
 [node name="Polygon2D" type="Polygon2D" parent="The_Sun"]
 polygon = PackedVector2Array(-1035, -23, -1029, 946, 69, 946, 66, -24)
-script = ExtResource("21_niosq")
+script = ExtResource("21_6jthm")
 
 [node name="TheSun" type="Sprite2D" parent="The_Sun"]
 z_index = 1
@@ -9394,7 +9394,7 @@ shape = SubResource("CircleShape2D_5e3u4")
 
 [node name="Area2D" type="Area2D" parent="The_Sun"]
 position = Vector2(-466, 431)
-script = ExtResource("23_xd548")
+script = ExtResource("23_8go6q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="The_Sun/Area2D"]
 position = Vector2(-20, 42)
@@ -9435,7 +9435,7 @@ shape = SubResource("RectangleShape2D_kulrg")
 
 [node name="Area2D" type="Area2D" parent="Entity"]
 position = Vector2(-434, 434)
-script = ExtResource("35_1xgkc")
+script = ExtResource("35_repr8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Entity/Area2D"]
 position = Vector2(3.5, 3)

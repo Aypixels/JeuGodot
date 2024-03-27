@@ -115,9 +115,10 @@ func check_lose():
 
 func enemy_turn() :
 	SignalBus.emit_signal("switch_turn", "enemy")
+	await get_tree().create_timer(0.5).timeout
 	for enemy in enemies :
 		SignalBus.emit_signal("enemy_attack", enemy.ATK)
-		await get_tree().create_timer(1).timeout
+		await get_tree().create_timer(1.2).timeout
 	if not check_lose() :
 		SignalBus.emit_signal("new_turn")
 		$"../choice/Attack".grab_focus()

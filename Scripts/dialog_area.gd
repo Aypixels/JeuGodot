@@ -16,5 +16,3 @@ func _on_area_exited(_area):
 	area_active = false
 	SignalBus.emit_signal('hide_spacebar')	
 
-
-func show_spacebar(): pass

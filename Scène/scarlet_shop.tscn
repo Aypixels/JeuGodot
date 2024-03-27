@@ -36,7 +36,8 @@ animations = [{
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g4eul"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uuhcl"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_la44h"]
+bg_color = Color(0.992157, 0.992157, 0.992157, 0.0862745)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5qk4m"]
 
@@ -46,7 +47,8 @@ animations = [{
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3o4o"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jvqip"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eyvul"]
+bg_color = Color(0.992157, 0.992157, 0.992157, 0.0862745)
 
 [node name="scarlet_shop" type="Container"]
 texture_filter = 1
@@ -91,24 +93,26 @@ alignment = 1
 [node name="Talk" type="Button" parent="choice_box/VBoxContainer"]
 texture_filter = 1
 layout_mode = 2
+focus_neighbor_bottom = NodePath("../Exit")
 theme_override_fonts/font = ExtResource("5_q2xsj")
 theme_override_font_sizes/font_size = 26
 theme_override_styles/normal = SubResource("StyleBoxEmpty_grc16")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_4ma3a")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_43fxf")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_g4eul")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_uuhcl")
+theme_override_styles/focus = SubResource("StyleBoxFlat_la44h")
 text = "Parler"
 
 [node name="Exit" type="Button" parent="choice_box/VBoxContainer"]
 layout_mode = 2
+focus_neighbor_top = NodePath("../Talk")
 theme_override_fonts/font = ExtResource("5_q2xsj")
 theme_override_font_sizes/font_size = 27
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5qk4m")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_o8sci")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_1frnm")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_x3o4o")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_jvqip")
+theme_override_styles/focus = SubResource("StyleBoxFlat_eyvul")
 text = "Sortir
 "
 

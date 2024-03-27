@@ -42,7 +42,6 @@ func _on_ennemy_group_next_player():
 	else:
 		index = 0
 		allies[-1].unfocus()
-		
 
 func focus_first():
 	if allies.size()>0 :
@@ -56,13 +55,22 @@ func switch_focus(x,y):
 func receive_dmg(DMG):
 	for ally in allies :
 		if ally.HP > 0:
-			ally.take_damage(DMG)
+			var total_dmg = DMG-ally.DEF
+			if total_dmg < 0 :
+				total_dmg = 0
+			ally.HP -= total_dmg
+			ally._update_health()
+			ally.damage_taken.play()
+			ally._play_animation()
+			if ally.HP <= 0 :
+				await ally.animation_player.animation_finished
+				ally._defeated()
 			break
-		
 		
 func allly_defeated(ally_id) :
 	if ally_id in allies :
 		allies.erase(ally_id)
+		e_group.allies.erase(ally_id)
 
 func current_ally_atk() :
 	return allies[index].ATK
@@ -102,27 +110,28 @@ func use_special(id) :
 		e_group.start_choosing()
 		await e_group.finished_choosing
 		target = e_group.get_child(e_group.target_index)
+	else:
+		e_group.action_queue.push_back([null,null, "special"])
 	get_child(index).call(specials[id]["action"], target)
+	
 	
 func special_finished():
 	e_group.reset_focus()
-	e_group.emit_signal("next_player")
-	e_group.action = ""
 	e_group.action_queue.push_back([e_group.target_index, 0 , e_group.action])
+	e_group.action = ""
+	e_group.emit_signal("next_player")
+
+
 
 func _on_special_1_pressed():
 	use_special(0)
-	$"../select_special/Special1".hide()
-	$"../select_special/Special1".text = ""
+	hide_specials()
 func _on_special_2_pressed():
 	use_special(1)
-	$"../select_special/Special2".hide()
-	$"../select_special/Special2".text = ""
+	hide_specials()
 func _on_special_3_pressed():
 	use_special(2)
-	$"../select_special/Special3".hide()
-	$"../select_special/Special3".text = ""
+	hide_specials()
 func _on_special_4_pressed():
 	use_special(3)
-	$"../select_special/Special4".hide()
-	$"../select_special/Special4".text = ""
+	hide_specials()

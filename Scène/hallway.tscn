@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://bvcv6yox357xr"]
+[gd_scene load_steps=10 format=3 uid="uid://bvcv6yox357xr"]
 
 [ext_resource type="Script" path="res://Scène/hallway.gd" id="1_eikkl"]
 [ext_resource type="Texture2D" uid="uid://d2wx07w6grsa3" path="res://assets/hallway_day.png" id="2_1d3qm"]
 [ext_resource type="Script" path="res://Scène/go_to_chamber.gd" id="3_xllkd"]
+[ext_resource type="Script" path="res://Scène/go_to_parent_room.gd" id="4_x5hk7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ac3lu"]
 animations = [{
@@ -45,6 +46,7 @@ sprite_frames = SubResource("SpriteFrames_ac3lu")
 animation = &"nuit"
 
 [node name="Collision" type="StaticBody2D" parent="."]
+visible = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Collision"]
 polygon = PackedVector2Array(-168, 12, -73, 12, -73, 14, -32, 14, -32, 12, -23, 12, -19, 15, -12, 15, -8, 12, 55, 12, 55, 16, 97, 16, 97, 12, 121, 12, 121, -23, 152, -23, 152, 12, 168, 12, 168, 43, -168, 43, -168, 63, 213, 62, 211, -68, -177, -69)
@@ -63,6 +65,7 @@ shape = SubResource("RectangleShape2D_vswje")
 
 [node name="go_to_parent_room" type="Area2D" parent="."]
 position = Vector2(26, 11)
+script = ExtResource("4_x5hk7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="go_to_parent_room"]
 position = Vector2(0.5, 2.5)
@@ -77,3 +80,5 @@ shape = SubResource("RectangleShape2D_ssg00")
 
 [connection signal="body_entered" from="go_to_chamber" to="go_to_chamber" method="_on_body_entered"]
 [connection signal="body_exited" from="go_to_chamber" to="go_to_chamber" method="_on_body_exited"]
+[connection signal="body_entered" from="go_to_parent_room" to="go_to_parent_room" method="_on_body_entered"]
+[connection signal="body_exited" from="go_to_parent_room" to="go_to_parent_room" method="_on_body_exited"]

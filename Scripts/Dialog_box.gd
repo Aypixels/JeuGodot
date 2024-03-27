@@ -10,6 +10,8 @@ Espace -> Intéragir
 M -> Inventaire"]],
 	"mirror" : [["Moi"],["C'est... Moi ?"]],
 	"non_accessible" : [["Moi"],["Je ne peux pas intéragir avec ça pour l'instant"]],
+	"cant_P_room" : [["Moi"],["Une chose est sûr... les réveiller serait une mauvaise idée..."]],
+	"man_tree" : [["Moi","Moi",""],["Il y a un homme derrière cette arbre","Il te tend quelquechose...","Un oeuf a été ajouté à votre inventaire ?"]],
 }
 var selected_text = []
 var selected_name = []

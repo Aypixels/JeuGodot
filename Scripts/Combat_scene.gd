@@ -12,4 +12,4 @@ func start_fight(combat_index, _enemies, _allies) :
 	
 func on_switch_turn(who):
 	turn.play(who+"_turn")
-
+			

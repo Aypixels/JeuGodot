@@ -5,12 +5,15 @@ var oneshot_opened = false
 var deltarune_opened = false
 var exit_opened = true
 
+var changing_scene = false
 var period = "night"
 var start_scene = "res://Scène/Tutoriel.tscn"
 var current_level : Node2D
 var combat : Node2D
 var current_allies = ["player"]
 @onready var fondu = $Fondu/AnimationPlayer
+@onready var inventory = $Player/Inventory
+
 
 #[Maxhp, hp, Lv] ,  item_equipped(0 : weapon/ 1 : armor/2: accessory : [ATK,DEF,HP, special effect, name], position, sprite_path,scale
 var allies = {
@@ -75,14 +78,18 @@ func combat_lost() :
 	
 
 func on_go_to(location, transition, _from) :
-	$Player.stop = true
-	$Player.go_idle()
-	if transition == true :
-		fondu.play("fondu")
-		await fondu.animation_finished
-		fondu.play_backwards("fondu")
-	current_level = load("res://Scène/"+location+".tscn").instantiate()
-	$Level.get_child(0).queue_free()
-	$Level.add_child(current_level)
-	$Player.stop = false
+	if changing_scene == false: 
+		changing_scene = true
+		$Player.stop = true
+		$Player.go_idle()
+		if transition == true :
+			fondu.play("fondu")
+			await fondu.animation_finished
+			fondu.play_backwards("fondu")
+		current_level = load("res://Scène/"+location+".tscn").instantiate()
+		$Level.get_child(0).queue_free()
+		$Level.add_child(current_level)
+		$Player.stop = false
+		changing_scene = false
+	
 	

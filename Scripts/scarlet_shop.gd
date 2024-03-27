@@ -36,6 +36,7 @@ func show_shop() :
 	
 	visible = true
 	position = player.get_cam_pos()
+	$choice_box/VBoxContainer/Talk.grab_focus()
 	
 func hide_shop():
 	player.camera_recover()
@@ -57,13 +58,19 @@ func _on_exit_pressed():
 
 
 func _on_talk_pressed():
-	if text_index < len(texts) - 1 :
-		text_index += 1
-		if text_index == 3 :
-			SignalBus.emit_signal("add_item_inventory", "foulard blanc")
-	if text_index == 1 :
-		await get_tree().create_timer(0.4).timeout
-		$Seam.play("smiling")
-	else :
-		$Seam.play("default")
-	show_text(text_index)
+	if text.visible_characters < len(text.text) :
+		text.visible_characters = len(text.text)
+	else:
+		if text_index < len(texts) - 1 :
+			text_index += 1
+			if text_index == 3 :
+				if $"../..".inventory.has_item("res://assets/Items/white_scarf.png") :
+					text_index+=1
+				else:
+					SignalBus.emit_signal("add_item_inventory", "foulard blanc")
+		if text_index == 1 :
+			await get_tree().create_timer(0.4).timeout
+			$Seam.play("smiling")
+		else :
+			$Seam.play("default")
+		show_text(text_index)

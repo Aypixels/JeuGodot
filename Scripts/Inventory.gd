@@ -14,8 +14,10 @@ var item_inventory = []
 var item_data = {
 	"bâton" : ["res://assets/Items/stick_sprite.png", 1,0,0 , "Un bâton :
 simple mais solide. Attention à ne pas le casser !", Vector2(0.3, 0.2999) , "weapon", null],
-	"foulard blanc" : ["res://assets/Items/white_scarf.png", 1,0,0 , "Un foulard blanc:
-un cadeau de la première personne que j'ai rencontré ici", Vector2(1, 1), "armor", null]
+	"foulard blanc" : ["res://assets/Items/white_scarf.png", 0,1,0 , "Un foulard blanc:
+un cadeau de la première personne que j'ai rencontré ici", Vector2(1, 1), "armor", null],
+	"oeuf vert" : ["res://assets/Items/green_egg.png", 0,0,0 , "Un oeuf vert :
+je me demande bien à quoi il pourrait me servir ?", Vector2(0.8, 0.8) , null, null]
 }
 
 
@@ -32,6 +34,13 @@ func _process(_delta):
 			open_inventory()
 		
 		
+func has_item(path):
+	for item in item_inventory:
+		if item[0] == path:
+			return true
+	return false
+		
+
 func open_inventory() :
 	SignalBus.emit_signal("update_FriskUI", game.allies["Frisk"][0][0], game.allies["Frisk"][0][1], game.allies["Frisk"][0][2])
 	get_tree().paused = true
@@ -93,6 +102,7 @@ func _on_item_list_item_selected(item_selected):
 		HP +"+ str(item_inventory[item_selected][3])
 		equiper.visible = true
 	else :
+		$item_info/stats.text = ""
 		equiper.visible = false
 	jeter.visible=true
 	$item_info/item_icon.texture = load(item_inventory[item_selected][0])
@@ -165,3 +175,4 @@ func unequip_item(item_name):
 		elif ally[1][2][4] == item_name :
 			var ally_pos = ally[2]
 			$Team.get_child(-ally_pos).get_child(2).texture = null
+

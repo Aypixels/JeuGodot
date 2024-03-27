@@ -4,6 +4,7 @@ extends Node2D
 @onready var damage_taken = $damage_taken
 @onready var game = $"../../.."
 @onready var e_group = $"../../Ennemy_group"
+@onready var animation_player = $AnimationPlayer
 
 var specials = [
 	{"name" : "* Inspecter",
@@ -28,15 +29,6 @@ func focus() :
 	_focus.show()
 func unfocus():
 	_focus.hide()
-	
-func take_damage(value):
-	HP -= value-DEF
-	_update_health()
-	damage_taken.play()
-	_play_animation()
-	if HP <= 0 :
-		await $AnimationPlayer.animation_finished
-		_defeated()
 	
 func _ready():
 	$AnimatedSprite2D.flip_h = true

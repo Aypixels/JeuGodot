@@ -20,7 +20,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3_0c0v1")
 }],
-"loop": true,
+"loop": false,
 "name": &"death",
 "speed": 1.0
 }, {

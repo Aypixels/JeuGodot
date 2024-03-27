@@ -73,7 +73,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("11_m21dc")
 }],
-"loop": true,
+"loop": false,
 "name": &"appear",
 "speed": 5.0
 }, {
@@ -126,7 +126,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("16_20vhq")
 }],
-"loop": true,
+"loop": false,
 "name": &"disappear",
 "speed": 5.0
 }, {
@@ -209,7 +209,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Combat_something" type="CharacterBody2D"]
+[node name="Combat_something" type="Node2D"]
 script = ExtResource("1_armpb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

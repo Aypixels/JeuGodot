@@ -1,4 +1,4 @@
-extends CharacterBody2D
+extends Node2D
 
 @onready var defeated = $defeated
 @onready var _focus = $focus

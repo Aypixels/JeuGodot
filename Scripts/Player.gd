@@ -29,7 +29,7 @@ func _ready() :
 	SignalBus.show_spacebar.connect(show_spacebar)
 	SignalBus.hide_spacebar.connect(hide_spacebar)
 
-func _physics_process(_delta):
+func _physics_process(_delta):			
 	if not stop :
 		velocity.x = (int(Input.is_action_pressed("Right")) - int(Input.is_action_pressed("Left"))) 
 		velocity.y = (int(Input.is_action_pressed("down")) - int(Input.is_action_pressed("up"))) 
@@ -64,12 +64,10 @@ func end_of_road():
 	
 
 func positionning(location, transition, from) :
-	stop = true
 	$AnimatedSprite2D.play("idle" + oldPose + _location)
 	if transition :
 		await get_tree().create_timer(1).timeout
 	position = locations[location+"_"+from]
-	stop = false
 
 func memory():
 	stop = true
